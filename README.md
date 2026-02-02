@@ -1,21 +1,42 @@
-# Lomaopas.fi
+# sv
 
-Lomaopas.fi on suomalaisille turisteille suunnattu verkkosivusto, joka tarjoaa kohdennettuja matkaoppaita suosittuihin lomakohteisiin. Projektin ydinajatus on koota kaikki oleellinen tieto 1–14 päivän lomaa varten yhteen paikkaan, selkeästi ja suomeksi.
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-## Kohderyhmä
-- **Palvelu on tarkoitettu:** suomalaisille, jotka suunnittelevat lyhyttä lomaa (1–14 vrk).
-- **Palvelu EI ole tarkoitettu:** maahan muuttaville, asukkaille tai kausityöntekijöille.
+## Creating a project
 
-## Dokumentaatio
-Tämä repositorio sisältää projektin keskeisen dokumentaation.
-- `docs/concept.md`: Projektin ydinidea, kohderyhmä ja visio.
-- `docs/content_scope.md`: Tarkka rajaus siitä, mitä sisältöä projekti kattaa ja mitä ei.
-- `docs/taxonomy.md`: Sivuston rakenne, URL-käytännöt ja sisältöhierarkia.
-- `docs/roadmap.md`: Projektin kehitysvaiheet.
-- `docs/monetization.md`: Suunnitelma sivuston kaupallistamiseksi.
-- `docs/premium_products.md`: Tiedot myytävistä premium-tuotteista.
-- `docs/tyonjohtaja.md`: Työnjohtajan ohjeet ja vastuut.
-- `docs/muokkausohjeet.md`: Muokkausohjeet sisällölle ja muutoksille.
-- `docs/agenttiohjeet.md`: Agenttien käyttö- ja delegointisäännöt.
-- `docs/paatosloki.md`: Päätösloki projektin linjauksista ja muutoksista.
-- `docs/pdf/fuengirola_pdf.md`: Esimerkkisisältö premium PDF-oppaasta.
+If you're seeing this, you've probably already done this step. Congrats!
+
+```sh
+# create a new project
+npx sv create my-app
+```
+
+To recreate this project with the same configuration:
+
+```sh
+# recreate this project
+npx sv create --template minimal --types ts --no-install .
+```
+
+## Developing
+
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+
+```sh
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```sh
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
