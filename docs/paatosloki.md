@@ -1,0 +1,44 @@
+# Päätösloki – Lomaopas.fi
+
+## Periaatteet
+Tämä loki kirjaa Lomaopas.fi-projektin keskeiset, lukitut päätökset aikajärjestyksessä. Sen tarkoitus on ylläpitää projektin visiota ja estää scope-vuotoa.
+
+Päätös on lukittu, kun se on dokumentoitu projektin `docs`-kansiossa ja muutos on commitoitu versionhallintaan. Tämä loki ei korvaa varsinaista dokumentaatiota, vaan kokoaa yhteen siitä johdetut päätökset.
+
+## Päätökset (aikajärjestyksessä, uusin viimeiseksi)
+
+### 2026-02-02 – Projektin konsepti ja sisältörajaus
+- **Kuvaus:** Projektin perustavat päätökset. Määriteltiin nimeksi Lomaopas.fi, kohderyhmäksi 1–14 vrk suomalaisturistit ja ydinfokukseksi tarjota kaikki oleellinen tieto suomeksi. Samalla tehtiin selkeä rajaus, että projekti ei palvele maahanmuuttajia tai asukkaita.
+- **Vaikutus:** Lukitsee projektin ytimen ja kohderyhmän, mikä ohjaa kaikkea sisällöntuotantoa. Estää sekoittumisen asukasprojekteihin.
+- **Lähde:** `docs/concept.md`, `docs/content_scope.md`
+- **Commit:** `0e78066 docs: initial Lomaopas.fi documentation`
+
+### 2026-02-02 – Tekninen ja sisällöllinen rakenne
+- **Kuvaus:** Sivuston taksonomia ja URL-rakenne määriteltiin muotoon `/maa/kaupunki`. Lisäksi päätettiin slug-säännöistä (pienet kirjaimet, ei ääkkösiä) ja siitä, että tiedosto- ja kansionimet pidetään aina pienillä kirjaimilla.
+- **Vaikutus:** Luo selkeän ja johdonmukaisen rakenteen sivustolle ja repositorioon. Varmistaa, että URL-osoitteet ovat siistejä ja pysyviä.
+- **Lähde:** `docs/taxonomy.md`, projektin tiedostorakenne
+- **Commit:** `0e78066 docs: initial Lomaopas.fi documentation`
+
+### 2026-02-02 – Roadmap ja vaiheistus
+- **Kuvaus:** Projektin elinkaari jaettiin neljään vaiheeseen (Phase 0–4), alkaen MVP-julkaisusta (Espanja + 1–2 kaupunkia) ja edeten skaalaukseen, monetisointiin ja mahdolliseen sovellukseen.
+- **Vaikutus:** Antaa selkeän suunnan projektin kehitykselle ja auttaa priorisoimaan tehtäviä. MVP-fokus mahdollistaa nopean aloituksen.
+- **Lähde:** `docs/roadmap.md`
+- **Commit:** `0e78066 docs: initial Lomaopas.fi documentation`
+
+### 2026-02-02 – Monetisointimalli
+- **Kuvaus:** Kaupallistaminen päätettiin perustaa kahteen pilariin: affiliate-markkinointiin ja omien premium PDF-oppaiden myyntiin. PDF-oppaan hinnaksi asetettiin 9,90 € ja konversio-oletukseksi 0,3–0,8 %.
+- **Vaikutus:** Määrittää, miten projekti tuottaa tuloja. Ohjaa premium-sisällön kehitystä ja affiliate-kumppanuuksien valintaa.
+- **Lähde:** `docs/monetization.md`, `docs/premium_products.md`
+- **Commit:** `0e78066 docs: initial Lomaopas.fi documentation`
+
+### 2026-02-02 – Ensimmäinen Premium-tuote: Fuengirola PDF
+- **Kuvaus:** Ensimmäiseksi premium-tuotteeksi luotiin sisältöpohja Fuengirolan PDF-oppaalle. Tämä toimii mallina tuleville kaupunkioppaille.
+- **Vaikutus:** Konkretisoi premium-tuotteen idean ja luo valmiin rungon sisällöntuotannolle.
+- **Lähde:** `docs/pdf/fuengirola_pdf.md`
+- **Commit:** `0e78066 docs: initial Lomaopas.fi documentation`
+
+### 2026-02-02 – Työnjohtajarooli ja agenttimalli
+- **Kuvaus:** Määriteltiin "Työnjohtaja"-rooli, joka vastaa projektin vision noudattamisesta, mutta ei itse tee tehtäviä. Työ delegoidaan erikoistuneille agenteille (Claude Code, Codex CLI, Gemini).
+- **Vaikutus:** Lukitsee projektin johtamis- ja toteutusmallin. Varmistaa, että päätökset ja toteutus pysyvät erillään ja että työtä tehdään hallitusti.
+- **Lähde:** `docs/tyonjohtaja.md`
+- **Commit:** `39f4aae docs: add tyonjohtaja role and delegation rules`
