@@ -1,3 +1,8 @@
+<svelte:head>
+  <title>Fuengirola – Missä asua | Lomaopas.fi</title>
+  <meta name="description" content="Tulossa: tiivis katsaus alueisiin ja majoittumiseen Fuengirolassa." />
+</svelte:head>
+
 <h1>Fuengirola – Missä asua</h1>
-<p>Lyhyt yhteenveto alueista ja majoittumisesta lomailijalle.</p>
-<p><a href="/espanja/fuengirola">Takaisin Fuengirolan kaupunkisivulle</a></p>
+<p>Tulossa: lyhyt vertailu alueista ja majoitusvinkeistä lomailijalle.</p>
+<p><a href="/espanja/fuengirola">Takaisin Fuengirolaan</a></p>
