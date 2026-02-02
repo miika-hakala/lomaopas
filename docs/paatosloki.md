@@ -43,13 +43,13 @@ Päätös on lukittu, kun se on dokumentoitu projektin `docs`-kansiossa ja muuto
 - **Lähde:** `docs/tyonjohtaja.md`
 - **Commit:** `39f4aae docs: add tyonjohtaja role and delegation rules`
 
-### 2026-02-02 – Muokkausohjeet lukittu
+### tuntematon – Muokkausohjeet lukittu
 - **Kuvaus:** Dokumentoitiin säännöt sisällön muokkaamiselle, uusien dokumenttien luomiselle ja muutosten hallinnalle. Ohjeistus korostaa dokumentaation seuraamista ja hallittuja, perusteltuja muutoksia.
 - **Vaikutus:** Yhtenäistää tavan, jolla projektin sisältöä ja dokumentaatiota muokataan. Varmistaa, että muutokset ovat jäljitettävissä ja noudattavat projektin periaatteita.
 - **Lähde:** `docs/muokkausohjeet.md`
 - **Commit:** `f1d880f docs: add content editing and change rules`
 
-### 2026-02-02 – Agenttien käyttöohjeet lukittu
+### tuntematon – Agenttien käyttöohjeet lukittu
 - **Kuvaus:** Laadittiin tarkemmat käyttö- ja delegointisäännöt projektissa käytettäville agenteille (Claude, Codex, Gemini). Ohjeistaa, mikä agentti sopii mihinkin tehtävään ja miten tehtävänanto tulee muotoilla.
 - **Vaikutus:** Selkeyttää työnjakoa agenttien välillä ja tehostaa delegointia. Varmistaa, että Työnjohtaja osaa valita oikean työkalun kuhunkin tehtävään.
 - **Lähde:** `docs/agenttiohjeet.md`
