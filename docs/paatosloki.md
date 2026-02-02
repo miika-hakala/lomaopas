@@ -60,3 +60,9 @@ Päätös on lukittu, kun se on dokumentoitu projektin `docs`-kansiossa ja muuto
 - **Vaikutus:** Estää ennenaikaisen monetisoinnin. Ohjaa Phase 1.1 kehitystä (sisältö ensin, kanava kevyt). Varmistaa, että sivut ja mahdollinen appi perustuvat yhteen totuuslähteeseen.
 - **Lähde:** keskustelussa sovittu hybridimalli, `docs/pdf/fuengirola_pdf.md`, `docs/concept.md`
 - **Commit:** ei vielä commitoitu
+
+### 2026-02-02 – Phase 1.1 teknologia: SvelteKit
+- **Kuvaus:** Päätettiin käyttää SvelteKitiä Phase 1.1 -sivuston teknologiana. Tämä mahdollistaa myöhemmän appimaisen kehityksen ilman uudelleenplatformausta. Sivuston minimirunko ja reitit rakennetaan `docs/content_map.md` -tiedoston mukaisesti ilman kirjautumista, maksua tai checkout-toiminnallisuutta.
+- **Vaikutus:** Luodaan teknologinen perusta tulevalle kehitykselle, joka skaalautuu sovellukseksi. Ohjaa Phase 1.1 kehitystä keskittymään sisältöön ja kevyeen kanavaan.
+- **Lähde:** keskustelussa sovittu teknologiavalinta
+- **Commit:** ei vielä commitoitu
