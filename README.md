@@ -14,4 +14,8 @@ Tämä repositorio sisältää projektin keskeisen dokumentaation.
 - `docs/roadmap.md`: Projektin kehitysvaiheet.
 - `docs/monetization.md`: Suunnitelma sivuston kaupallistamiseksi.
 - `docs/premium_products.md`: Tiedot myytävistä premium-tuotteista.
+- `docs/tyonjohtaja.md`: Työnjohtajan ohjeet ja vastuut.
+- `docs/muokkausohjeet.md`: Muokkausohjeet sisällölle ja muutoksille.
+- `docs/agenttiohjeet.md`: Agenttien käyttö- ja delegointisäännöt.
+- `docs/paatosloki.md`: Päätösloki projektin linjauksista ja muutoksista.
 - `docs/pdf/fuengirola_pdf.md`: Esimerkkisisältö premium PDF-oppaasta.
