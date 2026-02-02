@@ -1,12 +1,8 @@
-<h1>Fuengirola</h1>
-<p>Kooste Fuengirolasta ja oikotiet tärkeimpiin alaosiin.</p>
+<svelte:head>
+  <title>Fuengirola | Lomaopas.fi</title>
+  <meta name="description" content="Tiivis yleiskatsaus Fuengirolaan ja linkit alasivuille." />
+</svelte:head>
 
-<ul>
-  <li><a href="/espanja/fuengirola/liikkuminen">Liikkuminen</a></li>
-  <li><a href="/espanja/fuengirola/missa-asua">Missä asua</a></li>
-  <li><a href="/espanja/fuengirola/rannat">Rannat</a></li>
-  <li><a href="/espanja/fuengirola/ravintolat">Ravintolat</a></li>
-  <li><a href="/espanja/fuengirola/nahtavyydet">Nähtävyydet</a></li>
-  <li><a href="/espanja/fuengirola/paivaretket">Päiväretket</a></li>
-  <li><a href="/espanja/fuengirola/faq">UKK</a></li>
-</ul>
+<h1>Fuengirola</h1>
+<p>Tulossa: nopea yleiskuva kaupungista ja selkeät oikotiet alasivuille.</p>
+<p><a href="/espanja">Takaisin Espanjaan</a></p>

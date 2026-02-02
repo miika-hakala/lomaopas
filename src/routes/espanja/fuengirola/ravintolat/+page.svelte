@@ -1,3 +1,8 @@
+<svelte:head>
+  <title>Fuengirola – Ravintolat | Lomaopas.fi</title>
+  <meta name="description" content="Tulossa: tiivis opas ruokailuun, hintatasoon ja käytäntöihin." />
+</svelte:head>
+
 <h1>Fuengirola – Ravintolat</h1>
-<p>Tiivis katsaus ruokailuun, hintatasoon ja käytännön vinkkeihin.</p>
-<p><a href="/espanja/fuengirola">Takaisin Fuengirolan kaupunkisivulle</a></p>
+<p>Tulossa: selkeä kooste ruokailusta ja perusvinkeistä.</p>
+<p><a href="/espanja/fuengirola">Takaisin Fuengirolaan</a></p>
