@@ -54,3 +54,9 @@ Päätös on lukittu, kun se on dokumentoitu projektin `docs`-kansiossa ja muuto
 - **Vaikutus:** Selkeyttää työnjakoa agenttien välillä ja tehostaa delegointia. Varmistaa, että Työnjohtaja osaa valita oikean työkalun kuhunkin tehtävään.
 - **Lähde:** `docs/agenttiohjeet.md`
 - **Commit:** `0ba32ca docs: add agent usage and delegation rules`
+
+### 2026-02-02 – Hybridimalli: PDF sisältöytimenä, sivusto ensisijaisena kanavana
+- **Kuvaus:** Päätettiin hybridimallista, jossa PDF toimii sisäisenä sisältömasterina ("single source of truth"). Sivusto rakennetaan ensin PDF-sisällön pohjalta. PDF julkaistaan tuotteena vasta myöhemmässä vaiheessa, kun sivustolla on liikennettä ja PDF tarjoaa selkeää lisäarvoa (offline, checklistat, tiivistys). PDF ei ole vielä tuote eikä myynnissä.
+- **Vaikutus:** Estää ennenaikaisen monetisoinnin. Ohjaa Phase 1.1 kehitystä (sisältö ensin, kanava kevyt). Varmistaa, että sivut ja mahdollinen appi perustuvat yhteen totuuslähteeseen.
+- **Lähde:** keskustelussa sovittu hybridimalli, `docs/pdf/fuengirola_pdf.md`, `docs/concept.md`
+- **Commit:** ei vielä commitoitu
