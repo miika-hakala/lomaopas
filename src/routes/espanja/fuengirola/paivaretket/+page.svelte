@@ -21,8 +21,10 @@
 
 <h3>Málaga</h3>
 <p>
-  Alueen pääkaupunki, joka on täynnä kulttuuria, historiaa ja ostosmahdollisuuksia. Vieraile Picasson museossa, Alcazaban linnoituksessa tai nauti vilkkaasta kaupunkielämästä.
-  <AffiliateLink link={activities.malaga} />
+  Alueen pääkaupunki, joka on täynnä kulttuuria, historiaa ja ostosmahdollisuuksia.
+  Vieraile Picasson museossa, Alcazaban linnoituksessa tai nauti vilkkaasta
+  kaupunkielämästä. Junalla vain ~45 minuuttia.
+  <a href="/espanja/malaga">Lue lisää Málagasta →</a>
 </p>
 
 <h3>Mijas Pueblo</h3>

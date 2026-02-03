@@ -30,6 +30,11 @@ export const accommodation = {
     label: 'Hae majoitusta Fuengirolasta',
     partner: 'Booking.com',
   } satisfies AffiliateLink,
+  malaga: {
+    url: `https://www.booking.com/city/es/malaga.html?aid=${AFFILIATE_IDS.booking}`,
+    label: 'Hae majoitusta Málagasta',
+    partner: 'Booking.com',
+  } satisfies AffiliateLink,
 };
 
 /**
@@ -57,6 +62,11 @@ export const activities = {
     label: 'Katso retket Málagaan',
     partner: 'GetYourGuide',
   } satisfies AffiliateLink,
+  malagaDayTrips: {
+    url: `https://www.getyourguide.com/malaga-l162/?partner_id=${AFFILIATE_IDS.getyourguide}`,
+    label: 'Katso päiväretket Málagasta',
+    partner: 'GetYourGuide',
+  } satisfies AffiliateLink,
   ronda: {
     url: `https://www.getyourguide.com/ronda-l963/?partner_id=${AFFILIATE_IDS.getyourguide}`,
     label: 'Katso retket Rondaan',
@@ -72,6 +82,16 @@ export const activities = {
     label: 'Katso päiväretket Fuengirolasta',
     partner: 'GetYourGuide',
   } satisfies AffiliateLink,
+  granada: {
+    url: `https://www.getyourguide.com/granada-l38/?partner_id=${AFFILIATE_IDS.getyourguide}`,
+    label: 'Katso retket Granadaan',
+    partner: 'GetYourGuide',
+  } satisfies AffiliateLink,
+  nerja: {
+    url: `https://www.getyourguide.com/nerja-l1122/?partner_id=${AFFILIATE_IDS.getyourguide}`,
+    label: 'Katso retket Nerjaan',
+    partner: 'GetYourGuide',
+  } satisfies AffiliateLink,
 };
 
 /**
@@ -81,6 +101,16 @@ export const tickets = {
   bioparc: {
     url: `https://www.getyourguide.com/fuengirola-l967/bioparc-fuengirola-tickets-t123456/?partner_id=${AFFILIATE_IDS.getyourguide}`,
     label: 'Osta liput Bioparciin',
+    partner: 'GetYourGuide',
+  } satisfies AffiliateLink,
+  picassoMuseum: {
+    url: `https://www.getyourguide.com/malaga-l162/picasso-museum-malaga-tickets-t12345/?partner_id=${AFFILIATE_IDS.getyourguide}`,
+    label: 'Osta liput Picasso-museoon',
+    partner: 'GetYourGuide',
+  } satisfies AffiliateLink,
+  alcazaba: {
+    url: `https://www.getyourguide.com/malaga-l162/alcazaba-malaga-tickets-t12346/?partner_id=${AFFILIATE_IDS.getyourguide}`,
+    label: 'Osta liput Alcazabaan',
     partner: 'GetYourGuide',
   } satisfies AffiliateLink,
 };
