@@ -1,55 +1,73 @@
 /**
  * Sää-util LomaSihteerille
- * Käyttää Open-Meteo API:a (ilmainen, ei API-avainta)
+ * Käyttää AEMET OpenData API:a (Espanjan virallinen sääpalvelu)
  */
 
 export interface DailyWeather {
   summary: string;
   conclusion: string;
   ok: boolean;
+  source: 'aemet' | 'fallback';
 }
 
-// Fuengirolan koordinaatit
-const FUENGIROLA_LAT = 36.54;
-const FUENGIROLA_LON = -4.62;
-
-// WMO Weather interpretation codes -> suomenkielinen kuvaus
-const weatherCodeDescriptions: Record<number, string> = {
-  0: 'selkeää',
-  1: 'pääosin selkeää',
-  2: 'puolipilvistä',
-  3: 'pilvistä',
-  45: 'sumuista',
-  48: 'sumuista',
-  51: 'tihkusadetta',
-  53: 'tihkusadetta',
-  55: 'tihkusadetta',
-  61: 'sadetta',
-  63: 'sadetta',
-  65: 'voimakasta sadetta',
-  80: 'sadekuuroja',
-  81: 'sadekuuroja',
-  82: 'voimakkaita kuuroja',
-  95: 'ukkosia',
-  96: 'ukkosia',
-  99: 'voimakkaita ukkosia',
+export const FALLBACK_WEATHER: DailyWeather = {
+  summary: 'Säätietoja ei saatu.',
+  conclusion: 'Suunnittele päivä joustavasti.',
+  ok: false,
+  source: 'fallback',
 };
 
-function getWeatherDescription(code: number): string {
-  return weatherCodeDescriptions[code] || 'vaihtelevaa';
+// AEMET sääkoodien käännökset (espanja -> suomi, yleiset)
+const aemetDescriptions: Record<string, string> = {
+  'despejado': 'selkeää',
+  'poco nuboso': 'pääosin selkeää',
+  'intervalos nubosos': 'puolipilvistä',
+  'nuboso': 'pilvistä',
+  'muy nuboso': 'hyvin pilvistä',
+  'cubierto': 'pilvistä',
+  'nubes altas': 'korkeita pilviä',
+  'intervalos nubosos con lluvia': 'ajoittaista sadetta',
+  'nuboso con lluvia': 'sadetta',
+  'muy nuboso con lluvia': 'sadetta',
+  'cubierto con lluvia': 'sadetta',
+  'lluvia': 'sadetta',
+  'lluvia escasa': 'heikkoa sadetta',
+  'chubascos': 'sadekuuroja',
+  'tormenta': 'ukkosia',
+  'tormenta con lluvia': 'ukkosia ja sadetta',
+  'niebla': 'sumuista',
+  'bruma': 'utuista',
+  'calima': 'pölyistä',
+};
+
+export function parseAemetDescription(estadoCielo: string): string {
+  const lower = estadoCielo.toLowerCase();
+  for (const [key, value] of Object.entries(aemetDescriptions)) {
+    if (lower.includes(key)) {
+      return value;
+    }
+  }
+  return 'vaihtelevaa';
 }
 
-function generateConclusion(tempMax: number, weatherCode: number): string {
-  // Sadekoodi
-  if (weatherCode >= 51) {
+export function generateConclusion(tempMax: number, description: string): string {
+  const lower = description.toLowerCase();
+
+  // Sade
+  if (lower.includes('sadetta') || lower.includes('kuuroja')) {
     return 'Varaa sateenvarjo mukaan.';
   }
 
+  // Ukkonen
+  if (lower.includes('ukkosia')) {
+    return 'Seuraa säätilannetta päivän aikana.';
+  }
+
   // Lämpötilan mukaan
-  if (tempMax >= 30) {
+  if (tempMax >= 32) {
     return 'Vältä keskipäivän kuumuutta, aamu ja ilta parhaita ulkoiluun.';
   }
-  if (tempMax >= 25) {
+  if (tempMax >= 26) {
     return 'Aamupäivä paras ulkoiluun.';
   }
   if (tempMax >= 18) {
@@ -58,49 +76,20 @@ function generateConclusion(tempMax: number, weatherCode: number): string {
   return 'Ota kevyt takki mukaan.';
 }
 
-export async function getDailyWeather(city: string): Promise<DailyWeather> {
-  // Fallback-arvot
-  const fallback: DailyWeather = {
-    summary: 'Säätietoja ei saatu.',
-    conclusion: 'Suunnittele päivä joustavasti.',
-    ok: false,
-  };
-
+/**
+ * Hakee sään client-sidelta API-reitin kautta
+ */
+export async function getDailyWeather(): Promise<DailyWeather> {
   try {
-    // Open-Meteo API - haetaan päivän ennuste
-    const url = new URL('https://api.open-meteo.com/v1/forecast');
-    url.searchParams.set('latitude', FUENGIROLA_LAT.toString());
-    url.searchParams.set('longitude', FUENGIROLA_LON.toString());
-    url.searchParams.set('daily', 'weather_code,temperature_2m_max,temperature_2m_min');
-    url.searchParams.set('timezone', 'Europe/Madrid');
-    url.searchParams.set('forecast_days', '1');
-
-    const response = await fetch(url.toString());
+    const response = await fetch('/api/weather');
 
     if (!response.ok) {
-      return fallback;
+      return FALLBACK_WEATHER;
     }
 
-    const data = await response.json();
-
-    if (!data.daily || !data.daily.weather_code || !data.daily.temperature_2m_max) {
-      return fallback;
-    }
-
-    const weatherCode = data.daily.weather_code[0];
-    const tempMax = Math.round(data.daily.temperature_2m_max[0]);
-    const tempMin = Math.round(data.daily.temperature_2m_min[0]);
-
-    const description = getWeatherDescription(weatherCode);
-    const summary = `Päivä on ${description}, ${tempMax} °C.`;
-    const conclusion = generateConclusion(tempMax, weatherCode);
-
-    return {
-      summary,
-      conclusion,
-      ok: true,
-    };
+    const data: DailyWeather = await response.json();
+    return data;
   } catch {
-    return fallback;
+    return FALLBACK_WEATHER;
   }
 }

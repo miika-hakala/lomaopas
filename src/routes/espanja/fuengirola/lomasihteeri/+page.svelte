@@ -11,6 +11,7 @@
     summary: copy.briefing.weather_text,
     conclusion: '',
     ok: false,
+    source: 'fallback',
   };
 
   const interestLabels: Record<string, string> = copy.onboarding2.interests;
@@ -21,8 +22,8 @@
     if (profileData) {
       profile = JSON.parse(profileData);
       status = getLomasihteeriStatus(profile);
-      // Hae live-sää
-      weather = await getDailyWeather('fuengirola');
+      // Hae live-sää AEMET:sta
+      weather = await getDailyWeather();
     } else {
       profile = null;
     }
