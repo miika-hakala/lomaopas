@@ -2,19 +2,27 @@
   import { onMount } from 'svelte';
   import { getLomasihteeriStatus, type LomaProfile } from '$lib/lomasihteeri/time';
   import { copy } from '$lib/lomasihteeri/copy';
+  import { getDailyWeather, type DailyWeather } from '$lib/lomasihteeri/weather';
 
   let profile: LomaProfile | null = null;
   let status: string = '';
   let isLoading = true;
+  let weather: DailyWeather = {
+    summary: copy.briefing.weather_text,
+    conclusion: '',
+    ok: false,
+  };
 
   const interestLabels: Record<string, string> = copy.onboarding2.interests;
   const interestTips: Record<string, string> = copy.briefing.interest_tips;
 
-  onMount(() => {
+  onMount(async () => {
     const profileData = localStorage.getItem('lomasihteeri_profile');
     if (profileData) {
       profile = JSON.parse(profileData);
       status = getLomasihteeriStatus(profile);
+      // Hae live-sää
+      weather = await getDailyWeather('fuengirola');
     } else {
       profile = null;
     }
@@ -88,7 +96,7 @@
 
       <article class="briefing-section">
         <h3>{copy.briefing.weather_title}</h3>
-        <p>{copy.briefing.weather_text}</p>
+        <p>{weather.summary}{#if weather.conclusion} {weather.conclusion}{/if}</p>
       </article>
 
       <article class="briefing-section alerts-ok">
