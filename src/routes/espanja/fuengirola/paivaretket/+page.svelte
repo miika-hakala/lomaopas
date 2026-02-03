@@ -73,6 +73,8 @@
   <li><strong>Lasten kanssa:</strong> Monet kohteet, kuten Málagan tiedemuseo tai Mijasin aasitaksit, ovat hauskoja myös perheen pienimmille.</li>
 </ul>
 
+<!-- TODO: Add cross-city links here, e.g., link to /espanja/malaga, /espanja/marbella, etc. -->
+
 <p>
   <a href="/espanja/fuengirola">← Takaisin Fuengirolaan</a>
 </p>

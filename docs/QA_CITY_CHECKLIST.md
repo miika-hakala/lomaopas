@@ -98,6 +98,7 @@ npm run dev
 
 ## H) PDF Master
 
+- [ ] PDF stub created by new-city (automaattinen stub on olemassa)
 - [ ] PDF-master olemassa: `docs/pdf/{city}_pdf.md`
 - [ ] Kaikki 11 osiota mukana
 - [ ] Sisältö vastaa verkkosivuja
