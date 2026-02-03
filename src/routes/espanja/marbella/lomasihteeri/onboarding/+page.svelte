@@ -55,6 +55,7 @@
 
 <svelte:head>
   <title>Ota LomaSihteeri käyttöön – Marbella</title>
+  <meta name="description" content="Aloita LomaSihteeri Marbellassa. Määritä matkasi päivämäärät ja kiinnostuksen kohteesi saadaksesi henkilökohtaisia suosituksia." />
 </svelte:head>
 
 <main class="onboarding-container">

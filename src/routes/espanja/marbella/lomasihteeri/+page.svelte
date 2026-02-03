@@ -50,6 +50,7 @@
 
 <svelte:head>
   <title>{copy.dashboard.page_title} – Marbella</title>
+  <meta name="description" content="Lomasihteeri Marbella – matka- ja sääennusteet, tapahtumat ja vinkit Marbellaan. Henkilökohtainen matka-avustajasi." />
 </svelte:head>
 
 <main class="dashboard-container">

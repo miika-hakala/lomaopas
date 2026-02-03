@@ -68,6 +68,7 @@ Jos haluat nähdä lisää Andalusiaa, katso <a href="/espanja/marbella/paivaret
 </p>
 
 <p>
+  <a href="/espanja/marbella/ravintolat">← Ravintolat</a> |
   <a href="/espanja/marbella/paivaretket">Päiväretket →</a>
 </p>
 
