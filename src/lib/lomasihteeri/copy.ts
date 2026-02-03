@@ -16,6 +16,7 @@ export const copy = {
     error_missing: 'Täytä molemmat päivämäärät jatkaaksesi.',
     btn_next: 'Seuraava',
     btn_back: 'Takaisin',
+    step_indicator: 'Vaihe 1/2',
   },
 
   // C) Onboarding vaihe 2 (kiinnostukset)
@@ -32,18 +33,27 @@ export const copy = {
     },
     btn_done: 'Valmis',
     saved_note: 'Tallennamme valinnat vain tähän laitteeseen.',
+    step_indicator: 'Vaihe 2/2',
+    edit_later_note: 'Voit muuttaa valintoja myöhemmin.',
   },
 
   // D) LomaSihteeri-sivu (profiili + placeholder)
   dashboard: {
     page_title: 'LomaSihteeri',
     trip_title: 'Matkasi',
+    edit_link: 'Muokkaa tietoja',
+    clear_btn: 'Nollaa profiili',
     no_profile_title: 'Ota LomaSihteeri käyttöön',
     no_profile_body: 'Aseta matkasi päivämäärät ja kiinnostuksen kohteet, niin saat henkilökohtaisen lomakirjeen.',
-    no_profile_cta: 'Avaa onboarding',
+    no_profile_cta: 'Aloita tästä',
     briefing_title: 'Päivän kirje',
     briefing_placeholder: 'Tämä on MVP-versio. Päivän kirjeen sisältö (sää, tapahtumat ja kiinnostuksen mukaiset nostot) lisätään seuraavassa vaiheessa.',
     back_to_city: 'Takaisin Fuengirolan oppaaseen',
+    label_city: 'Kaupunki',
+    label_start: 'Loma alkaa',
+    label_end: 'Loma päättyy',
+    label_interests: 'Kiinnostukset',
+    interests_none: 'Ei valittu',
   },
 
   // E) Päivän kirje -demo (kovakoodattu sisältö)
@@ -56,6 +66,7 @@ export const copy = {
 
     alerts_title: 'Lomaasi vaikuttavat',
     alerts_ok: 'Ei merkittäviä häiriöitä tänään.',
+    alerts_ok_icon: '✓',
 
     events_title: 'Tänään tapahtuu',
     events: [

@@ -25,12 +25,55 @@ Keskusta on kompakti ja suurin osa palveluista on kävelyetäisyydellä. Lisäks
 junayhteys Málagan lentokentältä tekee saapumisesta vaivatonta.
 </p>
 
-<div class="lomasihteeri-cta">
-  <h2>{copy.cta.title}</h2>
+<section class="lomasihteeri-cta" aria-labelledby="lomasihteeri-heading">
+  <h2 id="lomasihteeri-heading">{copy.cta.title}</h2>
   <p>{copy.cta.body}</p>
-  <a href="/espanja/fuengirola/lomasihteeri/onboarding" class="button">{copy.cta.button}</a>
-  <small class="cta-note">{copy.cta.note}</small>
-</div>
+  <a href="/espanja/fuengirola/lomasihteeri/onboarding" class="cta-button">{copy.cta.button}</a>
+  <p class="cta-note">{copy.cta.note}</p>
+</section>
+
+<style>
+  .lomasihteeri-cta {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border: 1px solid #dee2e6;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    max-width: 600px;
+  }
+  .lomasihteeri-cta h2 {
+    margin: 0 0 0.75rem 0;
+    font-size: 1.25rem;
+    color: #212529;
+  }
+  .lomasihteeri-cta p {
+    margin: 0 0 1rem 0;
+    color: #495057;
+    line-height: 1.5;
+  }
+  .cta-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: background-color 0.15s ease;
+  }
+  .cta-button:hover {
+    background-color: #0056b3;
+  }
+  .cta-button:focus-visible {
+    outline: 3px solid #007bff;
+    outline-offset: 2px;
+  }
+  .cta-note {
+    margin: 1rem 0 0 0;
+    font-size: 0.85rem;
+    color: #6c757d;
+  }
+</style>
 
 <h2>Mitä Fuengirolassa voi tehdä?</h2>
 
