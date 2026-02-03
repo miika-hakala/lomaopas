@@ -1,3 +1,7 @@
+<script lang="ts">
+  import { copy } from '$lib/lomasihteeri/copy';
+</script>
+
 <svelte:head>
   <title>Fuengirola – Aurinkoinen matkaopas | Matkaopas Espanjaan</title>
   <meta
@@ -22,9 +26,10 @@ junayhteys Málagan lentokentältä tekee saapumisesta vaivatonta.
 </p>
 
 <div class="lomasihteeri-cta">
-  <h2>LomaSihteeri – huolehtii lomastasi</h2>
-  <p>Haluatko lomaasi varten räätälöityjä vinkkejä ja päivittäisen tilannekatsauksen? Ilmainen LomaSihteeri lähettää sinulle joka aamu olennaisimmat ideat ja tiedot suoraan sähköpostiisi.</p>
-  <a href="/espanja/fuengirola/lomasihteeri/onboarding" class="button">Ota LomaSihteeri käyttöön</a>
+  <h2>{copy.cta.title}</h2>
+  <p>{copy.cta.body}</p>
+  <a href="/espanja/fuengirola/lomasihteeri/onboarding" class="button">{copy.cta.button}</a>
+  <small class="cta-note">{copy.cta.note}</small>
 </div>
 
 <h2>Mitä Fuengirolassa voi tehdä?</h2>

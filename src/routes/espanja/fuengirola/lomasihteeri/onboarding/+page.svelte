@@ -1,10 +1,11 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
   import { goto } from '$app/navigation';
+  import { copy } from '$lib/lomasihteeri/copy';
 
   let step = 1;
   let startDate: string = '';
   let endDate: string = '';
+  let errorMessage: string = '';
   let interests = {
     ruoka_ja_viini: false,
     kulttuuri: false,
@@ -14,14 +15,23 @@
     urheilu: false,
   };
 
-  const citySlug = 'fuengirola'; // Hardcoded for this MVP example
+  const citySlug = 'fuengirola';
 
   type InterestKey = keyof typeof interests;
 
+  const interestLabels: Record<InterestKey, string> = copy.onboarding2.interests;
+
   function nextStep() {
-    if (step === 1 && startDate && endDate) {
-      step = 2;
+    if (!startDate || !endDate) {
+      errorMessage = copy.onboarding1.error_missing;
+      return;
     }
+    errorMessage = '';
+    step = 2;
+  }
+
+  function prevStep() {
+    step = 1;
   }
 
   function saveProfile() {
@@ -49,37 +59,44 @@
 
 {#if step === 1}
   <div class="onboarding-step">
-    <h2>Vaihe 1/2: Kerro matkasi ajankohta</h2>
+    <h2>{copy.onboarding1.page_title}</h2>
+    <p class="help-text">{copy.onboarding1.help}</p>
     <form on:submit|preventDefault={nextStep}>
       <div>
-        <label for="start-date">Saapumispäivä</label>
-        <input type="date" id="start-date" bind:value={startDate} required />
+        <label for="start-date">{copy.onboarding1.label_arrival}</label>
+        <input type="date" id="start-date" bind:value={startDate} />
       </div>
       <div>
-        <label for="end-date">Lähtöpäivä</label>
-        <input type="date" id="end-date" bind:value={endDate} required />
+        <label for="end-date">{copy.onboarding1.label_departure}</label>
+        <input type="date" id="end-date" bind:value={endDate} />
       </div>
-      <button type="submit">Seuraava</button>
+      {#if errorMessage}
+        <p class="error">{errorMessage}</p>
+      {/if}
+      <button type="submit">{copy.onboarding1.btn_next}</button>
     </form>
+    <p><a href="/espanja/fuengirola">{copy.onboarding1.btn_back}</a></p>
   </div>
 {/if}
 
 {#if step === 2}
   <div class="onboarding-step">
-    <h2>Vaihe 2/2: Valitse kiinnostuksen kohteesi</h2>
-    <p>Valitse 1-3 sinua eniten kiinnostavaa aihetta.</p>
+    <h2>{copy.onboarding2.page_title}</h2>
+    <p class="help-text">{copy.onboarding2.help}</p>
     <form on:submit|preventDefault={saveProfile}>
       <div class="interests-grid">
         {#each Object.keys(interests) as interest}
           {@const key = interest as InterestKey}
           <div>
             <input type="checkbox" id={key} bind:checked={interests[key]} />
-            <label for={key}>{key.replace(/_/g, ' ')}</label>
+            <label for={key}>{interestLabels[key]}</label>
           </div>
         {/each}
       </div>
-      <button type="submit">Valmis</button>
+      <p class="saved-note">{copy.onboarding2.saved_note}</p>
+      <button type="submit">{copy.onboarding2.btn_done}</button>
     </form>
+    <p><button type="button" class="link-btn" on:click={prevStep}>{copy.onboarding1.btn_back}</button></p>
   </div>
 {/if}
 
@@ -89,6 +106,10 @@
     padding: 1.5rem;
     border-radius: 8px;
     margin-top: 1rem;
+  }
+  .help-text {
+    color: #555;
+    margin-bottom: 1rem;
   }
   .interests-grid {
     display: grid;
@@ -105,6 +126,15 @@
     padding: 0.5rem;
     margin-bottom: 1rem;
   }
+  .error {
+    color: #dc3545;
+    margin-bottom: 1rem;
+  }
+  .saved-note {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 1rem 0;
+  }
   button {
     padding: 0.75rem 1.5rem;
     background-color: #007bff;
@@ -115,5 +145,15 @@
   }
   button:hover {
     background-color: #0056b3;
+  }
+  .link-btn {
+    background: none;
+    color: #007bff;
+    padding: 0;
+    text-decoration: underline;
+  }
+  .link-btn:hover {
+    background: none;
+    color: #0056b3;
   }
 </style>

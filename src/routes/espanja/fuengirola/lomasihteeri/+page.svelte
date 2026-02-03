@@ -1,9 +1,12 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import { getLomasihteeriStatus, type LomaProfile } from '$lib/lomasihteeri/time';
+  import { copy } from '$lib/lomasihteeri/copy';
 
   let profile: LomaProfile | null = null;
   let status: string = 'Ladataan profiilia...';
+
+  const interestLabels: Record<string, string> = copy.onboarding2.interests;
 
   onMount(() => {
     const profileData = localStorage.getItem('lomasihteeri_profile');
@@ -11,49 +14,57 @@
       profile = JSON.parse(profileData);
       status = getLomasihteeriStatus(profile);
     } else {
-      status = 'LomaSihteeriä ei ole aktivoitu. Ota se käyttöön kaupunkisivulta!';
+      profile = null;
     }
   });
 
   function clearProfile() {
     localStorage.removeItem('lomasihteeri_profile');
     profile = null;
-    status = 'Profiili poistettu. Voit aktivoida palvelun uudelleen milloin tahansa.';
+  }
+
+  function formatInterests(interests: string[]): string {
+    return interests.map((i) => interestLabels[i] || i).join(', ') || 'Ei valittu';
   }
 </script>
 
 <svelte:head>
-  <title>Oma LomaSihteeri – Fuengirola</title>
+  <title>{copy.dashboard.page_title} – Fuengirola</title>
 </svelte:head>
 
-<h1>Oma LomaSihteeri</h1>
+<h1>{copy.dashboard.page_title}</h1>
 
 <div class="profile-card">
   {#if profile}
-    <h2>Matkasi tiedot</h2>
-    <p><strong>Kaupunki:</strong> {profile.city_slug}</p>
+    <h2>{copy.dashboard.trip_title}</h2>
+    <p><strong>Kaupunki:</strong> Fuengirola</p>
     <p><strong>Loma alkaa:</strong> {profile.start_date}</p>
     <p><strong>Loma päättyy:</strong> {profile.end_date}</p>
-    <p><strong>Kiinnostuksen kohteet:</strong> {profile.interests.join(', ') || 'Ei valittu'}</p>
+    <p><strong>Kiinnostuksen kohteet:</strong> {formatInterests(profile.interests)}</p>
 
     <div class="status-box">
       <h3>Tämän hetken status:</h3>
       <p>{status}</p>
     </div>
-    
+
     <div class="placeholder-letter">
-        <h3>Päivän kirje</h3>
-        <p>Päivän kirje generoidaan myöhemmin tähän näkymään, kun loma on aktiivinen.</p>
+      <h3>{copy.dashboard.briefing_title}</h3>
+      <p>{copy.dashboard.briefing_placeholder}</p>
     </div>
 
+    <p><a href="/espanja/fuengirola/lomasihteeri/onboarding">Muokkaa tietoja</a></p>
     <button on:click={clearProfile}>Nollaa ja poista profiili</button>
 
   {:else}
-    <p>{status}</p>
+    <div class="no-profile">
+      <h2>{copy.dashboard.no_profile_title}</h2>
+      <p>{copy.dashboard.no_profile_body}</p>
+      <a href="/espanja/fuengirola/lomasihteeri/onboarding" class="button">{copy.dashboard.no_profile_cta}</a>
+    </div>
   {/if}
 </div>
 
-<p><a href="/espanja/fuengirola">← Takaisin Fuengirolan oppaaseen</a></p>
+<p><a href="/espanja/fuengirola">← {copy.dashboard.back_to_city}</a></p>
 
 <style>
   .profile-card {
@@ -76,6 +87,23 @@
     margin: 1.5rem 0;
     text-align: center;
     color: #777;
+  }
+  .no-profile {
+    text-align: center;
+  }
+  .no-profile p {
+    margin: 1rem 0;
+  }
+  .button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  .button:hover {
+    background-color: #0056b3;
   }
   button {
     background-color: #dc3545;
