@@ -67,6 +67,7 @@ export const copy = {
     alerts_title: 'Lomaasi vaikuttavat',
     alerts_ok: 'Ei merkittäviä häiriöitä tänään.',
     alerts_ok_icon: '✓',
+    alerts_fallback: 'Tietoja häiriöistä ei saatu.',
 
     events_title: 'Tänään tapahtuu',
     events_none: 'Ei merkittäviä tapahtumia tänään.',

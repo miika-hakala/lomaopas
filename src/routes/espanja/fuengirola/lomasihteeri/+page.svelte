@@ -4,6 +4,7 @@
   import { copy } from '$lib/lomasihteeri/copy';
   import { getDailyWeather, type DailyWeather } from '$lib/lomasihteeri/weather';
   import { getDailyEvents, type DailyEvents } from '$lib/lomasihteeri/events';
+  import { getAlerts, type AlertsResponse } from '$lib/lomasihteeri/alerts';
 
   let profile: LomaProfile | null = null;
   let status: string = '';
@@ -21,6 +22,12 @@
     items: [],
     fallback: true,
   };
+  let alerts: AlertsResponse = {
+    ok: true,
+    source: 'fallback',
+    items: [],
+    fallback: false,
+  };
 
   const interestLabels: Record<string, string> = copy.onboarding2.interests;
   const interestTips: Record<string, string> = copy.briefing.interest_tips;
@@ -31,12 +38,14 @@
       profile = JSON.parse(profileData);
       status = getLomasihteeriStatus(profile);
       // Hae live-data rinnakkain
-      const [weatherData, eventsData] = await Promise.all([
+      const [weatherData, eventsData, alertsData] = await Promise.all([
         getDailyWeather(),
         getDailyEvents(),
+        getAlerts(),
       ]);
       weather = weatherData;
       events = eventsData;
+      alerts = alertsData;
     } else {
       profile = null;
     }
@@ -113,9 +122,20 @@
         <p>{weather.summary}{#if weather.conclusion} {weather.conclusion}{/if}</p>
       </article>
 
-      <article class="briefing-section alerts-ok">
+      <article class="briefing-section" class:alerts-ok={alerts.items.length === 0} class:alerts-warning={alerts.items.length > 0}>
         <h3>{copy.briefing.alerts_title}</h3>
-        <p><span class="ok-icon" aria-hidden="true">{copy.briefing.alerts_ok_icon}</span> {copy.briefing.alerts_ok}</p>
+        {#if alerts.items.length === 0}
+          <p><span class="ok-icon" aria-hidden="true">{copy.briefing.alerts_ok_icon}</span> {copy.briefing.alerts_ok}</p>
+        {:else}
+          <ul class="alerts-list">
+            {#each alerts.items as alert}
+              <li class="alert-item alert-{alert.level}">
+                <strong>{alert.title}</strong>
+                {#if alert.detail}<br><span class="alert-detail">{alert.detail}</span>{/if}
+              </li>
+            {/each}
+          </ul>
+        {/if}
       </article>
 
       <article class="briefing-section">
@@ -365,6 +385,44 @@
   .ok-icon {
     font-weight: bold;
     margin-right: 0.25rem;
+  }
+  .alerts-warning {
+    background: #fff3cd;
+    border: 1px solid #ffeeba;
+    border-radius: 8px;
+    padding: 0.875rem 1rem;
+  }
+  .alerts-warning h3 {
+    color: #856404;
+  }
+  .alerts-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .alert-item {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .alert-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .alert-item strong {
+    color: #856404;
+  }
+  .alert-detail {
+    font-size: 0.9em;
+    color: #6c757d;
+  }
+  .alert-yellow strong {
+    color: #856404;
+  }
+  .alert-orange strong {
+    color: #d35400;
+  }
+  .alert-red strong {
+    color: #c0392b;
   }
   .interest-tips li {
     margin-bottom: 0.6rem;
