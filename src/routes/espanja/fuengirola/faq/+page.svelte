@@ -58,7 +58,7 @@ Fuengirolasta suositun kohteen lapsiperheille.
 <p>
 Ravintoloiden hinnat vaihtelevat alueen ja ravintolatyypin mukaan. Paikalliset
 ravintolat ja rantabaarit ovat usein edullisempia kuin keskustan
-turistiravintolat.
+turistiravintolat. Lue lisää <a href="/espanja/fuengirola/ravintolat">Fuengirolan ravintoloista</a>.
 </p>
 
 <h2>Kannattaako Fuengirolassa vuokrata auto?</h2>

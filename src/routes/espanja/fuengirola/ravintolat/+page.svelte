@@ -55,5 +55,10 @@
 </ul>
 
 <p>
-  <a href="/espanja/fuengirola">← Takaisin Fuengirolaan</a>
+<a href="/espanja/fuengirola/rannat">← Rannat</a> |
+<a href="/espanja/fuengirola/nahtavyydet">Nähtävyydet →</a>
+</p>
+
+<p>
+<a href="/espanja/fuengirola">← Takaisin Fuengirolaan</a>
 </p>

@@ -140,12 +140,13 @@ Fuengirola on erinomainen kohde monenlaisille matkailijoille:
 <h2>Lisätietoa</h2>
 
 <ul>
-  <li><a href="/espanja/fuengirola/liikkuminen">Liikkuminen Fuengirolassa</a></li>
-  <li><a href="/espanja/fuengirola/rannat">Fuengirolan rannat</a></li>
+  <li><a href="/espanja/fuengirola/liikkuminen">Saapuminen ja liikkuminen</a></li>
+  <li><a href="/espanja/fuengirola/missa-asua">Missä asua</a></li>
+  <li><a href="/espanja/fuengirola/rannat">Rannat</a></li>
   <li><a href="/espanja/fuengirola/ravintolat">Ravintolat</a></li>
-  <li><a href="/espanja/fuengirola/paivaretket">Päiväretket</a></li>
   <li><a href="/espanja/fuengirola/nahtavyydet">Nähtävyydet</a></li>
-  <li><a href="/espanja/fuengirola/faq">Usein kysytyt kysymykset (FAQ)</a></li>
+  <li><a href="/espanja/fuengirola/paivaretket">Päiväretket</a></li>
+  <li><a href="/espanja/fuengirola/faq">Usein kysytyt kysymykset</a></li>
 </ul>
 
 <p>
