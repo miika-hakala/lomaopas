@@ -69,6 +69,7 @@ export const copy = {
     alerts_ok_icon: '✓',
 
     events_title: 'Tänään tapahtuu',
+    events_none: 'Ei merkittäviä tapahtumia tänään.',
     events: [
       'Aamupäivän markkinat (keskusta)',
       'Rantapromenadin iltameno klo 20 alkaen',

@@ -3,6 +3,7 @@
   import { getLomasihteeriStatus, type LomaProfile } from '$lib/lomasihteeri/time';
   import { copy } from '$lib/lomasihteeri/copy';
   import { getDailyWeather, type DailyWeather } from '$lib/lomasihteeri/weather';
+  import { getDailyEvents, type DailyEvents } from '$lib/lomasihteeri/events';
 
   let profile: LomaProfile | null = null;
   let status: string = '';
@@ -13,6 +14,13 @@
     ok: false,
     source: 'fallback',
   };
+  let events: DailyEvents = {
+    ok: false,
+    source: 'fallback',
+    date: '',
+    items: [],
+    fallback: true,
+  };
 
   const interestLabels: Record<string, string> = copy.onboarding2.interests;
   const interestTips: Record<string, string> = copy.briefing.interest_tips;
@@ -22,8 +30,13 @@
     if (profileData) {
       profile = JSON.parse(profileData);
       status = getLomasihteeriStatus(profile);
-      // Hae live-sää AEMET:sta
-      weather = await getDailyWeather();
+      // Hae live-data rinnakkain
+      const [weatherData, eventsData] = await Promise.all([
+        getDailyWeather(),
+        getDailyEvents(),
+      ]);
+      weather = weatherData;
+      events = eventsData;
     } else {
       profile = null;
     }
@@ -107,11 +120,17 @@
 
       <article class="briefing-section">
         <h3>{copy.briefing.events_title}</h3>
-        <ul>
-          {#each copy.briefing.events as event}
-            <li>{event}</li>
-          {/each}
-        </ul>
+        {#if events.items.length > 0}
+          <ul>
+            {#each events.items as event}
+              <li>
+                {event.title}{#if event.when} <span class="event-when">({event.when})</span>{/if}
+              </li>
+            {/each}
+          </ul>
+        {:else}
+          <p>{copy.briefing.events_none}</p>
+        {/if}
       </article>
 
       <article class="briefing-section">
@@ -328,6 +347,10 @@
   .briefing-section li {
     margin-bottom: 0.4rem;
     line-height: 1.4;
+  }
+  .event-when {
+    color: #6c757d;
+    font-size: 0.9em;
   }
   .alerts-ok {
     background: #d4edda;
