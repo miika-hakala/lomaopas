@@ -79,9 +79,14 @@ Commit: `fbf98be` (test: add playwright e2e smoke for lomasihteeri flow)
 
 **Tavoite:** Top 20 -kohteiden vaiheistus ja toimitusketju (PDF → sivut → QA).
 
-**Next up:** Phase 2x.P0.1 Gran Canaria scaffold (new-city)
+**Status:**
+- Phase 2x.P0.1 Gran Canaria scaffold — DONE
+- Phase 2x.P0.2 Teneriffa scaffold — DONE
+- Automaatio valmis ja testattu
 
-**Session:** Session closed by user; work paused.
+**Session:** Completed 2026-02-03
+
+**Next:** PDF master täyttö (Gran Canaria, Teneriffa)
 
 ---
 

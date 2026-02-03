@@ -102,8 +102,8 @@
 **Tavoite:** Laajentaa Lomaopas.fi:n sisältö Top 20 -kohdelistan mukaiseksi klusteriksi (2026).
 
 ### P0 – Ehdoton ydin (suurin volyymi)
-1. **Gran Canaria** — PDF stub → PDF master → City pages → QA/SEO → DONE (NEXT/READY)
-2. **Teneriffa** — PDF stub → PDF master → City pages → QA/SEO → DONE
+1. **Gran Canaria** — PDF stub → **PDF master (NEXT)** → City pages → QA/SEO → DONE
+2. **Teneriffa** — PDF stub → **PDF master (NEXT)** → City pages → QA/SEO → DONE
 3. **Thaimaa** — PDF stub → PDF master → City pages → QA/SEO → DONE
 4. **Mallorca** — PDF stub → PDF master → City pages → QA/SEO → DONE
 5. **Costa del Sol** — PDF stub → PDF master → City pages → QA/SEO → DONE/PARTIAL (Fuengirola, Málaga, Torremolinos, Benalmádena, Marbella valmiit)

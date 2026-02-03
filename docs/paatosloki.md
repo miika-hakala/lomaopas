@@ -110,3 +110,11 @@ Päätös on lukittu, kun se on dokumentoitu projektin `docs`-kansiossa ja muuto
 - **Vaikutus:** Työ pysäytetään tähän kohtaan; seuraava aktiivinen toimenpide on Phase 2x.P0.1 Gran Canaria scaffold.
 - **Lähde:** `docs/status.md`, `docs/roadmap.md`, `docs/TASKS.md`
 - **Commit:** (tämä commit)
+
+### 2026-02-03 – Multi-region automaatio valmis
+- **Kuvaus:** City scaffold -automaatio rakennettu tukemaan useita maita/alueita. Automaatio luo PDF stubin, kaupunkisivut, affiliate-linkit ja lomasihteeri-sivut. Testattu Gran Canarialla ja Teneriffalla.
+- **Vaikutus:** Phase 2x skaalautuvuus varmistettu. Uusien kohteiden lisääminen nopeutuu merkittävästi.
+- **Ominaisuudet:** Multi-region tuki (`--region`), PDF stub generointi (11-osion runko), idempotenssi, affiliate stub generointi (quoted keys), hub card injection, hyphenated slugs tuki (bracket notation).
+- **Testattu:** Málaga & Torremolinos (idempotenssi), Gran Canaria (multi-region, hyphenated slug), Teneriffa (multi-city per region).
+- **Lähde:** `docs/scripts/new-city-multiregion.md`, `scripts/new-city.ts`
+- **Commitit:** `cb78bbb`, `e5e8637`, `fa9d4c1`, `47b11a0`, `4980a11`
