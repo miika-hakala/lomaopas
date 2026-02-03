@@ -2,7 +2,7 @@
   <title>Marbella – FAQ | Matkaopas Espanjaan</title>
   <meta
     name="description"
-    content="Vastauksia yleisimpiin kysymyksiin Marbellasta. Onko Marbella kallis tai turvallinen? Milloin matkustaa? Lue vinkit ensikertalaiselle."
+    content="Usein kysytyt kysymykset Marbellasta: turvallisuus, hintataso, liikkuminen, rannat ja päiväretket. Vinkit ensikertalaiselle."
   />
 </svelte:head>
 
@@ -10,86 +10,55 @@
 
 <p>
 Tälle sivulle on koottu vastaukset yleisimpiin kysymyksiin, joita Marbellaan
-matkustavat pohtivat. Jos suunnittelet lomaa tai pidempää oleskelua, tästä saat
-nopean yleiskuvan.
-</p>
-
-<h2>Milloin Marbellaan kannattaa matkustaa?</h2>
-<p>
-Marbellaan voi matkustaa ympäri vuoden. Kevät ja syksy ovat monien mielestä
-parhaita aikoja miellyttävän sään ja pienempien turistimäärien ansiosta.
-Kesällä on kuumaa, talvella taas leutoa ja aurinkoista.
-</p>
-
-<h2>Onko Marbella kallis matkakohde?</h2>
-<p>
-Marbella on Espanjan mittapuulla kohtuuhintainen. Ruoka, julkinen liikenne ja
-palvelut ovat usein edullisempia kuin Pohjois-Euroopassa, erityisesti jos vältät
-turistisimmat paikat.
+matkustavat pohtivat. Jos suunnittelet lomaa, tästä saat nopean yleiskuvan.
 </p>
 
 <h2>Onko Marbella turvallinen?</h2>
 <p>
-Marbella on yleisesti ottaen turvallinen kaupunki. Kuten kaikissa
-matkakohteissa, taskuvarkauksiin kannattaa varautua vilkkailla alueilla ja
-turistikohteissa.
+Marbella on yleisesti ottaen turvallinen. Kuten kaikissa suosituissa
+matkakohteissa, taskuvarkauksiin kannattaa varautua vilkkailla alueilla.
 </p>
 
-<h2>Tarvitseeko Marbellassa osata espanjaa?</h2>
+<h2>Onko Marbella kallis matkakohde?</h2>
 <p>
-Espanjan osaaminen helpottaa arkea, mutta pärjäät hyvin myös englannilla.
-Monet paikalliset palvelut toimivat useilla kielillä, ja alueella on paljon
-kansainvälisiä asukkaita.
+Marbella on usein kalliimpi kuin monet muut Costa del Solin kohteet, erityisesti
+Golden Milellä ja Puerto Banúsissa. Vanhakaupungista ja sivukaduilta löytyy
+edullisempia vaihtoehtoja.
+</p>
+
+<h2>Tarvitseeko Marbellassa autoa?</h2>
+<p>
+Kaupungissa pärjää hyvin kävellen, bussilla ja taksilla. Auto voi olla hyödyllinen,
+jos aiot tehdä useita <a href="/espanja/marbella/paivaretket">päiväretkiä</a>.
 </p>
 
 <h2>Miten Marbellassa liikutaan paikasta toiseen?</h2>
 <p>
-Liikkuminen on helppoa kävellen, junalla, bussilla ja taksilla. Lue lisää <a href="/espanja/marbella/liikkuminen">liikkumisesta Marbellassa</a>. Junayhteys
-Málagaan ja lentokentälle on erityisen kätevä.
-</p>
-
-<h2>Sopiiko Marbella lapsiperheille?</h2>
-<p>
-Kyllä. Pitkät hiekkarannat, matala rantavesi ja monipuoliset palvelut tekevät
-Marbellasta suositun kohteen lapsiperheille.
-</p>
-
-<h2>Miten hintataso näkyy ravintoloissa?</h2>
-<p>
-Ravintoloiden hinnat vaihtelevat alueen ja ravintolatyypin mukaan. Paikalliset
-ravintolat ja rantabaarit ovat usein edullisempia kuin keskustan
-turistiravintolat. Lue lisää <a href="/espanja/marbella/ravintolat">Marbellan ravintoloista</a>.
-</p>
-
-<h2>Kannattaako Marbellassa vuokrata auto?</h2>
-<p>
-Auto ei ole välttämätön kaupungissa, mutta se voi olla hyödyllinen, jos aiot
-tehdä päiväretkiä tai liikkua laajemmin Andalusiassa.
+Liikkuminen onnistuu kävellen, bussilla ja taksilla. Lentokentältä suora bussi
+on kätevin vaihtoehto. Lue lisää <a href="/espanja/marbella/liikkuminen">liikkumisesta Marbellassa</a>.
 </p>
 
 <h2>Minkälaiset rannat Marbellassa on?</h2>
 <p>
-Marbellassa on useita kilometrejä hyvin hoidettuja hiekkarantoja. Lue lisää <a href="/espanja/marbella/rannat">Marbellan rannoista</a>.
+Marbellassa on pitkä rantaviiva, jossa on sekä vilkkaita kaupunkirantoja että
+rauhallisempia luontorantoja. Lue lisää <a href="/espanja/marbella/rannat">Marbellan rannoista</a>.
 </p>
 
-<h2>Voiko Marbellasta tehdä helposti päiväretkiä?</h2>
+<h2>Mistä löytää hyviä ravintoloita?</h2>
 <p>
-Kyllä. Läheltä löytyvät esimerkiksi Málaga, Mijas Pueblo, Marbella ja Ronda.
-Lue lisää <a href="/espanja/marbella/paivaretket">päiväretkistä Marbellasta</a>.
+Parhaat alueet ovat vanhakaupunki, Golden Mile ja Puerto Banús. Vanhankaupungin
+sivukaduilta löydät usein edullisempia vaihtoehtoja. Lue lisää <a href="/espanja/marbella/ravintolat">Marbellan ravintoloista</a>.
 </p>
 
-<h2>Onko Marbella hyvä kohde talvella?</h2>
+<h2>Milloin Marbellaan kannattaa matkustaa?</h2>
 <p>
-Talvella Marbella on suosittu erityisesti pidempään oleskelevien ja
-talvehtijoiden keskuudessa. Sää on leuto ja aurinkoinen, ja palvelut toimivat
-ympäri vuoden.
+Kevät ja syksy ovat monille parasta aikaa: sää on lämmin ja turistimäärät ovat
+maltillisia. Kesällä on kuumaa ja vilkasta.
 </p>
 
-<h2>Mitä kannattaa huomioida ensikertalaisena?</h2>
+<h2>Pärjääkö englannilla?</h2>
 <p>
-Marbella on helppo ja turvallinen ensikohde Espanjassa. Varaudu aurinkoon,
-käytä mukavia kenkiä kävelyyn ja tutustu myös hieman keskustan ulkopuolisiin
-alueisiin.
+Kyllä, erityisesti turistialueilla. Espanjan perussanoista on aina hyötyä.
 </p>
 
 <p>

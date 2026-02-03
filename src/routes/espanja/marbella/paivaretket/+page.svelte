@@ -7,71 +7,88 @@
   <title>Marbella – Päiväretket | Matkaopas Espanjaan</title>
   <meta
     name="description"
-    content="Lähde päiväretkelle Marbellasta! Suosituimmat kohteet kuten Málaga, Mijas, Marbella ja Ronda. Vinkit liikkumiseen ja parhaat reitit autolla tai junalla."
+    content="Päiväretket Marbellasta: Ronda, Gibraltar, Málaga, Benalmádena, Torremolinos ja Fuengirola. Vinkit liikkumiseen ja retkien suunnitteluun."
   />
 </svelte:head>
 
 <h1>Päiväretket Marbellasta</h1>
 
 <p>
-  Marbellan keskeinen sijainti Costa del Solilla tekee siitä erinomaisen tukikohdan päiväretkille. Lähialueet tarjoavat upeita kaupunkeja, vuoristokyliä ja luonnonnähtävyyksiä, joihin pääsee helposti junalla, bussilla tai autolla.
+Marbella on erinomainen tukikohta päiväretkille. Lähialueella on sekä
+rannikkokaupunkeja että sisämaan upeita kohteita, joihin pääsee bussilla tai
+vuokra-autolla.
+</p>
+
+<p>
+Jos haluat pysyä kaupungissa, katso myös <a href="/espanja/marbella/nahtavyydet">Marbellan nähtävyydet</a>.
 </p>
 
 <h2>Suosituimmat päiväretkikohteet</h2>
 
+<h3>Ronda</h3>
+<p>
+  Ikoninen rotkokaupunki ja Puente Nuevo -silta. Yksi Andalusian parhaista
+  päiväretkistä.
+  <AffiliateLink link={activities.ronda} />
+</p>
+
+<h3>Gibraltar</h3>
+<p>
+  Brittitunnelmaa, apinat ja upeat näkymät. Ota passi tai henkilökortti mukaan
+  rajalle.
+</p>
+
 <h3>Málaga</h3>
 <p>
-  Alueen pääkaupunki, joka on täynnä kulttuuria, historiaa ja ostosmahdollisuuksia.
-  Vieraile Picasson museossa, Alcazaban linnoituksessa tai nauti vilkkaasta
-  kaupunkielämästä. Junalla vain ~45 minuuttia.
+  Kulttuuria, museoita ja vilkas vanhakaupunki. Bussilla tai autolla noin
+  45–60 minuuttia.
   <a href="/espanja/malaga">Lue lisää Málagasta →</a>
 </p>
 
 <h3>Benalmádena</h3>
 <p>
-  Costa del Solin monipuolisin perhelomakohde. Puerto Marinan satama, köysirata
-  vuorelle ja Selwo Marina. Junalla ~20 minuuttia.
+  Monipuolinen perhekohde Puerto Marinan sataman ja köysiradan ansiosta.
   <a href="/espanja/benalmadena">Lue lisää Benalmádenasta →</a>
   <AffiliateLink link={activities.benalmadena} />
 </p>
 
+<h3>Torremolinos</h3>
+<p>
+  Pitkät rannat, rennot rantabaarit ja helppo päiväretki rannikkoa pitkin.
+  <a href="/espanja/torremolinos">Lue lisää Torremolinoksesta →</a>
+  <AffiliateLink link={activities.torremolinos} />
+</p>
+
+<h3>Fuengirola</h3>
+<p>
+  Helppo retki rannoille ja rantabulevardille. Junayhteys toimii Málagan kautta.
+  <a href="/espanja/fuengirola">Lue lisää Fuengirolasta →</a>
+</p>
+
 <h3>Mijas Pueblo</h3>
 <p>
-  Vain lyhyen matkan päässä Marbellasta sijaitseva perinteinen andalusialainen valkoinen kylä. Ihaile upeita maisemia, kiertele kapeilla kujilla ja nauti rauhallisesta tunnelmasta.
+  Andalusialainen valkoinen kylä, hyvä lyhyempi retki.
   <AffiliateLink link={activities.mijas} />
-</p>
-
-<h3>Marbella & Puerto Banús</h3>
-<p>
-  Ylellisyydestään tunnettu Marbella tarjoaa kauniin vanhankaupungin ja vilkkaan satama-alueen Puerto Banúsissa, jossa voit ihailla luksusjahteja ja merkkiliikkeitä.
-</p>
-
-<h3>Ronda</h3>
-<p>
-  Vaikuttavalla paikalla rotkon reunalla sijaitseva historiallinen kaupunki. Rondan uusi silta (Puente Nuevo) on yksi Andalusian kuvatuimmista nähtävyyksistä.
-  <AffiliateLink link={activities.ronda} />
-</p>
-
-<h3>Nerja & Frigiliana</h3>
-<p>
-  Idässä sijaitseva Nerja on tunnettu upeista tippukiviluolistaan ja Balcón de Europa -näköalatasanteesta. Lähistöllä oleva Frigiliana on palkittu yhtenä Espanjan kauneimmista kylistä.
 </p>
 
 <h2>Liikkuminen retkille</h2>
 <p>Vaihtoehtoja on useita, ja lisätietoa löydät <a href="/espanja/marbella/liikkuminen">liikkuminen Marbellassa</a> -sivultamme.</p>
 <ul>
-  <li><strong>Juna:</strong> Rannikkojuna (C-1) on kätevin ja nopein tapa matkustaa Málagan suuntaan.</li>
-  <li><strong>Bussi:</strong> Linja-autolla pääsee kätevästi moniin kohteisiin, kuten Mijasiin, Marbellaan ja Rondaan. Marbellan linja-autoasema sijaitsee keskeisellä paikalla.</li>
-  <li><strong>Auto:</strong> Vuokra-autolla liikkuminen antaa eniten vapautta. <AffiliateLink link={transport.carRental} /></li>
+  <li><strong>Bussi:</strong> Helppo vaihtoehto Málagaan, Rondaan ja rannikon kohteisiin.</li>
+  <li><strong>Auto:</strong> Eniten vapautta, erityisesti Rondayn ja Gibraltarille. <AffiliateLink link={transport.carRental} /></li>
+  <li><strong>Juna:</strong> Ei suoraa junaa Marbellaan, mutta junalla pääsee Málagasta rannikkokaupunkeihin.</li>
 </ul>
 
 <h2>Vinkkejä päiväretkille</h2>
 <ul>
-  <li><strong>Ajoitus:</strong> Lähde matkaan aamulla, jotta ehdit nähdä ja kokea mahdollisimman paljon.</li>
-  <li><strong>Liput:</strong> Suosituimpiin nähtävyyksiin, kuten Málagan museoihin tai Rondan areenalle, kannattaa ostaa liput etukäteen netistä.</li>
-  <li><strong>Kuumuus:</strong> Muista ottaa mukaan vettä, hattu ja aurinkovoidetta erityisesti kesäkuukausina.</li>
-  <li><strong>Lasten kanssa:</strong> Monet kohteet, kuten Málagan tiedemuseo tai Mijasin aasitaksit, ovat hauskoja myös perheen pienimmille.</li>
+  <li><strong>Ajoitus:</strong> Lähde liikkeelle aamulla ja vältä ruuhkat.</li>
+  <li><strong>Liput:</strong> Suosituimpiin kohteisiin liput kannattaa varata etukäteen.</li>
+  <li><strong>Kuumuus:</strong> Ota mukaan vettä, hattu ja aurinkosuoja.</li>
 </ul>
+
+<p>
+  <AffiliateLink link={activities.marbella} showDisclosure={false} />
+</p>
 
 <p>
   <a href="/espanja/marbella">← Takaisin Marbellaan</a>

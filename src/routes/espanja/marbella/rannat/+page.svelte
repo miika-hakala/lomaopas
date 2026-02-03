@@ -2,36 +2,45 @@
   <title>Marbella – Rannat | Matkaopas Espanjaan</title>
   <meta
     name="description"
-    content="Opas Marbellan upeille rannoille. Esittelyssä Los Boliches, Playa del Castillo ja muut suosikit. Vinkit palveluista, aurinkotuoleista ja chiringuito-rantaravintoloista."
+    content="Opas Marbellan rannoille: Fontanilla, Venus, Nagüeles, Puerto Banús ja Cabopino. Vinkit palveluista, rantabulevardista ja chiringuitoista."
   />
 </svelte:head>
 
 <h1>Marbellan rannat</h1>
 
 <p>
-Marbella tunnetaan erityisesti pitkistä ja hyvin hoidetuista hiekkarannoistaan.
-Rantoja on useita kilometrejä, ja ne ovat helposti saavutettavissa lähes mistä
-tahansa kaupunginosasta.
+Marbellassa on pitkä rantaviiva ja useita hyvin hoidettuja hiekkarantoja.
+Rantabulevardi yhdistää keskustan, Golden Milen ja osan rannoista, joten
+rantojen välillä on helppo liikkua.
 </p>
 
 <h2>Suosituimmat rannat</h2>
 
-<h3>Playa de los Boliches</h3>
+<h3>Playa de la Fontanilla</h3>
 <p>
-Vilkas ja suosittu ranta, jonka läheisyydessä on paljon ravintoloita ja
-palveluita. Sopii hyvin lapsiperheille.
+  Keskustan lähiranta, leveä ja helppo. Palvelut ja chiringuitot löytyvät
+  kävelyetäisyydeltä.
 </p>
 
-<h3>Playa del Castillo</h3>
+<h3>Playa de Venus / Playa del Faro</h3>
 <p>
-Rauhallisempi ranta lähellä linnan aluetta. Hyvä valinta, jos haluat enemmän
-tilaa ja vähemmän hälinää.
+  Lähimpänä vanhaakaupunkia sijaitsevat rannat. Hyvä yhdistää vanhakaupungin
+  kävelyyn ja illanviettoon.
 </p>
 
-<h3>Playa de Carvajal</h3>
+<h3>Playa de Nagüeles</h3>
 <p>
-Hieman keskustan ulkopuolella sijaitseva ranta, jota pidetään yhtenä alueen
-siisteimmistä ja rauhallisimmista.
+  Golden Milen tyylikäs ranta, jossa on rauhallisempi tunnelma ja rantabaareja.
+</p>
+
+<h3>Playa de Puerto Banús</h3>
+<p>
+  Sataman vieressä sijaitseva vilkas ranta. Palvelut ja rantaklubit lähellä.
+</p>
+
+<h3>Playa de Cabopino</h3>
+<p>
+  Luonnonläheinen ranta dyyneillä. Monien mielestä alueen kaunein ranta.
 </p>
 
 <h2>Rantojen palvelut</h2>
@@ -40,15 +49,15 @@ siisteimmistä ja rauhallisimmista.
   <li>Aurinkotuolit ja -varjot</li>
   <li>Suihkut ja wc-tilat</li>
   <li>Rantabaarit ja <a href="/espanja/marbella/ravintolat">chiringuito-ravintolat</a></li>
-  <li>Esteettömiä kulkureittejä</li>
+  <li>Rantabulevardi kävelyyn ja pyöräilyyn</li>
 </ul>
 
 <h2>Vinkkejä rantalomaan</h2>
 
 <ul>
-  <li>Aamupäivällä rannat ovat rauhallisempia</li>
-  <li>Kesällä aurinkosuoja on välttämätön</li>
-  <li>Talvikaudella rannat sopivat hyvin kävelyyn ja ulkoiluun</li>
+  <li>Parhaat ajat rannalle ovat aamu ja myöhäinen iltapäivä</li>
+  <li>Rantaklubeille kannattaa varata pöytä sesongissa</li>
+  <li>Älä jätä arvoesineitä näkyville</li>
 </ul>
 
 <p>

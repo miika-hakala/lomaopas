@@ -102,6 +102,11 @@ export const activities = {
     label: 'Katso päiväretket Marbellasta',
     partner: 'GetYourGuide',
   } satisfies AffiliateLink,
+  marbella: {
+    url: `https://www.getyourguide.com/marbella-l169/?partner_id=${AFFILIATE_IDS.getyourguide}`,
+    label: 'Katso aktiviteetit Marbellassa',
+    partner: 'GetYourGuide',
+  } satisfies AffiliateLink,
   granada: {
     url: `https://www.getyourguide.com/granada-l38/?partner_id=${AFFILIATE_IDS.getyourguide}`,
     label: 'Katso retket Granadaan',

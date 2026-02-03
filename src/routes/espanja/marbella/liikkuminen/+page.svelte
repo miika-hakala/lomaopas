@@ -7,64 +7,66 @@
   <title>Marbella – Liikkuminen | Matkaopas Espanjaan</title>
   <meta
     name="description"
-    content="Opas liikkumiseen Marbellassa. Näin pääset lentokentältä ja käytät junaa, busseja ja takseja. Katso myös vinkit autonvuokraukseen ja päiväretkiin."
+    content="Opas liikkumiseen Marbellassa. Näin pääset lentokentältä, käytät busseja ja takseja sekä liikut kävellen Golden Milella ja vanhassakaupungissa."
   />
 </svelte:head>
 
 <h1>Liikkuminen Marbellassa</h1>
 
 <p>
-Marbellassa liikkuminen on helppoa ja edullista. Kaupunki on melko tasainen ja
-sopii hyvin kävelyyn, mutta myös julkinen liikenne toimii luotettavasti.
+Marbella on kompakti rantakaupunki, jossa vanhakaupunki, rantabulevardi ja
+satama-alueet ovat helposti käveltävissä. Alueiden välillä liikkuminen onnistuu
+myös busseilla ja takseilla.
 </p>
 
-<h2>Saapuminen lentokentältä</h2>
+<h2>Saapuminen Málagan lentokentältä</h2>
 
 <p>
-Málagan lentokentältä Marbellaan pääsee usealla tavalla:
+Lentokentältä Marbellaan pääsee parhaiten bussilla, taksilla tai vuokra-autolla.
 </p>
 
 <ul>
-  <li><strong>Juna</strong> – nopein ja suosituin vaihtoehto, matka kestää noin 45 minuuttia</li>
+  <li><strong>Suora bussi</strong> – kätevin vaihtoehto, matka noin 45–70 minuuttia</li>
   <li><strong>Taksi tai kuljetus</strong> – suora ja helppo. <AffiliateLink link={transport.airportTransfer} /></li>
-  <li><strong>Vuokra-auto</strong> – hyvä vaihtoehto, jos aiot liikkua laajemmin</li>
+  <li><strong>Vuokra-auto</strong> – hyvä, jos aiot tehdä useita päiväretkiä</li>
 </ul>
 
-<h2>Juna</h2>
+<h2>Kävellen</h2>
 
 <p>
-Paikallisjuna kulkee Marbellan ja Málagan välillä useita kertoja tunnissa.
-Junalla pääsee kätevästi myös lentokentälle ja naapurikaupunkeihin.
-</p>
-
-<p>
-Marbellassa on useita asemia, kuten keskustan ja Los Bolichesin alueilla.
+Vanhakaupunki (Casco Antiguo), Plaza de los Naranjos ja Paseo Marítimo ovat
+parhaita koettavia kävellen. Kävely on myös helpoin tapa nauttia Golden Milestä.
 </p>
 
 <h2>Bussit</h2>
 
 <p>
-Paikallisbussit kulkevat kaupungin sisällä ja lähialueille. Bussit ovat
-edullisia, mutta aikataulut voivat vaihdella erityisesti iltaisin.
+Paikallisbussit yhdistävät keskustan, Puerto Banúsin ja San Pedron alueet.
+Bussilla pääset myös Marbellan linja-autoasemalle, josta lähtevät kaukobussit
+Málagaan ja muihin kohteisiin.
 </p>
 
 <h2>Taksit ja sovellukset</h2>
 
 <p>
-Takseja on hyvin saatavilla, ja ne ovat luotettava tapa liikkua erityisesti
-iltaisin. Myös sovelluspohjaiset kyytipalvelut toimivat alueella.
+Taksit ovat luotettavia, erityisesti iltaisin. Sovelluspohjaiset kyytipalvelut
+voivat toimia sesongista riippuen.
 </p>
 
 <h2>Autoilu</h2>
 
 <p>
-Auton vuokraaminen voi olla järkevää, jos suunnittelet päiväretkiä tai haluat
-liikkua vapaammin. Keskustassa pysäköinti voi olla haastavaa, mutta parkkihalleja
-on useita. Lue lisää <a href="/espanja/marbella/paivaretket">vinkkejämme päiväretkiin</a>.
+Auton vuokraaminen on järkevää, jos aiot tehdä retkiä Rondayn, Gibraltarille tai
+sisämaahan. Keskustassa pysäköinti voi olla haastavaa sesongin aikaan. Lue lisää
+<a href="/espanja/marbella/paivaretket">päiväretkistä Marbellasta</a>.
 </p>
 
 <p>
 <AffiliateLink link={transport.carRental} />
+</p>
+
+<p>
+<a href="/espanja/marbella/paivaretket">Päiväretket →</a>
 </p>
 
 <p>

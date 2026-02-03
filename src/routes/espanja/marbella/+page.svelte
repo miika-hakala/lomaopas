@@ -3,26 +3,26 @@
 </script>
 
 <svelte:head>
-  <title>Marbella – Aurinkoinen matkaopas | Matkaopas Espanjaan</title>
+  <title>Marbella – Rantaelämää ja vanhakaupunki | Matkaopas Espanjaan</title>
   <meta
     name="description"
-    content="Suunnitteletko matkaa Marbellaan? Tämä matkaopas kattaa kaiken olennaisen: upeat rannat, parhaat ravintolat, nähtävyydet ja liikkumisen. Aloita loman suunnittelu!"
+    content="Suunnitteletko matkaa Marbellaan? Vanhakaupunki, Golden Mile, Puerto Banús, rannat, ravintolat ja päiväretket. Pikaopas ja linkit tärkeimpiin sivuihin."
   />
 </svelte:head>
 
-<h1>Marbella – Costa del Solin suosikkikohde</h1>
+<h1>Marbella – tyylikäs rantaloma Costa del Solilla</h1>
 
 <p>
-Marbella on aurinkoinen rannikkokaupunki Etelä-Espanjassa Costa del Solilla.
-Se tunnetaan pitkistä hiekkarannoistaan, helposta liikkumisesta ja
-monipuolisista palveluista. Kaupunki sopii hyvin niin lyhyelle lomalle kuin
-pidempäänkin oleskeluun.
+Marbella on Costa del Solin elegantti rantalomakohde, jossa vanhakaupunki,
+Golden Mile ja Puerto Banús luovat kolme erilaista tunnelmaa. Vanhakaupungin
+kujat ja Plaza de los Naranjos tarjoavat andalusialaista charmia, kun taas
+rantabulevardi ja satama-alueet sopivat rentoon lomapäivään.
 </p>
 
 <p>
-Marbellassa yhdistyvät rantaloma, kaupunkielämä ja erinomainen sijainti.
-Keskusta on kompakti ja suurin osa palveluista on kävelyetäisyydellä. Lisäksi
-junayhteys Málagan lentokentältä tekee saapumisesta vaivatonta.
+Marbellassa on helppo yhdistää ranta, hyvä ruoka ja päiväretket. Kaupunki on
+kompakti, mutta alueiden välillä liikkuminen onnistuu kävellen, bussilla tai
+taksilla.
 </p>
 
 <section class="lomasihteeri-cta" aria-labelledby="lomasihteeri-heading">
@@ -108,32 +108,55 @@ junayhteys Málagan lentokentältä tekee saapumisesta vaivatonta.
 <h2>Mitä Marbellassa voi tehdä?</h2>
 
 <ul>
-  <li><strong>Nauti rannoista</strong> – useita kilometrejä hyvin hoidettuja hiekkarantoja</li>
-  <li><strong>Syö hyvin</strong> – satoja ravintoloita ja perinteisiä rantabaareja</li>
-  <li><strong>Liiku helposti</strong> – juna, bussit ja taksit toimivat sujuvasti</li>
-  <li><strong>Tee päiväretkiä</strong> – Málaga, Mijas ja Marbella ovat lähellä</li>
+  <li><strong>Kävele Old Townissa</strong> – Casco Antiguo ja Plaza de los Naranjos</li>
+  <li><strong>Nauti Golden Milestä</strong> – rantabulevardi ja resort‑fiilis</li>
+  <li><strong>Käy Puerto Banúsissa</strong> – satama, ostokset ja iltakävely</li>
+  <li><strong>Tee päiväretkiä</strong> – Ronda, Málaga ja Gibraltar ovat lähellä</li>
 </ul>
 
 <h2>Kenelle Marbella sopii?</h2>
 
-<p>
-Marbella on erinomainen kohde monenlaisille matkailijoille:
-</p>
-
 <ul>
-  <li>Rantalomaa etsiville</li>
-  <li>Lapsiperheille</li>
-  <li>Talvehtijoille</li>
-  <li>Helppoa lomaa arvostaville ensikertalaisille</li>
+  <li>Haluat rantaloman ja kaupunkifiiliksen samassa paketissa</li>
+  <li>Arvostat siistiä ympäristöä ja tyylikästä rantapromenadia</li>
+  <li>Pidät satama‑alueista, ostoksista ja hyvistä ravintoloista</li>
+  <li>Haluat tehdä päiväretkiä Andalusian sisämaahan</li>
+</ul>
+
+<h2>Pikaopas</h2>
+
+<h3>Tärkeimmät hakusanat Google Mapsiin</h3>
+<ul>
+  <li><strong>Vanhakaupunki:</strong> <code>Casco Antiguo Marbella</code></li>
+  <li><strong>Plaza de los Naranjos:</strong> <code>Plaza de los Naranjos</code></li>
+  <li><strong>Puerto Banús:</strong> <code>Puerto Banús</code></li>
+  <li><strong>Golden Mile:</strong> <code>Golden Mile Marbella</code></li>
+  <li><strong>Rantabulevardi:</strong> <code>Paseo Marítimo Marbella</code></li>
+  <li><strong>Linja-autoasema:</strong> <code>Estación de Autobuses Marbella</code></li>
+</ul>
+
+<h3>Tyypilliset hinnat</h3>
+<ul>
+  <li>Bussi lentokentältä: ~8–15 €</li>
+  <li>Paikallisbussi: ~1–2 €</li>
+  <li>Aurinkotuoli + varjo: 10–20 € / päivä</li>
+  <li>Kahvi: 1,80–3 €</li>
+  <li>Illallinen: 25–50 €</li>
+</ul>
+
+<h3>Hätänumerot</h3>
+<ul>
+  <li>Yleinen hätänumero: <strong>112</strong></li>
+  <li>Poliisi: <strong>091</strong></li>
 </ul>
 
 <aside class="pdf-teaser" aria-labelledby="pdf-heading">
-  <h3 id="pdf-heading">Tulossa: Marbella offline-opas</h3>
-  <p>Valmistelemme ladattavaa PDF-opasta, joka toimii ilman nettiyhteyttä.</p>
+  <h3 id="pdf-heading">Marbella offline‑pikaopas</h3>
+  <p>Tallenna tärkeimmät vinkit puhelimeen ennen matkaa.</p>
   <ul>
-    <li>Toimii offline – ei vaadi dataa kohteessa</li>
-    <li>Valmiit checklistat ennen matkaa ja perillä</li>
-    <li>Suorat hakusanat Google Mapsiin</li>
+    <li>Hakusanat Google Mapsiin</li>
+    <li>Hintahaarukat ja käytännön vinkit</li>
+    <li>Checklista ennen matkaa ja perillä</li>
   </ul>
 </aside>
 
