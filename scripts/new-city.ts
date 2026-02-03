@@ -5,6 +5,256 @@ function toTitleCase(str: string): string {
     return str.replace(/-/g, ' ').replace(/\b\w/g, (char) => char.toUpperCase());
 }
 
+function ensureDirectory(dirPath: string) {
+    if (!fs.existsSync(dirPath)) {
+        fs.mkdirSync(dirPath, { recursive: true });
+        console.log(`Created directory: ${dirPath}`);
+        return;
+    }
+    console.log(`Exists, skipped: ${dirPath}`);
+}
+
+function writeFileIfMissing(filePath: string, content: string) {
+    if (fs.existsSync(filePath)) {
+        console.log(`Exists, skipped: ${filePath}`);
+        return false;
+    }
+    fs.writeFileSync(filePath, content, 'utf8');
+    console.log(`Created file: ${filePath}`);
+    return true;
+}
+
+function ensureAffiliateEntry(
+    filePath: string,
+    objectName: 'accommodation' | 'activities',
+    entryKey: string,
+    entryContent: string,
+) {
+    if (!fs.existsSync(filePath)) {
+        console.warn(`Warning: Affiliate links file not found: ${filePath}. Skipping.`);
+        return;
+    }
+
+    const content = fs.readFileSync(filePath, 'utf8');
+    const anchor = `export const ${objectName} = {`;
+    const startIndex = content.indexOf(anchor);
+    if (startIndex === -1) {
+        console.warn(`Warning: Could not find ${objectName} block in ${filePath}. Skipping.`);
+        return;
+    }
+
+    const endIndex = content.indexOf('};', startIndex);
+    if (endIndex === -1) {
+        console.warn(`Warning: Could not find end of ${objectName} block in ${filePath}. Skipping.`);
+        return;
+    }
+
+    const block = content.slice(startIndex, endIndex);
+    const entryRegex = new RegExp(`\\n\\s*${entryKey}:\\s*{`);
+    if (entryRegex.test(block)) {
+        console.log(`Affiliate ${objectName}.${entryKey} exists, skipped`);
+        return;
+    }
+
+    const updated =
+        content.slice(0, endIndex) +
+        `  ${entryKey}: {\n${entryContent}\n  } satisfies AffiliateLink,\n` +
+        content.slice(endIndex);
+
+    fs.writeFileSync(filePath, updated, 'utf8');
+    console.log(`Added affiliate stub: ${objectName}.${entryKey}`);
+}
+
+function ensureEspanjaCard(citySlug: string, cityName: string) {
+    const filePath = path.join('src/routes/espanja', '+page.svelte');
+    if (!fs.existsSync(filePath)) {
+        console.warn(`Warning: Espanja hub not found: ${filePath}. Skipping.`);
+        return;
+    }
+
+    const content = fs.readFileSync(filePath, 'utf8');
+    const cityLink = `/espanja/${citySlug}`;
+    if (content.includes(`href=\"${cityLink}\"`) || content.includes(`href='${cityLink}'`)) {
+        console.log(`City card exists, skipped: ${citySlug}`);
+        return;
+    }
+
+    const insertionPoint = '<!-- NEW_CITY_CARD_INSERTION_POINT -->';
+    if (!content.includes(insertionPoint)) {
+        console.warn(`Warning: Card insertion point not found in ${filePath}. Skipping.`);
+        return;
+    }
+
+    const card = `  <div class=\"city-card\">\n    <h3>${cityName}</h3>\n    <p>\n      TODO: Lyhyt kuvaus ${cityName}sta (ranta, vanhakaupunki, tunnelma).\n    </p>\n    <p><strong>Sopii:</strong> TODO</p>\n    <p><a href=\"${cityLink}\">Tutustu ${cityName}an →</a></p>\n  </div>\n\n  `;
+
+    const updated = content.replace(insertionPoint, `${card}${insertionPoint}`);
+    fs.writeFileSync(filePath, updated, 'utf8');
+    console.log(`Added city card: ${citySlug}`);
+}
+
+function buildPdfStub(cityName: string) {
+    return `# ${cityName.toUpperCase()} – Täydellinen lomaopas suomalaisille
+
+**Suunniteltu 1–14 vrk lomalle – toimii offline**
+
+---
+
+## OFFLINE-PIKAOPAS (tallenna puhelimeen)
+
+### Tärkeimmät hakusanat Google Mapsiin
+
+| Tarkoitus | Hae näin |
+|-----------|----------|
+| Vanhakaupunki | \`TODO\` |
+| Rantabulevardi | \`TODO\` |
+| Juna-/linja-autoasema | \`TODO\` |
+| Ruokakauppa | \`TODO\` |
+| Apteekki | \`TODO\` |
+| Taksi | \`TODO\` |
+| Sairaala / päivystys | \`TODO\` |
+
+### Hätänumerot
+
+- Yleinen hätänumero: **112**
+- Poliisi: **091**
+- Päivystys: Hae \`TODO\`
+
+### Tyypilliset hinnat
+
+| Asia | Hintahaarukka |
+|------|---------------|
+| Bussi lentokentältä | ~TODO € |
+| Paikallisbussi | ~TODO € |
+| Aurinkotuoli + varjo | TODO–TODO € / päivä |
+| Kahvi | TODO–TODO € |
+| Lounas (menú del día) | TODO–TODO € |
+| Illallinen | TODO–TODO € |
+
+*Hinnat vaihtelevat kauden, sijainnin ja kysynnän mukaan.*
+
+---
+
+## CHECKLISTA: ENNEN MATKAA
+
+### Viikkoa ennen
+
+- [ ] Matkavakuutus voimassa
+- [ ] Maksukorttien PIN-koodit muistissa
+- [ ] Majoituksen osoite ja yhteystiedot tallennettu
+- [ ] Google Maps: tallenna kartat offline-tilaan (\`${cityName}\`)
+- [ ] TODO: liput/varaukset
+
+### Päivää ennen
+
+- [ ] Tulosta tai tallenna tämä PDF puhelimeen
+- [ ] Lentolippujen mobiilikortti valmiina
+- [ ] Lentokentältä kulkeminen tarkistettu
+
+### Laukkuun
+
+- [ ] EHIC/KELA-kortti
+- [ ] Aurinkovoide
+- [ ] Hattu ja aurinkolasit
+- [ ] Mukavat kävelykengät
+- [ ] Uimapuku ja pyyhe
+
+---
+
+## CHECKLISTA: EKA PÄIVÄ PERILLÄ
+
+### Heti saapuessa
+
+- [ ] Osta bussilippu / järjestä kuljetus
+- [ ] Löydä lähin ruokakauppa
+- [ ] Kävele keskustassa ja rannalla
+
+### Illalla
+
+- [ ] Kokeile paikallista ravintolaa
+- [ ] Suunnittele seuraavan päivän ranta tai nähtävyys
+
+---
+
+## 1. TERVETULOA ${cityName.toUpperCase()}
+
+TODO: 2–3 kappaletta (kaupungin profiili, ranta + kaupunki).
+
+### Kenelle sopii
+
+- TODO
+
+### Kenelle ei sovi
+
+- TODO
+
+---
+
+## 2. SAAPUMINEN KOHDESEEN
+
+TODO: lentokentältä, bussi/taksi/juna + kesto + hinnat.
+
+---
+
+## 3. LIIKKUMINEN LOMALLA
+
+TODO: kävely, bussi/juna, taksi, sovellukset, vuokra-auto.
+
+---
+
+## 4. ALUEET JA MAJOITUS
+
+TODO: alueet + kenelle sopii + plussat/miinukset.
+
+---
+
+## 5. RANNAT
+
+TODO: tärkeimmät rannat + rantavinkit.
+
+---
+
+## 6. RAVINTOLAT
+
+TODO: hintataso, ruokailuajat, parhaat alueet.
+
+---
+
+## 7. NÄHTÄVYYDET JA TEKEMINEN
+
+TODO: nähtävyydet, kävelyreitit, aktiviteetit.
+
+---
+
+## 8. PÄIVÄRETKET
+
+TODO: lähikohteet + liikkuminen.
+
+---
+
+## 9. KÄYTÄNNÖN ASIAT
+
+TODO: ruokakaupat, apteekit, raha, turvallisuus.
+
+---
+
+## 10. HYÖDYLLISET SOVELLUKSET
+
+TODO: Google Maps, paikallisliikenne, taksisovellukset, käännös.
+
+---
+
+## 11. FAQ
+
+TODO: 6–10 yleisintä kysymystä + linkitys checklisteihin.
+
+---
+
+## Lopuksi
+
+TODO: lyhyt loppukappale kaupungin profiilista.
+`;
+}
+
 async function main() {
     const args = process.argv.slice(2);
     let citySlug: string | undefined;
@@ -32,10 +282,13 @@ async function main() {
         cityName = toTitleCase(citySlug);
     }
 
-    console.log(`Scaffolding new city: ${cityName} (${citySlug})`);
+    console.log(`Scaffolding new city: ${cityName} (${citySlug})\n`);
 
     const baseSourcePath = 'src/routes/espanja/fuengirola';
     const baseDestPath = path.join('src/routes/espanja', citySlug);
+
+    // Ensure base destination directory exists
+    ensureDirectory(baseDestPath);
 
     const pages = [
         { src: '+page.svelte', dest: '+page.svelte' },
@@ -61,6 +314,11 @@ async function main() {
             continue;
         }
 
+        if (fs.existsSync(destFilePath)) {
+            console.log(`Exists, skipped: ${destFilePath}`);
+            continue;
+        }
+
         fs.mkdirSync(destDir, { recursive: true });
 
         let content = fs.readFileSync(sourceFilePath, 'utf8');
@@ -72,44 +330,65 @@ async function main() {
         // Special handling for lomasihteeri pages' hardcoded citySlug
         if (page.src.startsWith('lomasihteeri/')) {
             content = content.replace(/const citySlug = 'fuengirola';/g, `const citySlug = '${citySlug}';`);
-            content = content.replace(/\/espanja\/fuengirola\/lomasihteeri/g, `/espanja/${citySlug}/lomasihteeri`);
+            content = content.replace(new RegExp('/espanja/fuengirola/lomasihteeri', 'g'), '/espanja/' + citySlug + '/lomasihteeri');
         }
-        
+
+        if (page.src.startsWith('paivaretket/')) {
+            const todoMarker = '<!-- TODO: Lisää cross-city linkit muihin kaupunkeihin (päiväretket) -->';
+            if (!content.includes(todoMarker)) {
+                const insertPoint = '</p>\n\n<h2>';
+                if (content.includes(insertPoint)) {
+                    content = content.replace(insertPoint, `</p>\n\n${todoMarker}\n\n<h2>`);
+                } else {
+                    content = `${todoMarker}\n\n${content}`;
+                }
+            }
+        }
+
         fs.writeFileSync(destFilePath, content, 'utf8');
-        console.log(`Created: ${destFilePath}`);
+        console.log(`Created file: ${destFilePath}`);
     }
 
-    // --- Update src/routes/espanja/+page.svelte with new city card ---
-    const espanjaPagePath = 'src/routes/espanja/+page.svelte';
-    const newCityCard = `
-  <div class="city-card">
-    <h3>${cityName}</h3>
-    <p>
-      Yleiskuvaus kohteesta ${cityName}. Lisää tähän lyhyt ja ytimekäs kuvaus, joka houkuttelee lukijoita.
-    </p>
-    <p><strong>Sopii:</strong> Esimerkiksi: Perheille, pariskunnille, aktiivilomailijoille</p>
-    <p><a href="/espanja/${citySlug}">Tutustu ${cityName}yn →</a></p>
-  </div>`;
+    const pdfPath = path.join('docs/pdf', `${citySlug}_pdf.md`);
+    ensureDirectory(path.dirname(pdfPath));
+    writeFileIfMissing(pdfPath, buildPdfStub(cityName));
 
-    let espanjaPageContent = fs.readFileSync(espanjaPagePath, 'utf8');
-    const insertionPoint = '  <!-- NEW_CITY_CARD_INSERTION_POINT -->';
-    if (espanjaPageContent.includes(insertionPoint)) {
-        espanjaPageContent = espanjaPageContent.replace(
-            insertionPoint,
-            `${newCityCard}\n${insertionPoint}`
-        );
-        fs.writeFileSync(espanjaPagePath, espanjaPageContent, 'utf8');
-        console.log(`Updated: ${espanjaPagePath} with new city card for ${cityName}`);
-    } else {
-        console.warn(`Warning: Insertion point "${insertionPoint}" not found in ${espanjaPagePath}. City card not added automatically.`);
-    }
+    const accommodationEntry = [
+        `    url: \`https://www.booking.com/city/es/${citySlug}.html?aid=\${AFFILIATE_IDS.booking}\`,`,
+        `    label: 'Hae majoitusta ${cityName}',`,
+        "    partner: 'Booking.com',",
+    ].join('\n');
 
+    const activitiesEntry = [
+        `    url: \`https://www.getyourguide.com/${citySlug}-lTODO/?partner_id=\${AFFILIATE_IDS.getyourguide}\`,`,
+        `    label: 'Katso aktiviteetit ${cityName}',`,
+        "    partner: 'GetYourGuide',",
+    ].join('\n');
 
-    console.log('\n--- Next Steps ---');
-    console.log(`- Remember to create docs/pdf/${citySlug}_pdf.md`);
-    console.log(`- Remember to add accommodation.${citySlug} links.ts:ään`);
-    console.log(`- Run docs/QA_CITY_CHECKLIST.md`);
-    console.log('------------------');
+    ensureAffiliateEntry(
+        path.join('src/lib/affiliates/links.ts'),
+        'accommodation',
+        citySlug,
+        accommodationEntry,
+    );
+
+    ensureAffiliateEntry(
+        path.join('src/lib/affiliates/links.ts'),
+        'activities',
+        citySlug,
+        activitiesEntry,
+    );
+
+    ensureEspanjaCard(citySlug, cityName);
+
+    console.log(`
+--- Next Steps ---
+- Täytä docs/pdf/${citySlug}_pdf.md
+- Täytä sivusisällöt PDF:n mukaan
+- Päivitä affiliate-linkit oikeiksi
+- Aja docs/QA_CITY_CHECKLIST.md
+- npm run check && npm run build
+------------------`);
 }
 
-main().catch(console.error);
+main();

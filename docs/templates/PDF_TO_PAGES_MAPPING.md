@@ -20,6 +20,12 @@ PDF-osio                    → Verkkosivu
 11. FAQ                     → faq/
 ```
 
+## PDF-stub (new-city)
+
+`npm run new-city` luo automaattisesti PDF-master-stubin, jossa on 1–11 -runkorakenne
+sekä offline-pikaopas (Maps-hakusanat, hintahaarukka + disclaimer) ja checklistat ennen
+varsinaisia osioita. Täytä stubi ennen sivujen sisältöjä, jotta mapping pysyy linjassa.
+
 ## Yksityiskohtainen mapping
 
 ### Hub-sivu (+page.svelte)
