@@ -1,8 +1,8 @@
 <svelte:head>
-  <title>Fuengirolan nähtävyydet – Top 5 kohteet ja tekemistä</title>
+  <title>Fuengirola – Nähtävyydet | Matkaopas Espanjaan</title>
   <meta
     name="description"
-    content="Tutustu Fuengirolan parhaisiin nähtävyyksiin. Vinkit Castillo Sohailiin, Bioparciin, satamaan ja parhaisiin aktiviteetteihin."
+    content="Löydä Fuengirolan parhaat nähtävyydet. Esittelyssä Castillo Sohail, Bioparc, satama ja rantapaseo. Vinkit kävelyretkiin ja parhaisiin elämyksiin."
   />
 </svelte:head>
 
@@ -16,12 +16,12 @@
 
 <h3>Castillo de Sohail</h3>
 <p>
-  Tämä upea, 900-luvulta peräisin oleva linna vartioi kaupunkia joen suulla. Linna on itsessään vaikuttava näky, ja sen muurilta avautuvat hienot maisemat merelle ja vuorille. Kesäisin linnan alueella järjestetään konsertteja ja festivaaleja.
+  Tämä upea, 900-luvulta peräisin oleva linna vartioi kaupunkia joen suulla. Linna on itsessään vaikuttava näky, ja sen muurilta avautuvat hienot maisemat merelle ja vuorille. Se on myös loistava paikka aloittaa <a href="/espanja/fuengirola/paivaretket">päiväretki</a> läheiseen Mijasin kylään.
 </p>
 
 <h3>Paseo Marítimo (Rantapaseo)</h3>
 <p>
-  Fuengirolan kahdeksan kilometriä pitkä rantabulevardi on kaupungin sydän. Se on täydellinen paikka kävelylle, pyöräilylle tai vain ihmisten katseluun. Varella on lukemattomia kahviloita, baareja ja ravintoloita.
+  Fuengirolan kahdeksan kilometriä pitkä rantabulevardi on kaupungin sydän. Se on täydellinen paikka kävelylle, pyöräilylle tai vain ihmisten katseluun. Varella on lukemattomia kahviloita, baareja ja ravintoloita vieri vieressä <a href="/espanja/fuengirola/rannat">rantojen</a> kanssa.
 </p>
 
 <h3>Bioparc Fuengirola</h3>

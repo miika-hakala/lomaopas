@@ -1,8 +1,8 @@
 <svelte:head>
-  <title>Fuengirolan ravintolat – Parhaat vinkit ja suositukset</title>
+  <title>Fuengirola – Ravintolat | Matkaopas Espanjaan</title>
   <meta
     name="description"
-    content="Löydä parhaat ravintolat Fuengirolasta. Vinkkejä espanjalaiseen ruokakulttuuriin, kalaravintoloihin, chiringuitoihin ja käytännön neuvoja."
+    content="Löydä Fuengirolan parhaat ravintolat. Esittelyssä tapas-baarit, kalaravintolat ja chiringuitot. Katso vinkit ja opi löytämään paikalliset helmet."
   />
 </svelte:head>
 
@@ -26,7 +26,7 @@
 
 <h3>Rantapaseo (Paseo Marítimo)</h3>
 <p>
-  Rantabulevardi on täydellinen paikka nauttia ateriasta merinäköalalla. Tarjolla on kaikkea tuoreesta kalasta pizzoihin ja hampurilaisiin.
+  Rantabulevardi on täydellinen paikka nauttia ateriasta merinäköalalla. Tarjolla on kaikkea tuoreesta kalasta pizzoihin ja hampurilaisiin. Alue yhdistää <a href="/espanja/fuengirola/rannat">rannat</a> ja ruokailun.
 </p>
 
 <h2>Ruokakulttuurin helmet</h2>

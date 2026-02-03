@@ -1,8 +1,8 @@
 <svelte:head>
-  <title>Liikkuminen Fuengirolassa – Juna, bussit ja taksit</title>
+  <title>Fuengirola – Liikkuminen | Matkaopas Espanjaan</title>
   <meta
     name="description"
-    content="Näin liikut Fuengirolassa: saapuminen lentokentältä, junat, bussit, taksit ja autonvuokraus."
+    content="Opas liikkumiseen Fuengirolassa. Näin pääset lentokentältä ja käytät junaa, busseja ja takseja. Katso myös vinkit autonvuokraukseen ja päiväretkiin."
   />
 </svelte:head>
 
@@ -55,7 +55,7 @@ iltaisin. Myös sovelluspohjaiset kyytipalvelut toimivat alueella.
 <p>
 Auton vuokraaminen voi olla järkevää, jos suunnittelet päiväretkiä tai haluat
 liikkua vapaammin. Keskustassa pysäköinti voi olla haastavaa, mutta parkkihalleja
-on useita.
+on useita. Lue lisää <a href="/espanja/fuengirola/paivaretket">vinkkejämme päiväretkiin</a>.
 </p>
 
 <p>

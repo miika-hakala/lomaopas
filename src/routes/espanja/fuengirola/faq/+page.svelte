@@ -1,8 +1,8 @@
 <svelte:head>
-  <title>Fuengirola FAQ – Usein kysytyt kysymykset matkailijoille</title>
+  <title>Fuengirola – FAQ | Matkaopas Espanjaan</title>
   <meta
     name="description"
-    content="Vastaukset yleisimpiin kysymyksiin Fuengirolasta: paras matkustusaika, hinnat, turvallisuus, liikkuminen ja vinkit."
+    content="Vastauksia yleisimpiin kysymyksiin Fuengirolasta. Onko Fuengirola kallis tai turvallinen? Milloin matkustaa? Lue vinkit ensikertalaiselle."
   />
 </svelte:head>
 
@@ -44,7 +44,7 @@ kansainvälisiä asukkaita.
 
 <h2>Miten Fuengirolassa liikutaan paikasta toiseen?</h2>
 <p>
-Liikkuminen on helppoa kävellen, junalla, bussilla ja taksilla. Junayhteys
+Liikkuminen on helppoa kävellen, junalla, bussilla ja taksilla. Lue lisää <a href="/espanja/fuengirola/liikkuminen">liikkumisesta Fuengirolassa</a>. Junayhteys
 Málagaan ja lentokentälle on erityisen kätevä.
 </p>
 
@@ -69,14 +69,13 @@ tehdä päiväretkiä tai liikkua laajemmin Andalusiassa.
 
 <h2>Minkälaiset rannat Fuengirolassa on?</h2>
 <p>
-Fuengirolassa on useita kilometrejä hyvin hoidettuja hiekkarantoja, joilla on
-paljon palveluita kuten aurinkotuoleja, suihkuja ja ravintoloita.
+Fuengirolassa on useita kilometrejä hyvin hoidettuja hiekkarantoja. Lue lisää <a href="/espanja/fuengirola/rannat">Fuengirolan rannoista</a>.
 </p>
 
 <h2>Voiko Fuengirolasta tehdä helposti päiväretkiä?</h2>
 <p>
 Kyllä. Läheltä löytyvät esimerkiksi Málaga, Mijas Pueblo, Marbella ja Ronda.
-Moniin kohteisiin pääsee helposti junalla tai bussilla.
+Lue lisää <a href="/espanja/fuengirola/paivaretket">päiväretkistä Fuengirolasta</a>.
 </p>
 
 <h2>Onko Fuengirola hyvä kohde talvella?</h2>
