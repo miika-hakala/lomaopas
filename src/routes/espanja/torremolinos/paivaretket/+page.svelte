@@ -121,7 +121,8 @@ Paras vaihtoehto Rondaan ja sisämaahan.
 </ul>
 
 <p>
-<a href="/espanja/torremolinos/nahtavyydet">← Nähtävyydet</a>
+<a href="/espanja/torremolinos/liikkuminen">← Liikkuminen</a> |
+<a href="/espanja/torremolinos/nahtavyydet">Nähtävyydet →</a>
 </p>
 
 <p>
