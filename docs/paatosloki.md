@@ -66,3 +66,9 @@ Päätös on lukittu, kun se on dokumentoitu projektin `docs`-kansiossa ja muuto
 - **Vaikutus:** Luodaan teknologinen perusta tulevalle kehitykselle, joka skaalautuu sovellukseksi. Ohjaa Phase 1.1 kehitystä keskittymään sisältöön ja kevyeen kanavaan.
 - **Lähde:** keskustelussa sovittu teknologiavalinta
 - **Commit:** ei vielä commitoitu
+
+### 2026-02-03 – Projekti keskeytetty Fuengirola v1:n jälkeen
+- **Kuvaus:** Käyttäjän pyynnöstä projekti keskeytettiin Fuengirola v1 -version valmistumisen jälkeen. Projektin jatkamisesta tehdään erillinen päätös.
+- **Vaikutus:** Ei aktiivista kehitystä; turvallinen jatkopiste luotu. Fuengirola v1 on lukittu.
+- **Lähde:** `docs/status.md`
+- **Commit:** `afb3bcd16c8ee01c64696622f372e70d8f6c34c4`

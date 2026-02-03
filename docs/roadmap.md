@@ -6,20 +6,25 @@
 - Taksonomia & URL-rakenne
 - City-sivun template
 
-## Phase 1 – NEXT (MVP)
-- **Tavoite:** nopea julkaisu SEO-liikenteen keräämiseksi.
-- **Laajuus:** Espanja + 1–2 kaupunkia (Fuengirola, Málaga).
-- **Sisältö:** vain ydinsisältö per kaupunki, ei vielä kaikkia alasivuja.
+## Phase 1: Fuengirola MVP – DONE
+- **Tavoite:** Ensimmäisen kohdeoppaan julkaisu (Fuengirola).
+- **Laajuus:** Espanja > Fuengirola.
+- **Sisältö:** Hub-sivu, Liikkuminen, Rannat, Ravintolat, Päiväretket, Nähtävyydet, FAQ.
+- **Tekniikka:** SvelteKit-pohja, reititys ja SEO-perusta.
 
-## Phase 2 – Skaalaus
-- Uusien kaupunkien lisääminen.
-- Laajennus yksityiskohtaisemmille alasivuille (/ravintolat, /rannat).
-- Sisäisen linkityksen rakentaminen.
+## Phase 2: Laajennus ja hionta – DONE
+- Sisällön viimeistely.
+- SEO-optimointi ja sisäinen linkitys.
+- Dokumentaation päivittäminen.
 
-## Phase 3 – Monetisointi
+## Projekti keskeytetty (v1 valmis)
+- **Päätös:** Projekti on keskeytetty käyttäjän pyynnöstä Fuengirola v1:n valmistuttua.
+- **Jatkotoimet:** Projekti jatkuu myöhemmin erillisellä päätöksellä. Seuraava luonteva askel on Phase 3 (Monetisointi).
+
+## Phase 3 – Monetisointi (TODO)
 - Affiliate-linkkien integrointi (hotellit, retket, kuljetukset).
 - Premium PDF-oppaiden lanseeraus.
 
-## Phase 4 – Premium & App
+## Phase 4 – Premium & App (TODO)
 - Laajennus premium-sisältöön (offline-kartat, syvemmät oppaat).
 - Mahdollinen natiivisovellus.
