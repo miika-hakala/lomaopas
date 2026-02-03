@@ -52,5 +52,10 @@ siisteimmistä ja rauhallisimmista.
 </ul>
 
 <p>
+<a href="/espanja/fuengirola/missa-asua">← Missä asua (alueet)</a> |
+<a href="/espanja/fuengirola/ravintolat">Ravintolat →</a>
+</p>
+
+<p>
 <a href="/espanja/fuengirola">← Takaisin Fuengirolaan</a>
 </p>
