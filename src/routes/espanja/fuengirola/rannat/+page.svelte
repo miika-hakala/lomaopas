@@ -1,8 +1,8 @@
 <svelte:head>
-  <title>Fuengirolan rannat – Parhaat rannat ja vinkit</title>
+  <title>Fuengirola – Rannat | Matkaopas Espanjaan</title>
   <meta
     name="description"
-    content="Tutustu Fuengirolan rantoihin: suosituimmat rannat, palvelut ja vinkit rantalomaan."
+    content="Opas Fuengirolan upeille rannoille. Esittelyssä Los Boliches, Playa del Castillo ja muut suosikit. Vinkit palveluista, aurinkotuoleista ja chiringuito-rantaravintoloista."
   />
 </svelte:head>
 
@@ -39,7 +39,7 @@ siisteimmistä ja rauhallisimmista.
 <ul>
   <li>Aurinkotuolit ja -varjot</li>
   <li>Suihkut ja wc-tilat</li>
-  <li>Rantabaarit ja ravintolat</li>
+  <li>Rantabaarit ja <a href="/espanja/fuengirola/ravintolat">chiringuito-ravintolat</a></li>
   <li>Esteettömiä kulkureittejä</li>
 </ul>
 

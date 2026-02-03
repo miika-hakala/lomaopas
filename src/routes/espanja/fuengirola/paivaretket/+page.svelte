@@ -1,8 +1,8 @@
 <svelte:head>
-  <title>Päiväretket Fuengirolasta – Parhaat kohteet ja vinkit</title>
+  <title>Fuengirola – Päiväretket | Matkaopas Espanjaan</title>
   <meta
     name="description"
-    content="Suunnittele päiväretki Fuengirolasta. Suosituimmat kohteet kuten Málaga, Mijas, Marbella ja Ronda. Vinkkejä liikkumiseen ja suunnitteluun."
+    content="Lähde päiväretkelle Fuengirolasta! Suosituimmat kohteet kuten Málaga, Mijas, Marbella ja Ronda. Vinkit liikkumiseen ja parhaat reitit autolla tai junalla."
   />
 </svelte:head>
 
@@ -40,6 +40,7 @@
 </p>
 
 <h2>Liikkuminen retkille</h2>
+<p>Vaihtoehtoja on useita, ja lisätietoa löydät <a href="/espanja/fuengirola/liikkuminen">liikkuminen Fuengirolassa</a> -sivultamme.</p>
 <ul>
   <li><strong>Juna:</strong> Rannikkojuna (C-1) on kätevin ja nopein tapa matkustaa Málagan suuntaan.</li>
   <li><strong>Bussi:</strong> Linja-autolla pääsee kätevästi moniin kohteisiin, kuten Mijasiin, Marbellaan ja Rondaan. Fuengirolan linja-autoasema sijaitsee keskeisellä paikalla.</li>
