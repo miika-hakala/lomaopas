@@ -49,11 +49,74 @@ Kumppanuuslinkkien kautta saatavat komissiot. Fokus on lomailijalle relevantteis
 
 Myydään ladattavia, offline-toimivia PDF-oppaita per kaupunki.
 
-- **Hinta-oletus:** 9,90 € per opas
+- **Hinta:** 9,90 € per opas
 - **Konversio-oletus:** 0,3–0,8 % sivuston kävijöistä ostaa oppaan
 - **Myyntivaltti:** Helppous, offline-saatavuus, kuratoitu sisältö, checklistat ja suorat karttalinkit
 
-**Status:** PENDING – odottaa Phase 3 affiliate-validointia
+---
+
+## 3. Myyntimalli (Phase 3.5)
+
+### Ensimmäinen tuote
+
+| Kenttä | Arvo |
+|--------|------|
+| Tuote | Fuengirola PDF-opas |
+| Hinta | 9,90 € |
+| Muoto | PDF (A4, tulostettava) |
+| Toimitus | Välitön lataus maksun jälkeen |
+
+### Maksunvälittäjä
+
+**Valinta: Stripe**
+
+| Kriteeri | Stripe |
+|----------|--------|
+| Käyttöönotto | Nopea, ei erillisiä sopimuksia |
+| Provisio | ~2,9 % + 0,25 € / transaktio |
+| Valuutta | EUR natiivisti |
+| PDF-toimitus | Integroitavissa Checkout Sessioniin |
+| Käyttäjätilit | Ei tarvita (guest checkout) |
+
+Vaihtoehto: Lemon Squeezy (all-in-one, hoitaa myös ALV:n)
+
+### Ostovirta (käyttäjän näkökulmasta)
+
+```
+1. Käyttäjä klikkaa "Osta opas" (myyntisivu)
+2. → Stripe Checkout (hosted page)
+3. → Maksun vahvistus
+4. → Kiitos-sivu + latauslinkki
+5. → Sähköpostivahvistus + linkki (varmuuskopio)
+```
+
+### Toimitusmalli
+
+| Vaihe | Toteutus |
+|-------|----------|
+| PDF-tiedosto | Staattinen, versionhallittu |
+| Latauslinkki | Stripe Checkout success_url + token |
+| Varmuuskopio | Sähköpostiin (Stripe/Resend) |
+| Linkin voimassaolo | 7 päivää / 5 latausta |
+
+### Tekninen toteutus (korkean tason)
+
+```
+/api/checkout      → Luo Stripe Checkout Session
+/api/webhook       → Vastaanota Stripe events
+/kiitos            → Näytä latauslinkki (token-validointi)
+/lataa/[token]     → Toimita PDF (kertakäyttöinen/rajoitettu)
+```
+
+### Mitä EI tehdä (Phase 3.5)
+
+- Ei käyttäjätilejä tai kirjautumista
+- Ei subscription-mallia
+- Ei ostoskorin tai bundle-myynnin toteutusta
+- Ei useita tuotteita (vain Fuengirola)
+- Ei ALV-käsittelyä itse (käytetään Stripea tai LemonSqueezyä)
+- Ei manuaalista laskutusta
+- Ei palautuskäsittelyä automatisoituna (case-by-case)
 
 ---
 
@@ -61,7 +124,11 @@ Myydään ladattavia, offline-toimivia PDF-oppaita per kaupunki.
 
 | Vaihe | Toimenpide | Tila |
 |-------|------------|------|
-| 3.1 | Affiliate-tilien luonti | TODO |
-| 3.2 | Ensimmäiset linkit sisältöön | TODO |
-| 3.3 | Seuranta ja optimointi | TODO |
-| 3.4 | Premium PDF -lanseeraus | PENDING |
+| 3.1 | Affiliate-strategia dokumentoitu | DONE |
+| 3.2 | Affiliate-linkit sivuille | DONE |
+| 3.3 | PDF-sisältö viimeistelty | DONE |
+| 3.4 | PDF-teaser kaupunkisivulle | DONE |
+| 3.5 | Myyntimalli lukittu | DONE |
+| 3.6 | Stripe-integraatio | TODO |
+| 3.7 | Myyntisivu + checkout | TODO |
+| 3.8 | Lanseeraus | TODO |
