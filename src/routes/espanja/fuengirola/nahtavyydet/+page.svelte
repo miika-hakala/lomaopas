@@ -1,3 +1,8 @@
+<script lang="ts">
+  import AffiliateLink from '$lib/affiliates/AffiliateLink.svelte';
+  import { tickets, activities } from '$lib/affiliates/links';
+</script>
+
 <svelte:head>
   <title>Fuengirola – Nähtävyydet | Matkaopas Espanjaan</title>
   <meta
@@ -27,6 +32,7 @@
 <h3>Bioparc Fuengirola</h3>
 <p>
   Moderni ja palkittu eläintarha, joka on erikoistunut uhanalaisiin lajeihin. Bioparc jäljittelee eläinten luonnollisia elinympäristöjä ja on suosittu kohde erityisesti lapsiperheiden keskuudessa.
+  <AffiliateLink link={tickets.bioparc} />
 </p>
 
 <h3>Satama (Puerto Deportivo)</h3>
@@ -49,7 +55,7 @@
 <h2>Vinkkejä</h2>
 <ul>
   <li><strong>Paras aika vierailla:</strong> Nähtävyydet ovat ruuhkaisimpia keskikesällä. Kevät ja syksy ovat erinomaista aikaa tutustua kohteisiin rauhassa.</li>
-  <li><strong>Liput:</strong> Suosituimpiin kohteisiin, kuten Bioparciin, liput kannattaa ostaa etukäteen verkosta jonojen välttämiseksi.</li>
+  <li><strong>Liput:</strong> Suosituimpiin kohteisiin liput kannattaa ostaa etukäteen verkosta jonojen välttämiseksi. <AffiliateLink link={activities.fuengirolaDayTrips} showDisclosure={false} /></li>
 </ul>
 
 <p>

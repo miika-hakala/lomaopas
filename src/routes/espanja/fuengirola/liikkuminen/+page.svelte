@@ -1,3 +1,8 @@
+<script lang="ts">
+  import AffiliateLink from '$lib/affiliates/AffiliateLink.svelte';
+  import { transport } from '$lib/affiliates/links';
+</script>
+
 <svelte:head>
   <title>Fuengirola – Liikkuminen | Matkaopas Espanjaan</title>
   <meta
@@ -21,7 +26,7 @@ Málagan lentokentältä Fuengirolaan pääsee usealla tavalla:
 
 <ul>
   <li><strong>Juna</strong> – nopein ja suosituin vaihtoehto, matka kestää noin 45 minuuttia</li>
-  <li><strong>Taksi</strong> – suora ja helppo, mutta kalliimpi</li>
+  <li><strong>Taksi tai kuljetus</strong> – suora ja helppo. <AffiliateLink link={transport.airportTransfer} /></li>
   <li><strong>Vuokra-auto</strong> – hyvä vaihtoehto, jos aiot liikkua laajemmin</li>
 </ul>
 
@@ -56,6 +61,10 @@ iltaisin. Myös sovelluspohjaiset kyytipalvelut toimivat alueella.
 Auton vuokraaminen voi olla järkevää, jos suunnittelet päiväretkiä tai haluat
 liikkua vapaammin. Keskustassa pysäköinti voi olla haastavaa, mutta parkkihalleja
 on useita. Lue lisää <a href="/espanja/fuengirola/paivaretket">vinkkejämme päiväretkiin</a>.
+</p>
+
+<p>
+<AffiliateLink link={transport.carRental} />
 </p>
 
 <p>
