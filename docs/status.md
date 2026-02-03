@@ -39,6 +39,42 @@ Commit: `fbf98be` (test: add playwright e2e smoke for lomasihteeri flow)
 
 ---
 
+### Phase 3: Monetisointi — ⏸️ PAUSED (3.8 lanseeraus odottaa)
+
+**Valmiit vaiheet (3.1–3.7):**
+- [x] Affiliate-strategia dokumentoitu
+- [x] Affiliate-linkit sivuille (Booking, GetYourGuide, Rentalcars)
+- [x] PDF-sisältö viimeistelty
+- [x] PDF-teaser kaupunkisivulle
+- [x] Myyntimalli lukittu (Stripe, 9,90 €)
+- [x] Stripe-integraatio
+- [x] Myyntisivu + checkout
+- [x] Supabase-tilaustallennus + latausrajat (7 pv / 5 latausta)
+
+**Odottaa:**
+- [ ] Phase 3.8: Lanseeraus (paused – odotetaan lisää liikennettä)
+
+**Commit (3.7):** `0ae2eea` (feat: harden payments with supabase persistence)
+
+**Viitteet:**
+- `docs/monetization.md`
+- `docs/premium_products.md`
+
+---
+
+### Phase 1x: Kaupunkien skaalaus — 🟢 ACTIVE
+
+**Tavoite:** Laajentaa sisältö uusiin kaupunkeihin Fuengirola-mallilla.
+
+**Ensimmäinen kohde:** Málaga
+
+**Status:**
+- [ ] Málaga PDF master
+- [ ] Málaga kaupunkisivut
+- [ ] Sisäinen linkitys
+
+---
+
 ### Tekninen tila
 
 | Kohde | Tila |
@@ -47,12 +83,15 @@ Commit: `fbf98be` (test: add playwright e2e smoke for lomasihteeri flow)
 | Reittirakenne | Lukittu |
 | Main-haara | Ajan tasalla |
 | E2E-testit | Vihreä |
+| Stripe-integraatio | ✅ Valmis |
+| Supabase (orders) | ✅ Valmis |
 
 ---
 
-### Seuraavat vaiheet (PENDING – tauolla)
+### Seuraavat vaiheet
 
-- Phase 3: Monetisointi
-- Phase 4: Premium & App
-
-Projekti jatkuu erillisellä päätöksellä.
+| Vaihe | Status |
+|-------|--------|
+| Phase 1x – Málaga | ACTIVE |
+| Phase 3.8 – Lanseeraus | PAUSED |
+| Phase 4 – Premium & App | PENDING |

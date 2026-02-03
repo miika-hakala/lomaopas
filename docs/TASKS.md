@@ -54,10 +54,48 @@ Päivitetty: 2026-02-03
 
 ---
 
-## Phase 3: Monetisointi – PENDING (tauolla)
+## Phase 3: Monetisointi – PAUSED (3.8 odottaa)
 
-- [ ] Affiliate-linkit
-- [ ] Premium PDF-oppaat
+### 3.1–3.2 Affiliate-linkit – DONE
+- [x] Strategia dokumentoitu
+- [x] Linkit sivuille (Booking, GetYourGuide, Rentalcars)
+- [x] AffiliateLink-komponentti
+
+### 3.3–3.5 PDF-myynti (valmistelu) – DONE
+- [x] PDF-sisältö viimeistelty
+- [x] PDF-teaser kaupunkisivulle
+- [x] Myyntimalli lukittu
+
+### 3.6–3.7 Stripe-integraatio – DONE
+- [x] POST /api/checkout (Checkout Session)
+- [x] POST /api/webhook (Stripe events)
+- [x] GET /api/lataa (token-suojattu lataus)
+- [x] Supabase-tilaustallennus
+- [x] Latausrajat (7 pv / 5 latausta)
+- [x] /checkout ja /kiitos sivut
+
+### 3.8 Lanseeraus – PAUSED
+- [ ] Stripe live-avaimet
+- [ ] Varsinainen PDF-tiedosto
+- [ ] Email-vahvistukset
+
+---
+
+## Phase 1x: Kaupunkien skaalaus – ACTIVE
+
+### P1x.1 Málaga (ensimmäinen kohde)
+- [ ] PDF master: Málaga (`docs/pdf/malaga_pdf.md`)
+- [ ] Kaupunkisivut PDF:n pohjalta
+- [ ] SEO & sisäinen linkitys
+
+### P1x.2 Torremolinos
+- [ ] PDF master: Torremolinos
+- [ ] Kaupunkisivut PDF:n pohjalta
+- [ ] SEO & sisäinen linkitys
+
+### P1x.3 Benalmádena (myöhemmin)
+- [ ] PDF master
+- [ ] Kaupunkisivut
 
 ---
 
@@ -71,6 +109,6 @@ Päivitetty: 2026-02-03
 
 ## Huomautukset
 
-- Phase 2 lukittu ja testattu
-- Jatkokehitys odottaa erillistä päätöstä
+- Phase 3.8 (lanseeraus) siirretty odottamaan lisää liikennettä
+- Phase 1x aloitetaan ennen lanseerausta
 - Testausohje: `docs/testing.md`

@@ -72,3 +72,29 @@ Päätös on lukittu, kun se on dokumentoitu projektin `docs`-kansiossa ja muuto
 - **Vaikutus:** Ei aktiivista kehitystä; turvallinen jatkopiste luotu. Fuengirola v1 on lukittu.
 - **Lähde:** `docs/status.md`
 - **Commit:** `afb3bcd16c8ee01c64696622f372e70d8f6c34c4`
+
+### 2026-02-03 – Phase 2 (LomaSihteeri MVP) valmis
+- **Kuvaus:** LomaSihteeri-toiminnallisuus toteutettu: onboarding, päivän kirje live-datalla (sää, varoitukset, tapahtumat), LocalStorage-profiili. E2E-testit ja Phase Gate -käytäntö dokumentoitu.
+- **Vaikutus:** Käyttäjät voivat saada personoidun päivän katsauksen Fuengirolan lomalle.
+- **Lähde:** `docs/lomasihteeri/`, `docs/testing.md`
+- **Commit:** `fbf98be`
+
+### 2026-02-03 – Phase 3 (Monetisointi) vaiheet 3.1–3.7 valmiit
+- **Kuvaus:** Affiliate-linkit integroitu, PDF-myyntimalli lukittu, Stripe-checkout toteutettu, Supabase-tilaustallennus ja token-suojattu lataus (7 pv / 5 latausta) implementoitu.
+- **Vaikutus:** Tekninen valmius PDF-myyntiin. Lanseeraus (3.8) odottaa lisää liikennettä.
+- **Lähde:** `docs/monetization.md`, `docs/premium_products.md`
+- **Commit:** `0ae2eea`
+
+### 2026-02-03 – Phase 3.8 (lanseeraus) siirretty myöhemmäksi
+- **Kuvaus:** Päätettiin siirtää PDF-oppaan julkinen lanseeraus odottamaan, kunnes sivustolla on enemmän liikennettä ja sisältöä.
+- **Vaikutus:** Stripe-integraatio on valmis mutta ei aktiivisessa käytössä. Fokus siirtyy sisällön laajentamiseen.
+- **Perustelu:** Liikenteen ja sisältöpohjan kasvattaminen ennen monetisointia parantaa konversiota.
+- **Lähde:** `docs/status.md`, `docs/roadmap.md`
+- **Commit:** (tämä commit)
+
+### 2026-02-03 – Phase 1x (Kaupunkien skaalaus) aloitettu
+- **Kuvaus:** Päätettiin aloittaa uusi vaihe, jossa Lomaopas.fi laajennetaan useaan kaupunkiin hyödyntäen Fuengirolan valmista mallia. Ensimmäinen kohde on Málaga, sen jälkeen Torremolinos ja myöhemmin Benalmádena.
+- **Vaikutus:** Sisältöfokus: PDF master per kaupunki, sitten kaupunkisivut. Ei uusia ominaisuuksia.
+- **Perustelu:** Kasvattaa liikennettä ja sisältöpohjaa ennen PDF-lanseerausta.
+- **Lähde:** `docs/roadmap.md`, `docs/TASKS.md`
+- **Commit:** (tämä commit)
