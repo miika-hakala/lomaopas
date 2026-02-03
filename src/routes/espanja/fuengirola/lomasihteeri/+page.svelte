@@ -2,32 +2,12 @@
   import { onMount } from 'svelte';
   import { getLomasihteeriStatus, type LomaProfile } from '$lib/lomasihteeri/time';
   import { copy } from '$lib/lomasihteeri/copy';
-  import { getDailyWeather, type DailyWeather } from '$lib/lomasihteeri/weather';
-  import { getDailyEvents, type DailyEvents } from '$lib/lomasihteeri/events';
-  import { getAlerts, type AlertsResponse } from '$lib/lomasihteeri/alerts';
+  import { getDailyBriefing, type DailyBriefing, FALLBACK_BRIEFING } from '$lib/lomasihteeri/briefing';
 
   let profile: LomaProfile | null = null;
   let status: string = '';
   let isLoading = true;
-  let weather: DailyWeather = {
-    summary: copy.briefing.weather_text,
-    conclusion: '',
-    ok: false,
-    source: 'fallback',
-  };
-  let events: DailyEvents = {
-    ok: false,
-    source: 'fallback',
-    date: '',
-    items: [],
-    fallback: true,
-  };
-  let alerts: AlertsResponse = {
-    ok: true,
-    source: 'fallback',
-    items: [],
-    fallback: false,
-  };
+  let briefing: DailyBriefing = FALLBACK_BRIEFING;
 
   const interestLabels: Record<string, string> = copy.onboarding2.interests;
   const interestTips: Record<string, string> = copy.briefing.interest_tips;
@@ -37,15 +17,8 @@
     if (profileData) {
       profile = JSON.parse(profileData);
       status = getLomasihteeriStatus(profile);
-      // Hae live-data rinnakkain
-      const [weatherData, eventsData, alertsData] = await Promise.all([
-        getDailyWeather(),
-        getDailyEvents(),
-        getAlerts(),
-      ]);
-      weather = weatherData;
-      events = eventsData;
-      alerts = alertsData;
+      // Hae kaikki data yhdellä kutsulla (cached)
+      briefing = await getDailyBriefing();
     } else {
       profile = null;
     }
@@ -119,16 +92,16 @@
 
       <article class="briefing-section">
         <h3>{copy.briefing.weather_title}</h3>
-        <p>{weather.summary}{#if weather.conclusion} {weather.conclusion}{/if}</p>
+        <p>{briefing.weather.summary}{#if briefing.weather.conclusion} {briefing.weather.conclusion}{/if}</p>
       </article>
 
-      <article class="briefing-section" class:alerts-ok={alerts.items.length === 0} class:alerts-warning={alerts.items.length > 0}>
+      <article class="briefing-section" class:alerts-ok={briefing.alerts.items.length === 0} class:alerts-warning={briefing.alerts.items.length > 0}>
         <h3>{copy.briefing.alerts_title}</h3>
-        {#if alerts.items.length === 0}
+        {#if briefing.alerts.items.length === 0}
           <p><span class="ok-icon" aria-hidden="true">{copy.briefing.alerts_ok_icon}</span> {copy.briefing.alerts_ok}</p>
         {:else}
           <ul class="alerts-list">
-            {#each alerts.items as alert}
+            {#each briefing.alerts.items as alert}
               <li class="alert-item alert-{alert.level}">
                 <strong>{alert.title}</strong>
                 {#if alert.detail}<br><span class="alert-detail">{alert.detail}</span>{/if}
@@ -140,9 +113,9 @@
 
       <article class="briefing-section">
         <h3>{copy.briefing.events_title}</h3>
-        {#if events.items.length > 0}
+        {#if briefing.events.items.length > 0}
           <ul>
-            {#each events.items as event}
+            {#each briefing.events.items as event}
               <li>
                 {event.title}{#if event.when} <span class="event-when">({event.when})</span>{/if}
               </li>
