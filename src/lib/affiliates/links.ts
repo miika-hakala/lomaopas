@@ -45,6 +45,11 @@ export const accommodation = {
     label: 'Hae majoitusta Benalmádenasta',
     partner: 'Booking.com',
   } satisfies AffiliateLink,
+  marbella: {
+    url: `https://www.booking.com/city/es/marbella.html?aid=${AFFILIATE_IDS.booking}`,
+    label: 'Hae majoitusta Marbellasta',
+    partner: 'Booking.com',
+  } satisfies AffiliateLink,
 };
 
 /**
@@ -90,6 +95,11 @@ export const activities = {
   fuengirolaDayTrips: {
     url: `https://www.getyourguide.com/fuengirola-l967/?partner_id=${AFFILIATE_IDS.getyourguide}`,
     label: 'Katso päiväretket Fuengirolasta',
+    partner: 'GetYourGuide',
+  } satisfies AffiliateLink,
+  marbellaDayTrips: {
+    url: `https://www.getyourguide.com/marbella-l169/?partner_id=${AFFILIATE_IDS.getyourguide}`,
+    label: 'Katso päiväretket Marbellasta',
     partner: 'GetYourGuide',
   } satisfies AffiliateLink,
   granada: {

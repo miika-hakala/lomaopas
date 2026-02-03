@@ -64,6 +64,17 @@ ja helposta saavutettavuudesta Málagan lentokentän kautta.
     <p><strong>Sopii:</strong> Perheille, pariskunnille, monipuolisuutta arvostaville</p>
     <p><a href="/espanja/benalmadena">Tutustu Benalmádenaan →</a></p>
   </div>
+
+
+  <div class="city-card">
+    <h3>Marbella</h3>
+    <p>
+      Yleiskuvaus kohteesta Marbella. Lisää tähän lyhyt ja ytimekäs kuvaus, joka houkuttelee lukijoita.
+    </p>
+    <p><strong>Sopii:</strong> Esimerkiksi: Perheille, pariskunnille, aktiivilomailijoille</p>
+    <p><a href="/espanja/marbella">Tutustu Marbellayn →</a></p>
+  </div>
+  <!-- NEW_CITY_CARD_INSERTION_POINT -->
 </div>
 
 <h2>Käytännön perusteet</h2>
