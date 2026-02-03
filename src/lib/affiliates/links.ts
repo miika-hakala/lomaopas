@@ -35,6 +35,11 @@ export const accommodation = {
     label: 'Hae majoitusta Málagasta',
     partner: 'Booking.com',
   } satisfies AffiliateLink,
+  torremolinos: {
+    url: `https://www.booking.com/city/es/torremolinos.html?aid=${AFFILIATE_IDS.booking}`,
+    label: 'Hae majoitusta Torremolinoksesta',
+    partner: 'Booking.com',
+  } satisfies AffiliateLink,
 };
 
 /**
@@ -92,6 +97,16 @@ export const activities = {
     label: 'Katso retket Nerjaan',
     partner: 'GetYourGuide',
   } satisfies AffiliateLink,
+  torremolinos: {
+    url: `https://www.getyourguide.com/torremolinos-l968/?partner_id=${AFFILIATE_IDS.getyourguide}`,
+    label: 'Katso retket Torremolinoksesta',
+    partner: 'GetYourGuide',
+  } satisfies AffiliateLink,
+  benalmadena: {
+    url: `https://www.getyourguide.com/benalmadena-l969/?partner_id=${AFFILIATE_IDS.getyourguide}`,
+    label: 'Katso retket Benalmádenaan',
+    partner: 'GetYourGuide',
+  } satisfies AffiliateLink,
 };
 
 /**
@@ -111,6 +126,11 @@ export const tickets = {
   alcazaba: {
     url: `https://www.getyourguide.com/malaga-l162/alcazaba-malaga-tickets-t12346/?partner_id=${AFFILIATE_IDS.getyourguide}`,
     label: 'Osta liput Alcazabaan',
+    partner: 'GetYourGuide',
+  } satisfies AffiliateLink,
+  aqualand: {
+    url: `https://www.getyourguide.com/torremolinos-l968/aqualand-torremolinos-tickets-t12347/?partner_id=${AFFILIATE_IDS.getyourguide}`,
+    label: 'Osta liput Aqualandiin',
     partner: 'GetYourGuide',
   } satisfies AffiliateLink,
 };

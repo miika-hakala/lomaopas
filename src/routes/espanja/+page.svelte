@@ -2,7 +2,7 @@
   <title>Espanja – Lomakohteet suomalaisille | Lomaopas.fi</title>
   <meta
     name="description"
-    content="Espanjan lomakohteet suomalaisille. Costa del Solin aurinkorannikko: Málaga, Fuengirola ja muut kohteet. Käytännön vinkit ja oppaat."
+    content="Espanjan lomakohteet suomalaisille. Costa del Solin aurinkorannikko: Málaga, Fuengirola, Torremolinos ja muut kohteet. Käytännön vinkit ja oppaat."
   />
 </svelte:head>
 
@@ -44,6 +44,16 @@ ja helposta saavutettavuudesta Málagan lentokentän kautta.
     <p><strong>Sopii:</strong> Perheille, ensikertalaisille, rantalomaa etsiville</p>
     <p><a href="/espanja/fuengirola">Tutustu Fuengirolaan →</a></p>
   </div>
+
+  <div class="city-card">
+    <h3>Torremolinos</h3>
+    <p>
+      Costa del Solin alkuperäinen turistikohde. Rantalomaa, vilkasta yöelämää ja
+      kansainvälinen ilmapiiri. Lähinnä lentokenttää – vain 8 min junalla.
+    </p>
+    <p><strong>Sopii:</strong> Yöelämää etsiville, ystäväporukoille, helppoutta arvostaville</p>
+    <p><a href="/espanja/torremolinos">Tutustu Torremolinokseen →</a></p>
+  </div>
 </div>
 
 <h2>Käytännön perusteet</h2>
@@ -59,7 +69,7 @@ ja helposta saavutettavuudesta Málagan lentokentän kautta.
 <h2>Lisää kohteita tulossa</h2>
 
 <p>
-Seuraavaksi: Torremolinos, Benalmádena ja muut Costa del Solin kohteet.
+Seuraavaksi: Benalmádena, Marbella ja muut Costa del Solin kohteet.
 </p>
 
 <style>
@@ -72,6 +82,12 @@ Seuraavaksi: Torremolinos, Benalmádena ja muut Costa del Solin kohteet.
   @media (min-width: 640px) {
     .city-cards {
       grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 960px) {
+    .city-cards {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 
