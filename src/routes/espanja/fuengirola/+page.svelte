@@ -21,6 +21,12 @@ Keskusta on kompakti ja suurin osa palveluista on kävelyetäisyydellä. Lisäks
 junayhteys Málagan lentokentältä tekee saapumisesta vaivatonta.
 </p>
 
+<div class="lomasihteeri-cta">
+  <h2>LomaSihteeri – huolehtii lomastasi</h2>
+  <p>Haluatko lomaasi varten räätälöityjä vinkkejä ja päivittäisen tilannekatsauksen? Ilmainen LomaSihteeri lähettää sinulle joka aamu olennaisimmat ideat ja tiedot suoraan sähköpostiisi.</p>
+  <a href="/espanja/fuengirola/lomasihteeri/onboarding" class="button">Ota LomaSihteeri käyttöön</a>
+</div>
+
 <h2>Mitä Fuengirolassa voi tehdä?</h2>
 
 <ul>
