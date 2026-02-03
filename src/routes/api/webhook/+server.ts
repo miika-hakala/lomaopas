@@ -2,13 +2,13 @@
  * POST /api/webhook
  *
  * Stripe webhook endpoint
- * Handles checkout.session.completed events
+ * This is the ONLY source of truth for payment status
  */
 
 import { error, json } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
 import { stripe } from '$lib/stripe/config';
-import { markOrderPaid } from '$lib/stripe/orders';
+import { markOrderPaid, createOrder, getOrderBySession } from '$lib/db/orders';
 import { STRIPE_WEBHOOK_SECRET } from '$env/static/private';
 
 export const POST: RequestHandler = async ({ request }) => {
@@ -34,14 +34,33 @@ export const POST: RequestHandler = async ({ request }) => {
       const session = event.data.object;
       const email = session.customer_email || session.customer_details?.email || '';
 
-      const order = markOrderPaid(session.id, email);
+      // Check if order exists (might have been created during checkout)
+      let order = await getOrderBySession(session.id);
 
-      if (order) {
-        console.log(`Order ${order.id} marked as paid. Email: ${email}`);
+      // If no order exists, create it (handles edge cases)
+      if (!order) {
+        console.log(`Creating order for session ${session.id} via webhook`);
+        order = await createOrder(session.id, 'fuengirola_pdf');
+      }
+
+      // Mark as paid - this is the source of truth
+      const paidOrder = await markOrderPaid(session.id, email);
+
+      if (paidOrder) {
+        console.log(
+          `Order ${paidOrder.id} marked as paid. Email: ${email}, Token: ${paidOrder.download_token}`
+        );
         // TODO: Send confirmation email with download link
       } else {
-        console.warn(`Order not found for session ${session.id}`);
+        console.error(`Failed to mark order as paid for session ${session.id}`);
       }
+      break;
+    }
+
+    case 'checkout.session.expired': {
+      const session = event.data.object;
+      console.log(`Checkout session expired: ${session.id}`);
+      // Order stays as 'pending' - can be cleaned up later
       break;
     }
 

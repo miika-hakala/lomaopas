@@ -6,8 +6,9 @@
 
 import { json, error } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
-import { stripe, PRODUCTS, type ProductId } from '$lib/stripe/config';
-import { createOrder } from '$lib/stripe/orders';
+import { stripe } from '$lib/stripe/config';
+import { PRODUCTS, type ProductId } from '$lib/stripe/products';
+import { createOrder } from '$lib/db/orders';
 
 export const POST: RequestHandler = async ({ request, url }) => {
   const body = await request.json().catch(() => ({}));
@@ -42,8 +43,13 @@ export const POST: RequestHandler = async ({ request, url }) => {
       customer_email: body.email || undefined,
     });
 
-    // Store pending order
-    createOrder(session.id, productId);
+    // Store pending order in database
+    const order = await createOrder(session.id, productId);
+
+    if (!order) {
+      console.error('Failed to create order for session:', session.id);
+      // Continue anyway - webhook will handle order creation if needed
+    }
 
     return json({
       sessionId: session.id,
