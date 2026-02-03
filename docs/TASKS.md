@@ -4,6 +4,16 @@ Päivitetty: 2026-02-03
 
 ---
 
+## DESTINATION-BUILD-TEMPLATE
+
+- [ ] PDF stub (`npm run new-city`)
+- [ ] PDF master (sisältö täytetty)
+- [ ] City pages (hub + alasivut)
+- [ ] QA/SEO (`docs/QA_CITY_CHECKLIST.md`)
+- [ ] DONE
+
+---
+
 ## Phase 1: Fuengirola MVP – DONE
 
 - [x] Hub-sivu
@@ -96,6 +106,43 @@ Päivitetty: 2026-02-03
 ### P1x.3 Benalmádena (myöhemmin)
 - [ ] PDF master
 - [ ] Kaupunkisivut
+
+---
+
+## Phase 2x: Global Destinations (2026) – PLANNED
+
+### P2x.P0 – Ehdoton ydin
+
+#### Gran Canaria
+- [ ] PDF stub (`npm run new-city`)
+- [ ] PDF master (sisältö täytetty)
+- [ ] City pages (hub + alasivut)
+- [ ] QA/SEO (`docs/QA_CITY_CHECKLIST.md`)
+- [ ] DONE
+
+#### Teneriffa
+- [ ] PDF stub (`npm run new-city`)
+- [ ] PDF master (sisältö täytetty)
+- [ ] City pages (hub + alasivut)
+- [ ] QA/SEO (`docs/QA_CITY_CHECKLIST.md`)
+- [ ] DONE
+
+#### Thaimaa (Phuket / Krabi / Koh Samui)
+- [ ] PDF stub (`npm run new-city`)
+- [ ] PDF master (sisältö täytetty)
+- [ ] City pages (hub + alasivut)
+- [ ] QA/SEO (`docs/QA_CITY_CHECKLIST.md`)
+- [ ] DONE
+
+#### Mallorca
+- [ ] PDF stub (`npm run new-city`)
+- [ ] PDF master (sisältö täytetty)
+- [ ] City pages (hub + alasivut)
+- [ ] QA/SEO (`docs/QA_CITY_CHECKLIST.md`)
+- [ ] DONE
+
+#### Costa del Sol — DONE/PARTIAL
+- Fuengirola, Málaga, Torremolinos, Benalmádena, Marbella
 
 ---
 

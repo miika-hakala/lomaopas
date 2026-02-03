@@ -98,3 +98,9 @@ Päätös on lukittu, kun se on dokumentoitu projektin `docs`-kansiossa ja muuto
 - **Perustelu:** Kasvattaa liikennettä ja sisältöpohjaa ennen PDF-lanseerausta.
 - **Lähde:** `docs/roadmap.md`, `docs/TASKS.md`
 - **Commit:** (tämä commit)
+
+### 2026-02-03 – TOP 20 (2026) kohdelista lukittu
+- **Kuvaus:** TOP 20 -kohdelista vuodelle 2026 lukittiin ja siitä tehtiin virallinen ohjausdokumentti. Lista ohjaa roadmap-priorisointia, automaation ajamisjärjestystä sekä PDF-masterien ja kohdesivujen tuotantoa.
+- **Vaikutus:** Kehitys ja sisältötyö priorisoidaan P0/P1/P2 -jaon mukaan, eikä listaa muuteta ilman strategista päätöstä.
+- **Lähde:** `docs/market/top-destinations-2026.md`
+- **Commit:** (tämä commit)

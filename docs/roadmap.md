@@ -97,6 +97,44 @@
 
 ---
 
+## Phase 2x – Global Destinations (2026)
+
+**Tavoite:** Laajentaa Lomaopas.fi:n sisältö Top 20 -kohdelistan mukaiseksi klusteriksi (2026).
+
+### P0 – Ehdoton ydin (suurin volyymi)
+1. **Gran Canaria** — PDF stub → PDF master → City pages → QA/SEO → DONE
+2. **Teneriffa** — PDF stub → PDF master → City pages → QA/SEO → DONE
+3. **Thaimaa** — PDF stub → PDF master → City pages → QA/SEO → DONE
+4. **Mallorca** — PDF stub → PDF master → City pages → QA/SEO → DONE
+5. **Costa del Sol** — PDF stub → PDF master → City pages → QA/SEO → DONE/PARTIAL (Fuengirola, Málaga, Torremolinos, Benalmádena, Marbella valmiit)
+
+### P1 – Suuret aurinko- ja perhelomakohteet
+6. **Kreeta** — PDF stub → PDF master → City pages → QA/SEO → DONE
+7. **Rodos** — PDF stub → PDF master → City pages → QA/SEO → DONE
+8. **Antalya** — PDF stub → PDF master → City pages → QA/SEO → DONE
+9. **Alanya** — PDF stub → PDF master → City pages → QA/SEO → DONE
+10. **Hurghada** — PDF stub → PDF master → City pages → QA/SEO → DONE
+
+### P1 – Kaupunkilomat ja yhdistelmäkohteet
+11. **Barcelona** — PDF stub → PDF master → City pages → QA/SEO → DONE
+12. **Rooma** — PDF stub → PDF master → City pages → QA/SEO → DONE
+13. **Pariisi** — PDF stub → PDF master → City pages → QA/SEO → DONE
+14. **Lontoo** — PDF stub → PDF master → City pages → QA/SEO → DONE
+15. **New York** — PDF stub → PDF master → City pages → QA/SEO → DONE
+
+### P2 – Tärkeät mutta pienempi volyymi
+16. **Kypros** — PDF stub → PDF master → City pages → QA/SEO → DONE
+17. **Zakynthos** — PDF stub → PDF master → City pages → QA/SEO → DONE
+18. **Lissabon** — PDF stub → PDF master → City pages → QA/SEO → DONE
+19. **Cancún** — PDF stub → PDF master → City pages → QA/SEO → DONE
+20. **Fuerteventura** — PDF stub → PDF master → City pages → QA/SEO → DONE
+
+**Toimitusketju:** PDF stub → PDF master → City pages → QA/SEO → DONE
+
+Lähde: `docs/market/top-destinations-2026.md`
+
+---
+
 ## Phase 4 – Premium & App (PENDING – tauolla)
 - Laajennus premium-sisältöön (offline-kartat, syvemmät oppaat).
 - Mahdollinen natiivisovellus.
