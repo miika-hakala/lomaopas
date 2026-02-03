@@ -129,6 +129,6 @@ Vaihtoehto: Lemon Squeezy (all-in-one, hoitaa myös ALV:n)
 | 3.3 | PDF-sisältö viimeistelty | DONE |
 | 3.4 | PDF-teaser kaupunkisivulle | DONE |
 | 3.5 | Myyntimalli lukittu | DONE |
-| 3.6 | Stripe-integraatio | TODO |
-| 3.7 | Myyntisivu + checkout | TODO |
+| 3.6 | Stripe-integraatio | DONE |
+| 3.7 | Myyntisivu + checkout | DONE |
 | 3.8 | Lanseeraus | TODO |
