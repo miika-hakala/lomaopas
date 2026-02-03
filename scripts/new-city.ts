@@ -5,6 +5,10 @@ function toTitleCase(str: string): string {
     return str.replace(/-/g, ' ').replace(/\b\w/g, (char) => char.toUpperCase());
 }
 
+function printUsage() {
+    console.log('Usage: npm run new-city -- <city_slug> [city_name (optional)] [--region <region>]');
+}
+
 function ensureDirectory(dirPath: string) {
     if (!fs.existsSync(dirPath)) {
         fs.mkdirSync(dirPath, { recursive: true });
@@ -65,15 +69,15 @@ function ensureAffiliateEntry(
     console.log(`Added affiliate stub: ${objectName}.${entryKey}`);
 }
 
-function ensureEspanjaCard(citySlug: string, cityName: string) {
-    const filePath = path.join('src/routes/espanja', '+page.svelte');
+function ensureRegionCard(region: string, citySlug: string, cityName: string) {
+    const filePath = path.join('src/routes', region, '+page.svelte');
     if (!fs.existsSync(filePath)) {
-        console.warn(`Warning: Espanja hub not found: ${filePath}. Skipping.`);
+        console.warn(`Warning: Region hub not found: ${filePath}. Skipping.`);
         return;
     }
 
     const content = fs.readFileSync(filePath, 'utf8');
-    const cityLink = `/espanja/${citySlug}`;
+    const cityLink = `/${region}/${citySlug}`;
     if (content.includes(`href=\"${cityLink}\"`) || content.includes(`href='${cityLink}'`)) {
         console.log(`City card exists, skipped: ${citySlug}`);
         return;
@@ -259,22 +263,37 @@ async function main() {
     const args = process.argv.slice(2);
     let citySlug: string | undefined;
     let cityName: string | undefined;
+    let region = 'espanja';
 
     // Parse arguments for city_slug and city_name
-    let argIndex = 0;
-    if (args[0] === '--') { // Handle `npm run new-city -- <city_slug>`
-        argIndex = 1;
+    const normalizedArgs = args[0] === '--' ? args.slice(1) : args;
+
+    if (normalizedArgs.includes('--help') || normalizedArgs.includes('-h')) {
+        printUsage();
+        process.exit(0);
     }
 
-    if (args[argIndex]) {
-        citySlug = args[argIndex];
-        if (args[argIndex + 1] && !args[argIndex + 1].startsWith('--')) {
-            cityName = args[argIndex + 1];
+    for (let i = 0; i < normalizedArgs.length; i += 1) {
+        const current = normalizedArgs[i];
+        if (current === '--region') {
+            if (normalizedArgs[i + 1]) {
+                region = normalizedArgs[i + 1];
+                i += 1;
+            }
+            continue;
+        }
+
+        if (!current.startsWith('--')) {
+            if (!citySlug) {
+                citySlug = current;
+            } else if (!cityName) {
+                cityName = current;
+            }
         }
     }
 
     if (!citySlug) {
-        console.error('Usage: npm run new-city -- <city_slug> [city_name (optional)]');
+        printUsage();
         process.exit(1);
     }
 
@@ -282,10 +301,10 @@ async function main() {
         cityName = toTitleCase(citySlug);
     }
 
-    console.log(`Scaffolding new city: ${cityName} (${citySlug})\n`);
+    console.log(`Scaffolding new city: ${cityName} (${citySlug}) [region: ${region}]\n`);
 
     const baseSourcePath = 'src/routes/espanja/fuengirola';
-    const baseDestPath = path.join('src/routes/espanja', citySlug);
+    const baseDestPath = path.join('src/routes', region, citySlug);
 
     // Ensure base destination directory exists
     ensureDirectory(baseDestPath);
@@ -326,11 +345,15 @@ async function main() {
         // Replace placeholders
         content = content.replace(/Fuengirola/g, cityName);
         content = content.replace(/fuengirola/g, citySlug);
+        content = content.replace(/\/espanja\//g, `/${region}/`);
 
         // Special handling for lomasihteeri pages' hardcoded citySlug
         if (page.src.startsWith('lomasihteeri/')) {
             content = content.replace(/const citySlug = 'fuengirola';/g, `const citySlug = '${citySlug}';`);
-            content = content.replace(new RegExp('/espanja/fuengirola/lomasihteeri', 'g'), '/espanja/' + citySlug + '/lomasihteeri');
+            content = content.replace(
+                new RegExp('/espanja/fuengirola/lomasihteeri', 'g'),
+                `/${region}/${citySlug}/lomasihteeri`,
+            );
         }
 
         if (page.src.startsWith('paivaretket/')) {
@@ -379,7 +402,7 @@ async function main() {
         activitiesEntry,
     );
 
-    ensureEspanjaCard(citySlug, cityName);
+    ensureRegionCard(region, citySlug, cityName);
 
     console.log(`
 --- Next Steps ---
