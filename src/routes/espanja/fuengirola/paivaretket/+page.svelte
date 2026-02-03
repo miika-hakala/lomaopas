@@ -1,8 +1,3 @@
-<script lang="ts">
-  import AffiliateLink from '$lib/affiliates/AffiliateLink.svelte';
-  import { activities, transport } from '$lib/affiliates/links';
-</script>
-
 <svelte:head>
   <title>Fuengirola – Päiväretket | Matkaopas Espanjaan</title>
   <meta
@@ -22,13 +17,11 @@
 <h3>Málaga</h3>
 <p>
   Alueen pääkaupunki, joka on täynnä kulttuuria, historiaa ja ostosmahdollisuuksia. Vieraile Picasson museossa, Alcazaban linnoituksessa tai nauti vilkkaasta kaupunkielämästä.
-  <AffiliateLink link={activities.malaga} />
 </p>
 
 <h3>Mijas Pueblo</h3>
 <p>
   Vain lyhyen matkan päässä Fuengirolasta sijaitseva perinteinen andalusialainen valkoinen kylä. Ihaile upeita maisemia, kiertele kapeilla kujilla ja nauti rauhallisesta tunnelmasta.
-  <AffiliateLink link={activities.mijas} />
 </p>
 
 <h3>Marbella & Puerto Banús</h3>
@@ -39,7 +32,6 @@
 <h3>Ronda</h3>
 <p>
   Vaikuttavalla paikalla rotkon reunalla sijaitseva historiallinen kaupunki. Rondan uusi silta (Puente Nuevo) on yksi Andalusian kuvatuimmista nähtävyyksistä.
-  <AffiliateLink link={activities.ronda} />
 </p>
 
 <h3>Nerja & Frigiliana</h3>
@@ -52,7 +44,7 @@
 <ul>
   <li><strong>Juna:</strong> Rannikkojuna (C-1) on kätevin ja nopein tapa matkustaa Málagan suuntaan.</li>
   <li><strong>Bussi:</strong> Linja-autolla pääsee kätevästi moniin kohteisiin, kuten Mijasiin, Marbellaan ja Rondaan. Fuengirolan linja-autoasema sijaitsee keskeisellä paikalla.</li>
-  <li><strong>Auto:</strong> Vuokra-autolla liikkuminen antaa eniten vapautta. <AffiliateLink link={transport.carRental} /></li>
+  <li><strong>Auto:</strong> Vuokra-autolla liikkuminen antaa eniten vapautta, mutta varaudu tietulleihin ja pysäköintihaasteisiin suosituimmissa kohteissa.</li>
 </ul>
 
 <h2>Vinkkejä päiväretkille</h2>
