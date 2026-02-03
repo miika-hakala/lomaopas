@@ -86,6 +86,26 @@ Projektissa käytetään kolmea agenttia:
 
 ---
 
+## Phase Gate – hyväksyntäehdot
+
+Työnjohtaja kuittaa vaiheen **PASS** vain, jos:
+
+1. **Testit läpäisty** (ks. `docs/testing.md`)
+   - `npm run check` – 0 errors
+   - `npm run build` – success
+   - Smoke-test suoritettu
+
+2. **Loppuraportti sisältää testitulokset**
+   - Agentti raportoi testien statuksen
+   - Ilman testituloksia ei PASS-kuittausta
+
+3. **Dokumentaatio ajan tasalla**
+   - Muutokset vastaavat dokumentaatiota
+
+Jos jokin ehto ei täyty → **FAIL** ja palautus korjattavaksi.
+
+---
+
 ## Dokumentaatio on totuus
 
 Jos sisältö tai koodi on ristiriidassa dokumentaation kanssa,

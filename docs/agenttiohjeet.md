@@ -171,6 +171,20 @@ git status
 commit hash (jos committeja tehty)
 ```
 
+### Testit loppuraportissa (pakollinen koodimuutoksissa)
+
+Jos tehtävä sisältää koodimuutoksia, raportin on sisällettävä:
+
+```
+TESTIT:
+- npm run check: PASS/FAIL
+- npm run build: PASS/FAIL
+- smoke-test: PASS/FAIL (kuvaus)
+```
+
+Ilman testituloksia työnjohtaja ei voi kuitata vaihetta PASS.
+Katso tarkemmat ohjeet: `docs/testing.md`
+
 ### Miksi raportti on tärkeä
 
 - Työnjohtaja näkee, mitä tapahtui
