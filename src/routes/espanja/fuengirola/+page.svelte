@@ -73,6 +73,36 @@ junayhteys Málagan lentokentältä tekee saapumisesta vaivatonta.
     font-size: 0.85rem;
     color: #6c757d;
   }
+
+  .pdf-teaser {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-left: 4px solid #6c757d;
+    border-radius: 4px;
+    padding: 1rem 1.25rem;
+    margin: 2rem 0;
+    max-width: 600px;
+  }
+  .pdf-teaser h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+    color: #495057;
+  }
+  .pdf-teaser p {
+    margin: 0 0 0.75rem 0;
+    color: #6c757d;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  .pdf-teaser ul {
+    margin: 0;
+    padding-left: 1.25rem;
+    color: #6c757d;
+    font-size: 0.9rem;
+  }
+  .pdf-teaser li {
+    margin-bottom: 0.25rem;
+  }
 </style>
 
 <h2>Mitä Fuengirolassa voi tehdä?</h2>
@@ -96,6 +126,16 @@ Fuengirola on erinomainen kohde monenlaisille matkailijoille:
   <li>Talvehtijoille</li>
   <li>Helppoa lomaa arvostaville ensikertalaisille</li>
 </ul>
+
+<aside class="pdf-teaser" aria-labelledby="pdf-heading">
+  <h3 id="pdf-heading">Tulossa: Fuengirola offline-opas</h3>
+  <p>Valmistelemme ladattavaa PDF-opasta, joka toimii ilman nettiyhteyttä.</p>
+  <ul>
+    <li>Toimii offline – ei vaadi dataa kohteessa</li>
+    <li>Valmiit checklistat ennen matkaa ja perillä</li>
+    <li>Suorat hakusanat Google Mapsiin</li>
+  </ul>
+</aside>
 
 <h2>Lisätietoa</h2>
 
