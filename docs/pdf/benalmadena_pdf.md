@@ -487,7 +487,7 @@ Benalmádena on Costa del Solin monipuolisin perhelomakohde. Kaupunki yhdistää
 
 ---
 
-## 9. LOMAILIJAN ARKI
+## 9. KÄYTÄNNÖN ASIAT
 
 ### Ruokakaupat
 

@@ -284,7 +284,7 @@ Torremolinos on Costa del Solin alkuperäinen turistikohde – kaupunki, josta E
 ### Vinkit
 
 - **Menú del día:** Päivän lounas, sis. alkuruoka + pääruoka + jälkiruoka + juoma
-- **La Carihuela:** Paras alue kalalle ja merenelävienä – mene sinne!
+- **La Carihuela:** Paras alue kalalle ja mereneläville – mene sinne!
 - **Vältä:** Calle San Miguelin turistiravintoloita kuvamenuilla
 - **Tippi:** Ei pakollinen, pyöristys riittää
 
@@ -366,7 +366,7 @@ Torremolinos on Costa del Solin alkuperäinen turistikohde – kaupunki, josta E
 
 - Jatkuu suoraan Torremolinoksesta rantapromenadia pitkin
 - Puerto Marina (satama), Selwo Marina (delfinaario)
-- Teleferico-köysirata vuorelle
+- Teleférico-köysirata vuorelle
 - **Hakusana:** `Puerto Marina Benalmádena`
 
 ### Málaga (~20 min junalla)
@@ -399,7 +399,7 @@ Torremolinos on Costa del Solin alkuperäinen turistikohde – kaupunki, josta E
 ### Ronda (päiväretki autolla)
 
 - Kuuluisa rotko ja Puente Nuevo -silta
-- ~1,5 h autolla, suosittele vuokra-autoa
+- ~1,5 h autolla, vuokra-auto suositellaan
 - **Hakusana:** `Ronda Puente Nuevo`
 
 ### Granada & Alhambra

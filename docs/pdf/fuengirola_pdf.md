@@ -335,7 +335,7 @@ Hitaampi ja vaatii usein vaihtoja. Käytä vain jos juna ei toimi.
 ### Ronda (päiväretki autolla)
 
 - Kuuluisa rotko ja Puente Nuevo -silta
-- ~1,5 h autolla, suosittele vuokra-autoa
+- ~1,5 h autolla, vuokra-auto suositellaan
 - **Hakusana:** `Ronda Puente Nuevo`
 
 ---
