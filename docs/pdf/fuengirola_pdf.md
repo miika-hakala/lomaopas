@@ -22,11 +22,11 @@
 - Poliisi: **091**
 - Terveyskeskus (Centro de Salud): Hae `Centro de Salud Fuengirola`
 
-### Pikahinnat (2024–2025)
+### Tyypilliset hinnat
 
-| Asia | Hinta |
-|------|-------|
-| Juna lentokentältä | ~3,60 € |
+| Asia | Hintahaarukka |
+|------|---------------|
+| Juna lentokentältä | ~3–4 € |
 | Bussilippu | ~1,50 € |
 | Aurinkotuoli + varjo | 6–10 € / päivä |
 | Kahvi | 1,50–2,50 € |
@@ -34,6 +34,8 @@
 | Lounasannos | 10–15 € |
 | Illallinen | 15–30 € |
 | Taksi lentokentältä | 35–50 € |
+
+*Hinnat vaihtelevat kauden ja sijainnin mukaan.*
 
 ---
 
