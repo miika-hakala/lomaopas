@@ -55,6 +55,11 @@ export const accommodation = {
     label: 'Hae majoitusta Gran Canaria',
     partner: 'Booking.com',
   } satisfies AffiliateLink,
+  'teneriffa': {
+    url: `https://www.booking.com/city/es/teneriffa.html?aid=${AFFILIATE_IDS.booking}`,
+    label: 'Hae majoitusta Teneriffa',
+    partner: 'Booking.com',
+  } satisfies AffiliateLink,
 };
 
 /**
@@ -140,6 +145,16 @@ export const activities = {
   'gran-canariaDayTrips': {
     url: `https://www.getyourguide.com/gran-canaria-lTODO/?partner_id=${AFFILIATE_IDS.getyourguide}`,
     label: 'Katso päiväretket Gran Canaria',
+    partner: 'GetYourGuide',
+  } satisfies AffiliateLink,
+  'teneriffa': {
+    url: `https://www.getyourguide.com/teneriffa-lTODO/?partner_id=${AFFILIATE_IDS.getyourguide}`,
+    label: 'Katso aktiviteetit Teneriffa',
+    partner: 'GetYourGuide',
+  } satisfies AffiliateLink,
+  'teneriffaDayTrips': {
+    url: `https://www.getyourguide.com/teneriffa-lTODO/?partner_id=${AFFILIATE_IDS.getyourguide}`,
+    label: 'Katso päiväretket Teneriffa',
     partner: 'GetYourGuide',
   } satisfies AffiliateLink,
 };
