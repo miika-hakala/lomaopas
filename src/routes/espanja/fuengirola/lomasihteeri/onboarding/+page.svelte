@@ -73,6 +73,7 @@
             id="start-date"
             bind:value={startDate}
             aria-describedby={errorMessage ? 'date-error' : undefined}
+            data-testid="start-date"
           />
         </div>
         <div class="form-group">
@@ -82,13 +83,14 @@
             id="end-date"
             bind:value={endDate}
             aria-describedby={errorMessage ? 'date-error' : undefined}
+            data-testid="end-date"
           />
         </div>
         {#if errorMessage}
           <p class="error" id="date-error" role="alert">{errorMessage}</p>
         {/if}
         <div class="button-row">
-          <button type="submit" class="btn-primary" disabled={!canProceed}>{copy.onboarding1.btn_next}</button>
+          <button type="submit" class="btn-primary" disabled={!canProceed} data-testid="btn-next">{copy.onboarding1.btn_next}</button>
         </div>
       </form>
       <p class="back-link"><a href="/espanja/fuengirola">← {copy.onboarding1.btn_back}</a></p>
@@ -116,7 +118,7 @@
         <p class="saved-note">{copy.onboarding2.saved_note}</p>
         <p class="edit-note">{copy.onboarding2.edit_later_note}</p>
         <div class="button-row">
-          <button type="submit" class="btn-primary">{copy.onboarding2.btn_done}</button>
+          <button type="submit" class="btn-primary" data-testid="btn-done">{copy.onboarding2.btn_done}</button>
         </div>
       </form>
       <p class="back-link"><button type="button" class="link-btn" on:click={prevStep}>← {copy.onboarding1.btn_back}</button></p>

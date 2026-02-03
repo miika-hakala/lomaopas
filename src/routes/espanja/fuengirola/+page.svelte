@@ -28,7 +28,7 @@ junayhteys Málagan lentokentältä tekee saapumisesta vaivatonta.
 <section class="lomasihteeri-cta" aria-labelledby="lomasihteeri-heading">
   <h2 id="lomasihteeri-heading">{copy.cta.title}</h2>
   <p>{copy.cta.body}</p>
-  <a href="/espanja/fuengirola/lomasihteeri/onboarding" class="cta-button">{copy.cta.button}</a>
+  <a href="/espanja/fuengirola/lomasihteeri/onboarding" class="cta-button" data-testid="lomasihteeri-cta">{copy.cta.button}</a>
   <p class="cta-note">{copy.cta.note}</p>
 </section>
 

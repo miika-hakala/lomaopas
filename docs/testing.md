@@ -44,6 +44,27 @@ npm run dev
 
 ---
 
+## 2b. E2E-testi (Playwright)
+
+Automatisoitu smoke-testi korvaa manuaalisen LomaSihteeri-testin kun vihreä:
+
+```bash
+npm run test:e2e        # Headless (CI-yhteensopiva)
+npm run test:e2e:ui     # UI-tila (debuggaus)
+```
+
+### Mitä testi kattaa
+
+- Kaupunkisivu → CTA-klikkaus
+- Onboarding vaiheet 1 ja 2
+- Dashboard: profiili + päivän kirje näkyvät
+- LocalStorage: profiili säilyy reload-jälkeen
+- API `/api/briefing`: status 200, oikea rakenne
+
+**Jos E2E-testi on vihreä, manuaalista LomaSihteeri-smokea ei tarvita.**
+
+---
+
 ## 3. API-muutosten minimitestit
 
 Kun API-endpointteja muutetaan:
@@ -83,11 +104,11 @@ npm run dev
 
 - [ ] `npm run check` – 0 errors
 - [ ] `npm run build` – success
-- [ ] Smoke-test suoritettu (yleinen)
+- [ ] Smoke-test suoritettu (yleinen TAI E2E)
 
 ### Jos kyseessä LomaSihteeri-muutos
 
-- [ ] LomaSihteeri-smoke suoritettu
+- [ ] `npm run test:e2e` – PASS (korvaa manuaalisen smoke-testin)
 - [ ] API-vastaukset tarkistettu (jos API-muutos)
 
 ### Loppuraportissa ilmoitettava
@@ -96,7 +117,7 @@ npm run dev
 TESTIT:
 - npm run check: PASS/FAIL
 - npm run build: PASS/FAIL
-- smoke-test: PASS/FAIL
+- npm run test:e2e: PASS/FAIL (tai manuaalinen smoke)
 - [lisätestit tarvittaessa]
 ```
 

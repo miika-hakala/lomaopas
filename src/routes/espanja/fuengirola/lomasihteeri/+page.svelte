@@ -60,7 +60,7 @@
       <p class="loading-text">Ladataan...</p>
     </div>
   {:else if profile}
-    <section class="profile-card" aria-labelledby="trip-title">
+    <section class="profile-card" aria-labelledby="trip-title" data-testid="trip-card">
       <h2 id="trip-title">{copy.dashboard.trip_title}</h2>
       <dl class="trip-details">
         <div class="detail-row">
@@ -83,7 +83,7 @@
       <a href="/espanja/fuengirola/lomasihteeri/onboarding" class="edit-link">{copy.dashboard.edit_link}</a>
     </section>
 
-    <section class="briefing-card" aria-labelledby="briefing-title">
+    <section class="briefing-card" aria-labelledby="briefing-title" data-testid="briefing-card">
       <div class="briefing-header">
         <h2 id="briefing-title">{copy.dashboard.briefing_title}</h2>
         <span class="demo-badge" aria-label="Tämä on esittelyversio">{copy.briefing.demo_badge}</span>
