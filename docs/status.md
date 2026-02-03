@@ -75,6 +75,16 @@ Commit: `fbf98be` (test: add playwright e2e smoke for lomasihteeri flow)
 
 ---
 
+### Phase 2x: Global Destinations (2026) — 🟢 ACTIVE
+
+**Tavoite:** Top 20 -kohteiden vaiheistus ja toimitusketju (PDF → sivut → QA).
+
+**Next up:** Phase 2x.P0.1 Gran Canaria scaffold (new-city)
+
+**Session:** Session closed by user; work paused.
+
+---
+
 ### Tekninen tila
 
 | Kohde | Tila |
@@ -93,5 +103,6 @@ Commit: `fbf98be` (test: add playwright e2e smoke for lomasihteeri flow)
 | Vaihe | Status |
 |-------|--------|
 | Phase 1x – Málaga | ACTIVE |
+| Phase 2x – Global Destinations (2026) | ACTIVE |
 | Phase 3.8 – Lanseeraus | PAUSED |
 | Phase 4 – Premium & App | PENDING |

@@ -114,6 +114,10 @@ Päivitetty: 2026-02-03
 ### P2x.P0 – Ehdoton ydin
 
 #### Gran Canaria
+- [ ] Status: NEXT
+- [ ] Run `npm run new-city -- gran-canaria "Gran Canaria"`
+- [ ] Verify pdf stub + routes + affiliate stub + /espanja card
+- [ ] Run `npm run check && npm run build`
 - [ ] PDF stub (`npm run new-city`)
 - [ ] PDF master (sisältö täytetty)
 - [ ] City pages (hub + alasivut)

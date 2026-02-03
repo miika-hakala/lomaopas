@@ -104,3 +104,9 @@ Päätös on lukittu, kun se on dokumentoitu projektin `docs`-kansiossa ja muuto
 - **Vaikutus:** Kehitys ja sisältötyö priorisoidaan P0/P1/P2 -jaon mukaan, eikä listaa muuteta ilman strategista päätöstä.
 - **Lähde:** `docs/market/top-destinations-2026.md`
 - **Commit:** (tämä commit)
+
+### 2026-02-03 – Session closed by user; Phase 2x docs locked
+- **Kuvaus:** Istunto suljettiin käyttäjän pyynnöstä. Phase 2x -dokumentaatio lukittiin ja seuraavaksi toimenpiteeksi määritettiin Gran Canaria -scaffold.
+- **Vaikutus:** Työ pysäytetään tähän kohtaan; seuraava aktiivinen toimenpide on Phase 2x.P0.1 Gran Canaria scaffold.
+- **Lähde:** `docs/status.md`, `docs/roadmap.md`, `docs/TASKS.md`
+- **Commit:** (tämä commit)
