@@ -69,6 +69,28 @@ Nämä säännöt sitovat kaikkia agentteja poikkeuksetta:
 - tarkista `git status` ennen pushia
 - raportoi kaikki muutokset
 
+**Git-käytännöt: commit vs push**
+
+Codex CLI tekee commitin tehtävän päätteeksi, mutta **ei pushaa automaattisesti**.
+Push tehdään vain, jos tehtävänannossa on erillinen `PUSH:`-osio.
+
+Tämä on tarkoituksellista:
+- Työnjohtaja voi tarkistaa commitin ennen julkaisua
+- Virheet voidaan korjata ennen kuin ne päätyvät remoteen
+- Push-oikeus on eksplisiittinen päätös, ei oletus
+
+**Valmis PUSH-osio tehtävänantoihin:**
+
+Jos työnjohtaja haluaa pushin osaksi tehtävää, hän lisää tehtävänannon loppuun:
+
+```
+PUSH:
+- git push origin main (tai nykyinen branch)
+- vahvista loppuraportissa: "pushed"
+```
+
+Jos `PUSH:`-osiota ei ole, agentti raportoi commitin mutta jättää pushin työnjohtajan tehtäväksi.
+
 **Milloin paras valinta:**
 - kun tiedosto pitää siirtää tai nimetä uudelleen
 - kun tarvitaan commit ja push
