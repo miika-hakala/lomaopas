@@ -28,6 +28,10 @@ function writeFileIfMissing(filePath: string, content: string) {
     return true;
 }
 
+function escapeRegex(value: string) {
+    return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
 function ensureAffiliateEntry(
     filePath: string,
     objectName: 'accommodation' | 'activities',
@@ -54,7 +58,8 @@ function ensureAffiliateEntry(
     }
 
     const block = content.slice(startIndex, endIndex);
-    const entryRegex = new RegExp(`\\n\\s*${entryKey}:\\s*{`);
+    const escapedKey = escapeRegex(entryKey);
+    const entryRegex = new RegExp(`\\n\\s*['"]?${escapedKey}['"]?\\s*:\\s*{`);
     if (entryRegex.test(block)) {
         console.log(`Affiliate ${objectName}.${entryKey} exists, skipped`);
         return;
@@ -62,7 +67,7 @@ function ensureAffiliateEntry(
 
     const updated =
         content.slice(0, endIndex) +
-        `  ${entryKey}: {\n${entryContent}\n  } satisfies AffiliateLink,\n` +
+        `  '${entryKey}': {\n${entryContent}\n  } satisfies AffiliateLink,\n` +
         content.slice(endIndex);
 
     fs.writeFileSync(filePath, updated, 'utf8');
@@ -347,6 +352,21 @@ async function main() {
         content = content.replace(/fuengirola/g, citySlug);
         content = content.replace(/\/espanja\//g, `/${region}/`);
 
+        if (citySlug.includes('-')) {
+            content = content.replace(
+                new RegExp(`activities\\.${citySlug}DayTrips`, 'g'),
+                `activities['${citySlug}DayTrips']`,
+            );
+            content = content.replace(
+                new RegExp(`accommodation\\.${citySlug}`, 'g'),
+                `accommodation['${citySlug}']`,
+            );
+            content = content.replace(
+                new RegExp(`activities\\.${citySlug}`, 'g'),
+                `activities['${citySlug}']`,
+            );
+        }
+
         // Special handling for lomasihteeri pages' hardcoded citySlug
         if (page.src.startsWith('lomasihteeri/')) {
             content = content.replace(/const citySlug = 'fuengirola';/g, `const citySlug = '${citySlug}';`);
@@ -388,6 +408,12 @@ async function main() {
         "    partner: 'GetYourGuide',",
     ].join('\n');
 
+    const activitiesDayTripsEntry = [
+        `    url: \`https://www.getyourguide.com/${citySlug}-lTODO/?partner_id=\${AFFILIATE_IDS.getyourguide}\`,`,
+        `    label: 'Katso päiväretket ${cityName}',`,
+        "    partner: 'GetYourGuide',",
+    ].join('\n');
+
     ensureAffiliateEntry(
         path.join('src/lib/affiliates/links.ts'),
         'accommodation',
@@ -400,6 +426,13 @@ async function main() {
         'activities',
         citySlug,
         activitiesEntry,
+    );
+
+    ensureAffiliateEntry(
+        path.join('src/lib/affiliates/links.ts'),
+        'activities',
+        `${citySlug}DayTrips`,
+        activitiesDayTripsEntry,
     );
 
     ensureRegionCard(region, citySlug, cityName);

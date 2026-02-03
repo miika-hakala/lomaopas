@@ -50,6 +50,11 @@ export const accommodation = {
     label: 'Hae majoitusta Marbellasta',
     partner: 'Booking.com',
   } satisfies AffiliateLink,
+  'gran-canaria': {
+    url: `https://www.booking.com/city/es/gran-canaria.html?aid=${AFFILIATE_IDS.booking}`,
+    label: 'Hae majoitusta Gran Canaria',
+    partner: 'Booking.com',
+  } satisfies AffiliateLink,
 };
 
 /**
@@ -125,6 +130,16 @@ export const activities = {
   benalmadena: {
     url: `https://www.getyourguide.com/benalmadena-l969/?partner_id=${AFFILIATE_IDS.getyourguide}`,
     label: 'Katso retket Benalmádenaan',
+    partner: 'GetYourGuide',
+  } satisfies AffiliateLink,
+  'gran-canaria': {
+    url: `https://www.getyourguide.com/gran-canaria-lTODO/?partner_id=${AFFILIATE_IDS.getyourguide}`,
+    label: 'Katso aktiviteetit Gran Canaria',
+    partner: 'GetYourGuide',
+  } satisfies AffiliateLink,
+  'gran-canariaDayTrips': {
+    url: `https://www.getyourguide.com/gran-canaria-lTODO/?partner_id=${AFFILIATE_IDS.getyourguide}`,
+    label: 'Katso päiväretket Gran Canaria',
     partner: 'GetYourGuide',
   } satisfies AffiliateLink,
 };
