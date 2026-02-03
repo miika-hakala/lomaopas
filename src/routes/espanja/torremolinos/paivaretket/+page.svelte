@@ -29,6 +29,7 @@ päässä, Málaga ja Fuengirola 15–20 minuutin junamatkan.
   <li>Teleferico-köysirata vuorelle</li>
 </ul>
 <p>
+Perheille paljon tekemistä – <a href="/espanja/benalmadena">lue lisää Benalmádenasta</a>.
 <AffiliateLink link={activities.benalmadena} />
 </p>
 

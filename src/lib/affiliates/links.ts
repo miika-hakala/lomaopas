@@ -40,6 +40,11 @@ export const accommodation = {
     label: 'Hae majoitusta Torremolinoksesta',
     partner: 'Booking.com',
   } satisfies AffiliateLink,
+  benalmadena: {
+    url: `https://www.booking.com/city/es/benalmadena.html?aid=${AFFILIATE_IDS.booking}`,
+    label: 'Hae majoitusta Benalmádenasta',
+    partner: 'Booking.com',
+  } satisfies AffiliateLink,
 };
 
 /**
@@ -131,6 +136,26 @@ export const tickets = {
   aqualand: {
     url: `https://www.getyourguide.com/torremolinos-l968/aqualand-torremolinos-tickets-t12347/?partner_id=${AFFILIATE_IDS.getyourguide}`,
     label: 'Osta liput Aqualandiin',
+    partner: 'GetYourGuide',
+  } satisfies AffiliateLink,
+  selwoMarina: {
+    url: `https://www.getyourguide.com/benalmadena-l969/selwo-marina-tickets-t12348/?partner_id=${AFFILIATE_IDS.getyourguide}`,
+    label: 'Osta liput Selwo Marinaan',
+    partner: 'GetYourGuide',
+  } satisfies AffiliateLink,
+  teleferico: {
+    url: `https://www.getyourguide.com/benalmadena-l969/teleferico-benalmadena-tickets-t12349/?partner_id=${AFFILIATE_IDS.getyourguide}`,
+    label: 'Osta liput köysirataan',
+    partner: 'GetYourGuide',
+  } satisfies AffiliateLink,
+  seaLife: {
+    url: `https://www.getyourguide.com/benalmadena-l969/sea-life-benalmadena-tickets-t12350/?partner_id=${AFFILIATE_IDS.getyourguide}`,
+    label: 'Osta liput Sea Lifeen',
+    partner: 'GetYourGuide',
+  } satisfies AffiliateLink,
+  tivoliWorld: {
+    url: `https://www.getyourguide.com/benalmadena-l969/tivoli-world-tickets-t12351/?partner_id=${AFFILIATE_IDS.getyourguide}`,
+    label: 'Osta liput Tivoli Worldiin',
     partner: 'GetYourGuide',
   } satisfies AffiliateLink,
 };

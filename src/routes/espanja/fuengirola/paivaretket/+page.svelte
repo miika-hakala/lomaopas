@@ -27,6 +27,14 @@
   <a href="/espanja/malaga">Lue lisää Málagasta →</a>
 </p>
 
+<h3>Benalmádena</h3>
+<p>
+  Costa del Solin monipuolisin perhelomakohde. Puerto Marinan satama, köysirata
+  vuorelle ja Selwo Marina. Junalla ~20 minuuttia.
+  <a href="/espanja/benalmadena">Lue lisää Benalmádenasta →</a>
+  <AffiliateLink link={activities.benalmadena} />
+</p>
+
 <h3>Mijas Pueblo</h3>
 <p>
   Vain lyhyen matkan päässä Fuengirolasta sijaitseva perinteinen andalusialainen valkoinen kylä. Ihaile upeita maisemia, kiertele kapeilla kujilla ja nauti rauhallisesta tunnelmasta.

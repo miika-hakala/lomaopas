@@ -2,7 +2,7 @@
   <title>Espanja – Lomakohteet suomalaisille | Lomaopas.fi</title>
   <meta
     name="description"
-    content="Espanjan lomakohteet suomalaisille. Costa del Solin aurinkorannikko: Málaga, Fuengirola, Torremolinos ja muut kohteet. Käytännön vinkit ja oppaat."
+    content="Espanjan lomakohteet suomalaisille. Costa del Solin aurinkorannikko: Málaga, Fuengirola, Torremolinos, Benalmádena ja muut kohteet. Käytännön vinkit ja oppaat."
   />
 </svelte:head>
 
@@ -54,6 +54,16 @@ ja helposta saavutettavuudesta Málagan lentokentän kautta.
     <p><strong>Sopii:</strong> Yöelämää etsiville, ystäväporukoille, helppoutta arvostaville</p>
     <p><a href="/espanja/torremolinos">Tutustu Torremolinokseen →</a></p>
   </div>
+
+  <div class="city-card">
+    <h3>Benalmádena</h3>
+    <p>
+      Costa del Solin monipuolisin perhelomakohde. Puerto Marinan satama, köysirata
+      vuorelle, Selwo Marina ja Tivoli World – kaikki yhdessä paikassa.
+    </p>
+    <p><strong>Sopii:</strong> Perheille, pariskunnille, monipuolisuutta arvostaville</p>
+    <p><a href="/espanja/benalmadena">Tutustu Benalmádenaan →</a></p>
+  </div>
 </div>
 
 <h2>Käytännön perusteet</h2>
@@ -69,7 +79,7 @@ ja helposta saavutettavuudesta Málagan lentokentän kautta.
 <h2>Lisää kohteita tulossa</h2>
 
 <p>
-Seuraavaksi: Benalmádena, Marbella ja muut Costa del Solin kohteet.
+Seuraavaksi: Marbella, Nerja ja muut Costa del Solin kohteet.
 </p>
 
 <style>

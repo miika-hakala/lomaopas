@@ -67,6 +67,19 @@ myydään usein loppuun.
 Tunnelmallinen, valokuvauksellinen – täydellinen puolen päivän kohde.
 </p>
 
+<h2>Benalmádena</h2>
+
+<ul>
+  <li><strong>Etäisyys:</strong> ~15 min junalla</li>
+  <li>Puerto Marina (palkittu venesatama)</li>
+  <li>Teleférico-köysirata (upeat näkymät)</li>
+  <li>Selwo Marina ja Tivoli World (perheille)</li>
+</ul>
+<p>
+<a href="/espanja/benalmadena">Lue lisää Benalmádenasta →</a>
+<AffiliateLink link={activities.benalmadena} />
+</p>
+
 <h2>Fuengirola</h2>
 
 <ul>
