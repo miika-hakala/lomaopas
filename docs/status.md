@@ -1,113 +1,69 @@
-## Lomaopas.fi – STATUS
+# PROJECT STATUS (ACTIVE – Lomaopas.fi)
 
-Päivitetty: 2026-02-03
-
----
-
-### Fuengirola v1 — ✅ VALMIS
-
-Commit: `afb3bcd16c8ee01c64696622f372e70d8f6c34c4`
-
-**Sisältö:**
-- Fuengirola hub + kaikki alaosiot
-- SEO-viimeistely ja sisäinen linkitys
+Päivitetty: 2026-02-04
 
 ---
 
-### LomaSihteeri MVP — ✅ VALMIS
-
-Commit: `fbf98be` (test: add playwright e2e smoke for lomasihteeri flow)
-
-**Toiminnallisuus:**
-- Onboarding-flow (päivämäärät + kiinnostukset)
-- Päivän kirje live-datalla:
-  - Sää (AEMET)
-  - Varoitukset (AEMET CAP)
-  - Tapahtumat (Visit Costa del Sol + curated fallback)
-- LocalStorage-profiili (ei kirjautumista)
-- Unified `/api/briefing` endpoint (30 min cache)
-
-**Testaus:**
-- `npm run check` – PASS
-- `npm run build` – PASS
-- `npm run test:e2e` – PASS (Playwright smoke)
-- Phase Gate -käytäntö dokumentoitu
-
-**Viitteet:**
-- Testausohje: `docs/testing.md`
-- LomaSihteeri-dokumentaatio: `docs/lomasihteeri/`
+> **IMPORTANT**
+>
+> This status describes ONLY the current Lomaopas.fi project.
+>
+> Previous implementations such as:
+> - Fuengirola MVP
+> - LomaSihteeri MVP
+> - Gran Canaria / Teneriffa content
+> - Stripe monetization experiments
+>
+> are HISTORICAL or separate projects and do NOT indicate
+> the current build status of Lomaopas.fi.
 
 ---
 
-### Phase 3: Monetisointi — ⏸️ PAUSED (3.8 lanseeraus odottaa)
+## Current active status
 
-**Valmiit vaiheet (3.1–3.7):**
-- [x] Affiliate-strategia dokumentoitu
-- [x] Affiliate-linkit sivuille (Booking, GetYourGuide, Rentalcars)
-- [x] PDF-sisältö viimeistelty
-- [x] PDF-teaser kaupunkisivulle
-- [x] Myyntimalli lukittu (Stripe, 9,90 €)
-- [x] Stripe-integraatio
-- [x] Myyntisivu + checkout
-- [x] Supabase-tilaustallennus + latausrajat (7 pv / 5 latausta)
+| Component | Status |
+|-----------|--------|
+| Local dev | NOT RUN |
+| Vercel project | NOT CREATED |
+| Supabase project | NOT CREATED |
 
-**Odottaa:**
-- [ ] Phase 3.8: Lanseeraus (paused – odotetaan lisää liikennettä)
+## Current phase
 
-**Commit (3.7):** `0ae2eea` (feat: harden payments with supabase persistence)
+**Phase 0 — Project foundation (ACTIVE)**
 
-**Viitteet:**
-- `docs/monetization.md`
-- `docs/premium_products.md`
+See: [docs/roadmap-0-to-launch.md](./roadmap-0-to-launch.md)
 
----
+## Next task
 
-### Phase 1x: Kaupunkien skaalaus — 🟢 ACTIVE
-
-**Tavoite:** Laajentaa sisältö uusiin kaupunkeihin Fuengirola-mallilla.
-
-**Ensimmäinen kohde:** Málaga
-
-**Status:**
-- [ ] Málaga PDF master
-- [ ] Málaga kaupunkisivut
-- [ ] Sisäinen linkitys
+**P0-001: Run project locally**
+- `npm install`
+- `npm run dev`
+- Verify homepage opens in browser
 
 ---
 
-### Phase 2x: Global Destinations (2026) — 🟢 ACTIVE
+## Phase progress
 
-**Tavoite:** Top 20 -kohteiden vaiheistus ja toimitusketju (PDF → sivut → QA).
-
-**Status:**
-- **Gran Canaria — DONE** (PDF master + City pages, `npm run check/build` PASS)
-- **Teneriffa — DONE** (PDF master + City pages, `npm run check/build` PASS)
-- Automaatio valmis ja testattu
-
-**Commit (viimeisin):** `abb77b9`
-
-**Next:** QA/SEO-kierros (Gran Canaria, Teneriffa)
-
----
-
-### Tekninen tila
-
-| Kohde | Tila |
-|-------|------|
-| SvelteKit build | ✅ OK |
-| Reittirakenne | Lukittu |
-| Main-haara | Ajan tasalla |
-| E2E-testit | Vihreä |
-| Stripe-integraatio | ✅ Valmis |
-| Supabase (orders) | ✅ Valmis |
-
----
-
-### Seuraavat vaiheet
-
-| Vaihe | Status |
+| Phase | Status |
 |-------|--------|
-| Phase 1x – Málaga | ACTIVE |
-| Phase 2x – Global Destinations (2026) | ACTIVE |
-| Phase 3.8 – Lanseeraus | PAUSED |
-| Phase 4 – Premium & App | PENDING |
+| Phase 0 — Foundation | ACTIVE |
+| Phase 1 — Vercel | PENDING |
+| Phase 2 — Supabase | PENDING |
+| Phase 3 — Admin | PENDING |
+| Phase 4 — Site structure | PENDING |
+| Phase 5 — Testing | PENDING |
+| Phase 6 — Launch readiness | PENDING |
+| Phase 6.5 — Hardening | PENDING |
+| Phase 7 — Launch | PENDING |
+
+---
+
+## Historical reference (do not use for planning)
+
+Previous work exists in the codebase but is considered historical:
+- Fuengirola content pages
+- LomaSihteeri feature
+- Stripe integration
+- Multi-city scaffolding
+
+These are NOT indicators of current project status.
