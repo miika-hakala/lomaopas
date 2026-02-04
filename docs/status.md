@@ -36,24 +36,29 @@ Päivitetty: 2026-02-04
 | Database schema | ✅ DEPLOYED |
 | Seed data | ✅ LOADED |
 | RLS policies | ✅ ACTIVE |
+| Admin auth | ✅ WORKING |
+| Admin dashboard | ✅ WORKING |
+| Article CRUD | ✅ WORKING |
 
 ## Current phase
 
-**Phase 3 — Admin & sisältö (ACTIVE)**
+**Phase 4 — Site structure (ACTIVE)**
 
 Previous phases:
 - Phase 0 — Foundation ✅ COMPLETE
 - Phase 1 — Vercel & Preview ✅ COMPLETE
 - Phase 2 — Supabase ✅ COMPLETE
+- Phase 3 — Admin & sisältö ✅ COMPLETE
 
 See: [docs/roadmap-0-to-launch.md](./roadmap-0-to-launch.md)
 
 ## Next task
 
-**P3-001: Enable Supabase Auth (admin login)**
-- Configure authentication providers
-- Set up admin user
-- Test login flow
+**P4-001: Create public destination page (/espanja)**
+- Fetch destination data from Supabase
+- Display destination info
+- List articles for this destination
+- Use RLS (public read only)
 
 ---
 
@@ -64,8 +69,8 @@ See: [docs/roadmap-0-to-launch.md](./roadmap-0-to-launch.md)
 | Phase 0 — Foundation | ✅ COMPLETE |
 | Phase 1 — Vercel | ✅ COMPLETE |
 | Phase 2 — Supabase | ✅ COMPLETE |
-| Phase 3 — Admin | ACTIVE |
-| Phase 4 — Site structure | PENDING |
+| Phase 3 — Admin | ✅ COMPLETE |
+| Phase 4 — Site structure | ACTIVE |
 | Phase 5 — Testing | PENDING |
 | Phase 6 — Launch readiness | PENDING |
 | Phase 6.5 — Hardening | PENDING |

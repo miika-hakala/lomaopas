@@ -12,20 +12,13 @@ Päivitetty: 2026-02-04
 
 ## NEXT
 
-### Phase 3 — Admin & sisältö
+### Phase 4 — Site structure (julkinen sivusto)
 
-- [ ] P3-001: Ota Supabase Auth käyttöön (admin login)
-- [ ] P3-002: Luo admin-näkymä artikkeleiden listaukseen
-- [ ] P3-003: Lisää artikkelin luonti ja muokkaus
-- [ ] P3-004: Lisää publish/unpublish -toiminto
-
-### Phase 4 — Sivusto & reitit
-
-- [ ] P4-001: Rakenna etusivu
-- [ ] P4-002: Rakenna kohdelistaus
-- [ ] P4-003: Rakenna kohdesivu
-- [ ] P4-004: Rakenna artikkelisivu
-- [ ] P4-005: Lisää perushaku / filtterit
+- [ ] P4-001: Luo julkinen destination-sivu (/espanja)
+- [ ] P4-002: Luo julkinen city-sivu (/espanja/fuengirola)
+- [ ] P4-003: Luo julkinen article-sivu (/espanja/fuengirola/rannat)
+- [ ] P4-004: Lisää navigaatio ja breadcrumbs
+- [ ] P4-005: Testaa että RLS toimii (vain julkaistu sisältö näkyy)
 
 ### Phase 5 — Testaus & laatu
 
@@ -96,6 +89,13 @@ Päivitetty: 2026-02-04
 - [x] P2-004: Luo schema v1 (destinations, articles, categories, sources)
 - [x] P2-005: Lisää seed-data (1 kohde + 1 artikkeli)
 - [x] P2-006: Lisää RLS: public read, admin write
+
+### Phase 3 — Admin & sisältö
+
+- [x] P3-001: Ota Supabase Auth käyttöön (admin login)
+- [x] P3-002: Luo admin-näkymä artikkeleiden listaukseen
+- [x] P3-003: Lisää artikkelin luonti ja muokkaus
+- [x] P3-004: Lisää publish/unpublish -toiminto (valmis P3-003:ssa)
 
 - [x] P0-SETUP-001: Projektin pystytys ja perusdokumentaatio
 - [x] P1-FNG-001: Fuengirola MVP-sisältö (PDF + sivut)
