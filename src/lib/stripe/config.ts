@@ -1,13 +1,11 @@
 /**
  * Stripe configuration (server-side only)
  *
- * Phase 3.5: Single product (Fuengirola PDF)
+ * Phase 1: Stripe disabled for Vercel preview builds
  */
 
-import Stripe from 'stripe';
-import { STRIPE_SECRET_KEY } from '$env/static/private';
-
-export const stripe = new Stripe(STRIPE_SECRET_KEY);
+// Stripe is disabled in Phase 1; adapter kept for Phase 3 re-enable.
+export const stripe = null;
 
 // Re-export products for server-side use
 export { PRODUCTS, type ProductId } from './products';

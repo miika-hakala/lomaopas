@@ -1,62 +1,12 @@
 /**
  * POST /api/checkout
  *
- * Creates a Stripe Checkout Session for the specified product
+ * Phase 1: Stripe disabled for Vercel preview builds
  */
 
-import { json, error } from '@sveltejs/kit';
+import { error } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
-import { stripe } from '$lib/stripe/config';
-import { PRODUCTS, type ProductId } from '$lib/stripe/products';
-import { createOrder } from '$lib/db/orders';
 
-export const POST: RequestHandler = async ({ request, url }) => {
-  const body = await request.json().catch(() => ({}));
-  const productId = body.product as ProductId;
-
-  if (!productId || !PRODUCTS[productId]) {
-    throw error(400, 'Invalid product');
-  }
-
-  const product = PRODUCTS[productId];
-  const baseUrl = url.origin;
-
-  try {
-    const session = await stripe.checkout.sessions.create({
-      mode: 'payment',
-      payment_method_types: ['card'],
-      line_items: [
-        {
-          price_data: {
-            currency: product.currency,
-            product_data: {
-              name: product.name,
-              description: product.description,
-            },
-            unit_amount: product.price,
-          },
-          quantity: 1,
-        },
-      ],
-      success_url: `${baseUrl}/kiitos?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `${baseUrl}/checkout?cancelled=true`,
-      customer_email: body.email || undefined,
-    });
-
-    // Store pending order in database
-    const order = await createOrder(session.id, productId);
-
-    if (!order) {
-      console.error('Failed to create order for session:', session.id);
-      // Continue anyway - webhook will handle order creation if needed
-    }
-
-    return json({
-      sessionId: session.id,
-      url: session.url,
-    });
-  } catch (err) {
-    console.error('Stripe checkout error:', err);
-    throw error(500, 'Failed to create checkout session');
-  }
+export const POST: RequestHandler = async () => {
+  throw error(503, 'Stripe is disabled in Phase 1 previews');
 };
