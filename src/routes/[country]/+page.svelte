@@ -6,6 +6,13 @@
 
 <svelte:head>
 	<title>{data.destination.name} - Lomaopas.fi</title>
+	<meta
+		name="description"
+		content="Tutustu {data.destination.name}n kohteisiin ja nähtävyyksiin. Suomenkielinen matkaopas."
+	/>
+	<meta property="og:title" content="{data.destination.name} - Lomaopas.fi" />
+	<meta property="og:description" content="Tutustu {data.destination.name}n kohteisiin" />
+	<meta property="og:type" content="website" />
 </svelte:head>
 
 <div class="container">

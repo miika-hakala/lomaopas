@@ -1,5 +1,13 @@
 <svelte:head>
 	<title>Lomaopas.fi - Suomenkielinen matkaopas</title>
+	<meta
+		name="description"
+		content="Lomaopas.fi tarjoaa suomenkielistä matkatietoa Espanjan kohteista. Tutustu Fuengirolan rantoihin ja nähtävyyksiin."
+	/>
+	<meta property="og:title" content="Lomaopas.fi - Suomenkielinen matkaopas" />
+	<meta property="og:description" content="Suomenkielinen matkaopas Espanjan kohteisiin" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://lomaopas.vercel.app/" />
 </svelte:head>
 
 <div class="container">
