@@ -32,18 +32,14 @@
 <p>
 	Costa Adejessa sijaitseva, toistuvasti maailman parhaaksi vesipuistoksi äänestetty
 	thaimaalais-teemainen elämyspuisto. Tarjoaa huimia liukumäkiä adrenaliinin metsästäjille,
-	mutta myös rentoja altaita ja oman alueen perheen pienimmille. <AffiliateLink
-		link={tickets.siamPark}
-	/>
+	mutta myös rentoja altaita ja oman alueen perheen pienimmille.
 </p>
 
 <h3>Loro Parque</h3>
 <p>
 	Puerto de la Cruzissa sijaitseva, yksi maailman tunnetuimmista eläinpuistoista. Kuuluisa
 	valtavasta papukaijakokoelmastaan, mutta sen suurimpia vetonauloja ovat maailmatasoiset
-	miekkavalas-, delfiini- ja merileijonaesitykset sekä upea pingviinimaailma. <AffiliateLink
-		link={tickets.loroParque}
-	/>
+	miekkavalas-, delfiini- ja merileijonaesitykset sekä upea pingviinimaailma.
 </p>
 
 <h2>Luontoa ja maisemia</h2>
@@ -59,7 +55,7 @@
 <p>
 	Länsirannikon jopa 600 metriä pystysuoraan mereen putoavat kalliot ovat vaikuttava näky.
 	Parhaiten ne kokee mereltä käsin veneretkellä, joita lähtee läheisestä satamasta. Usein
-	retkillä nähdään myös delfiinejä. <AffiliateLink link={activities.tenerife} />
+	retkillä nähdään myös delfiinejä. <AffiliateLink link={activities['teneriffa']} />
 </p>
 
 <h3>Anagan maalaispuisto</h3>

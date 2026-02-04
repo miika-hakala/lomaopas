@@ -31,7 +31,7 @@
 	<strong>Miten päästä:</strong> Kätevin tapa on vuokra-autolla, joka antaa vapauden pysähdellä
 	omassa tahdissa. Myös lähes kaikki matkanjärjestäjät tarjoavat valmiita bussiretkiä, jotka
 	ovat helppo ja informatiivinen vaihtoehto. Muista varata köysiradan liput hyvissä ajoin
-	etukäteen. <AffiliateLink link={activities.tenerife} />
+	etukäteen. <AffiliateLink link={activities['teneriffa']} />
 </p>
 
 <h3>2. Masca ja Los Gigantes</h3>

@@ -67,13 +67,13 @@
 <h3>Palmitos Park</h3>
 <p>
 	Laaja eläin- ja kasvitieteellinen puisto lähellä Maspalomasia. Upeat delfiini- ja
-	petolintunäytökset ovat puiston kohokohtia. <AffiliateLink link={tickets.palmitosPark} />
+	petolintunäytökset ovat puiston kohokohtia.
 </p>
 
 <h3>Aqualand Maspalomas</h3>
 <p>
 	Suuri vesipuisto, joka tarjoaa liukumäkiä ja altaita kaikenikäisille. Varma hitti kuumana
-	päivänä. <AffiliateLink link={tickets.aqualand} />
+	päivänä.
 </p>
 
 <h3>Poema del Mar</h3>
@@ -86,7 +86,7 @@
 <p>
 	Lounaisrannikon satamista (erityisesti Puerto Rico) lähtee päivittäin retkiä, joilla voi nähdä
 	delfiinejä ja valaita niiden luonnollisessa ympäristössä. <AffiliateLink
-		link={activities.granCanaria}
+		link={activities['gran-canaria']}
 	/>
 </p>
 

@@ -54,7 +54,7 @@
 <p>
 	<strong>Miten päästä:</strong> Bussit (esim. linja 1 ja 32) kulkevat tiheästi rannikkoa pitkin.
 	Hauska vaihtoehto on myös vesibussi (Ferry), joka kulkee Arguineguinin ja Puerto Ricon kautta.
-	<AffiliateLink link={activities.granCanaria} />
+	<AffiliateLink link={activities['gran-canaria']} />
 </p>
 
 <h3>4. Teror & Arucas – Pohjoisen helmet</h3>
