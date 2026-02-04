@@ -52,6 +52,9 @@
 
 ## Phase 3: Monetisointi – PAUSED (3.8 odottaa)
 
+**Syy:** siirretty myöhemmäksi fokusointipäätöksellä
+**Aktivoituu kun:** nykyinen NEXT-vaihe julkaistu
+
 **Tavoite:** Tulonlähteiden luominen affiliate-linkeillä ja PDF-myynnillä.
 
 ### 3.1–3.2 Affiliate-linkit – DONE
@@ -72,6 +75,8 @@
 ### 3.8 Lanseeraus – PAUSED
 - Odottaa lisää liikennettä ja sisältöä
 - Jatkuu Phase 1x jälkeen
+- **Syy:** siirretty myöhemmäksi fokusointipäätöksellä
+- **Aktivoituu kun:** nykyinen NEXT-vaihe julkaistu
 
 ---
 
@@ -140,3 +145,22 @@ Lähde: `docs/market/top-destinations-2026.md`
 ## Phase 4 – Premium & App (PENDING – tauolla)
 - Laajennus premium-sisältöön (offline-kartat, syvemmät oppaat).
 - Mahdollinen natiivisovellus.
+
+---
+
+## 🧠 PARKED & FUTURE SYSTEMS
+
+### Local AI Agent (Offline / Private)
+- oma lokaalisti ajettava agentti
+- oma tietokanta, agentti päivittää itse
+- rajattu Lomaopas / kohdekohtaisiin tietoihin
+- HW: Ryzen 5950X / 64GB RAM / RTX 3060
+- Tila: PARKED
+- Aktivoituu kun: Fuengirola + 1 laajennuskohde vakaa
+
+### Agenttiarkkitehtuuri & työnjako
+- Planner / Työnjohtaja / Worker-agentit
+- tehtävät delegoidaan kopioitavina blokkeina
+- Single Source of Truth: ROADMAP + TASKS
+- Tila: OSIN KÄYTÖSSÄ
+- Huom: ei omaa roadmap-vaihetta
