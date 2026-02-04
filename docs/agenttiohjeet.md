@@ -122,7 +122,41 @@ Gemini toimii vain annetun materiaalin pohjalta. Työnjohtajan on toimitettava k
 
 ---
 
-## 4. Tehtävänannon pakollinen muoto
+## 4. Tiedostojen käsittely
+
+### Työnkulku dokumenttien luomisesta projektiin
+
+Kun työnjohtaja tarvitsee uuden dokumentin tai päivittää olemassa olevaa:
+
+1. **Työnjohtaja luo dokumentin**
+   - Käyttää Claude Code -agenttia
+   - Tiedosto luodaan: `/mnt/user-data/outputs/`
+   - Esim: `tyonjohtaja_updated.md`
+
+2. **Käyttäjä lataa tiedoston**
+   - Lataa sen omaan Downloads-kansioonsa: `~/Downloads/`
+   - Tiedosto on nyt käyttäjän koneella
+
+3. **Työnjohtaja delegoi siirron**
+   - Delegoi Codex CLI:lle tehtävän:
+   - "Kopioi ~/Downloads/tiedosto.md → docs/tiedosto.md"
+   - Sisältää commit-ohjeet
+
+4. **Codex CLI suorittaa**
+   - Kopioi tiedoston oikeaan sijaintiin projektissa
+   - Ajaa git add + commit
+   - Raportoi tuloksen
+
+### Tärkeät huomiot
+
+- **Työnjohtaja ei kopioi tiedostoja itse** - delegoi Codex CLI:lle
+- **Lähdepolku on aina ~/Downloads/** - ei /home/claude/ tai /mnt/user-data/outputs/
+- **Kohdepolku määritellään tehtävänannossa** - esim. docs/, src/, jne.
+- **Commit kuuluu tehtävään** - Codex hoitaa versionhallinnan
+
+---
+
+## 5. Tehtävänannon pakollinen muoto
 
 Jokainen tehtävä annetaan agentille **yhtenä kopioitavana tekstiblokkina**.
 
@@ -160,7 +194,7 @@ Jos tehtävänanto on puutteellinen, työnjohtaja korjaa sen ennen delegointia.
 
 ---
 
-## 5. Loppuraporttivaatimus
+## 6. Loppuraporttivaatimus
 
 Jokaisen agentin on raportoitava tehtävän päätteeksi vähintään:
 
@@ -196,7 +230,7 @@ Ilman raporttia tehtävää ei katsota suoritetuksi.
 
 ---
 
-## 6. Yleiset virheet ja hylkäysperusteet
+## 7. Yleiset virheet ja hylkäysperusteet
 
 ### Yleisimmät virheet
 
