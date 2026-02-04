@@ -12,19 +12,12 @@ Päivitetty: 2026-02-04
 
 ## NEXT
 
-### Phase 4 — Site structure (julkinen sivusto)
+### Phase 5 — Testing
 
-- [ ] P4-001: Luo julkinen destination-sivu (/espanja)
-- [ ] P4-002: Luo julkinen city-sivu (/espanja/fuengirola)
-- [ ] P4-003: Luo julkinen article-sivu (/espanja/fuengirola/rannat)
-- [ ] P4-004: Lisää navigaatio ja breadcrumbs
-- [ ] P4-005: Testaa että RLS toimii (vain julkaistu sisältö näkyy)
-
-### Phase 5 — Testaus & laatu
-
-- [ ] P5-001: Lisää e2e smoke-testit (etusivu, artikkeli, ei 404)
-- [ ] P5-002: Lisää broken-link -testi etusivulle
-- [ ] P5-003: Estä placeholder-linkit tuotannossa
+- [ ] P5-001: Aja täydellinen e2e-testisarja
+- [ ] P5-002: Testaa kaikki julkiset reitit automaattisesti
+- [ ] P5-003: Testaa admin CRUD -flow automaattisesti
+- [ ] P5-004: Varmista että build + deploy toimii Vercelissä
 
 ### Phase 6 — Julkaisuvalmius
 
@@ -96,6 +89,14 @@ Päivitetty: 2026-02-04
 - [x] P3-002: Luo admin-näkymä artikkeleiden listaukseen
 - [x] P3-003: Lisää artikkelin luonti ja muokkaus
 - [x] P3-004: Lisää publish/unpublish -toiminto (valmis P3-003:ssa)
+
+### Phase 4 — Site structure (julkinen sivusto)
+
+- [x] P4-001: Luo julkinen destination-sivu (/espanja)
+- [x] P4-002: Luo julkinen city-sivu (/espanja/fuengirola)
+- [x] P4-003: Luo julkinen article-sivu (/espanja/fuengirola/rannat)
+- [x] P4-004: Lisää navigaatio ja breadcrumbs (valmis implisiittisesti)
+- [x] P4-005: Testaa että RLS toimii (vain julkaistu sisältö näkyy)
 
 - [x] P0-SETUP-001: Projektin pystytys ja perusdokumentaatio
 - [x] P1-FNG-001: Fuengirola MVP-sisältö (PDF + sivut)

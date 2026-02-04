@@ -39,26 +39,31 @@ Päivitetty: 2026-02-04
 | Admin auth | ✅ WORKING |
 | Admin dashboard | ✅ WORKING |
 | Article CRUD | ✅ WORKING |
+| Public site | ✅ WORKING |
+| Dynamic routes | ✅ WORKING |
+| Breadcrumbs | ✅ WORKING |
+| RLS tested | ✅ PASSING |
 
 ## Current phase
 
-**Phase 4 — Site structure (ACTIVE)**
+**Phase 5 — Testing (ACTIVE)**
 
 Previous phases:
 - Phase 0 — Foundation ✅ COMPLETE
 - Phase 1 — Vercel & Preview ✅ COMPLETE
 - Phase 2 — Supabase ✅ COMPLETE
 - Phase 3 — Admin & sisältö ✅ COMPLETE
+- Phase 4 — Site structure ✅ COMPLETE
 
 See: [docs/roadmap-0-to-launch.md](./roadmap-0-to-launch.md)
 
 ## Next task
 
-**P4-001: Create public destination page (/espanja)**
-- Fetch destination data from Supabase
-- Display destination info
-- List articles for this destination
-- Use RLS (public read only)
+**P5-001: Run full e2e test suite**
+- Test all public routes
+- Test admin CRUD flows
+- Verify RLS in automated tests
+- Ensure all critical paths work
 
 ---
 
@@ -70,8 +75,8 @@ See: [docs/roadmap-0-to-launch.md](./roadmap-0-to-launch.md)
 | Phase 1 — Vercel | ✅ COMPLETE |
 | Phase 2 — Supabase | ✅ COMPLETE |
 | Phase 3 — Admin | ✅ COMPLETE |
-| Phase 4 — Site structure | ACTIVE |
-| Phase 5 — Testing | PENDING |
+| Phase 4 — Site structure | ✅ COMPLETE |
+| Phase 5 — Testing | ACTIVE |
 | Phase 6 — Launch readiness | PENDING |
 | Phase 6.5 — Hardening | PENDING |
 | Phase 7 — Launch | PENDING |
