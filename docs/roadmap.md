@@ -1,5 +1,7 @@
 # Roadmap
 
+> **0 → julkaisu roadmap:** [docs/roadmap-0-to-launch.md](./roadmap-0-to-launch.md)
+
 ## Phase 0 – DONE
 - Nimi: Lomaopas.fi
 - Kohderyhmä & sisältörajaus
