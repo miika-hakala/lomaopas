@@ -14,50 +14,79 @@
 <h1>Teneriffan nähtävyydet</h1>
 
 <p>
-  Vaikka Teneriffa on tunnettu ennen kaikkea rannoistaan, kaupungista ja sen lähialueilta löytyy myös paljon nähtävää ja koettavaa. Tässä muutamia suosituimpia kohteita.
+	Teneriffa on täynnä maailmanluokan nähtävyyksiä ja aktiviteetteja, jotka ulottuvat Teide-tulivuoren
+	huipulta syvälle Atlantin aaltoihin ja pohjoisen vehreisiin laaksoihin.
 </p>
 
-<h2>Keskeiset nähtävyydet</h2>
+<h2>Saaren kolme suurta</h2>
 
-<h3>Castillo de Sohail</h3>
+<h3>Teiden kansallispuisto</h3>
 <p>
-  Tämä upea, 900-luvulta peräisin oleva linna vartioi kaupunkia joen suulla. Linna on itsessään vaikuttava näky, ja sen muurilta avautuvat hienot maisemat merelle ja vuorille. Se on myös loistava paikka aloittaa <a href="/kanariansaaret/teneriffa/paivaretket">päiväretki</a> läheiseen Mijasin kylään.
+	Yksikään Teneriffan-matka ei ole täydellinen ilman vierailua Teiden kansallispuistossa. Koe
+	kuumainen vulkaaninen maisema, nouse köysiradalla 3555 metrin korkeuteen ja ihaile
+	uskomattomia panoraamanäkymiä. Alue on myös yksi maailman parhaista paikoista tähtien
+	tarkkailuun.
 </p>
 
-<h3>Paseo Marítimo (Rantapaseo)</h3>
+<h3>Siam Park</h3>
 <p>
-  Teneriffan kahdeksan kilometriä pitkä rantabulevardi on kaupungin sydän. Se on täydellinen paikka kävelylle, pyöräilylle tai vain ihmisten katseluun. Varella on lukemattomia kahviloita, baareja ja ravintoloita vieri vieressä <a href="/kanariansaaret/teneriffa/rannat">rantojen</a> kanssa.
+	Costa Adejessa sijaitseva, toistuvasti maailman parhaaksi vesipuistoksi äänestetty
+	thaimaalais-teemainen elämyspuisto. Tarjoaa huimia liukumäkiä adrenaliinin metsästäjille,
+	mutta myös rentoja altaita ja oman alueen perheen pienimmille. <AffiliateLink
+		link={tickets.siamPark}
+	/>
 </p>
 
-<h3>Bioparc Teneriffa</h3>
+<h3>Loro Parque</h3>
 <p>
-  Moderni ja palkittu eläintarha, joka on erikoistunut uhanalaisiin lajeihin. Bioparc jäljittelee eläinten luonnollisia elinympäristöjä ja on suosittu kohde erityisesti lapsiperheiden keskuudessa.
-  <AffiliateLink link={tickets.bioparc} />
+	Puerto de la Cruzissa sijaitseva, yksi maailman tunnetuimmista eläinpuistoista. Kuuluisa
+	valtavasta papukaijakokoelmastaan, mutta sen suurimpia vetonauloja ovat maailmatasoiset
+	miekkavalas-, delfiini- ja merileijonaesitykset sekä upea pingviinimaailma. <AffiliateLink
+		link={tickets.loroParque}
+	/>
 </p>
 
-<h3>Satama (Puerto Deportivo)</h3>
+<h2>Luontoa ja maisemia</h2>
+
+<h3>Mascan kylä ja laakso</h3>
 <p>
-  Teneriffan venesatama on vilkas paikka, jossa voi ihailla jahteja, nauttia ravintoloiden tarjonnasta tai lähteä veneretkelle. Satamasta lähtee risteilyjä delfiinien bongaukseen ja kalastusretkiä.
+	Henkeäsalpaavan kaunis ja dramaattinen rotkolaakson rinteeseen tarrautunut kylä. Pelkkä
+	ajomatka sinne kapeaa ja mutkittelevaa vuoristotietä pitkin on seikkailu, jota ei kannata
+	jättää väliin.
 </p>
 
-<h3>Markkinat</h3>
+<h3>Los Gigantesin kalliot</h3>
 <p>
-  Teneriffassa järjestetään yhdet Costa del Solin suurimmista markkinoista. Tiistaisin ja lauantaisin Feria-alue täyttyy kojuista, joissa myydään kaikkea vaatteista ja keramiikasta paikallisiin herkkuihin.
+	Länsirannikon jopa 600 metriä pystysuoraan mereen putoavat kalliot ovat vaikuttava näky.
+	Parhaiten ne kokee mereltä käsin veneretkellä, joita lähtee läheisestä satamasta. Usein
+	retkillä nähdään myös delfiinejä. <AffiliateLink link={activities.tenerife} />
 </p>
 
-<h2>Tekemistä ja aktiviteetteja</h2>
-<ul>
-  <li><strong>Kävelyreitit:</strong> Kiipeä Castillo Sohailin ympäristössä oleville kukkuloille tai kävele rantapaseo päästä päähän.</li>
-  <li><strong>Auringonlaskut:</strong> Nauti upeista auringonlaskuista linnan raunioilta tai jostakin rantapaseon monista baareista.</li>
-  <li><strong>Perhetekeminen:</strong> Bioparcin lisäksi lapsille on tarjolla vesipuisto (Aquamijas), minigolfia ja useita leikkipuistoja.</li>
-</ul>
+<h3>Anagan maalaispuisto</h3>
+<p>
+	Saaren koilliskulman muinainen laakeripuumetsä, joka on kuin ripaus esihistoriallista
+	maailmaa. Alueella on upeita, hyvin merkittyjä vaellusreittejä, jotka sopivat niin aloittelijoille
+	kuin kokeneillekin patikoijille.
+</p>
 
-<h2>Vinkkejä</h2>
-<ul>
-  <li><strong>Paras aika vierailla:</strong> Nähtävyydet ovat ruuhkaisimpia keskikesällä. Kevät ja syksy ovat erinomaista aikaa tutustua kohteisiin rauhassa.</li>
-  <li><strong>Liput:</strong> Suosituimpiin kohteisiin liput kannattaa ostaa etukäteen verkosta jonojen välttämiseksi. <AffiliateLink link={activities.teneriffaDayTrips} showDisclosure={false} /></li>
-</ul>
+<h2>Kulttuuria ja historiaa</h2>
+
+<h3>San Cristóbal de La Laguna</h3>
+<p>
+	Unescon suojelema vanhakaupunki on Teneriffan historiallinen ja kulttuurinen sydän. Sen
+	värikkäät siirtomaa-ajan rakennukset ja suorakulmainen asemakaava toimivat mallina monille
+	Latinalaisen Amerikan kaupungeille.
+</p>
+
+<h3>Garachico</h3>
+<p>
+	Hurmaava pikkukaupunki pohjoisrannikolla, jonka vuoden 1703 tulivuorenpurkaus osin tuhosi.
+	Purkauksen seurauksena syntyivät kuuluisat El Caletónin luonnonaltaat, joissa voi uida.
+</p>
 
 <p>
-  <a href="/kanariansaaret/teneriffa">← Takaisin Teneriffaan</a>
+	<a href="/kanariansaaret/teneriffa/ravintolat">← Edellinen: Ravintolat</a> |
+	<a href="/kanariansaaret/teneriffa/paivaretket">Seuraavaksi: Päiväretket →</a>
 </p>
+
+<p><a href="/kanariansaaret/teneriffa">← Takaisin Teneriffa-oppaaseen</a></p>

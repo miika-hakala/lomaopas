@@ -11,72 +11,68 @@
   />
 </svelte:head>
 
-<h1>Päiväretket Teneriffasta</h1>
+<h1>Päiväretket Teneriffalta</h1>
 
 <p>
-  Teneriffan keskeinen sijainti Costa del Solilla tekee siitä erinomaisen tukikohdan päiväretkille. Lähialueet tarjoavat upeita kaupunkeja, vuoristokyliä ja luonnonnähtävyyksiä, joihin pääsee helposti junalla, bussilla tai autolla.
+	Teneriffan todellinen sielu löytyy usein lomakeskusten ulkopuolelta. Päiväretki on paras tapa
+	kokea saaren uskomaton monimuotoisuus, ja saaren suuren koon vuoksi retkiin kannattaa varata
+	koko päivä.
 </p>
-
-<!-- TODO: Lisää cross-city linkit muihin kaupunkeihin (päiväretket) -->
 
 <h2>Suosituimmat päiväretkikohteet</h2>
 
-<h3>Málaga</h3>
+<h3>1. Teiden kansallispuisto</h3>
 <p>
-  Alueen pääkaupunki, joka on täynnä kulttuuria, historiaa ja ostosmahdollisuuksia.
-  Vieraile Picasson museossa, Alcazaban linnoituksessa tai nauti vilkkaasta
-  kaupunkielämästä. Junalla vain ~45 minuuttia.
-  <a href="/kanariansaaret/malaga">Lue lisää Málagasta →</a>
+	Tämä on pakollinen klassikko. Koe kuumainen vulkaaninen maisema, näe Espanjan korkein huippu ja
+	nauti uskomattomista panoraamanäkymistä. Tämä Unescon maailmanperintökohde on saaren tärkein
+	nähtävyys.
+</p>
+<p>
+	<strong>Miten päästä:</strong> Kätevin tapa on vuokra-autolla, joka antaa vapauden pysähdellä
+	omassa tahdissa. Myös lähes kaikki matkanjärjestäjät tarjoavat valmiita bussiretkiä, jotka
+	ovat helppo ja informatiivinen vaihtoehto. Muista varata köysiradan liput hyvissä ajoin
+	etukäteen. <AffiliateLink link={activities.tenerife} />
 </p>
 
-<h3>Benalmádena</h3>
+<h3>2. Masca ja Los Gigantes</h3>
 <p>
-  Costa del Solin monipuolisin perhelomakohde. Puerto Marinan satama, köysirata
-  vuorelle ja Selwo Marina. Junalla ~20 minuuttia.
-  <a href="/kanariansaaret/benalmadena">Lue lisää Benalmádenasta →</a>
-  <AffiliateLink link={activities.benalmadena} />
+	Tämä retki vie sinut saaren vanhimpaan ja jylhimpään osaan, Tenon vuoristoon. Näe huikean
+	kaunis Mascan vuoristokylä ja aja yhtä Euroopan kuuluisimmista ja haastavimmista teistä.
+	Ihaile Los Gigantesin massiivisia, mereen putoavia kallioita.
+</p>
+<p>
+	<strong>Miten päästä:</strong> Vuokra-auto on joustavin vaihtoehto, mutta vaatii kokenutta ja
+	rauhallista kuskia Mascan tiellä. Helpompi tapa on osallistua järjestetylle bussiretkelle.
+	<AffiliateLink link={transport.carRental} />
 </p>
 
-<h3>Mijas Pueblo</h3>
+<h3>3. La Gomera – Naapurisaaren rauhaan</h3>
 <p>
-  Vain lyhyen matkan päässä Teneriffasta sijaitseva perinteinen andalusialainen valkoinen kylä. Ihaile upeita maisemia, kiertele kapeilla kujilla ja nauti rauhallisesta tunnelmasta.
-  <AffiliateLink link={activities.mijas} />
+	Vaihda maisemaa ja koe Teneriffan pienempi, rauhallisempi ja vehreämpi naapurisaari. Vaella
+	Garajonayn kansallispuiston ikivanhassa laakeripuumetsässä ja tutustu saaren ainutlaatuiseen
+	vihellyskieleen, <em>el silbo gomeroon</em>.
+</p>
+<p>
+	<strong>Miten päästä:</strong> Nopeat lautat (Fred. Olsen ja Naviera Armas) kulkevat useita
+	kertoja päivässä Los Cristianosin satamasta La Gomeralle. Suosituin tapa on osallistua
+	valmiille päiväretkelle, joka sisältää lauttamatkat, lounaan ja opastetun kierroksen
+	saarella.
 </p>
 
-<h3>Marbella & Puerto Banús</h3>
+<h3>4. Pohjoisen kierros: La Laguna & Anaga</h3>
 <p>
-  Ylellisyydestään tunnettu Marbella tarjoaa kauniin vanhankaupungin ja vilkkaan satama-alueen Puerto Banúsissa, jossa voit ihailla luksusjahteja ja merkkiliikkeitä.
+	Pakene etelän aurinkoa ja tutustu saaren vihreään, historialliseen ja autenttiseen
+	pohjoisosaan. Kävele La Lagunan Unescon suojelemassa vanhassakaupungissa ja aja Anagan
+	vuoriston serpentiiniteitä.
+</p>
+<p>
+	<strong>Miten päästä:</strong> Tämä retki onnistuu parhaiten vuokra-autolla, sillä se antaa
+	vapauden pysähtyä pienissä kylissä ja näköalapaikoilla.
 </p>
 
-<h3>Ronda</h3>
 <p>
-  Vaikuttavalla paikalla rotkon reunalla sijaitseva historiallinen kaupunki. Rondan uusi silta (Puente Nuevo) on yksi Andalusian kuvatuimmista nähtävyyksistä.
-  <AffiliateLink link={activities.ronda} />
+	<a href="/kanariansaaret/teneriffa/nahtavyydet">← Edellinen: Nähtävyydet</a> |
+	<a href="/kanariansaaret/teneriffa/faq">Seuraavaksi: Usein kysytyt kysymykset →</a>
 </p>
 
-<h3>Nerja & Frigiliana</h3>
-<p>
-  Idässä sijaitseva Nerja on tunnettu upeista tippukiviluolistaan ja Balcón de Europa -näköalatasanteesta. Lähistöllä oleva Frigiliana on palkittu yhtenä Espanjan kauneimmista kylistä.
-</p>
-
-<h2>Liikkuminen retkille</h2>
-<p>Vaihtoehtoja on useita, ja lisätietoa löydät <a href="/kanariansaaret/teneriffa/liikkuminen">liikkuminen Teneriffassa</a> -sivultamme.</p>
-<ul>
-  <li><strong>Juna:</strong> Rannikkojuna (C-1) on kätevin ja nopein tapa matkustaa Málagan suuntaan.</li>
-  <li><strong>Bussi:</strong> Linja-autolla pääsee kätevästi moniin kohteisiin, kuten Mijasiin, Marbellaan ja Rondaan. Teneriffan linja-autoasema sijaitsee keskeisellä paikalla.</li>
-  <li><strong>Auto:</strong> Vuokra-autolla liikkuminen antaa eniten vapautta. <AffiliateLink link={transport.carRental} /></li>
-</ul>
-
-<h2>Vinkkejä päiväretkille</h2>
-<ul>
-  <li><strong>Ajoitus:</strong> Lähde matkaan aamulla, jotta ehdit nähdä ja kokea mahdollisimman paljon.</li>
-  <li><strong>Liput:</strong> Suosituimpiin nähtävyyksiin, kuten Málagan museoihin tai Rondan areenalle, kannattaa ostaa liput etukäteen netistä.</li>
-  <li><strong>Kuumuus:</strong> Muista ottaa mukaan vettä, hattu ja aurinkovoidetta erityisesti kesäkuukausina.</li>
-  <li><strong>Lasten kanssa:</strong> Monet kohteet, kuten Málagan tiedemuseo tai Mijasin aasitaksit, ovat hauskoja myös perheen pienimmille.</li>
-</ul>
-
-<!-- TODO: Add cross-city links here, e.g., link to /kanariansaaret/malaga, /kanariansaaret/marbella, etc. -->
-
-<p>
-  <a href="/kanariansaaret/teneriffa">← Takaisin Teneriffaan</a>
-</p>
+<p><a href="/kanariansaaret/teneriffa">← Takaisin Teneriffa-oppaaseen</a></p>

@@ -17,9 +17,10 @@
     <div class="city-card">
     <h3>Teneriffa</h3>
     <p>
-      TODO: Lyhyt kuvaus Teneriffasta (ranta, vanhakaupunki, tunnelma).
+      Kanariansaarten suurin ja monipuolisin saari, jota hallitsee mahtava Teide-tulivuori. Koe
+      etelän aurinkorannat, maailmanluokan teemapuistot ja pohjoisen vehreä luonto.
     </p>
-    <p><strong>Sopii:</strong> TODO</p>
+    <p><strong>Sopii:</strong> Aktiivilomailijoille, perheille ja luonnonystäville.</p>
     <p><a href="/kanariansaaret/teneriffa">Tutustu Teneriffaan →</a></p>
   </div>
 

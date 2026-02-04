@@ -9,89 +9,81 @@
 <h1>Usein kysytyt kysymykset Teneriffasta</h1>
 
 <p>
-Tälle sivulle on koottu vastaukset yleisimpiin kysymyksiin, joita Teneriffaan
-matkustavat pohtivat. Jos suunnittelet lomaa tai pidempää oleskelua, tästä saat
-nopean yleiskuvan.
+	Tälle sivulle on koottu vastaukset yleisimpiin kysymyksiin, joita Teneriffalle matkustavat
+	pohtivat.
 </p>
 
-<h2>Milloin Teneriffaan kannattaa matkustaa?</h2>
+<h2>Mikä on suurin ero etelä- ja pohjois-Teneriffan välillä?</h2>
 <p>
-Teneriffaan voi matkustaa ympäri vuoden. Kevät ja syksy ovat monien mielestä
-parhaita aikoja miellyttävän sään ja pienempien turistimäärien ansiosta.
-Kesällä on kuumaa, talvella taas leutoa ja aurinkoista.
+	Ilmasto ja tunnelma. Etelä on aurinkoinen, kuiva ja täynnä moderneja, kansainvälisiä
+	lomakohteita. Pohjoinen on vehreämpi, kosteampi ja tarjoaa enemmän autenttista kanarialaista
+	kulttuuria ja historiallisia kaupunkeja.
+</p>
+
+<h2>Pääseekö Teide-tulivuoren huipulle asti?</h2>
+<p>
+	Köysirata vie sinut 3 555 metrin korkeuteen. Siitä ylöspäin kraatterin reunalle (3 718 m)
+	vaaditaan erillinen, ilmainen lupa, joka on haettava kansallispuiston verkkosivuilta usein
+	viikkoja tai jopa kuukausia etukäteen. Maisemat ovat upeat jo köysiradan yläasemalta.
+</p>
+
+<h2>Mikä on "guachinche"?</h2>
+<p>
+	Se on perinteinen, usein perheomisteinen rustiikkinen ruokapaikka, joita löytyy pääasiassa
+	pohjoisen viinialueilta. Ne tarjoavat omatekoista viiniä ja muutamia yksinkertaisia,
+	herkullisia kotiruokalajeja erittäin edulliseen hintaan. Aito ja paikallinen elämys, jota ei
+	kannata jättää väliin!
+</p>
+
+<h2>Kannattaako auto vuokrata?</h2>
+<p>
+	Kyllä, se on erittäin suositeltavaa, jos haluat kokea saaren monipuolisesti. Auto on lähes
+	välttämätön Teiden, Mascan ja Anagan vuoriston tutkimiseen. Etelän lomakohteiden välillä ja
+	pääkaupunkiin pääsee kuitenkin kätevästi myös
+	<a href="/kanariansaaret/teneriffa/liikkuminen">bussilla</a>.
 </p>
 
 <h2>Onko Teneriffa kallis matkakohde?</h2>
 <p>
-Teneriffa on Espanjan mittapuulla kohtuuhintainen. Ruoka, julkinen liikenne ja
-palvelut ovat usein edullisempia kuin Pohjois-Euroopassa, erityisesti jos vältät
-turistisimmat paikat.
+	Hintataso on yleisesti ottaen edullisempi kuin Suomessa. Pohjois-Teneriffa ja pienemmät kylät
+	ovat edullisempia kuin etelän tasokkaimmat lomakohteet, kuten Costa Adeje.
 </p>
 
-<h2>Onko Teneriffa turvallinen?</h2>
+<h2>Voiko hanavettä juoda?</h2>
 <p>
-Teneriffa on yleisesti ottaen turvallinen kaupunki. Kuten kaikissa
-matkakohteissa, taskuvarkauksiin kannattaa varautua vilkkailla alueilla ja
-turistikohteissa.
+	Juomavedeksi suositellaan pullovettä. Hanavesi on turvallista peseytymiseen, mutta sen maku ja
+	korkea mineraalipitoisuus voivat aiheuttaa vatsavaivoja tottumattomalle.
 </p>
 
-<h2>Tarvitseeko Teneriffassa osata espanjaa?</h2>
+<h2>Käytännön vinkkejä</h2>
+<h3>Raha ja maksaminen</h3>
 <p>
-Espanjan osaaminen helpottaa arkea, mutta pärjäät hyvin myös englannilla.
-Monet paikalliset palvelut toimivat useilla kielillä, ja alueella on paljon
-kansainvälisiä asukkaita.
+	Kortti käy lähes kaikkialla, mutta käteistä on hyvä olla pieniä ostoksia, toreja ja busseja
+	varten. Vältä yksityisten yritysten (esim. Euronet) nostoautomaatteja ja suosi pankkien omia.
 </p>
 
-<h2>Miten Teneriffassa liikutaan paikasta toiseen?</h2>
+<h3>Turvallisuus</h3>
 <p>
-Liikkuminen on helppoa kävellen, junalla, bussilla ja taksilla. Lue lisää <a href="/kanariansaaret/teneriffa/liikkuminen">liikkumisesta Teneriffassa</a>. Junayhteys
-Málagaan ja lentokentälle on erityisen kätevä.
+	Teneriffa on turvallinen kohde. Normaali varovaisuus taskuvarkaiden varalta vilkkailla
+	alueilla riittää. Yleinen hätänumero on 112.
 </p>
 
-<h2>Sopiiko Teneriffa lapsiperheille?</h2>
-<p>
-Kyllä. Pitkät hiekkarannat, matala rantavesi ja monipuoliset palvelut tekevät
-Teneriffasta suositun kohteen lapsiperheille.
-</p>
-
-<h2>Miten hintataso näkyy ravintoloissa?</h2>
-<p>
-Ravintoloiden hinnat vaihtelevat alueen ja ravintolatyypin mukaan. Paikalliset
-ravintolat ja rantabaarit ovat usein edullisempia kuin keskustan
-turistiravintolat. Lue lisää <a href="/kanariansaaret/teneriffa/ravintolat">Teneriffan ravintoloista</a>.
-</p>
-
-<h2>Kannattaako Teneriffassa vuokrata auto?</h2>
-<p>
-Auto ei ole välttämätön kaupungissa, mutta se voi olla hyödyllinen, jos aiot
-tehdä päiväretkiä tai liikkua laajemmin Andalusiassa.
-</p>
-
-<h2>Minkälaiset rannat Teneriffassa on?</h2>
-<p>
-Teneriffassa on useita kilometrejä hyvin hoidettuja hiekkarantoja. Lue lisää <a href="/kanariansaaret/teneriffa/rannat">Teneriffan rannoista</a>.
-</p>
-
-<h2>Voiko Teneriffasta tehdä helposti päiväretkiä?</h2>
-<p>
-Kyllä. Läheltä löytyvät esimerkiksi Málaga, Mijas Pueblo, Marbella ja Ronda.
-Lue lisää <a href="/kanariansaaret/teneriffa/paivaretket">päiväretkistä Teneriffasta</a>.
-</p>
-
-<h2>Onko Teneriffa hyvä kohde talvella?</h2>
-<p>
-Talvella Teneriffa on suosittu erityisesti pidempään oleskelevien ja
-talvehtijoiden keskuudessa. Sää on leuto ja aurinkoinen, ja palvelut toimivat
-ympäri vuoden.
-</p>
-
-<h2>Mitä kannattaa huomioida ensikertalaisena?</h2>
-<p>
-Teneriffa on helppo ja turvallinen ensikohde Espanjassa. Varaudu aurinkoon,
-käytä mukavia kenkiä kävelyyn ja tutustu myös hieman keskustan ulkopuolisiin
-alueisiin.
-</p>
+<h2>Hyödyllisiä sovelluksia</h2>
+<p>Lataa puhelimeesi ainakin nämä ennen matkaa:</p>
+<ul>
+	<li>
+		<strong>Google Maps:</strong> Navigointiin ja paikkojen etsimiseen. Muista ladata kartta
+		offline-tilaan!
+	</li>
+	<li>
+		<strong>ten+ móvil:</strong> TITSA-bussien virallinen sovellus aikatauluille ja lippujen
+		ostoon.
+	</li>
+	<li><strong>AEMET:</strong> Espanjan virallinen ja luotettavin sääsovellus.</li>
+</ul>
 
 <p>
-<a href="/kanariansaaret/teneriffa">← Takaisin Teneriffaan</a>
+	<a href="/kanariansaaret/teneriffa/paivaretket">← Edellinen: Päiväretket</a>
 </p>
+
+<p><a href="/kanariansaaret/teneriffa">← Takaisin Teneriffa-oppaaseen</a></p>

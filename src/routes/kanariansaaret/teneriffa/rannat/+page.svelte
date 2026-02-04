@@ -9,53 +9,79 @@
 <h1>Teneriffan rannat</h1>
 
 <p>
-Teneriffa tunnetaan erityisesti pitkistä ja hyvin hoidetuista hiekkarannoistaan.
-Rantoja on useita kilometrejä, ja ne ovat helposti saavutettavissa lähes mistä
-tahansa kaupunginosasta.
+	Teneriffan rannat ovat yhtä monimuotoisia kuin saari itse. Etelä tarjoaa perinteisiä,
+	kultahiekkaisia paratiiseja, kun taas pohjoinen yllättää dramaattisilla, mustan laavahiekan
+	peittämillä rannoillaan.
 </p>
 
-<h2>Suosituimmat rannat</h2>
+<h2>Etelän kultaiset hiekkarannat</h2>
 
-<h3>Playa de los Boliches</h3>
+<h3>Playa del Duque & Playa de Fañabé</h3>
 <p>
-Vilkas ja suosittu ranta, jonka läheisyydessä on paljon ravintoloita ja
-palveluita. Sopii hyvin lapsiperheille.
+	Costa Adejen tyylikkäimmät rannat tarjoavat vaaleaa hiekkaa, turkoosia vettä ja laadukkaita
+	palveluita. Rauhallinen ilmapiiri tekee niistä täydellisiä pariskunnille ja perheille, jotka
+	etsivät rentoa rantaelämää.
 </p>
 
-<h3>Playa del Castillo</h3>
+<h3>Playa de las Vistas</h3>
 <p>
-Rauhallisempi ranta lähellä linnan aluetta. Hyvä valinta, jos haluat enemmän
-tilaa ja vähemmän hälinää.
+	Los Cristianosin ja Las Américasin välissä sijaitseva pitkä, leveä ja suosittu kultahiekkainen
+	ranta, joka on suojassa aalloilta. Rannalla on paljon palveluita ja aktiviteetteja.
 </p>
 
-<h3>Playa de Carvajal</h3>
+<h3>Playa de las Teresitas</h3>
 <p>
-Hieman keskustan ulkopuolella sijaitseva ranta, jota pidetään yhtenä alueen
-siisteimmistä ja rauhallisimmista.
+	Pääkaupunki Santa Cruzin kupeessa sijaitseva ranta on kuin postikorttimaisema. Se on luotu
+	Saharasta tuodusta kullankeltaisesta hiekasta, ja palmujen reunustama poukama on erittäin
+	suosittu paikallisten keskuudessa viikonloppuisin.
 </p>
 
-<h2>Rantojen palvelut</h2>
+<h2>Pohjoisen vulkaaniset helmet</h2>
 
+<h3>Playa Jardín</h3>
+<p>
+	Puerto de la Cruzissa sijaitseva, taiteilija César Manriquen suunnittelema ranta-alue on
+	enemmän kuin vain ranta. Se on mustan laavahiekan, eksoottisten puutarhojen ja vesiputousten
+	kaunis yhdistelmä.
+</p>
+
+<h3>Playa de Benijo</h3>
+<p>
+	Anagan vuoriston juurella sijaitseva saaren syrjäisin ja dramaattisin ranta. Sen mustalta
+	hiekalta kohoavat upeat, meren muovaamat kalliomuodostelmat. Varo voimakkaita virtauksia; tämä
+	ranta on enemmän valokuvausta ja maisemien ihailua varten.
+</p>
+
+<h3>Garachicon luonnonaltaat (El Caletón)</h3>
+<p>
+	Ei perinteinen ranta, mutta ainutlaatuinen uimiskokemus. Tulivuorenpurkauksen synnyttämät
+	laavamuodostelmat ovat luoneet Atlantin aalloilta suojassa olevia luonnollisia
+	merivesialtaita.
+</p>
+
+<h2>Rantavinkit</h2>
 <ul>
-  <li>Aurinkotuolit ja -varjot</li>
-  <li>Suihkut ja wc-tilat</li>
-  <li>Rantabaarit ja <a href="/kanariansaaret/teneriffa/ravintolat">chiringuito-ravintolat</a></li>
-  <li>Esteettömiä kulkureittejä</li>
+	<li>
+		<strong>Musta hiekka kuumenee:</strong> Vulkaaninen hiekka voi tulla polttavan kuumaksi
+		auringossa. Rantakengät ovat välttämättömät.
+	</li>
+	<li>
+		<strong>Kunnioita Atlanttia:</strong> Erityisesti pohjoisessa merenkäynti voi olla voimakasta.
+		Noudata aina lippuohjeistusta (punainen lippu = uimakielto).
+	</li>
+	<li>
+		<strong>Suojaudu auringolta:</strong> Aurinko on erittäin voimakas myös pilvisellä säällä. Käytä
+		korkeakertoimista aurinkovoidetta.
+	</li>
+	<li>
+		<strong>Palvelut:</strong> Useimmilla suosituilla rannoilla voi vuokrata aurinkotuoleja ja -varjoja
+		(n. 8–12 € / päivä).
+	</li>
 </ul>
 
-<h2>Vinkkejä rantalomaan</h2>
-
-<ul>
-  <li>Aamupäivällä rannat ovat rauhallisempia</li>
-  <li>Kesällä aurinkosuoja on välttämätön</li>
-  <li>Talvikaudella rannat sopivat hyvin kävelyyn ja ulkoiluun</li>
-</ul>
-
 <p>
-<a href="/kanariansaaret/teneriffa/missa-asua">← Missä asua (alueet)</a> |
-<a href="/kanariansaaret/teneriffa/ravintolat">Ravintolat →</a>
+	<a href="/kanariansaaret/teneriffa/missa-asua">← Edellinen: Missä asua</a> |
+	<a href="/kanariansaaret/teneriffa/ravintolat">Seuraavaksi: Ravintolat →</a>
 </p>
 
-<p>
-<a href="/kanariansaaret/teneriffa">← Takaisin Teneriffaan</a>
-</p>
+<p><a href="/kanariansaaret/teneriffa">← Takaisin Teneriffa-oppaaseen</a></p>
