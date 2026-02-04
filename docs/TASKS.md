@@ -12,12 +12,11 @@ Päivitetty: 2026-02-04
 
 ## NEXT
 
-### Phase 6.5 — Hardening
+### Phase 7 — Launch
 
-- [ ] P6.5-001: Tarkista kaikki kriittiset polut toimivat päästä päähän
-- [ ] P6.5-002: Varmista error handling kaikissa kriittisissä kohdissa
-- [ ] P6.5-003: Testaa edge caset (tyhjät tulokset, virheelliset syötteet)
-- [ ] P6.5-004: Varmista että kaikki linkit toimivat
+- [ ] P7-001: Final smoke test
+- [ ] P7-002: Monitor production
+- [ ] P7-003: Document launch
 
 ### Phase 7 — Julkaisu
 
@@ -99,6 +98,13 @@ Päivitetty: 2026-02-04
 - [-] P6-003: Analytics setup (SKIPPED - optional, post-launch)
 - [-] P6-004: Error monitoring (SKIPPED - optional, post-launch)
 - [x] P6-005: Final review
+
+### Phase 6.5 — Hardening
+
+- [x] P6.5-001: Tarkista kaikki kriittiset polut toimivat päästä päähän
+- [x] P6.5-002: Varmista error handling kaikissa kriittisissä kohdissa
+- [x] P6.5-003: Testaa edge caset (tyhjät tulokset, virheelliset syötteet)
+- [x] P6.5-004: Varmista että kaikki linkit toimivat
 
 - [x] P0-SETUP-001: Projektin pystytys ja perusdokumentaatio
 - [x] P1-FNG-001: Fuengirola MVP-sisältö (PDF + sivut)

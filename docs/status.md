@@ -50,7 +50,7 @@ Päivitetty: 2026-02-04
 
 ## Current phase
 
-**Phase 6.5 — Hardening (ACTIVE)**
+**Phase 7 — Launch (ACTIVE)**
 
 Previous phases:
 - Phase 0 — Foundation ✅ COMPLETE
@@ -60,6 +60,7 @@ Previous phases:
 - Phase 4 — Site structure ✅ COMPLETE
 - Phase 5 — Testing ✅ COMPLETE
 - Phase 6 — Launch readiness ✅ COMPLETE
+- Phase 6.5 — Hardening ✅ COMPLETE
 
 See: [docs/roadmap-0-to-launch.md](./roadmap-0-to-launch.md)
 
@@ -84,8 +85,8 @@ See: [docs/roadmap-0-to-launch.md](./roadmap-0-to-launch.md)
 | Phase 4 — Site structure | ✅ COMPLETE |
 | Phase 5 — Testing | ✅ COMPLETE |
 | Phase 6 — Launch readiness | ✅ COMPLETE |
-| Phase 6.5 — Hardening | ACTIVE |
-| Phase 7 — Launch | PENDING |
+| Phase 6.5 — Hardening | ✅ COMPLETE |
+| Phase 7 — Launch | ACTIVE |
 
 ---
 
