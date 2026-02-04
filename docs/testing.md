@@ -1,5 +1,17 @@
 # TESTAUS – Lomaopas.fi
 
+## Test commands
+
+| Komento | Tarkoitus |
+|---------|-----------|
+| `npm run test` | Playwright E2E (headless) |
+| `npm run e2e` | Playwright E2E (alias) |
+| `npm run test:e2e` | Playwright E2E (alias) |
+| `npm run test:ui` | Playwright UI |
+| `npm run test:headed` | Playwright headed |
+
+Unit tests (Vitest) are not currently configured.
+
 ## 1. Pakolliset komennot
 
 Jokaisen koodimuutoksen jälkeen ajetaan:

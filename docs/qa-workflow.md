@@ -8,6 +8,18 @@
 - [ ] `npm run e2e` ✅ (kun UI/reitit/linkit muuttuvat)
 - [ ] Ei 404-linkkejä näkyvissä osioissa (etusivu + navigaatio)
 
+## Test commands
+
+| Komento | Tarkoitus |
+|---------|-----------|
+| `npm run test` | Playwright E2E (headless) |
+| `npm run e2e` | Playwright E2E (alias) |
+| `npm run test:e2e` | Playwright E2E (alias) |
+| `npm run test:ui` | Playwright UI |
+| `npm run test:headed` | Playwright headed |
+
+Unit tests (Vitest) are not currently configured.
+
 ## Phase Gate (Phase valmistuminen)
 
 Kun Phase on teknisesti valmis, ennen siirtymistä seuraavaan:

@@ -28,9 +28,21 @@ Ei mergeä ilman:
 |---------|-----------|
 | `npm run dev` | Käynnistä kehityspalvelin |
 | `npm run build` | Tuotantobuildi |
-| `npm run test` | Yksikkötestit (Vitest) |
-| `npm run e2e` | E2E-testit (Playwright) |
+| `npm run test` | Playwright E2E (headless) |
+| `npm run e2e` | Playwright E2E (alias) |
 | `npm run check` | TypeScript + Svelte tarkistukset |
+
+## Test commands
+
+| Komento | Tarkoitus |
+|---------|-----------|
+| `npm run test` | Playwright E2E (headless) |
+| `npm run e2e` | Playwright E2E (alias) |
+| `npm run test:e2e` | Playwright E2E (alias) |
+| `npm run test:ui` | Playwright UI |
+| `npm run test:headed` | Playwright headed |
+
+Unit tests (Vitest) are not currently configured.
 
 ## PR-raporttipohja
 
