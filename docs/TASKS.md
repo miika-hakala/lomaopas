@@ -6,22 +6,90 @@ Päivitetty: 2026-02-04
 
 ## ACTIVE
 
-- [ ] P1x-MLG-001: PDF master: Málaga (`docs/pdf/malaga_pdf.md`)
+(tyhjä)
 
 ---
 
 ## NEXT
 
-- [ ] P1x-MLG-002: Kaupunkisivut: Málaga
-- [ ] P2x-GC-001: QA/SEO-kierros: Gran Canaria
-- [ ] P2x-TFN-001: QA/SEO-kierros: Teneriffa
-- [ ] P1x-TOR-001: PDF master: Torremolinos
-- [ ] P2x-TH-001: PDF master: Thaimaa
-- [ ] P2x-MLC-001: PDF master: Mallorca
+### Phase 0 — Perustus ja näkyvyys
+
+- [ ] P0-001: Asenna riippuvuudet ja varmista että npm run dev käynnistyy
+- [ ] P0-002: Varmista että perusnäkymä aukeaa selaimessa lokaalisti
+- [ ] P0-003: Lisää PR-template ja kirjaa preview + testit pakollisiksi
+- [ ] P0-004: Lisää CI: npm run build + npm run test
+- [ ] P0-005: Lisää Playwright smoke-test (etusivu aukeaa)
+
+### Phase 1 — Vercel & Preview
+
+- [ ] P1-001: Luo Vercel-projekti repo lomaopas:lle
+- [ ] P1-002: Määritä Vercel build ja root directory oikein
+- [ ] P1-003: Ota käyttöön Preview deployments PR:ille
+- [ ] P1-004: Dokumentoi preview-linkki pakolliseksi PR:issä
+
+### Phase 2 — Supabase
+
+- [ ] P2-001: Luo Supabase production -projekti
+- [ ] P2-002: Tallenna Supabase env-varit lokaalisti ja Verceliin
+- [ ] P2-003: Ota Supabase CLI käyttöön ja linkitä projekti
+- [ ] P2-004: Luo schema v1 (destinations, articles, categories, sources)
+- [ ] P2-005: Lisää seed-data (1 kohde + 1 artikkeli)
+- [ ] P2-006: Lisää RLS: public read, admin write
+
+### Phase 3 — Admin & sisältö
+
+- [ ] P3-001: Ota Supabase Auth käyttöön (admin login)
+- [ ] P3-002: Luo admin-näkymä artikkeleiden listaukseen
+- [ ] P3-003: Lisää artikkelin luonti ja muokkaus
+- [ ] P3-004: Lisää publish/unpublish -toiminto
+
+### Phase 4 — Sivusto & reitit
+
+- [ ] P4-001: Rakenna etusivu
+- [ ] P4-002: Rakenna kohdelistaus
+- [ ] P4-003: Rakenna kohdesivu
+- [ ] P4-004: Rakenna artikkelisivu
+- [ ] P4-005: Lisää perushaku / filtterit
+
+### Phase 5 — Testaus & laatu
+
+- [ ] P5-001: Lisää e2e smoke-testit (etusivu, artikkeli, ei 404)
+- [ ] P5-002: Lisää broken-link -testi etusivulle
+- [ ] P5-003: Estä placeholder-linkit tuotannossa
+
+### Phase 6 — Julkaisuvalmius
+
+- [ ] P6-001: Lisää analytics ja performance-mittaus
+- [ ] P6-002: Lisää error monitoring
+
+### Phase 6.5 — Production hardening & compliance
+
+- [ ] P6.5-001: Erota preview ja production -ympäristöt
+- [ ] P6.5-002: Lisää security headers ja rate limiting
+- [ ] P6.5-003: Lisää tietosuojaseloste ja evästekäytäntö
+- [ ] P6.5-004: Lisää backup- ja palautuspolitiikka
+- [ ] P6.5-005: Lisää Google Search Console ja sitemap
+
+### Phase 7 — Julkaisu
+
+- [ ] P7-001: Määritä tuotantodomain ja HTTPS
+- [ ] P7-002: Tarkista env-varit tuotannossa
+- [ ] P7-003: Aja launch checklist ja julkaise
 
 ---
 
 ## PAUSED
+
+### Phase 8 — LomaSihteeri (Post-launch)
+
+- [ ] P8-001: LomaSihteeri MVP (AI-assistentti)
+
+### Phase 9 — PWA / Mobiilisovellus (Post-launch)
+
+- [ ] P9-001: PWA-toteutus
+- [ ] P9-002: Natiivisovellus (ehdollinen)
+
+### Muu (odottaa julkaisua)
 
 - [ ] P3.8-LAUNCH-001: PDF-myynnin lanseeraus (Stripe live)
 
@@ -37,10 +105,3 @@ Päivitetty: 2026-02-04
 - [x] P2x-AUTO-001: Multi-region scaffold-automaatio
 - [x] P2x-GC-000: Gran Canaria sisällöntuotanto (PDF + sivut)
 - [x] P2x-TFN-000: Teneriffa sisällöntuotanto (PDF + sivut)
-
----
-
-## PARKED (operatiivinen)
-
-- [ ] P4-APP-001: Natiivisovelluksen rakentaminen (Syy: odottaa Phase 3 lanseerausta ja validoitua tarvetta)
-- [ ] P4-APP-002: Offline-kartat ja syvemmät oppaat (Syy: liittyy natiivisovellukseen)
