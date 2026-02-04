@@ -15,18 +15,6 @@ until Phase 8 is explicitly activated.
 
 ## NEXT
 
-### Phase 7 — Launch
-
-- [ ] P7-001: Final smoke test
-- [ ] P7-002: Monitor production
-- [ ] P7-003: Document launch
-
-### Phase 7 — Julkaisu
-
-- [ ] P7-001: Määritä tuotantodomain ja HTTPS
-- [ ] P7-002: Tarkista env-varit tuotannossa
-- [ ] P7-003: Aja launch checklist ja julkaise
-
 ---
 
 ## PAUSED
@@ -47,6 +35,18 @@ until Phase 8 is explicitly activated.
 ---
 
 ## DONE
+
+### Phase 7 — Launch
+
+- [x] P7-001: Final smoke test
+- [x] P7-002: Monitor production
+- [x] P7-003: Document launch
+
+### Phase 7 — Julkaisu
+
+- [x] P7-001: Määritä tuotantodomain ja HTTPS
+- [x] P7-002: Tarkista env-varit tuotannossa
+- [x] P7-003: Aja launch checklist ja julkaise
 
 ### Phase 0 — Perustus ja näkyvyys
 
