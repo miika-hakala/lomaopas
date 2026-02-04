@@ -90,6 +90,42 @@ Gate: testit failaa jos 404
 - cookie notice jos tarvitaan
 Gate: dashboard näkyy (kävijät + virheet)
 
+## Phase 6.5 — Production hardening & compliance (P0)
+
+Tavoite: tuotantovalmius ilman sokkoa (turva, palautus, laki, SEO-suojat).
+
+### 6.5.1 Ympäristöt & rollback
+- Preview/Staging ja Production eroteltu (env-varit + tarvittaessa Supabase dev/prod)
+- Rollback-prosessi dokumentoitu (paluu edelliseen deployhin)
+- DB-migraatioiden palautusstrategia (rollback tai forward-fix) dokumentoitu
+Gate: pystyt palauttamaan edellisen toimivan deployn + migraatiostrategia on kirjattu
+
+### 6.5.2 Turva & kovennus
+- Security headers (vähintään: X-Frame-Options, Referrer-Policy, basic CSP)
+- Rate limiting API-routeille + adminille
+- Server-side input validation (ei vain client)
+- Admin RBAC selkeä + minimi audit trail (kuka julkaisi mitä)
+Gate: admin ja API suojattu (rate limit + validointi), ei avoimia kirjoitusoikeuksia
+
+### 6.5.3 GDPR / tietosuoja / evästeet
+- Tietosuojaseloste julkaistu
+- Evästekäytäntö julkaistu (jos analytics/cookies)
+- Cookie consent toteutettu jos trackereita käytössä
+Gate: sivustolla on vaaditut sivut ja consent toimii tarvittaessa
+
+### 6.5.4 Operointi: backupit & hälytykset
+- Supabase backup/snapshot -politiikka määritelty
+- Palautustesti tehty (vähintään kerran)
+- Monitoring + alertit (ei pelkkä dashboard): error rate / uptime ilmoitukset
+Gate: palautus on testattu ja hälytys tulee virheistä/katkoksista
+
+### 6.5.5 SEO tuotantotason suojat
+- 404/500 sivut + selkeä UX
+- Redirect-mappi (jos URLit muuttuu)
+- Structured data (minimi): Article + BreadcrumbList (+ tarvittaessa WebSite/SearchAction)
+- Preview-ympäristöt noindex (ettei Google indeksoi previewta)
+Gate: preview ei indeksoidu, tuotannossa 404/500 ok ja structured data mukana
+
 ## Phase 7 — Julkaisu (P0)
 7.1 Domain & prod-asetukset
 - domain, https, redirectit
