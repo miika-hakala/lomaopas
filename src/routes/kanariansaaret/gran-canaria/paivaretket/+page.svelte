@@ -11,72 +11,67 @@
   />
 </svelte:head>
 
-<h1>Päiväretket Gran Canariasta</h1>
+<h1>Päiväretket Gran Canarialta</h1>
 
 <p>
-  Gran Canarian keskeinen sijainti Costa del Solilla tekee siitä erinomaisen tukikohdan päiväretkille. Lähialueet tarjoavat upeita kaupunkeja, vuoristokyliä ja luonnonnähtävyyksiä, joihin pääsee helposti junalla, bussilla tai autolla.
+	Vaikka oma lomakohteesi olisi täydellinen, Gran Canarian todellinen luonne paljastuu parhaiten
+	päiväretkillä. Saaren kompaktin koon ansiosta voit kokea aavikkoa, vuoristoa ja suurkaupungin
+	sykettä saman päivän aikana.
 </p>
-
-<!-- TODO: Lisää cross-city linkit muihin kaupunkeihin (päiväretket) -->
 
 <h2>Suosituimmat päiväretkikohteet</h2>
 
-<h3>Málaga</h3>
+<h3>1. Las Palmas – Pääkaupungin sykkeeseen</h3>
 <p>
-  Alueen pääkaupunki, joka on täynnä kulttuuria, historiaa ja ostosmahdollisuuksia.
-  Vieraile Picasson museossa, Alcazaban linnoituksessa tai nauti vilkkaasta
-  kaupunkielämästä. Junalla vain ~45 minuuttia.
-  <a href="/kanariansaaret/malaga">Lue lisää Málagasta →</a>
+	Täydellinen vastakohta etelän lomakohteille. Las Palmas on aito, vilkas espanjalainen
+	suurkaupunki, joka tarjoaa kulttuuria, historiaa, shoppailua ja yhden maailman parhaista
+	kaupunkirannoista. Vieraile Veguetan historiallisessa kaupunginosassa, shoppaile Trianan
+	kävelykadulla ja rentoudu Las Canterasin rannalla paikallisten tapaan.
+</p>
+<p>
+	<strong>Miten päästä:</strong> Etelän lomakohteista pääsee erittäin helposti ja edullisesti
+	bussilla (esim. linjat 30, 50, 91). Matka kestää noin 45–60 minuuttia.
 </p>
 
-<h3>Benalmádena</h3>
+<h3>2. Vuoristokierros – Saaren sydämeen</h3>
 <p>
-  Costa del Solin monipuolisin perhelomakohde. Puerto Marinan satama, köysirata
-  vuorelle ja Selwo Marina. Junalla ~20 minuuttia.
-  <a href="/kanariansaaret/benalmadena">Lue lisää Benalmádenasta →</a>
-  <AffiliateLink link={activities.benalmadena} />
+	Koe "pienoismanner" käytännössä ajamalla rannikon kuivuudesta sisämaan vehreisiin laaksoihin ja
+	karuille huipuille. Reitin varrella on viehättäviä kyliä kuten Fataga, näköalapaikkoja ja
+	saaren kuuluisimmat luonnonnähtävyydet Roque Nublo ja Pico de las Nieves.
+</p>
+<p>
+	<strong>Miten päästä:</strong> Paras tapa on vuokra-autolla, joka antaa vapauden pysähdellä
+	omassa tahdissa. Myös valmiita, järjestettyjä bussiretkiä on runsaasti tarjolla.
+	<AffiliateLink link={transport.carRental} />
 </p>
 
-<h3>Mijas Pueblo</h3>
+<h3>3. Puerto de Mogán – Idyllinen satamakylä</h3>
 <p>
-  Vain lyhyen matkan päässä Gran Canariasta sijaitseva perinteinen andalusialainen valkoinen kylä. Ihaile upeita maisemia, kiertele kapeilla kujilla ja nauti rauhallisesta tunnelmasta.
-  <AffiliateLink link={activities.mijas} />
+	Vieraile "Kanarian Pikku-Venetsiassa", joka on monien mielestä saaren kaunein paikka. Nauti
+	romanttisesta tunnelmasta, kiertele kukkien koristamia kujia ja syö tuoretta kalaa
+	satamaravintolassa. Perjantaisin kylä täyttyy saaren suurimmista markkinoista.
+</p>
+<p>
+	<strong>Miten päästä:</strong> Bussit (esim. linja 1 ja 32) kulkevat tiheästi rannikkoa pitkin.
+	Hauska vaihtoehto on myös vesibussi (Ferry), joka kulkee Arguineguinin ja Puerto Ricon kautta.
+	<AffiliateLink link={activities.granCanaria} />
 </p>
 
-<h3>Marbella & Puerto Banús</h3>
+<h3>4. Teror & Arucas – Pohjoisen helmet</h3>
 <p>
-  Ylellisyydestään tunnettu Marbella tarjoaa kauniin vanhankaupungin ja vilkkaan satama-alueen Puerto Banúsissa, jossa voit ihailla luksusjahteja ja merkkiliikkeitä.
+	Tällä retkellä näet saaren vehreän ja perinteisen pohjoisosan. Teror on kuuluisa
+	pyhiinvaelluskirkostaan ja upeista, veistetyistä puuparvekkeistaan. Arucasin kaupunkia
+	hallitsee valtava, mustasta laavakivestä rakennettu kirkko, ja siellä sijaitsee myös
+	Arehucas-rommitehdas, jossa voi vierailla.
+</p>
+<p>
+	<strong>Miten päästä:</strong> Helpointa on liikkua vuokra-autolla, jolloin voi yhdistää
+	molemmat kohteet samaan päivään.
 </p>
 
-<h3>Ronda</h3>
 <p>
-  Vaikuttavalla paikalla rotkon reunalla sijaitseva historiallinen kaupunki. Rondan uusi silta (Puente Nuevo) on yksi Andalusian kuvatuimmista nähtävyyksistä.
-  <AffiliateLink link={activities.ronda} />
+	<a href="/kanariansaaret/gran-canaria/nahtavyydet">← Edellinen: Nähtävyydet</a> |
+	<a href="/kanariansaaret/gran-canaria/faq">Seuraavaksi: Usein kysytyt kysymykset →</a>
 </p>
 
-<h3>Nerja & Frigiliana</h3>
-<p>
-  Idässä sijaitseva Nerja on tunnettu upeista tippukiviluolistaan ja Balcón de Europa -näköalatasanteesta. Lähistöllä oleva Frigiliana on palkittu yhtenä Espanjan kauneimmista kylistä.
-</p>
-
-<h2>Liikkuminen retkille</h2>
-<p>Vaihtoehtoja on useita, ja lisätietoa löydät <a href="/kanariansaaret/gran-canaria/liikkuminen">liikkuminen Gran Canariassa</a> -sivultamme.</p>
-<ul>
-  <li><strong>Juna:</strong> Rannikkojuna (C-1) on kätevin ja nopein tapa matkustaa Málagan suuntaan.</li>
-  <li><strong>Bussi:</strong> Linja-autolla pääsee kätevästi moniin kohteisiin, kuten Mijasiin, Marbellaan ja Rondaan. Gran Canarian linja-autoasema sijaitsee keskeisellä paikalla.</li>
-  <li><strong>Auto:</strong> Vuokra-autolla liikkuminen antaa eniten vapautta. <AffiliateLink link={transport.carRental} /></li>
-</ul>
-
-<h2>Vinkkejä päiväretkille</h2>
-<ul>
-  <li><strong>Ajoitus:</strong> Lähde matkaan aamulla, jotta ehdit nähdä ja kokea mahdollisimman paljon.</li>
-  <li><strong>Liput:</strong> Suosituimpiin nähtävyyksiin, kuten Málagan museoihin tai Rondan areenalle, kannattaa ostaa liput etukäteen netistä.</li>
-  <li><strong>Kuumuus:</strong> Muista ottaa mukaan vettä, hattu ja aurinkovoidetta erityisesti kesäkuukausina.</li>
-  <li><strong>Lasten kanssa:</strong> Monet kohteet, kuten Málagan tiedemuseo tai Mijasin aasitaksit, ovat hauskoja myös perheen pienimmille.</li>
-</ul>
-
-<!-- TODO: Add cross-city links here, e.g., link to /kanariansaaret/malaga, /kanariansaaret/marbella, etc. -->
-
-<p>
-  <a href="/kanariansaaret/gran-canaria">← Takaisin Gran Canariaan</a>
-</p>
+<p><a href="/kanariansaaret/gran-canaria">← Takaisin Gran Canaria -oppaaseen</a></p>

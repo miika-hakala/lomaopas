@@ -9,89 +9,86 @@
 <h1>Usein kysytyt kysymykset Gran Canariasta</h1>
 
 <p>
-Tälle sivulle on koottu vastaukset yleisimpiin kysymyksiin, joita Gran Canariaan
-matkustavat pohtivat. Jos suunnittelet lomaa tai pidempää oleskelua, tästä saat
-nopean yleiskuvan.
+	Tälle sivulle on koottu vastaukset yleisimpiin kysymyksiin, joita Gran Canarialle matkustavat
+	pohtivat.
 </p>
 
-<h2>Milloin Gran Canariaan kannattaa matkustaa?</h2>
+<h2>Voiko Gran Canarialla juoda hanavettä?</h2>
 <p>
-Gran Canariaan voi matkustaa ympäri vuoden. Kevät ja syksy ovat monien mielestä
-parhaita aikoja miellyttävän sään ja pienempien turistimäärien ansiosta.
-Kesällä on kuumaa, talvella taas leutoa ja aurinkoista.
+	Ei suositella. Vaikka vesi on teknisesti puhdasta, se on usein merivedestä suodatettua ja
+	sisältää paljon mineraaleja, jotka voivat aiheuttaa vatsavaivoja tottumattomalle. Käytä sitä
+	hampaiden pesuun, mutta osta juomavesi pulloissa.
 </p>
 
-<h2>Onko Gran Canaria kallis matkakohde?</h2>
+<h2>Millainen on hintataso?</h2>
 <p>
-Gran Canaria on Espanjan mittapuulla kohtuuhintainen. Ruoka, julkinen liikenne ja
-palvelut ovat usein edullisempia kuin Pohjois-Euroopassa, erityisesti jos vältät
-turistisimmat paikat.
+	Yleisesti ottaen hieman Suomea edullisempi. Erityisesti ruokakaupassa ja ulkona syödessä
+	säästää. <a href="/kanariansaaret/gran-canaria/ravintolat">Ravintoloiden</a> hintataso on
+	kohtuullinen, ja paikalliset tuotteet ovat edullisia.
 </p>
 
-<h2>Onko Gran Canaria turvallinen?</h2>
+<h2>Tarvitsenko käteistä vai pärjääkö kortilla?</h2>
 <p>
-Gran Canaria on yleisesti ottaen turvallinen kaupunki. Kuten kaikissa
-matkakohteissa, taskuvarkauksiin kannattaa varautua vilkkailla alueilla ja
-turistikohteissa.
+	Molempi parempi. Kortti käy lähes kaikkialla, mutta käteistä on hyvä olla pieniä ostoksia,
+	toreja, busseja ja mahdollisia tippejä varten.
 </p>
 
-<h2>Tarvitseeko Gran Canariassa osata espanjaa?</h2>
+<h2>Onko saari turvallinen?</h2>
 <p>
-Espanjan osaaminen helpottaa arkea, mutta pärjäät hyvin myös englannilla.
-Monet paikalliset palvelut toimivat useilla kielillä, ja alueella on paljon
-kansainvälisiä asukkaita.
+	Kyllä, Gran Canaria on erittäin turvallinen kohde. Terve maalaisjärki auttaa pitkälle: pidä
+	huolta omaisuudestasi tungoksessa ja älä jätä arvoesineitä näkyville autoon tai rannalle.
+	Yleinen hätänumero on 112.
 </p>
 
-<h2>Miten Gran Canariassa liikutaan paikasta toiseen?</h2>
+<h2>Kannattaako auto vuokrata?</h2>
 <p>
-Liikkuminen on helppoa kävellen, junalla, bussilla ja taksilla. Lue lisää <a href="/kanariansaaret/gran-canaria/liikkuminen">liikkumisesta Gran Canariassa</a>. Junayhteys
-Málagaan ja lentokentälle on erityisen kätevä.
+	Ehdottomasti, jos haluat tutustua saaren upeisiin sisäosiin, vuoristokyliin ja
+	pohjoisrannikkoon. Jos kuitenkin aiot pysyä pääasiassa etelän lomakohteiden ja Las Palmasin
+	välillä, pärjäät mainiosti erinomaisella ja edullisella
+	<a href="/kanariansaaret/gran-canaria/liikkuminen">bussiverkostolla</a>.
 </p>
 
-<h2>Sopiiko Gran Canaria lapsiperheille?</h2>
+<h2>Milloin on paras aika matkustaa?</h2>
 <p>
-Kyllä. Pitkät hiekkarannat, matala rantavesi ja monipuoliset palvelut tekevät
-Gran Canariasta suositun kohteen lapsiperheille.
+	Sää on miellyttävä ympäri vuoden. Talvikuukaudet (loka-maaliskuu) ovat vilkkainta sesonkia,
+	jolloin lämpötila on Suomen kesän luokkaa. Kesällä (kesä-syyskuu) on kuumempaa, mutta
+	merituuli viilentää mukavasti.
 </p>
 
-<h2>Miten hintataso näkyy ravintoloissa?</h2>
+<h2>Puhuvatko paikalliset englantia?</h2>
 <p>
-Ravintoloiden hinnat vaihtelevat alueen ja ravintolatyypin mukaan. Paikalliset
-ravintolat ja rantabaarit ovat usein edullisempia kuin keskustan
-turistiravintolat. Lue lisää <a href="/kanariansaaret/gran-canaria/ravintolat">Gran Canarian ravintoloista</a>.
+	Kyllä, turistialueilla ja nuoremman sukupolven keskuudessa pärjää hyvin englannilla.
+	Pienemmissä kylissä ja kaupoissa muutama sana espanjaa, kuten <em>hola</em> (hei),
+	<em>gracias</em> (kiitos) ja <em>por favor</em> (pyydän), on kuitenkin erittäin arvostettu ele.
 </p>
 
-<h2>Kannattaako Gran Canariassa vuokrata auto?</h2>
+<h2>Mitä ovat dyynit ja saako niillä kävellä?</h2>
 <p>
-Auto ei ole välttämätön kaupungissa, mutta se voi olla hyödyllinen, jos aiot
-tehdä päiväretkiä tai liikkua laajemmin Andalusiassa.
+	Maspalomasin dyynit ovat luonnonsuojelualue, joka koostuu tuulen muovaamasta hiekasta.
+	Dyynialueella saa kävellä merkittyjä reittejä pitkin. Se on upea paikka auringonlaskun
+	ihailuun.
 </p>
 
-<h2>Minkälaiset rannat Gran Canariassa on?</h2>
+<h2>Lisää käytännön vinkkejä</h2>
+
+<h3>Ruokakaupat ja apteekit</h3>
 <p>
-Gran Canariassa on useita kilometrejä hyvin hoidettuja hiekkarantoja. Lue lisää <a href="/kanariansaaret/gran-canaria/rannat">Gran Canarian rannoista</a>.
+	Suuria supermarketteja (Mercadona, HiperDino) löytyy lomakohteiden laitamita, ja pienempiä
+	(SPAR, SuperDino) keskustoista. Apteekit (Farmacia) tunnistaa vihreästä rististä, ja niistä
+	saa apua pieniin vaivoihin. Aina yksi apteekki on päivystysvuorossa (farmacia de guardia).
 </p>
 
-<h2>Voiko Gran Canariasta tehdä helposti päiväretkiä?</h2>
-<p>
-Kyllä. Läheltä löytyvät esimerkiksi Málaga, Mijas Pueblo, Marbella ja Ronda.
-Lue lisää <a href="/kanariansaaret/gran-canaria/paivaretket">päiväretkistä Gran Canariasta</a>.
-</p>
-
-<h2>Onko Gran Canaria hyvä kohde talvella?</h2>
-<p>
-Talvella Gran Canaria on suosittu erityisesti pidempään oleskelevien ja
-talvehtijoiden keskuudessa. Sää on leuto ja aurinkoinen, ja palvelut toimivat
-ympäri vuoden.
-</p>
-
-<h2>Mitä kannattaa huomioida ensikertalaisena?</h2>
-<p>
-Gran Canaria on helppo ja turvallinen ensikohde Espanjassa. Varaudu aurinkoon,
-käytä mukavia kenkiä kävelyyn ja tutustu myös hieman keskustan ulkopuolisiin
-alueisiin.
-</p>
+<h3>Hyödyllisiä sovelluksia</h3>
+<p>Lataa puhelimeesi ainakin nämä ennen matkaa:</p>
+<ul>
+	<li><strong>Google Maps:</strong> Navigointiin ja paikkojen etsimiseen. Muista ladata kartta offline-tilaan!</li>
+	<li><strong>GuaguasGLOBAL:</strong> Saaren bussiverkoston virallinen sovellus aikatauluille ja reiteille.</li>
+	<li><strong>Google Translate:</strong> Auttaa rikkomaan kielimuuria ravintoloissa ja kaupoissa.</li>
+	<li><strong>AEMET:</strong> Espanjan virallinen ja luotettavin sääsovellus.</li>
+</ul>
 
 <p>
-<a href="/kanariansaaret/gran-canaria">← Takaisin Gran Canariaan</a>
+	<a href="/kanariansaaret/gran-canaria/paivaretket">← Edellinen: Päiväretket</a>
 </p>
+
+<p><a href="/kanariansaaret/gran-canaria">← Takaisin Gran Canaria -oppaaseen</a></p>

@@ -14,59 +14,83 @@
 <h1>Liikkuminen Gran Canariassa</h1>
 
 <p>
-Gran Canariassa liikkuminen on helppoa ja edullista. Kaupunki on melko tasainen ja
-sopii hyvin kävelyyn, mutta myös julkinen liikenne toimii luotettavasti.
+	Gran Canarialla liikkuminen on vaivatonta, ja saaren moniin osiin on hyvät yhteydet.
+	Lomakohteiden sisällä pärjää usein kävellen, mutta saaren muihin osiin tutustumiseen on
+	useita hyviä vaihtoehtoja.
 </p>
 
 <h2>Saapuminen lentokentältä</h2>
 
 <p>
-Málagan lentokentältä Gran Canariaan pääsee usealla tavalla:
+	Gran Canarian kansainvälinen lentokenttä (LPA) sijaitsee saaren itärannikolla, noin 25–30
+	minuutin ajomatkan päässä etelän suosituimmista lomakohteista.
 </p>
 
+<h3>Bussi (Guagua)</h3>
+<p>
+	Kätevin ja edullisin tapa siirtyä majoitukseen on saaren kattava sinisten "Global"-bussien
+	verkosto. Lipun voi ostaa suoraan kuljettajalta.
+</p>
 <ul>
-  <li><strong>Juna</strong> – nopein ja suosituin vaihtoehto, matka kestää noin 45 minuuttia</li>
-  <li><strong>Taksi tai kuljetus</strong> – suora ja helppo. <AffiliateLink link={transport.airportTransfer} /></li>
-  <li><strong>Vuokra-auto</strong> – hyvä vaihtoehto, jos aiot liikkua laajemmin</li>
+	<li>
+		<strong>Etelän lomakohteet (Maspalomas, Playa del Inglés):</strong> Linjat 66 ja 90. Matka
+		kestää n. 30–40 min ja maksaa n. 4 €.
+	</li>
+	<li>
+		<strong>Lounaisrannikko (Puerto Rico, Puerto de Mogán):</strong> Linja 91. Matka Mogániin
+		kestää n. tunnin ja maksaa n. 7 €.
+	</li>
+	<li>
+		<strong>Pääkaupunki Las Palmas:</strong> Linja 60. Matka kestää n. 30 min ja maksaa n. 3 €.
+	</li>
 </ul>
 
-<h2>Juna</h2>
-
+<h3>Taksi tai yksityiskuljetus</h3>
 <p>
-Paikallisjuna kulkee Gran Canarian ja Málagan välillä useita kertoja tunnissa.
-Junalla pääsee kätevästi myös lentokentälle ja naapurikaupunkeihin.
+	Taksi on nopein ja vaivattomin vaihtoehto. Hinta suosituimpiin etelän kohteisiin on noin
+	40–50 €. Voit myös varata etukäteen jaetun tai yksityisen kuljetuksen, mikä voi olla hyvä
+	vaihtoehto isommalle ryhmälle. <AffiliateLink link={transport.airportTransfer} />
+</p>
+
+<h2>Liikkuminen saarella</h2>
+
+<h3>Kävely</h3>
+<p>
+	Useimmat etelän lomakohteet, kuten Playa del Inglés, Maspalomas ja Meloneras, on suunniteltu
+	käveltäviksi. Rantabulevardit (Paseo Marítimo) yhdistävät alueita ja tarjoavat upeita
+	maisemia kävelylenkeille.
+</p>
+
+<h3>Bussit</h3>
+<p>
+	Saaren laajuinen Global-bussiverkosto on edullinen ja tehokas tapa nähdä saarta. Las
+	Palmasin sisällä liikennöivät keltaiset Guaguas Municipales -bussit. Reitit ja aikataulut
+	löytyvät parhaiten yhtiöiden omista sovelluksista (GuaguasGLOBAL ja GuaguasLPA).
+</p>
+
+<h3>Taksit</h3>
+<p>
+	Taksit ovat yleisiä ja luotettavia. Viralliset taksit ovat valkoisia, ja ne ovat hyvä
+	vaihtoehto lyhyille siirtymille lomakohteiden sisällä. Huomioi, että Uber ja Bolt eivät
+	toimi saarella.
+</p>
+
+<h3>Autoilu ja vuokra-auto</h3>
+<p>
+	Auton vuokraaminen on paras tapa tutustua saaren piilotettuihin helmiin, kuten vuoristokyliin
+	ja syrjäisempiin rantoihin. Polttoaine on yleensä Suomea edullisempaa, mutta huomioi, että
+	vuoristotiet voivat olla kapeita ja mutkaisia. Lue lisää
+	<a href="/kanariansaaret/gran-canaria/paivaretket">vinkkejämme päiväretkiin</a>.
 </p>
 
 <p>
-Gran Canariassa on useita asemia, kuten keskustan ja Los Bolichesin alueilla.
-</p>
-
-<h2>Bussit</h2>
-
-<p>
-Paikallisbussit kulkevat kaupungin sisällä ja lähialueille. Bussit ovat
-edullisia, mutta aikataulut voivat vaihdella erityisesti iltaisin.
-</p>
-
-<h2>Taksit ja sovellukset</h2>
-
-<p>
-Takseja on hyvin saatavilla, ja ne ovat luotettava tapa liikkua erityisesti
-iltaisin. Myös sovelluspohjaiset kyytipalvelut toimivat alueella.
-</p>
-
-<h2>Autoilu</h2>
-
-<p>
-Auton vuokraaminen voi olla järkevää, jos suunnittelet päiväretkiä tai haluat
-liikkua vapaammin. Keskustassa pysäköinti voi olla haastavaa, mutta parkkihalleja
-on useita. Lue lisää <a href="/kanariansaaret/gran-canaria/paivaretket">vinkkejämme päiväretkiin</a>.
+	<AffiliateLink link={transport.carRental} />
 </p>
 
 <p>
-<AffiliateLink link={transport.carRental} />
+	<a href="/kanariansaaret/gran-canaria/missa-asua">Seuraavaksi: Missä asua →</a>
 </p>
 
 <p>
-<a href="/kanariansaaret/gran-canaria">← Takaisin Gran Canariaan</a>
+	<a href="/kanariansaaret/gran-canaria">← Takaisin Gran Canaria -oppaaseen</a>
 </p>

@@ -14,50 +14,85 @@
 <h1>Gran Canarian nähtävyydet</h1>
 
 <p>
-  Vaikka Gran Canaria on tunnettu ennen kaikkea rannoistaan, kaupungista ja sen lähialueilta löytyy myös paljon nähtävää ja koettavaa. Tässä muutamia suosituimpia kohteita.
+	Gran Canaria on paljon muutakin kuin rantoja. Saaren sisäosien dramaattiset vuoristomaisemat,
+	viehättävät pikkukylät ja pääkaupungin vilinä tarjoavat nähtävää ja koettavaa jokaiselle.
 </p>
 
-<h2>Keskeiset nähtävyydet</h2>
+<h2>Luonnonnähtävyydet</h2>
 
-<h3>Castillo de Sohail</h3>
+<h3>Maspalomasin dyynit</h3>
 <p>
-  Tämä upea, 900-luvulta peräisin oleva linna vartioi kaupunkia joen suulla. Linna on itsessään vaikuttava näky, ja sen muurilta avautuvat hienot maisemat merelle ja vuorille. Se on myös loistava paikka aloittaa <a href="/kanariansaaret/gran-canaria/paivaretket">päiväretki</a> läheiseen Mijasin kylään.
+	Eteläkärjen ikoninen, Saharan aavikkoa muistuttava hiekkadyynialue on saaren kuuluisin
+	luonnonnähtävyys. Kävele dyynien halki Playa del Inglésistä Maspalomasin majakalle ja koe
+	ainutlaatuinen maisema.
 </p>
 
-<h3>Paseo Marítimo (Rantapaseo)</h3>
+<h3>Roque Nublo</h3>
 <p>
-  Gran Canarian kahdeksan kilometriä pitkä rantabulevardi on kaupungin sydän. Se on täydellinen paikka kävelylle, pyöräilylle tai vain ihmisten katseluun. Varella on lukemattomia kahviloita, baareja ja ravintoloita vieri vieressä <a href="/kanariansaaret/gran-canaria/rannat">rantojen</a> kanssa.
+	Saaren symboli ja entinen pyhä paikka. Noin 1,5 km pituinen helppo kävelyreitti vie sinut 80
+	metriä korkean monoliitin juurelle, josta avautuvat saaren upeimmat panoraamanäkymät.
 </p>
 
-<h3>Bioparc Gran Canaria</h3>
+<h3>Pico de las Nieves</h3>
 <p>
-  Moderni ja palkittu eläintarha, joka on erikoistunut uhanalaisiin lajeihin. Bioparc jäljittelee eläinten luonnollisia elinympäristöjä ja on suosittu kohde erityisesti lapsiperheiden keskuudessa.
-  <AffiliateLink link={tickets.bioparc} />
+	Gran Canarian korkein huippu (1949 m). Kirkkaalla säällä huipulta voi nähdä naapurisaari
+	Teneriffan ja sen Teide-tulivuoren. Huipulle pääsee autolla.
 </p>
 
-<h3>Satama (Puerto Deportivo)</h3>
+<h2>Kylät ja kaupungit</h2>
+
+<h3>Vegueta, Las Palmas</h3>
 <p>
-  Gran Canarian venesatama on vilkas paikka, jossa voi ihailla jahteja, nauttia ravintoloiden tarjonnasta tai lähteä veneretkelle. Satamasta lähtee risteilyjä delfiinien bongaukseen ja kalastusretkiä.
+	Pääkaupungin historiallinen sydän on tunnelmallinen sekoitus kapeita mukulakivikatuja,
+	värikkäitä siirtomaa-ajan rakennuksia ja viihtyisiä aukioita. Vieraile Santa Anan
+	katedraalissa ja Kolumbuksen talossa (Casa de Colón).
 </p>
 
-<h3>Markkinat</h3>
+<h3>Teror</h3>
 <p>
-  Gran Canariassa järjestetään yhdet Costa del Solin suurimmista markkinoista. Tiistaisin ja lauantaisin Feria-alue täyttyy kojuista, joissa myydään kaikkea vaatteista ja keramiikasta paikallisiin herkkuihin.
+	Yksi saaren kauneimmista kylistä, joka on kuuluisa perinteisistä kanarialaisista taloistaan ja
+	niiden koristeellisista puuparvekkeista. Sunnuntain markkinat ovat suosittuja.
 </p>
 
-<h2>Tekemistä ja aktiviteetteja</h2>
-<ul>
-  <li><strong>Kävelyreitit:</strong> Kiipeä Castillo Sohailin ympäristössä oleville kukkuloille tai kävele rantapaseo päästä päähän.</li>
-  <li><strong>Auringonlaskut:</strong> Nauti upeista auringonlaskuista linnan raunioilta tai jostakin rantapaseon monista baareista.</li>
-  <li><strong>Perhetekeminen:</strong> Bioparcin lisäksi lapsille on tarjolla vesipuisto (Aquamijas), minigolfia ja useita leikkipuistoja.</li>
-</ul>
+<h3>Puerto de Mogán</h3>
+<p>
+	"Kanarian Pikku-Venetsiaksi" kutsuttu kuvauksellinen satamakylä, jonka kanavat, sillat ja
+	kukkaloisto hurmaavat kävijän. Erinomainen paikka <a
+		href="/kanariansaaret/gran-canaria/paivaretket">päiväretkelle</a
+	>.
+</p>
 
-<h2>Vinkkejä</h2>
-<ul>
-  <li><strong>Paras aika vierailla:</strong> Nähtävyydet ovat ruuhkaisimpia keskikesällä. Kevät ja syksy ovat erinomaista aikaa tutustua kohteisiin rauhassa.</li>
-  <li><strong>Liput:</strong> Suosituimpiin kohteisiin liput kannattaa ostaa etukäteen verkosta jonojen välttämiseksi. <AffiliateLink link={activities['gran-canariaDayTrips']} showDisclosure={false} /></li>
-</ul>
+<h2>Tekemistä lasten kanssa</h2>
+
+<h3>Palmitos Park</h3>
+<p>
+	Laaja eläin- ja kasvitieteellinen puisto lähellä Maspalomasia. Upeat delfiini- ja
+	petolintunäytökset ovat puiston kohokohtia. <AffiliateLink link={tickets.palmitosPark} />
+</p>
+
+<h3>Aqualand Maspalomas</h3>
+<p>
+	Suuri vesipuisto, joka tarjoaa liukumäkiä ja altaita kaikenikäisille. Varma hitti kuumana
+	päivänä. <AffiliateLink link={tickets.aqualand} />
+</p>
+
+<h3>Poema del Mar</h3>
+<p>
+	Moderni ja näyttävä akvaario Las Palmasin satamassa. Kolmeen osaan jaettu akvaario esittelee
+	maailman meriä syvyyksistä sademetsiin.
+</p>
+
+<h3>Veneretket</h3>
+<p>
+	Lounaisrannikon satamista (erityisesti Puerto Rico) lähtee päivittäin retkiä, joilla voi nähdä
+	delfiinejä ja valaita niiden luonnollisessa ympäristössä. <AffiliateLink
+		link={activities.granCanaria}
+	/>
+</p>
 
 <p>
-  <a href="/kanariansaaret/gran-canaria">← Takaisin Gran Canariaan</a>
+	<a href="/kanariansaaret/gran-canaria/ravintolat">← Edellinen: Ravintolat</a> |
+	<a href="/kanariansaaret/gran-canaria/paivaretket">Seuraavaksi: Päiväretket →</a>
 </p>
+
+<p><a href="/kanariansaaret/gran-canaria">← Takaisin Gran Canaria -oppaaseen</a></p>

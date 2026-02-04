@@ -7,9 +7,10 @@
     <div class="city-card">
     <h3>Gran Canaria</h3>
     <p>
-      TODO: Lyhyt kuvaus Gran Canariasta (ranta, vanhakaupunki, tunnelma).
+      Monipuolinen saari, joka tunnetaan etelän kultaisista dyyneistä, vilkkaista lomakohteista ja
+      pohjoisen vehreästä luonnosta. Täydellinen sekoitus rantaelämää ja seikkailua.
     </p>
-    <p><strong>Sopii:</strong> TODO</p>
+    <p><strong>Sopii:</strong> Rantalomalaisille, aktiivisille seikkailijoille ja lapsiperheille.</p>
     <p><a href="/kanariansaaret/gran-canaria">Tutustu Gran Canariaan →</a></p>
   </div>
 
