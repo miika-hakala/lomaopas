@@ -4,7 +4,7 @@ import type { PageServerLoad } from './$types';
 export const load: PageServerLoad = async ({ params, locals }) => {
 	const { data: city, error: cityError } = await locals.supabase
 		.from('destinations')
-		.select('*, parent:destinations!parent_id(*)')
+		.select('*')
 		.eq('slug', params.city)
 		.eq('type', 'city')
 		.eq('published', true)
@@ -14,7 +14,17 @@ export const load: PageServerLoad = async ({ params, locals }) => {
 		throw error(404, 'City not found');
 	}
 
-	if (city.parent?.slug !== params.country) {
+	const { data: country, error: countryError } = await locals.supabase
+		.from('destinations')
+		.select('*')
+		.eq('id', city.parent_id)
+		.single();
+
+	if (countryError || !country) {
+		throw error(404, 'Country not found');
+	}
+
+	if (country.slug !== params.country) {
 		throw error(404, 'City not found in this country');
 	}
 
@@ -31,7 +41,7 @@ export const load: PageServerLoad = async ({ params, locals }) => {
 
 	return {
 		city,
-		country: city.parent,
+		country,
 		articles: articles || []
 	};
 };
