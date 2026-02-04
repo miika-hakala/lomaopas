@@ -23,22 +23,30 @@ Päivitetty: 2026-02-04
 
 | Component | Status |
 |-----------|--------|
-| Local dev | NOT RUN |
+| Local dev | ✅ RUNNING |
+| npm install | ✅ DONE |
+| npm run dev | ✅ WORKING |
+| PR template | ✅ CREATED |
+| CI workflow | ✅ ACTIVE |
+| Smoke tests | ✅ PASSING |
 | Vercel project | NOT CREATED |
 | Supabase project | NOT CREATED |
 
 ## Current phase
 
-**Phase 0 — Project foundation (ACTIVE)**
+**Phase 1 — Vercel & Preview (ACTIVE)**
+
+Previous phase: Phase 0 — Foundation ✅ COMPLETE
 
 See: [docs/roadmap-0-to-launch.md](./roadmap-0-to-launch.md)
 
 ## Next task
 
-**P0-001: Run project locally**
-- `npm install`
-- `npm run dev`
-- Verify homepage opens in browser
+**P1-001: Create Vercel project**
+- Add New Project → repo lomaopas
+- Configure root directory
+- Set build command + output
+- Enable Preview deployments for PRs
 
 ---
 
@@ -46,8 +54,8 @@ See: [docs/roadmap-0-to-launch.md](./roadmap-0-to-launch.md)
 
 | Phase | Status |
 |-------|--------|
-| Phase 0 — Foundation | ACTIVE |
-| Phase 1 — Vercel | PENDING |
+| Phase 0 — Foundation | ✅ COMPLETE |
+| Phase 1 — Vercel | ACTIVE |
 | Phase 2 — Supabase | PENDING |
 | Phase 3 — Admin | PENDING |
 | Phase 4 — Site structure | PENDING |

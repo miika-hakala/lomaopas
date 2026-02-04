@@ -12,14 +12,6 @@ Päivitetty: 2026-02-04
 
 ## NEXT
 
-### Phase 0 — Perustus ja näkyvyys
-
-- [ ] P0-001: Asenna riippuvuudet ja varmista että npm run dev käynnistyy
-- [ ] P0-002: Varmista että perusnäkymä aukeaa selaimessa lokaalisti
-- [ ] P0-003: Lisää PR-template ja kirjaa preview + testit pakollisiksi
-- [ ] P0-004: Lisää CI: npm run build + npm run test
-- [ ] P0-005: Lisää Playwright smoke-test (etusivu aukeaa)
-
 ### Phase 1 — Vercel & Preview
 
 - [ ] P1-001: Luo Vercel-projekti repo lomaopas:lle
@@ -96,6 +88,14 @@ Päivitetty: 2026-02-04
 ---
 
 ## DONE
+
+### Phase 0 — Perustus ja näkyvyys
+
+- [x] P0-001: Asenna riippuvuudet ja varmista että npm run dev käynnistyy
+- [x] P0-002: Varmista että perusnäkymä aukeaa selaimessa lokaalisti
+- [x] P0-003: Lisää PR-template ja kirjaa preview + testit pakollisiksi
+- [x] P0-004: Lisää CI: npm run build + npm run test
+- [x] P0-005: Lisää Playwright smoke-test (etusivu aukeaa)
 
 - [x] P0-SETUP-001: Projektin pystytys ja perusdokumentaatio
 - [x] P1-FNG-001: Fuengirola MVP-sisältö (PDF + sivut)
