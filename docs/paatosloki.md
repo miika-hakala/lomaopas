@@ -8,7 +8,7 @@
 > It is NOT a source of truth for the current Lomaopas.fi build status.
 >
 > ACTIVE status and next steps are defined in:
-> - [docs/roadmap-0-to-launch.md](./roadmap-0-to-launch.md)
+> - [docs/roadmap.md](./roadmap.md)
 > - [docs/TASKS.md](./TASKS.md)
 > - [docs/status.md](./status.md)
 
@@ -138,4 +138,3 @@ Päätös on lukittu, kun se on dokumentoitu projektin `docs`-kansiossa ja muuto
 - **Vaikutus:** Phase 2x.P0 edistyminen 2/5. Kanariansaaret-klusterin ensimmäiset kohteet valmiit sisällöntuotannossa, odottavat QA/SEO-kierrosta.
 - **Lähde:** `docs/pdf/gran-canaria_pdf.md`, `docs/pdf/teneriffa_pdf.md`, kaupunkisivut
 - **Commitit:** `1ad7011`, `8850b8b`, `53314d4`, `7bf9aeb`, `abb77b9`
-

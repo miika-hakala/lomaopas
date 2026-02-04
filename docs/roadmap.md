@@ -1,11 +1,6 @@
 # Roadmap
 
-> **LEGACY DOCUMENT (ARCHIVED)**
->
-> This document describes previously completed or historical phases.
-> It is NOT an active roadmap.
->
-> **ACTIVE roadmap:** [docs/roadmap-0-to-launch.md](./roadmap-0-to-launch.md)
+> **SSOT:** Tämä on projektin ainoa roadmap.
 >
 > **Workflow & gates:** [docs/workflow.md](./workflow.md) | [docs/qa-workflow.md](./qa-workflow.md)
 
@@ -355,6 +350,19 @@ Gate-säännöt:
 - Automaatiot eivät ole pakollisia
 - Manuaalinen workflow säilyy aina
 - Admin voi ohittaa automaation kokonaan
+
+---
+
+## Track — LomaSihteeri (AI-avusteinen matkailuassistentti) (POST-LAUNCH)
+
+Status: ⏸️ PAUSED
+
+Scope: lukee vain julkaistua sisältöä alkuvaiheessa, ei automaattisia DB-muutoksia
+
+Milestones:
+- LS-0: Rajaus & konsepti
+- LS-1: MVP (Q&A + suositukset)
+- LS-2: Syvempi integraatio (oppaat/ohjaus)
 
 ---
 

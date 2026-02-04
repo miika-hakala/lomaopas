@@ -8,13 +8,13 @@ Päivitetty: 2026-02-04
 >
 > This status describes ONLY the current Lomaopas.fi project.
 >
-> Previous implementations such as:
+> Historical implementations such as:
 > - Fuengirola MVP
 > - LomaSihteeri MVP
 > - Gran Canaria / Teneriffa content
 > - Stripe monetization experiments
 >
-> are HISTORICAL or separate projects and do NOT indicate
+> are HISTORICAL and do NOT indicate
 > the current build status of Lomaopas.fi.
 
 ---
@@ -50,7 +50,11 @@ Päivitetty: 2026-02-04
 
 ## Current phase
 
-**Phase 7 — Launch (ACTIVE)**
+**Phase 7 — Launch ✅ COMPLETE**
+
+Next: **Phase 8 — Post-Launch & Expansion (PAUSED)**
+
+LomaSihteeri track: **POST-LAUNCH — PAUSED**
 
 Previous phases:
 - Phase 0 — Foundation ✅ COMPLETE
@@ -62,15 +66,12 @@ Previous phases:
 - Phase 6 — Launch readiness ✅ COMPLETE
 - Phase 6.5 — Hardening ✅ COMPLETE
 
-See: [docs/roadmap-0-to-launch.md](./roadmap-0-to-launch.md)
+See: [docs/roadmap.md](./roadmap.md)
 
 ## Next task
 
-**P6.5-001: Verify all critical paths work end-to-end**
-- Test complete user journeys
-- Verify admin workflows
-- Check error handling
-- Ensure graceful failures
+**Phase 8 — Post-Launch & Expansion (PAUSED)**
+- No active tasks while paused
 
 ---
 
@@ -86,7 +87,8 @@ See: [docs/roadmap-0-to-launch.md](./roadmap-0-to-launch.md)
 | Phase 5 — Testing | ✅ COMPLETE |
 | Phase 6 — Launch readiness | ✅ COMPLETE |
 | Phase 6.5 — Hardening | ✅ COMPLETE |
-| Phase 7 — Launch | ACTIVE |
+| Phase 7 — Launch | ✅ COMPLETE |
+| Phase 8 — Post-Launch & Expansion | PAUSED |
 
 ---
 

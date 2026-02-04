@@ -28,9 +28,9 @@ Päivitetty: 2026-02-04
 
 ## PAUSED
 
-### Phase 8 — LomaSihteeri (Post-launch)
+### LomaSihteeri (POST-LAUNCH, PAUSED)
 
-- [ ] P8-001: LomaSihteeri MVP (AI-assistentti)
+- [ ] LS-001: LomaSihteeri MVP (AI-assistentti)
 
 ### Phase 9 — PWA / Mobiilisovellus (Post-launch)
 

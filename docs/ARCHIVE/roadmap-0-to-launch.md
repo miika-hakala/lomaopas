@@ -226,3 +226,4 @@ Gate:
 - Web käytössä tuotannossa
 - Analytics osoittaa toistuvaa käyttöä
 - Selkeä käyttötapaus sovellukselle
+# ARCHIVED / DEPRECATED — Not SSOT. See docs/roadmap.md.
