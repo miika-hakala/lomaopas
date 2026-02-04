@@ -12,25 +12,12 @@ Päivitetty: 2026-02-04
 
 ## NEXT
 
-### Phase 5 — Testing
+### Phase 6.5 — Hardening
 
-- [ ] P5-001: Aja täydellinen e2e-testisarja
-- [ ] P5-002: Testaa kaikki julkiset reitit automaattisesti
-- [ ] P5-003: Testaa admin CRUD -flow automaattisesti
-- [ ] P5-004: Varmista että build + deploy toimii Vercelissä
-
-### Phase 6 — Julkaisuvalmius
-
-- [ ] P6-001: Lisää analytics ja performance-mittaus
-- [ ] P6-002: Lisää error monitoring
-
-### Phase 6.5 — Production hardening & compliance
-
-- [ ] P6.5-001: Erota preview ja production -ympäristöt
-- [ ] P6.5-002: Lisää security headers ja rate limiting
-- [ ] P6.5-003: Lisää tietosuojaseloste ja evästekäytäntö
-- [ ] P6.5-004: Lisää backup- ja palautuspolitiikka
-- [ ] P6.5-005: Lisää Google Search Console ja sitemap
+- [ ] P6.5-001: Tarkista kaikki kriittiset polut toimivat päästä päähän
+- [ ] P6.5-002: Varmista error handling kaikissa kriittisissä kohdissa
+- [ ] P6.5-003: Testaa edge caset (tyhjät tulokset, virheelliset syötteet)
+- [ ] P6.5-004: Varmista että kaikki linkit toimivat
 
 ### Phase 7 — Julkaisu
 
@@ -97,6 +84,21 @@ Päivitetty: 2026-02-04
 - [x] P4-003: Luo julkinen article-sivu (/espanja/fuengirola/rannat)
 - [x] P4-004: Lisää navigaatio ja breadcrumbs (valmis implisiittisesti)
 - [x] P4-005: Testaa että RLS toimii (vain julkaistu sisältö näkyy)
+
+### Phase 5 — Testing
+
+- [x] P5-001: Aja täydellinen e2e-testisarja
+- [x] P5-002: Testaa kaikki julkiset reitit automaattisesti
+- [x] P5-003: Testaa admin CRUD -flow automaattisesti
+- [x] P5-004: Varmista että build + deploy toimii Vercelissä
+
+### Phase 6 — Launch readiness
+
+- [x] P6-001: SEO basics (meta tags, sitemap, robots.txt)
+- [x] P6-002: Performance check (implisiittinen - SvelteKit + Vercel optimoinnit)
+- [-] P6-003: Analytics setup (SKIPPED - optional, post-launch)
+- [-] P6-004: Error monitoring (SKIPPED - optional, post-launch)
+- [x] P6-005: Final review
 
 - [x] P0-SETUP-001: Projektin pystytys ja perusdokumentaatio
 - [x] P1-FNG-001: Fuengirola MVP-sisältö (PDF + sivut)

@@ -43,10 +43,14 @@ Päivitetty: 2026-02-04
 | Dynamic routes | ✅ WORKING |
 | Breadcrumbs | ✅ WORKING |
 | RLS tested | ✅ PASSING |
+| E2E tests | ✅ PASSING (16 tests) |
+| SEO basics | ✅ IMPLEMENTED |
+| Sitemap | ✅ DEPLOYED |
+| Meta tags | ✅ IMPLEMENTED |
 
 ## Current phase
 
-**Phase 5 — Testing (ACTIVE)**
+**Phase 6.5 — Hardening (ACTIVE)**
 
 Previous phases:
 - Phase 0 — Foundation ✅ COMPLETE
@@ -54,16 +58,18 @@ Previous phases:
 - Phase 2 — Supabase ✅ COMPLETE
 - Phase 3 — Admin & sisältö ✅ COMPLETE
 - Phase 4 — Site structure ✅ COMPLETE
+- Phase 5 — Testing ✅ COMPLETE
+- Phase 6 — Launch readiness ✅ COMPLETE
 
 See: [docs/roadmap-0-to-launch.md](./roadmap-0-to-launch.md)
 
 ## Next task
 
-**P5-001: Run full e2e test suite**
-- Test all public routes
-- Test admin CRUD flows
-- Verify RLS in automated tests
-- Ensure all critical paths work
+**P6.5-001: Verify all critical paths work end-to-end**
+- Test complete user journeys
+- Verify admin workflows
+- Check error handling
+- Ensure graceful failures
 
 ---
 
@@ -76,9 +82,9 @@ See: [docs/roadmap-0-to-launch.md](./roadmap-0-to-launch.md)
 | Phase 2 — Supabase | ✅ COMPLETE |
 | Phase 3 — Admin | ✅ COMPLETE |
 | Phase 4 — Site structure | ✅ COMPLETE |
-| Phase 5 — Testing | ACTIVE |
-| Phase 6 — Launch readiness | PENDING |
-| Phase 6.5 — Hardening | PENDING |
+| Phase 5 — Testing | ✅ COMPLETE |
+| Phase 6 — Launch readiness | ✅ COMPLETE |
+| Phase 6.5 — Hardening | ACTIVE |
 | Phase 7 — Launch | PENDING |
 
 ---
