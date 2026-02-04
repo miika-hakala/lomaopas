@@ -1,5 +1,19 @@
 # Päätösloki – Lomaopas.fi
 
+> **HISTORICAL DECISIONS LOG**
+>
+> This file contains historical decisions from previous sessions,
+> experiments and related projects.
+>
+> It is NOT a source of truth for the current Lomaopas.fi build status.
+>
+> ACTIVE status and next steps are defined in:
+> - [docs/roadmap-0-to-launch.md](./roadmap-0-to-launch.md)
+> - [docs/TASKS.md](./TASKS.md)
+> - [docs/status.md](./status.md)
+
+---
+
 ## Periaatteet
 Tämä loki kirjaa Lomaopas.fi-projektin keskeiset, lukitut päätökset aikajärjestyksessä. Sen tarkoitus on ylläpitää projektin visiota ja estää scope-vuotoa.
 
