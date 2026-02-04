@@ -164,3 +164,57 @@ Gate: go live vasta kun checklist täynnä
 
 ## Jatkuva työskentelymalli
 Jokainen PR: local → preview (käyttäjä näkee) → testit (CI) → merge → prod tarvittaessa
+
+---
+
+## Phase 8 — LomaSihteeri (AI-avusteinen matkailuassistentti) (POST-LAUNCH)
+
+Tavoite: tarjota käyttäjälle älykäs, kontekstuaalinen apuri hyödyntäen
+julkaistua ja validoitua Lomaopas-sisältöä.
+
+### 8.1 Rajaus (tärkeä)
+- EI osa Lomaopas v1 -julkaisua
+- EI vaikuta Phase 0–7 aikatauluun
+- Read-only suhteessa tietokantaan alkuvaiheessa
+
+### 8.2 Toiminnallisuus v1
+- Kysymys–vastaus artikkeleista ja kohteista
+- Suositukset olemassa olevasta sisällöstä
+- Ei sisällön generointia ilman lähdettä
+
+### 8.3 Tekniset periaatteet
+- Käyttää vain julkaistua dataa (published=true)
+- Ei automaattisia DB-muutoksia
+- Lokitus ja rajoitukset (rate limit)
+
+Gate:
+- Web julkaistu
+- Sisältömalli vakaa
+- Käyttödata saatavilla (analytics)
+
+---
+
+## Phase 9 — PWA / Mobiilisovellus (POST-LAUNCH)
+
+Tavoite: parantaa saavutettavuutta ja sitoutumista, ei korvata webiä.
+
+### 9.1 Rajaus (tärkeä)
+- EI natiivisovellusta ennen PWA:ta
+- EI osa Lomaopas v1 -julkaisua
+- Päätös perustuu käyttödataan, ei oletuksiin
+
+### 9.2 PWA (ensisijainen)
+- Add to Home Screen
+- Offline-tuki keskeisille sivuille
+- Push-notifikaatiot (vain jos perusteltu)
+
+### 9.3 Natiivisovellus (ehdollinen)
+- iOS / Android vain jos:
+  - PWA ei riitä
+  - Käyttödata osoittaa tarpeen
+  - Backend vakaa
+
+Gate:
+- Web käytössä tuotannossa
+- Analytics osoittaa toistuvaa käyttöä
+- Selkeä käyttötapaus sovellukselle
