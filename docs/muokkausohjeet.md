@@ -184,8 +184,3 @@ Muokkaus ei ole vapaata luovuutta.
 Muokkaus on hallittua, dokumentoitua ja perusteltua toimintaa.
 
 Näin Lomaopas.fi pysyy selkeänä, hallittuna ja kannattavana.
-Tämän jälkeen Codex CLI voi jatkaa suoraan:
-
-git add docs/muokkausohjeet.md
-git commit -m "docs: add content editing and change rules"
-git push

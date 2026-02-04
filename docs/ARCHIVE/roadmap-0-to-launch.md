@@ -227,3 +227,4 @@ Gate:
 - Analytics osoittaa toistuvaa käyttöä
 - Selkeä käyttötapaus sovellukselle
 # ARCHIVED / DEPRECATED — Not SSOT. See docs/roadmap.md.
+Do not follow instructions here.
