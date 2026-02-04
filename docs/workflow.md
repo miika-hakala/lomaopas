@@ -102,6 +102,9 @@ Tarkistetaan:
 - Ei massajulkaisuja
 - Ei suoraa AI → publish -ketjua
 
+Kohdeoppaan visuaalinen ja sisällöllinen referenssi:
+`docs/design-mvp-fuengirola.md`
+
 ## QA Checklist — Destination Guide Publication
 
 ### Rakenne

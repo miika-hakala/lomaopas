@@ -303,6 +303,9 @@ DONE-kriteeri:
 - Sisältö on luettavaa pitkissä artikkeleissa
 - Uusia oppaita voi lisätä ilman design-työtä
 
+Design + Brand MVP referenssisivu (kohdeopas):
+`docs/design-mvp-fuengirola.md`
+
 Design MVP ei laajene ilman erillistä päätöstä.
 
 ---
