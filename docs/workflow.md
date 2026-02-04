@@ -57,3 +57,74 @@ Ei mergeä ilman:
 ### Notes
 [Lisätiedot tarvittaessa]
 ```
+
+## Minimitason manuaalinen opas-workflow (SSOT)
+
+Tämä workflow on virallinen tapa luoda uusia oppaita
+ennen admin-automaation valmistumista.
+
+### 🧱 Vaihe 1 — Päätös
+1. Päätetään:
+   - Alueopas vai Kohdeopas
+2. Varmistetaan, että rakenne noudattaa HUB/SPOKE-sääntöä
+
+### 📄 Vaihe 2 — Sisällön scaffold
+1. Luodaan opas vakioidun mallin mukaan:
+   - Alueopas-malli TAI
+   - Kohdeopas-malli
+2. Kaikki osiot luodaan tyhjinä tai luonnoksina
+
+### ✍️ Vaihe 3 — Sisällöntuotanto
+Sallittua:
+- Manuaalinen kirjoittaminen
+- AI-avusteinen luonnostelu (Claude / agentti)
+
+Pakollista:
+- Sisällön tarkistus
+- Rakenteen säilyttäminen
+
+### 🧪 Vaihe 4 — QA
+Tarkistetaan:
+- Oikea opastyyppi
+- Oikea linkitys (alue ↔ kohde)
+- Ei päällekkäistä sisältöä
+- Ei rikottuja linkkejä
+
+### 🚀 Vaihe 5 — Julkaisu
+1. Opas merkitään julkaistuksi
+2. Lisätään linkitys:
+   - Alueoppaaseen
+   - Mahdollisiin sisaroppaisiin
+3. Tarkistetaan näkyvyys frontendissä
+
+### 🔒 Workflow-säännöt
+- Yksi opas = yksi julkaisu kerrallaan
+- Ei massajulkaisuja
+- Ei suoraa AI → publish -ketjua
+
+## QA Checklist — Destination Guide Publication
+
+### Rakenne
+- [ ] Oikea opastyyppi (Alue / Kohde)
+- [ ] Noudattaa virallista opas-tyyppimallia
+- [ ] Kaikki pakolliset osiot olemassa
+
+### Sisältö
+- [ ] Ei placeholder-tekstiä
+- [ ] Ei päällekkäistä sisältöä muiden oppaiden kanssa
+- [ ] Sisältö vastaa yhtä selkeää hakuintentiota
+
+### Linkitys
+- [ ] Alueopas linkittää kohdeoppaaseen (jos kohde)
+- [ ] Kohdeopas linkittää takaisin alueoppaaseen
+- [ ] Ei rikottuja sisäisiä linkkejä
+
+### SEO (kevyt)
+- [ ] Otsikko vastaa kohdetta
+- [ ] Meta-kuvaus olemassa
+- [ ] Ei kilpaile toisen oppaan kanssa samoista termeistä
+
+### Julkaisu
+- [ ] Manuaalinen tarkistus tehty
+- [ ] Ei AI-sisältöä ilman tarkistusta
+- [ ] Julkaistu yksi opas kerrallaan

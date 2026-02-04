@@ -268,6 +268,46 @@ Jokainen kohdeopas linkittää takaisin Gran Canariaan
 
 ---
 
+## Phase 9 — Admin Automation & Assisted Content Creation (DRAFT)
+
+Status: 📝 DRAFT (ei aikataulutettu)
+
+Tavoite:
+- Nopeuttaa uusien matkakohteiden luontia
+- Vähentää manuaalista virhettä
+- Mahdollistaa hallittu AI-avusteinen sisällöntuotanto admin-paneelissa
+
+Phase 9 on puhtaasti parannusvaihe.
+Se ei ole edellytys sisällön skaalaukselle Phase 8:ssa.
+
+### Phase 9.1 — Admin-assisted Destination Creation
+
+Mahdollinen toteutus:
+
+Admin-paneeli tarjoaa ohjatun prosessin:
+1. Luo uusi alue tai kohde
+2. Valitse opastyyppi (Alue / Kohde)
+3. Automaattinen scaffold:
+   - sivurakenne
+   - tyhjät osiot
+4. AI-avusteinen sisällön luonnostelu (valinnainen)
+5. Pakollinen manuaalinen tarkistus
+6. Julkaisu vain admin-hyväksynnällä
+
+Rajoitukset:
+- AI ei koskaan julkaise suoraan
+- AI ei muuta rakennetta
+- Kaikki AI-sisältö = DRAFT
+
+### Phase 9 — Gate-periaatteet
+
+Gate-säännöt:
+- Automaatiot eivät ole pakollisia
+- Manuaalinen workflow säilyy aina
+- Admin voi ohittaa automaation kokonaan
+
+---
+
 ## 🧠 PARKED & FUTURE SYSTEMS
 
 ### Local AI Agent (Offline / Private)
