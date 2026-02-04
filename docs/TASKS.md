@@ -115,14 +115,14 @@ Päivitetty: 2026-02-03
 
 #### Gran Canaria
 - [x] PDF stub (`npm run new-city`)
-- [ ] PDF master (sisältö täytetty)
+- [x] PDF master (sisältö täytetty)
 - [x] City pages (hub + alasivut)
 - [ ] QA/SEO (`docs/QA_CITY_CHECKLIST.md`)
 - [ ] DONE
 
 #### Teneriffa
 - [x] PDF stub (`npm run new-city`)
-- [ ] PDF master (sisältö täytetty)
+- [x] PDF master (sisältö täytetty)
 - [x] City pages (hub + alasivut)
 - [ ] QA/SEO (`docs/QA_CITY_CHECKLIST.md`)
 - [ ] DONE

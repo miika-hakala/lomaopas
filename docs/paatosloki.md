@@ -118,3 +118,10 @@ Päätös on lukittu, kun se on dokumentoitu projektin `docs`-kansiossa ja muuto
 - **Testattu:** Málaga & Torremolinos (idempotenssi), Gran Canaria (multi-region, hyphenated slug), Teneriffa (multi-city per region).
 - **Lähde:** `docs/scripts/new-city-multiregion.md`, `scripts/new-city.ts`
 - **Commitit:** `cb78bbb`, `e5e8637`, `fa9d4c1`, `47b11a0`, `4980a11`
+
+### 2026-02-04 – Gran Canaria ja Teneriffa sisältötuotanto valmis
+- **Kuvaus:** Gran Canarian ja Teneriffan PDF masterit täytetty sisällöllä ja kaupunkisivut (hub + 7 alasivua) generoitu PDF:n pohjalta. Molemmat kohteet läpäisivät teknisen validoinnin (npm run check + npm run build).
+- **Vaikutus:** Phase 2x.P0 edistyminen 2/5. Kanariansaaret-klusterin ensimmäiset kohteet valmiit sisällöntuotannossa, odottavat QA/SEO-kierrosta.
+- **Lähde:** `docs/pdf/gran-canaria_pdf.md`, `docs/pdf/teneriffa_pdf.md`, kaupunkisivut
+- **Commitit:** `1ad7011`, `8850b8b`, `53314d4`, `7bf9aeb`, `abb77b9`
+
