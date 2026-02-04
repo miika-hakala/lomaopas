@@ -12,15 +12,6 @@ Päivitetty: 2026-02-04
 
 ## NEXT
 
-### Phase 2 — Supabase
-
-- [ ] P2-001: Luo Supabase production -projekti
-- [ ] P2-002: Tallenna Supabase env-varit lokaalisti ja Verceliin
-- [ ] P2-003: Ota Supabase CLI käyttöön ja linkitä projekti
-- [ ] P2-004: Luo schema v1 (destinations, articles, categories, sources)
-- [ ] P2-005: Lisää seed-data (1 kohde + 1 artikkeli)
-- [ ] P2-006: Lisää RLS: public read, admin write
-
 ### Phase 3 — Admin & sisältö
 
 - [ ] P3-001: Ota Supabase Auth käyttöön (admin login)
@@ -96,6 +87,15 @@ Päivitetty: 2026-02-04
 - [x] P1-002: Määritä Vercel build ja root directory oikein
 - [x] P1-003: Ota käyttöön Preview deployments PR:ille
 - [x] P1-004: Dokumentoi preview-linkki pakolliseksi PR:issä
+
+### Phase 2 — Supabase
+
+- [x] P2-001: Luo Supabase production -projekti
+- [x] P2-002: Tallenna Supabase env-varit lokaalisti ja Verceliin
+- [x] P2-003: Ota Supabase CLI käyttöön ja linkitä projekti
+- [x] P2-004: Luo schema v1 (destinations, articles, categories, sources)
+- [x] P2-005: Lisää seed-data (1 kohde + 1 artikkeli)
+- [x] P2-006: Lisää RLS: public read, admin write
 
 - [x] P0-SETUP-001: Projektin pystytys ja perusdokumentaatio
 - [x] P1-FNG-001: Fuengirola MVP-sisältö (PDF + sivut)
