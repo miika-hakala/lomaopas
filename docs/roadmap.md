@@ -311,6 +311,9 @@ Out of scope (Design MVP):
 - Admin-näkymien design
 - Brändigraafiset kuvitukset
 
+Phase 8 can be moved to ACTIVE only by explicit decision after Design MVP
+implementation or a pilot destination guide.
+
 ---
 
 ## Phase 9 — Admin Automation & Assisted Content Creation (DRAFT)

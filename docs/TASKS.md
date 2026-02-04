@@ -8,6 +8,9 @@ Päivitetty: 2026-02-04
 
 (tyhjä)
 
+Note: There are currently no ACTIVE tasks. All post-launch work is paused
+until Phase 8 is explicitly activated.
+
 ---
 
 ## NEXT
