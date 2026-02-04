@@ -50,3 +50,9 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+
+## Roadmap & Tracks (SSOT)
+
+This repository uses a single roadmap: docs/roadmap.md.
+LomaSihteeri is an integral part of Lomaopas but is managed as a separate
+POST-LAUNCH track, not as a Phase.
