@@ -1,6 +1,16 @@
-# sv
+# Lomaopas.fi
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Suomenkielinen matkaopas suosittuihin lomakohteisiin.
+
+## Documentation
+
+- [Workflow](docs/workflow.md) – PR-käytännöt ja gate-säännöt
+- [QA workflow](docs/qa-workflow.md) – Definition of Done ja testaus
+- [Roadmap](docs/roadmap.md) – Projektin vaiheet ja status
+
+---
+
+*Powered by SvelteKit.*
 
 ## Creating a project
 

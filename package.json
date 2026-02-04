@@ -10,8 +10,10 @@
 		"prepare": "svelte-kit sync || echo ''",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"test": "echo 'No unit tests configured yet'",
 		"test:e2e": "playwright test",
 		"test:e2e:ui": "playwright test --ui",
+		"e2e": "playwright test",
 		"new-city": "tsx scripts/new-city.ts"
 	},
 	"devDependencies": {
