@@ -157,6 +157,117 @@ Lähde: `docs/market/top-destinations-2026.md`
 
 ---
 
+## Phase 8 — Post-Launch & Expansion (PAUSED)
+
+Status: ⏸️ PAUSED  
+Tila: Suunniteltu ja lukittu, ei aktiivista kehitystä
+
+Tavoite:
+- Skaalata sisältöä hallitusti
+- Rakentaa SEO- ja liikenneperusta
+- Valmistella kaupallistamista
+- Mahdollistaa AI-agenttien turvallinen käyttö
+
+Phase 8 ei sisällä uusia core-featureita eikä teknisiä refaktoreita.
+Kaikki toteutus vaatii erillisen päätöksen Phase 8:n avaamisesta.
+
+### Phase 8.1 — Content Expansion (LOCKED DESIGN)
+
+SISÄLTÖRAKENNESÄÄNTÖ (SSOT):
+
+- Alueet (saaret, rannikkoalueet) toteutetaan yleisoppaina (hub)
+- Kaupungit ja lomakohteet toteutetaan omina oppainaan (spoke)
+- Alueopas ohjaa, kohdeopas syventää
+- Yksi opas = yksi selkeä hakuintentio
+- Massasisältöä ei tuoteta ilman QA-porttia
+
+OPAS-TYYPPIMALLIT (virallinen)
+
+Alueopas (HUB) – malli
+# {ALUEEN NIMI} – Matkaopas
+
+## Yleiskuva
+Lyhyt johdanto alueeseen ja sen luonteeseen.
+
+## Missä alue sijaitsee
+Maantieteellinen sijainti ja kartta.
+
+## Ilmasto ja paras matkustusaika
+Yleistasoinen kuvaus vuodenajoista.
+
+## Kenelle alue sopii
+Perheet, pariskunnat, aktiivilomat, etätyö jne.
+
+## Lomakohteet alueella
+- [Kohde 1]
+- [Kohde 2]
+- [Kohde 3]
+
+## Liikkuminen alueella
+Autot, julkinen liikenne, etäisyydet (yleistaso).
+
+## Usein kysytyt kysymykset
+Lyhyet, alueelliset vastaukset.
+
+Alueopas ei sisällä yksityiskohtaisia nähtävyys-, ravintola- tai aktiviteettilistoja.
+
+Kohdeopas (SPOKE) – malli
+# {KOHTEEN NIMI} – Matkaopas
+
+## Yleiskuva
+Millainen kohde on ja kenelle se sopii.
+
+## Sijainti ja saapuminen
+Miten kohteeseen pääsee.
+
+## Rannat
+Kohteen tärkeimmät rannat.
+
+## Nähtävyydet
+Paikalliset nähtävyydet ja kohokohdat.
+
+## Tekemistä ja aktiviteetit
+Ulkoilu, retket, tapahtumat.
+
+## Ravintolat ja ruokailu
+Paikalliset ravintolat ja ruokakulttuuri.
+
+## Liikkuminen kohteessa
+Kävellen, bussit, taksit, vuokraus.
+
+## Päiväretket
+Retkikohteet lähialueella.
+
+## Käytännön vinkit
+Hyvä tietää ennen matkaa.
+
+## Usein kysytyt kysymykset
+Kohdekohtaiset kysymykset ja vastaukset.
+
+Gran Canaria – konkreettinen hierarkia (esimerkkikohde)
+
+Alueopas
+
+Gran Canaria (alueopas)
+
+Kohdeoppaat
+
+Playa del Inglés
+
+Maspalomas
+
+Puerto Rico
+
+Las Palmas
+
+Sääntö:
+
+Gran Canaria -opas ei sisällä yksityiskohtaista sisältöä näistä
+
+Jokainen kohdeopas linkittää takaisin Gran Canariaan
+
+---
+
 ## 🧠 PARKED & FUTURE SYSTEMS
 
 ### Local AI Agent (Offline / Private)
