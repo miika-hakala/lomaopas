@@ -1,7 +1,31 @@
 <svelte:head>
-  <title>Lomaopas.fi - Suomenkielinen matkaopas</title>
+	<title>Lomaopas.fi - Suomenkielinen matkaopas</title>
 </svelte:head>
 
-<h1>Lomaopas.fi</h1>
-<p>Minimalistinen runko, joka listaa Espanjan kohteet ja Fuengirolan alasivut.</p>
-<p><a href="/espanja">Siirry Espanja-sivulle</a></p>
+<div class="container">
+	<h1>Lomaopas.fi</h1>
+	<p>Minimalistinen runko, joka listaa Espanjan kohteet ja Fuengirolan alasivut.</p>
+	<p><a href="/espanja">Siirry Espanja-sivulle</a></p>
+</div>
+
+<style>
+	.container {
+		max-width: 900px;
+		margin: 0 auto;
+		padding: 2rem;
+	}
+
+	h1 {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+	}
+
+	a {
+		color: #3b82f6;
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+</style>
