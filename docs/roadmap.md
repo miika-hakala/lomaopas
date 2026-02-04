@@ -268,6 +268,45 @@ Jokainen kohdeopas linkittää takaisin Gran Canariaan
 
 ---
 
+### Phase 8.2 — Design MVP (PAUSED)
+
+Status: ⏸️ PAUSED  
+Tila: Määritelty ja lukittu, ei toteutusta
+
+Tavoite:
+- Luoda kevyt mutta kestävä visuaalinen perusta
+- Tukea hub/spoke-sisältörakennetta
+- Mahdollistaa sisällön skaalaus ilman design-muutoksia
+
+Rajaus:
+- Koskee vain:
+  - Alueoppaita (hub)
+  - Kohdeoppaita (spoke)
+- Ei admin-näkymiä
+- Ei kampanjasivuja
+- Ei animaatioita tai teemoja
+
+Design MVP sisältää seuraavat pakolliset komponentit:
+1. Base layout (header, footer, max-width, responsiivisuus)
+2. Hero (alueopas / kohdeopas)
+3. Typografia (1 otsikkofontti, 1 leipäfontti)
+4. Sisältölayout (luettavuus, spacing)
+5. Opas-navigointi (alue ↔ kohde)
+6. Sisällysluettelo (TOC)
+7. Info-kortti (geneerinen)
+8. Neutraali CTA-komponentti
+9. Breadcrumbs
+10. Kuvakäytäntö (1 hero-kuva / opas)
+
+DONE-kriteeri:
+- Alue- ja kohdeopas toimivat visuaalisesti
+- Sisältö on luettavaa pitkissä artikkeleissa
+- Uusia oppaita voi lisätä ilman design-työtä
+
+Design MVP ei laajene ilman erillistä päätöstä.
+
+---
+
 ## Phase 9 — Admin Automation & Assisted Content Creation (DRAFT)
 
 Status: 📝 DRAFT (ei aikataulutettu)
