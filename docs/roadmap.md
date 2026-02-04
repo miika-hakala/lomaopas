@@ -308,6 +308,14 @@ Design + Brand MVP referenssisivu (kohdeopas):
 
 Design MVP ei laajene ilman erillistä päätöstä.
 
+Out of scope (Design MVP):
+- Dark mode
+- Teemavärit per kohde
+- Animaatiot ja transition-efektit
+- Kampanja- ja landing-sivut
+- Admin-näkymien design
+- Brändigraafiset kuvitukset
+
 ---
 
 ## Phase 9 — Admin Automation & Assisted Content Creation (DRAFT)
