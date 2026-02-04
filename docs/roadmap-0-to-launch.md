@@ -126,6 +126,27 @@ Gate: palautus on testattu ja hälytys tulee virheistä/katkoksista
 - Preview-ympäristöt noindex (ettei Google indeksoi previewta)
 Gate: preview ei indeksoidu, tuotannossa 404/500 ok ja structured data mukana
 
+### 6.5.6 Google Search & indexing readiness
+- Google Search Console property luotu
+  - domain- tai URL-property (ensisijaisesti domain)
+- Sitemap.xml:
+  - saatavilla /sitemap.xml
+  - lisätty Google Search Consoleen
+- Indexing-tila tarkistettu:
+  - Pages/Coverage-raportissa ei kriittisiä virheitä
+  - Manual actions: none
+- Preview- ja staging-ympäristöt:
+  - noindex + nofollow
+  - eivät indeksoidu Googleen
+- Robots.txt tarkistettu:
+  - ei estä tuotannon indeksointia
+  - estää preview-ympäristöt
+
+Gate:
+- Google Search Console hyväksyy sitemapin
+- Tuotantosivut indeksoitavissa
+- Preview/staging ei indeksoidu
+
 ## Phase 7 — Julkaisu (P0)
 7.1 Domain & prod-asetukset
 - domain, https, redirectit
