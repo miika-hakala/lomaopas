@@ -78,13 +78,13 @@
 
 ### 3.8 Lanseeraus – PAUSED
 - Odottaa lisää liikennettä ja sisältöä
-- Jatkuu Phase 1x jälkeen
+- Jatkuu kaupunkien skaalaus -vaiheen jälkeen
 - **Syy:** siirretty myöhemmäksi fokusointipäätöksellä
 - **Aktivoituu kun:** nykyinen NEXT-vaihe julkaistu
 
 ---
 
-## Phase 1x: Kaupunkien skaalaus – ACTIVE
+## Track — Kaupunkien skaalaus (ACTIVE)
 
 **Tavoite:** Skaalata Lomaopas.fi useaan kaupunkiin hyödyntäen Fuengirolan valmista mallia.
 
@@ -106,7 +106,7 @@
 
 ---
 
-## Phase 2x – Global Destinations (2026)
+## Track — Global Destinations (2026)
 
 **Tavoite:** Laajentaa Lomaopas.fi:n sisältö Top 20 -kohdelistan mukaiseksi klusteriksi (2026).
 
