@@ -12,13 +12,6 @@ Päivitetty: 2026-02-04
 
 ## NEXT
 
-### Phase 1 — Vercel & Preview
-
-- [ ] P1-001: Luo Vercel-projekti repo lomaopas:lle
-- [ ] P1-002: Määritä Vercel build ja root directory oikein
-- [ ] P1-003: Ota käyttöön Preview deployments PR:ille
-- [ ] P1-004: Dokumentoi preview-linkki pakolliseksi PR:issä
-
 ### Phase 2 — Supabase
 
 - [ ] P2-001: Luo Supabase production -projekti
@@ -96,6 +89,13 @@ Päivitetty: 2026-02-04
 - [x] P0-003: Lisää PR-template ja kirjaa preview + testit pakollisiksi
 - [x] P0-004: Lisää CI: npm run build + npm run test
 - [x] P0-005: Lisää Playwright smoke-test (etusivu aukeaa)
+
+### Phase 1 — Vercel & Preview
+
+- [x] P1-001: Luo Vercel-projekti repo lomaopas:lle
+- [x] P1-002: Määritä Vercel build ja root directory oikein
+- [x] P1-003: Ota käyttöön Preview deployments PR:ille
+- [x] P1-004: Dokumentoi preview-linkki pakolliseksi PR:issä
 
 - [x] P0-SETUP-001: Projektin pystytys ja perusdokumentaatio
 - [x] P1-FNG-001: Fuengirola MVP-sisältö (PDF + sivut)

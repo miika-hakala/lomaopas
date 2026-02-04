@@ -29,24 +29,27 @@ Päivitetty: 2026-02-04
 | PR template | ✅ CREATED |
 | CI workflow | ✅ ACTIVE |
 | Smoke tests | ✅ PASSING |
-| Vercel project | NOT CREATED |
+| Vercel project | ✅ DEPLOYED |
+| Vercel Preview | ✅ WORKING |
+| Production URL | ✅ https://lomaopas.vercel.app |
 | Supabase project | NOT CREATED |
 
 ## Current phase
 
-**Phase 1 — Vercel & Preview (ACTIVE)**
+**Phase 2 — Supabase (ACTIVE)**
 
-Previous phase: Phase 0 — Foundation ✅ COMPLETE
+Previous phases:
+- Phase 0 — Foundation ✅ COMPLETE
+- Phase 1 — Vercel & Preview ✅ COMPLETE
 
 See: [docs/roadmap-0-to-launch.md](./roadmap-0-to-launch.md)
 
 ## Next task
 
-**P1-001: Create Vercel project**
-- Add New Project → repo lomaopas
-- Configure root directory
-- Set build command + output
-- Enable Preview deployments for PRs
+**P2-001: Create Supabase production project**
+- Create new project on Supabase
+- Save connection details
+- Configure environment variables locally
 
 ---
 
@@ -55,8 +58,8 @@ See: [docs/roadmap-0-to-launch.md](./roadmap-0-to-launch.md)
 | Phase | Status |
 |-------|--------|
 | Phase 0 — Foundation | ✅ COMPLETE |
-| Phase 1 — Vercel | ACTIVE |
-| Phase 2 — Supabase | PENDING |
+| Phase 1 — Vercel | ✅ COMPLETE |
+| Phase 2 — Supabase | ACTIVE |
 | Phase 3 — Admin | PENDING |
 | Phase 4 — Site structure | PENDING |
 | Phase 5 — Testing | PENDING |
