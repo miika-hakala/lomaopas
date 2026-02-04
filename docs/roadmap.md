@@ -1,6 +1,11 @@
 # Roadmap
 
-> **0 → julkaisu roadmap:** [docs/roadmap-0-to-launch.md](./roadmap-0-to-launch.md)
+> **LEGACY DOCUMENT (ARCHIVED)**
+>
+> This document describes previously completed or historical phases.
+> It is NOT an active roadmap.
+>
+> **ACTIVE roadmap:** [docs/roadmap-0-to-launch.md](./roadmap-0-to-launch.md)
 >
 > **Workflow & gates:** [docs/workflow.md](./workflow.md) | [docs/qa-workflow.md](./qa-workflow.md)
 

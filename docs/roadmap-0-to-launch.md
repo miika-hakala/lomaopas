@@ -1,5 +1,13 @@
 # LOMAOPAS Roadmap: Phase 0 → Julkaisu
 
+> **ACTIVE ROADMAP (SSOT)**
+>
+> This is the ONLY active roadmap for Lomaopas.fi.
+> All other roadmap documents or phase descriptions are LEGACY
+> and must NOT be used for planning or execution.
+
+---
+
 ## Phase 0 — Projektin perustus ja näkyvyys (P0)
 Tavoite: saat sivuston näkyviin ja testattavaksi heti, ennen mitään isompaa rakentamista.
 
