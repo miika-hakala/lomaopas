@@ -1,6 +1,11 @@
 # Roadmap
 
-> **SSOT:** Tämä on projektin ainoa roadmap.
+> **LEGACY DOCUMENT (ARCHIVED)**
+>
+> This document describes previously completed or historical phases.
+> It is NOT an active roadmap.
+>
+> **ACTIVE roadmap:** [docs/roadmap.md](./roadmap.md)
 >
 > **Workflow & gates:** [docs/workflow.md](./workflow.md) | [docs/qa-workflow.md](./qa-workflow.md)
 
@@ -78,46 +83,35 @@
 
 ### 3.8 Lanseeraus – PAUSED
 - Odottaa lisää liikennettä ja sisältöä
-- Jatkuu kaupunkien skaalaus -vaiheen jälkeen
+- Jatkuu Phase 1x jälkeen
 - **Syy:** siirretty myöhemmäksi fokusointipäätöksellä
 - **Aktivoituu kun:** nykyinen NEXT-vaihe julkaistu
 
 ---
 
-## Track — Kaupunkien skaalaus (ACTIVE)
+## Phase 1x: Kaupunkien skaalaus – DONE
 
 **Tavoite:** Skaalata Lomaopas.fi useaan kaupunkiin hyödyntäen Fuengirolan valmista mallia.
 
 ### Kohteet (järjestyksessä)
-1. **Málaga** (ensimmäinen)
-2. Torremolinos
-3. (myöhemmin) Benalmádena
-
-### Laajuus per kaupunki
-- PDF master (single source of truth)
-- Kaupunkisivu + alasivut (PDF:n pohjalta)
-- SEO & sisäinen linkitys
-- Ei uusia ominaisuuksia – sisältöfokus
-
-### Hyödyt
-- Kasvattaa sivuston liikennettä
-- Laajentaa sisältöpohjaa ennen lanseerausta
-- Testaa skaalautuvuutta
+1. **Málaga** ✅ DONE
+2. **Torremolinos** ✅ DONE
+3. **Benalmádena** ✅ DONE
 
 ---
 
-## Track — Global Destinations (2026)
+## Track — Global Destinations (2026) — ACTIVE
 
 **Tavoite:** Laajentaa Lomaopas.fi:n sisältö Top 20 -kohdelistan mukaiseksi klusteriksi (2026).
 
+**Status:** 🔄 ACTIVE (Phase 8.1 — Content Expansion)
+
 ### P0 – Ehdoton ydin (suurin volyymi)
-1. **Gran Canaria** — PDF stub → PDF master → City pages → **QA/SEO (NEXT)** → DONE
-2. **Teneriffa** — PDF stub → PDF master → City pages → **QA/SEO (NEXT)** → DONE
+1. **Gran Canaria** — PDF master ✅ | City pages ✅ | **QA/SEO (ACTIVE)** → DONE
+2. **Teneriffa** — PDF master ✅ | City pages ✅ | **QA/SEO (ACTIVE)** → DONE
 3. **Thaimaa** — PDF stub → PDF master → City pages → QA/SEO → DONE
 4. **Mallorca** — PDF stub → PDF master → City pages → QA/SEO → DONE
-5. **Costa del Sol** — PDF stub → PDF master → City pages → QA/SEO → DONE/PARTIAL (Fuengirola, Málaga, Torremolinos, Benalmádena, Marbella valmiit)
-
-*Huom: Gran Canaria ja Teneriffa odottavat QA/SEO-kierrosta.*
+5. **Costa del Sol** — ✅ DONE (Fuengirola, Málaga, Torremolinos, Benalmádena, Marbella)
 
 ### P1 – Suuret aurinko- ja perhelomakohteet
 6. **Kreeta** — PDF stub → PDF master → City pages → QA/SEO → DONE
@@ -146,16 +140,10 @@ Lähde: `docs/market/top-destinations-2026.md`
 
 ---
 
-## Phase 4 – Premium & App (PENDING – tauolla)
-- Laajennus premium-sisältöön (offline-kartat, syvemmät oppaat).
-- Mahdollinen natiivisovellus.
+## Phase 8 — Post-Launch & Expansion (ACTIVE)
 
----
-
-## Phase 8 — Post-Launch & Expansion (PAUSED)
-
-Status: ⏸️ PAUSED  
-Tila: Suunniteltu ja lukittu, ei aktiivista kehitystä
+Status: 🔄 ACTIVE  
+Started: 2026-02-05
 
 Tavoite:
 - Skaalata sisältöä hallitusti
@@ -164,9 +152,10 @@ Tavoite:
 - Mahdollistaa AI-agenttien turvallinen käyttö
 
 Phase 8 ei sisällä uusia core-featureita eikä teknisiä refaktoreita.
-Kaikki toteutus vaatii erillisen päätöksen Phase 8:n avaamisesta.
 
-### Phase 8.1 — Content Expansion (LOCKED DESIGN)
+### Phase 8.1 — Content Expansion (ACTIVE)
+
+Status: 🔄 ACTIVE
 
 SISÄLTÖRAKENNESÄÄNTÖ (SSOT):
 
@@ -178,7 +167,9 @@ SISÄLTÖRAKENNESÄÄNTÖ (SSOT):
 
 OPAS-TYYPPIMALLIT (virallinen)
 
-Alueopas (HUB) – malli
+**Alueopas (HUB) – malli**
+
+```
 # {ALUEEN NIMI} – Matkaopas
 
 ## Yleiskuva
@@ -203,10 +194,13 @@ Autot, julkinen liikenne, etäisyydet (yleistaso).
 
 ## Usein kysytyt kysymykset
 Lyhyet, alueelliset vastaukset.
+```
 
 Alueopas ei sisällä yksityiskohtaisia nähtävyys-, ravintola- tai aktiviteettilistoja.
 
-Kohdeopas (SPOKE) – malli
+**Kohdeopas (SPOKE) – malli**
+
+```
 # {KOHTEEN NIMI} – Matkaopas
 
 ## Yleiskuva
@@ -238,28 +232,22 @@ Hyvä tietää ennen matkaa.
 
 ## Usein kysytyt kysymykset
 Kohdekohtaiset kysymykset ja vastaukset.
+```
 
-Gran Canaria – konkreettinen hierarkia (esimerkkikohde)
+**Gran Canaria – konkreettinen hierarkia (esimerkkikohde)**
 
-Alueopas
+Alueopas:
+- Gran Canaria (alueopas)
 
-Gran Canaria (alueopas)
-
-Kohdeoppaat
-
-Playa del Inglés
-
-Maspalomas
-
-Puerto Rico
-
-Las Palmas
+Kohdeoppaat:
+- Playa del Inglés
+- Maspalomas
+- Puerto Rico
+- Las Palmas
 
 Sääntö:
-
-Gran Canaria -opas ei sisällä yksityiskohtaista sisältöä näistä
-
-Jokainen kohdeopas linkittää takaisin Gran Canariaan
+- Gran Canaria -opas ei sisällä yksityiskohtaista sisältöä näistä
+- Jokainen kohdeopas linkittää takaisin Gran Canariaan
 
 ---
 
@@ -310,9 +298,6 @@ Out of scope (Design MVP):
 - Kampanja- ja landing-sivut
 - Admin-näkymien design
 - Brändigraafiset kuvitukset
-
-Phase 8 can be moved to ACTIVE only by explicit decision after Design MVP
-implementation or a pilot destination guide.
 
 ---
 

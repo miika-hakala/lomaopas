@@ -1,6 +1,6 @@
 # PROJECT STATUS (ACTIVE – Lomaopas.fi)
 
-Päivitetty: 2026-02-04
+Päivitetty: 2026-02-05
 
 ---
 
@@ -50,11 +50,9 @@ Päivitetty: 2026-02-04
 
 ## Current phase
 
-**Phase 7 — Launch ✅ COMPLETE**
+**Phase 8 — Post-Launch & Expansion (ACTIVE)**
 
-Next: **Phase 8 — Post-Launch & Expansion (PAUSED)**
-
-LomaSihteeri track: **POST-LAUNCH — PAUSED**
+Focus: Phase 8.1 — Content Expansion
 
 Previous phases:
 - Phase 0 — Foundation ✅ COMPLETE
@@ -65,13 +63,17 @@ Previous phases:
 - Phase 5 — Testing ✅ COMPLETE
 - Phase 6 — Launch readiness ✅ COMPLETE
 - Phase 6.5 — Hardening ✅ COMPLETE
+- Phase 7 — Launch ✅ COMPLETE
 
 See: [docs/roadmap.md](./roadmap.md)
 
 ## Next task
 
-**Phase 8 — Post-Launch & Expansion (PAUSED)**
-- No active tasks while paused
+**P8.1-001: Gran Canaria & Teneriffa QA/SEO pass**
+- Review existing content (PDF masters + city pages)
+- SEO optimization
+- Internal linking check
+- Content quality assurance
 
 ---
 
@@ -88,7 +90,8 @@ See: [docs/roadmap.md](./roadmap.md)
 | Phase 6 — Launch readiness | ✅ COMPLETE |
 | Phase 6.5 — Hardening | ✅ COMPLETE |
 | Phase 7 — Launch | ✅ COMPLETE |
-| Phase 8 — Post-Launch & Expansion | PAUSED |
+| Phase 8 — Post-Launch & Expansion | 🔄 ACTIVE |
+| Phase 8.1 — Content Expansion | 🔄 ACTIVE |
 
 ---
 

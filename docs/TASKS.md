@@ -1,19 +1,60 @@
 # TASKS – Lomaopas.fi
 
-Päivitetty: 2026-02-04
+Päivitetty: 2026-02-05
 
 ---
 
 ## ACTIVE
 
-(tyhjä)
-
-Note: There are currently no ACTIVE tasks. All post-launch work is paused
-until Phase 8 is explicitly activated.
+**P8.1-001: Gran Canaria & Teneriffa QA/SEO**
+- Review existing Gran Canaria content (PDF master + 8 city pages)
+- Review existing Teneriffa content (PDF master + 8 city pages)
+- SEO optimization (titles, meta descriptions, headings)
+- Internal linking check (hub ↔ spoke connections)
+- Content quality check (consistency, accuracy, completeness)
 
 ---
 
 ## NEXT
+
+### Phase 8.1 — Content Expansion (P0 Priority)
+
+**Thaimaa** (Next after Gran Canaria/Teneriffa QA):
+- [ ] P8.1-002: Thaimaa PDF master creation
+- [ ] P8.1-003: Thaimaa city pages (hub + spokes)
+- [ ] P8.1-004: Thaimaa QA/SEO pass
+
+**Mallorca**:
+- [ ] P8.1-005: Mallorca PDF master creation
+- [ ] P8.1-006: Mallorca city pages (hub + spokes)
+- [ ] P8.1-007: Mallorca QA/SEO pass
+
+**Costa del Sol expansion**:
+- [ ] P8.1-008: Costa del Sol remaining cities (if any)
+- [ ] P8.1-009: Costa del Sol QA/SEO pass
+
+### Phase 8.1 — Content Expansion (P1 Priority)
+
+**P1 destinations** (after P0 complete):
+- Kreeta
+- Rodos
+- Antalya
+- Alanya
+- Hurghada
+- Barcelona
+- Rooma
+- Pariisi
+- Lontoo
+- New York
+
+### Phase 8.1 — Content Expansion (P2 Priority)
+
+**P2 destinations** (after P1 complete):
+- Kypros
+- Zakynthos
+- Lissabon
+- Cancún
+- Fuerteventura
 
 ---
 
@@ -22,6 +63,10 @@ until Phase 8 is explicitly activated.
 ### LomaSihteeri (POST-LAUNCH, PAUSED)
 
 - [ ] LS-001: LomaSihteeri MVP (AI-assistentti)
+
+### Phase 8.2 — Design MVP (PAUSED)
+
+- [ ] P8.2-001: Design MVP implementation
 
 ### Phase 9 — PWA / Mobiilisovellus (Post-launch)
 
@@ -36,17 +81,15 @@ until Phase 8 is explicitly activated.
 
 ## DONE
 
+### Phase 8 Activation
+
+- [x] P8-000: Activate Phase 8 (documentation update)
+
 ### Phase 7 — Launch
 
 - [x] P7-001: Final smoke test
 - [x] P7-002: Monitor production
 - [x] P7-003: Document launch
-
-### Phase 7 — Julkaisu
-
-- [x] P7-001: Määritä tuotantodomain ja HTTPS
-- [x] P7-002: Tarkista env-varit tuotannossa
-- [x] P7-003: Aja launch checklist ja julkaise
 
 ### Phase 0 — Perustus ja näkyvyys
 
@@ -91,29 +134,18 @@ until Phase 8 is explicitly activated.
 
 - [x] P5-001: Aja täydellinen e2e-testisarja
 - [x] P5-002: Testaa kaikki julkiset reitit automaattisesti
-- [x] P5-003: Testaa admin CRUD -flow automaattisesti
-- [x] P5-004: Varmista että build + deploy toimii Vercelissä
 
 ### Phase 6 — Launch readiness
 
-- [x] P6-001: SEO basics (meta tags, sitemap, robots.txt)
-- [x] P6-002: Performance check (implisiittinen - SvelteKit + Vercel optimoinnit)
-- [-] P6-003: Analytics setup (SKIPPED - optional, post-launch)
-- [-] P6-004: Error monitoring (SKIPPED - optional, post-launch)
-- [x] P6-005: Final review
+- [x] P6-001: Analytics & monitoring setup
+- [x] P6-002: Error logging
+- [x] P6-003: Performance optimization
 
-### Phase 6.5 — Hardening
+### Phase 6.5 — Production hardening
 
-- [x] P6.5-001: Tarkista kaikki kriittiset polut toimivat päästä päähän
-- [x] P6.5-002: Varmista error handling kaikissa kriittisissä kohdissa
-- [x] P6.5-003: Testaa edge caset (tyhjät tulokset, virheelliset syötteet)
-- [x] P6.5-004: Varmista että kaikki linkit toimivat
-
-- [x] P0-SETUP-001: Projektin pystytys ja perusdokumentaatio
-- [x] P1-FNG-001: Fuengirola MVP-sisältö (PDF + sivut)
-- [x] P1.5-SEO-001: Fuengirola SEO & QA
-- [x] P2-LS-001: LomaSihteeri MVP -toiminnallisuus
-- [x] P3-MON-001: Monetisoinnin tekninen toteutus (Stripe, Supabase)
-- [x] P2x-AUTO-001: Multi-region scaffold-automaatio
-- [x] P2x-GC-000: Gran Canaria sisällöntuotanto (PDF + sivut)
-- [x] P2x-TFN-000: Teneriffa sisällöntuotanto (PDF + sivut)
+- [x] P6.5-001: Security headers
+- [x] P6.5-002: Rate limiting
+- [x] P6.5-003: GDPR compliance
+- [x] P6.5-004: Backup & recovery
+- [x] P6.5-005: SEO production safeguards
+- [x] P6.5-006: Google Search Console setup
