@@ -1,11 +1,6 @@
 # Roadmap
 
-> **LEGACY DOCUMENT (ARCHIVED)**
->
-> This document describes previously completed or historical phases.
-> It is NOT an active roadmap.
->
-> **ACTIVE roadmap:** [docs/roadmap.md](./roadmap.md)
+> **SSOT:** Tämä on projektin ainoa roadmap.
 >
 > **Workflow & gates:** [docs/workflow.md](./workflow.md) | [docs/qa-workflow.md](./qa-workflow.md)
 
@@ -62,7 +57,7 @@
 ## Phase 3: Monetisointi – PAUSED (3.8 odottaa)
 
 **Syy:** siirretty myöhemmäksi fokusointipäätöksellä
-**Aktivoituu kun:** nykyinen NEXT-vaihe julkaistu
+**Aktivoituu kun:** sisältöpohja riittävän laaja
 
 **Tavoite:** Tulonlähteiden luominen affiliate-linkeillä ja PDF-myynnillä.
 
@@ -83,58 +78,56 @@
 
 ### 3.8 Lanseeraus – PAUSED
 - Odottaa lisää liikennettä ja sisältöä
-- Jatkuu Phase 1x jälkeen
-- **Syy:** siirretty myöhemmäksi fokusointipäätöksellä
-- **Aktivoituu kun:** nykyinen NEXT-vaihe julkaistu
+- **Aktivoituu kun:** sisältöpohja riittävän laaja
 
 ---
 
-## Phase 1x: Kaupunkien skaalaus – DONE
+## Track — Kaupunkien skaalaus – DONE
 
 **Tavoite:** Skaalata Lomaopas.fi useaan kaupunkiin hyödyntäen Fuengirolan valmista mallia.
 
-### Kohteet (järjestyksessä)
-1. **Málaga** ✅ DONE
-2. **Torremolinos** ✅ DONE
-3. **Benalmádena** ✅ DONE
+### Kohteet ✅ DONE
+1. **Málaga** ✅
+2. **Torremolinos** ✅
+3. **Benalmádena** ✅
 
 ---
 
-## Track — Global Destinations (2026) — ACTIVE
+## Track — Global Destinations (2026) — READY FOR EXPANSION
 
 **Tavoite:** Laajentaa Lomaopas.fi:n sisältö Top 20 -kohdelistan mukaiseksi klusteriksi (2026).
 
-**Status:** 🔄 ACTIVE (Phase 8.1 — Content Expansion)
+**Status:** ⏳ READY (odottaa Design MVP:tä)
 
 ### P0 – Ehdoton ydin (suurin volyymi)
-1. **Gran Canaria** — PDF master ✅ | City pages ✅ | **QA/SEO (ACTIVE)** → DONE
-2. **Teneriffa** — PDF master ✅ | City pages ✅ | **QA/SEO (ACTIVE)** → DONE
-3. **Thaimaa** — PDF stub → PDF master → City pages → QA/SEO → DONE
-4. **Mallorca** — PDF stub → PDF master → City pages → QA/SEO → DONE
+1. **Gran Canaria** — PDF master ✅ | City pages ✅ | QA/SEO (after Design MVP)
+2. **Teneriffa** — PDF master ✅ | City pages ✅ | QA/SEO (after Design MVP)
+3. **Thaimaa** — (after Design MVP)
+4. **Mallorca** — (after Design MVP)
 5. **Costa del Sol** — ✅ DONE (Fuengirola, Málaga, Torremolinos, Benalmádena, Marbella)
 
 ### P1 – Suuret aurinko- ja perhelomakohteet
-6. **Kreeta** — PDF stub → PDF master → City pages → QA/SEO → DONE
-7. **Rodos** — PDF stub → PDF master → City pages → QA/SEO → DONE
-8. **Antalya** — PDF stub → PDF master → City pages → QA/SEO → DONE
-9. **Alanya** — PDF stub → PDF master → City pages → QA/SEO → DONE
-10. **Hurghada** — PDF stub → PDF master → City pages → QA/SEO → DONE
+6. **Kreeta**
+7. **Rodos**
+8. **Antalya**
+9. **Alanya**
+10. **Hurghada**
 
 ### P1 – Kaupunkilomat ja yhdistelmäkohteet
-11. **Barcelona** — PDF stub → PDF master → City pages → QA/SEO → DONE
-12. **Rooma** — PDF stub → PDF master → City pages → QA/SEO → DONE
-13. **Pariisi** — PDF stub → PDF master → City pages → QA/SEO → DONE
-14. **Lontoo** — PDF stub → PDF master → City pages → QA/SEO → DONE
-15. **New York** — PDF stub → PDF master → City pages → QA/SEO → DONE
+11. **Barcelona**
+12. **Rooma**
+13. **Pariisi**
+14. **Lontoo**
+15. **New York**
 
 ### P2 – Tärkeät mutta pienempi volyymi
-16. **Kypros** — PDF stub → PDF master → City pages → QA/SEO → DONE
-17. **Zakynthos** — PDF stub → PDF master → City pages → QA/SEO → DONE
-18. **Lissabon** — PDF stub → PDF master → City pages → QA/SEO → DONE
-19. **Cancún** — PDF stub → PDF master → City pages → QA/SEO → DONE
-20. **Fuerteventura** — PDF stub → PDF master → City pages → QA/SEO → DONE
+16. **Kypros**
+17. **Zakynthos**
+18. **Lissabon**
+19. **Cancún**
+20. **Fuerteventura**
 
-**Toimitusketju:** PDF stub → PDF master → City pages → QA/SEO → DONE
+**Toimitusketju:** Design MVP → PDF master → City pages → QA/SEO → DONE
 
 Lähde: `docs/market/top-destinations-2026.md`
 
@@ -146,18 +139,72 @@ Status: 🔄 ACTIVE
 Started: 2026-02-05
 
 Tavoite:
+- Luoda skaalautuva visuaalinen perusta
 - Skaalata sisältöä hallitusti
 - Rakentaa SEO- ja liikenneperusta
 - Valmistella kaupallistamista
-- Mahdollistaa AI-agenttien turvallinen käyttö
 
-Phase 8 ei sisällä uusia core-featureita eikä teknisiä refaktoreita.
+**KRIITTINEN JÄRJESTYS:**
+1. **Phase 8.1 — Design MVP** (ACTIVE) → Visuaalinen perusta
+2. **Phase 8.2 — Content Expansion** (NEXT) → Sisällön skaalaus
 
-### Phase 8.1 — Content Expansion (ACTIVE)
+---
 
-Status: 🔄 ACTIVE
+### Phase 8.1 — Design MVP (ACTIVE)
 
-SISÄLTÖRAKENNESÄÄNTÖ (SSOT):
+Status: 🔄 ACTIVE  
+Started: 2026-02-05
+
+**Tavoite:**
+- Luoda kevyt mutta kestävä visuaalinen perusta
+- Tukea hub/spoke-sisältörakennetta
+- Mahdollistaa sisällön skaalaus ilman design-muutoksia
+
+**Rajaus:**
+- Koskee vain:
+  - Alueoppaita (hub)
+  - Kohdeoppaita (spoke)
+- Ei admin-näkymiä
+- Ei kampanjasivuja
+- Ei animaatioita tai teemoja
+
+**Design MVP sisältää seuraavat pakolliset komponentit:**
+1. Base layout (header, footer, max-width, responsiivisuus)
+2. Hero (alueopas / kohdeopas)
+3. Typografia (1 otsikkofontti, 1 leipäfontti)
+4. Sisältölayout (luettavuus, spacing)
+5. Opas-navigointi (alue ↔ kohde)
+6. Sisällysluettelo (TOC)
+7. Info-kortti (geneerinen)
+8. Neutraali CTA-komponentti
+9. Breadcrumbs
+10. Kuvakäytäntö (1 hero-kuva / opas)
+
+**DONE-kriteeri:**
+- Alue- ja kohdeopas toimivat visuaalisesti
+- Sisältö on luettavaa pitkissä artikkeleissa
+- Uusia oppaita voi lisätä ilman design-työtä
+
+**Design + Brand MVP referenssisivu (kohdeopas):**
+`docs/design-mvp-fuengirola.md`
+
+Design MVP ei laajene ilman erillistä päätöstä.
+
+**Out of scope (Design MVP):**
+- Dark mode
+- Teemavärit per kohde
+- Animaatiot ja transition-efektit
+- Kampanja- ja landing-sivut
+- Admin-näkymien design
+- Brändigraafiset kuvitukset
+
+---
+
+### Phase 8.2 — Content Expansion (NEXT)
+
+Status: ⏳ NEXT (alkaa kun Design MVP valmis)
+
+**SISÄLTÖRAKENNESÄÄNTÖ (SSOT):**
 
 - Alueet (saaret, rannikkoalueet) toteutetaan yleisoppaina (hub)
 - Kaupungit ja lomakohteet toteutetaan omina oppainaan (spoke)
@@ -165,7 +212,7 @@ SISÄLTÖRAKENNESÄÄNTÖ (SSOT):
 - Yksi opas = yksi selkeä hakuintentio
 - Massasisältöä ei tuoteta ilman QA-porttia
 
-OPAS-TYYPPIMALLIT (virallinen)
+**OPAS-TYYPPIMALLIT (virallinen)**
 
 **Alueopas (HUB) – malli**
 
@@ -248,56 +295,6 @@ Kohdeoppaat:
 Sääntö:
 - Gran Canaria -opas ei sisällä yksityiskohtaista sisältöä näistä
 - Jokainen kohdeopas linkittää takaisin Gran Canariaan
-
----
-
-### Phase 8.2 — Design MVP (PAUSED)
-
-Status: ⏸️ PAUSED  
-Tila: Määritelty ja lukittu, ei toteutusta
-
-Tavoite:
-- Luoda kevyt mutta kestävä visuaalinen perusta
-- Tukea hub/spoke-sisältörakennetta
-- Mahdollistaa sisällön skaalaus ilman design-muutoksia
-
-Rajaus:
-- Koskee vain:
-  - Alueoppaita (hub)
-  - Kohdeoppaita (spoke)
-- Ei admin-näkymiä
-- Ei kampanjasivuja
-- Ei animaatioita tai teemoja
-
-Design MVP sisältää seuraavat pakolliset komponentit:
-1. Base layout (header, footer, max-width, responsiivisuus)
-2. Hero (alueopas / kohdeopas)
-3. Typografia (1 otsikkofontti, 1 leipäfontti)
-4. Sisältölayout (luettavuus, spacing)
-5. Opas-navigointi (alue ↔ kohde)
-6. Sisällysluettelo (TOC)
-7. Info-kortti (geneerinen)
-8. Neutraali CTA-komponentti
-9. Breadcrumbs
-10. Kuvakäytäntö (1 hero-kuva / opas)
-
-DONE-kriteeri:
-- Alue- ja kohdeopas toimivat visuaalisesti
-- Sisältö on luettavaa pitkissä artikkeleissa
-- Uusia oppaita voi lisätä ilman design-työtä
-
-Design + Brand MVP referenssisivu (kohdeopas):
-`docs/design-mvp-fuengirola.md`
-
-Design MVP ei laajene ilman erillistä päätöstä.
-
-Out of scope (Design MVP):
-- Dark mode
-- Teemavärit per kohde
-- Animaatiot ja transition-efektit
-- Kampanja- ja landing-sivut
-- Admin-näkymien design
-- Brändigraafiset kuvitukset
 
 ---
 

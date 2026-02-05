@@ -52,7 +52,7 @@ Päivitetty: 2026-02-05
 
 **Phase 8 — Post-Launch & Expansion (ACTIVE)**
 
-Focus: Phase 8.1 — Content Expansion
+Focus: Phase 8.1 — Design MVP
 
 Previous phases:
 - Phase 0 — Foundation ✅ COMPLETE
@@ -69,11 +69,11 @@ See: [docs/roadmap.md](./roadmap.md)
 
 ## Next task
 
-**P8.1-001: Gran Canaria & Teneriffa QA/SEO pass**
-- Review existing content (PDF masters + city pages)
-- SEO optimization
-- Internal linking check
-- Content quality assurance
+**P8.1-001: Design MVP implementation**
+- Create scalable visual foundation for hub/spoke guides
+- Implement 10 core components (layout, hero, typography, TOC, etc.)
+- Use Fuengirola as reference implementation
+- Enable content scaling without design changes
 
 ---
 
@@ -91,7 +91,8 @@ See: [docs/roadmap.md](./roadmap.md)
 | Phase 6.5 — Hardening | ✅ COMPLETE |
 | Phase 7 — Launch | ✅ COMPLETE |
 | Phase 8 — Post-Launch & Expansion | 🔄 ACTIVE |
-| Phase 8.1 — Content Expansion | 🔄 ACTIVE |
+| Phase 8.1 — Design MVP | 🔄 ACTIVE |
+| Phase 8.2 — Content Expansion | ⏳ NEXT |
 
 ---
 
