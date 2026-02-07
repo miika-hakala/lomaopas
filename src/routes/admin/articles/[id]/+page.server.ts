@@ -8,6 +8,11 @@ export const load: PageServerLoad = async ({ locals, params }) => {
 		throw redirect(303, '/admin/login');
 	}
 
+	const isAdmin = await locals.isAdmin();
+	if (!isAdmin) {
+		throw error(403, 'Forbidden');
+	}
+
 	const { data: article, error: articleError } = await locals.supabase
 		.from('articles')
 		.select('*')
@@ -27,6 +32,7 @@ export const load: PageServerLoad = async ({ locals, params }) => {
 		article,
 		destinations: destinationsRes.data || [],
 		categories: categoriesRes.data || [],
-		session
+		session,
+		isAdmin
 	};
 };

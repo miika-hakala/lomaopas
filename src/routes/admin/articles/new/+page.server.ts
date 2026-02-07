@@ -1,4 +1,4 @@
-import { redirect } from '@sveltejs/kit';
+import { error, redirect } from '@sveltejs/kit';
 import type { PageServerLoad } from './$types';
 
 export const load: PageServerLoad = async ({ locals }) => {
@@ -6,6 +6,11 @@ export const load: PageServerLoad = async ({ locals }) => {
 
 	if (!session) {
 		throw redirect(303, '/admin/login');
+	}
+
+	const isAdmin = await locals.isAdmin();
+	if (!isAdmin) {
+		throw error(403, 'Forbidden');
 	}
 
 	const [destinationsRes, categoriesRes] = await Promise.all([
@@ -16,6 +21,7 @@ export const load: PageServerLoad = async ({ locals }) => {
 	return {
 		destinations: destinationsRes.data || [],
 		categories: categoriesRes.data || [],
-		session
+		session,
+		isAdmin
 	};
 };
