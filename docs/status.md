@@ -61,7 +61,7 @@ Päivitetty: 2026-02-08
 
 **Phase 8 — Post-Launch & Expansion (ACTIVE)**
 
-Focus: Phase 8.1 — Design MVP
+Focus: Phase 8.2 — Content Expansion
 
 Previous phases:
 - Phase 0 — Foundation ✅ COMPLETE
@@ -78,8 +78,11 @@ See: [docs/roadmap.md](./roadmap.md)
 
 ## Next task
 
-**P8.2-002: Thaimaa PDF master creation**
-- Create comprehensive travel guide content for Thailand destinations
+**P8.2-001: Gran Canaria & Teneriffa QA/SEO pass**
+- Review existing content (PDF masters + city pages)
+- SEO optimization (titles, meta descriptions, headings)
+- Internal linking check (hub ↔ spoke connections)
+- Content quality assurance
 
 ---
 

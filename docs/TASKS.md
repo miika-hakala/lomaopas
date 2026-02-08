@@ -93,7 +93,7 @@ Web-pohjaiset prototyyppitiedostot on poistettu.
 
 ## DONE
 
-### Design MVP (Phase 8.1)
+### Phase 8.1 — Design MVP
 
 - [x] P8.1-001: Design MVP implementation
   - Layer 1: Typography (Inter), base layout, header, footer
