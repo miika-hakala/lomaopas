@@ -2,6 +2,8 @@
   export let title: string;
   export let subtitle: string = '';
   export let variant: 'hub' | 'spoke' | 'article' = 'spoke';
+  export let image: string = '';
+  export let imageAlt: string = '';
 </script>
 
 <section class="hero hero--{variant}">
@@ -12,6 +14,11 @@
     {/if}
     <slot />
   </div>
+  {#if image}
+    <div class="hero-image">
+      <img src={image} alt={imageAlt || title} loading="lazy" />
+    </div>
+  {/if}
 </section>
 
 <style>
@@ -59,6 +66,20 @@
     color: var(--color-text-secondary);
     line-height: var(--line-height-relaxed);
     max-width: 600px;
+  }
+
+  .hero-image {
+    margin-top: var(--space-xl);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
   }
 
   @media (max-width: 768px) {
