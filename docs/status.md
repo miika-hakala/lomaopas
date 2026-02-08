@@ -1,6 +1,6 @@
 # PROJECT STATUS (ACTIVE – Lomaopas.fi)
 
-Päivitetty: 2026-02-05
+Päivitetty: 2026-02-08
 
 ---
 
@@ -47,6 +47,10 @@ Päivitetty: 2026-02-05
 | SEO basics | ✅ IMPLEMENTED |
 | Sitemap | ✅ DEPLOYED |
 | Meta tags | ✅ IMPLEMENTED |
+| Auth hardening | ✅ DONE (PR1) |
+| Form actions | ✅ DONE (PR2) |
+| Audit trail | ✅ DONE (PR3) |
+| Node version | v22 LTS (NVM) |
 
 ## Current phase
 

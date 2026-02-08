@@ -1,6 +1,6 @@
 # TASKS – Lomaopas.fi
 
-Päivitetty: 2026-02-05
+Päivitetty: 2026-02-08
 
 ---
 
@@ -94,6 +94,12 @@ Gate criteria:
 ---
 
 ## DONE
+
+### Security Audit (Post-Launch)
+
+- [x] AUDIT-PR1: Auth hardening (getUser validation, admin layout guard, variable shadowing fix)
+- [x] AUDIT-PR2: Form actions with server-side validation, dead code cleanup, env fix
+- [x] AUDIT-PR3: Audit trail migration, admin role documentation, rate limiting docs
 
 ### Phase 8 Activation
 
