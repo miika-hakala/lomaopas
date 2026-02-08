@@ -2,33 +2,36 @@ import { error } from '@sveltejs/kit';
 import type { PageServerLoad } from './$types';
 
 export const load: PageServerLoad = async ({ params, locals }) => {
-	const { data: city, error: cityError } = await locals.supabase
+	const { data: region, error: regionError } = await locals.supabase
 		.from('destinations')
 		.select('*')
-		.eq('slug', params.city)
-		.eq('type', 'city')
+		.eq('slug', params.region)
+		.eq('type', 'region')
 		.eq('published', true)
 		.single();
 
-	if (cityError || !city) {
-		throw error(404, 'City not found');
+	if (regionError || !region) {
+		throw error(404, 'Region not found');
 	}
 
-	const { data: country, error: countryError } = await locals.supabase
+	const { data: destination, error: destError } = await locals.supabase
 		.from('destinations')
 		.select('*')
-		.eq('id', city.parent_id)
+		.eq('slug', params.destination)
+		.eq('parent_id', region.id)
+		.in('type', ['city', 'island'])
+		.eq('published', true)
 		.single();
 
-	if (countryError || !country || country.slug !== params.country) {
-		throw error(404, 'Country not found');
+	if (destError || !destination) {
+		throw error(404, 'Destination not found');
 	}
 
 	const { data: article, error: articleError } = await locals.supabase
 		.from('articles')
 		.select('*, category:categories(*)')
 		.eq('slug', params.article)
-		.eq('destination_id', city.id)
+		.eq('destination_id', destination.id)
 		.eq('published', true)
 		.single();
 
@@ -38,7 +41,7 @@ export const load: PageServerLoad = async ({ params, locals }) => {
 
 	return {
 		article,
-		city,
-		country
+		destination,
+		region
 	};
 };
