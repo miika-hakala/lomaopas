@@ -52,6 +52,10 @@ Päivitetty: 2026-02-08
 | Audit trail | ✅ DONE (PR3) |
 | Node version | v22 LTS (.nvmrc) |
 | Design MVP | ✅ DONE (Layer 1–4) |
+| Region hierarchy | ✅ DONE (3-tier: region → destination → article) |
+| Canary Islands migration | ✅ DONE (14 articles in Supabase) |
+| QA/SEO pass | ✅ DONE (OG tags, link fixes) |
+| LomaSihteeri cleanup | ✅ DONE (moved to mobile app track) |
 
 ## Current phase
 
@@ -74,11 +78,8 @@ See: [docs/roadmap.md](./roadmap.md)
 
 ## Next task
 
-**P8.2-001: Gran Canaria & Teneriffa QA/SEO pass**
-- Review existing content (PDF masters + city pages)
-- SEO optimization (titles, meta descriptions, headings)
-- Internal linking check (hub ↔ spoke connections)
-- Content quality assurance
+**P8.2-002: Thaimaa PDF master creation**
+- Create comprehensive travel guide content for Thailand destinations
 
 ---
 

@@ -6,30 +6,18 @@ Päivitetty: 2026-02-08
 
 ## ACTIVE
 
-**P8.2-001: Gran Canaria & Teneriffa QA/SEO pass**
-- Review existing content (PDF masters + city pages)
-- SEO optimization (titles, meta descriptions, headings)
-- Internal linking check (hub ↔ spoke connections)
-- Content quality assurance
+**P8.2-002: Thaimaa PDF master creation**
+- Create comprehensive travel guide content for Thailand destinations
 
 Gate criteria:
-- All pages load correctly
-- Meta tags present and accurate
-- Hub ↔ spoke links work
-- Content reviewed for quality
+- PDF master document complete
+- Content covers all standard sections (overview, beaches, restaurants, etc.)
 
 ---
 
 ## NEXT
 
 ### Phase 8.2 — Content Expansion (after Design MVP)
-
-**Gran Canaria & Teneriffa QA/SEO** (First after Design MVP):
-- [ ] P8.2-001: Gran Canaria & Teneriffa QA/SEO pass
-  - Review existing content (PDF masters + city pages)
-  - SEO optimization (titles, meta descriptions, headings)
-  - Internal linking check (hub ↔ spoke connections)
-  - Content quality assurance
 
 **Thaimaa** (Next after Gran Canaria/Teneriffa QA):
 - [ ] P8.2-002: Thaimaa PDF master creation
@@ -101,6 +89,18 @@ Web-pohjaiset prototyyppitiedostot on poistettu.
   - Layer 3: TOC, info card, CTA components
   - Layer 4: Image support and guidelines
   - 10/10 components implemented
+
+### Content Expansion — QA/SEO (Phase 8.2)
+
+- [x] P8.2-001: Gran Canaria & Teneriffa QA/SEO pass
+  - Region hierarchy implemented (country → region → city/island)
+  - 14 articles migrated from hardcoded routes to Supabase
+  - Dynamic [region]/[destination]/[article] routing
+  - Dynamic homepage (fetches regions from Supabase)
+  - OG tags added to all public pages
+  - Stale /espanja/ links fixed
+  - Article content links verified
+  - LomaSihteeri web prototype removed (moved to mobile app track)
 
 ### Security Audit (Post-Launch)
 
