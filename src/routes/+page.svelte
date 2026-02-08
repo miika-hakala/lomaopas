@@ -10,6 +10,9 @@
 		name="description"
 		content="Lomaopas.fi tarjoaa suomenkielistä matkatietoa suosituista lomakohteista. Tutustu kohteisiin ja suunnittele unelmalomasi."
 	/>
+	<meta property="og:title" content="Lomaopas.fi - Suomenkielinen matkaopas" />
+	<meta property="og:description" content="Suomenkielinen matkaopas suosituimpiin lomakohteisiin." />
+	<meta property="og:type" content="website" />
 </svelte:head>
 
 <div class="home-page">

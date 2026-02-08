@@ -85,7 +85,7 @@
   </div>
 
   <p class="back-link">
-    <a href="/espanja/fuengirola">← Takaisin Fuengirola-oppaaseen</a>
+    <a href="/costa-del-sol/fuengirola">← Takaisin Fuengirola-oppaaseen</a>
   </p>
 </div>
 

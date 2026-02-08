@@ -12,6 +12,9 @@
 		name="description"
 		content="Tutustu {data.region.name}n kohteisiin ja vinkkeihin. Suomenkielinen matkaopas."
 	/>
+	<meta property="og:title" content="{data.region.name} - Lomaopas.fi" />
+	<meta property="og:description" content="Tutustu {data.region.name}n kohteisiin ja vinkkeihin." />
+	<meta property="og:type" content="website" />
 </svelte:head>
 
 <div class="guide-page">

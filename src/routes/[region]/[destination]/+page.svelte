@@ -13,6 +13,12 @@
 		name="description"
 		content="{data.destination.name} - tutustu nähtävyyksiin, ravintoloihin ja rantoihin. Suomenkielinen matkaopas."
 	/>
+	<meta property="og:title" content="{data.destination.name} - {data.region.name} - Lomaopas.fi" />
+	<meta
+		property="og:description"
+		content="Tutustu {data.destination.name}n nähtävyyksiin, ravintoloihin ja rantoihin."
+	/>
+	<meta property="og:type" content="website" />
 </svelte:head>
 
 <div class="guide-page">

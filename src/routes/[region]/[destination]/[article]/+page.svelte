@@ -16,6 +16,12 @@
 		name="description"
 		content="{data.article.content?.substring(0, 160) || data.article.title}"
 	/>
+	<meta property="og:title" content="{data.article.title} - Lomaopas.fi" />
+	<meta
+		property="og:description"
+		content="{data.article.content?.substring(0, 160) || data.article.title}"
+	/>
+	<meta property="og:type" content="article" />
 </svelte:head>
 
 <div class="article-page">
