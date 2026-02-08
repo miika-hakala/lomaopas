@@ -1,38 +1,25 @@
-import { error, redirect } from '@sveltejs/kit';
+import { error } from '@sveltejs/kit';
 import type { PageServerLoad } from './$types';
 
 export const load: PageServerLoad = async ({ locals, params }) => {
-	const session = await locals.getSession();
+  const { data: article, error: articleError } = await locals.supabase
+    .from('articles')
+    .select('*')
+    .eq('id', params.id)
+    .single();
 
-	if (!session) {
-		throw redirect(303, '/admin/login');
-	}
+  if (articleError || !article) {
+    throw error(404, 'Article not found');
+  }
 
-	const isAdmin = await locals.isAdmin();
-	if (!isAdmin) {
-		throw error(403, 'Forbidden');
-	}
+  const [destinationsRes, categoriesRes] = await Promise.all([
+    locals.supabase.from('destinations').select('id, name, slug').order('name'),
+    locals.supabase.from('categories').select('id, name, slug').order('name')
+  ]);
 
-	const { data: article, error: articleError } = await locals.supabase
-		.from('articles')
-		.select('*')
-		.eq('id', params.id)
-		.single();
-
-	if (articleError || !article) {
-		throw error(404, 'Article not found');
-	}
-
-	const [destinationsRes, categoriesRes] = await Promise.all([
-		locals.supabase.from('destinations').select('id, name, slug').order('name'),
-		locals.supabase.from('categories').select('id, name, slug').order('name')
-	]);
-
-	return {
-		article,
-		destinations: destinationsRes.data || [],
-		categories: categoriesRes.data || [],
-		session,
-		isAdmin
-	};
+  return {
+    article,
+    destinations: destinationsRes.data || [],
+    categories: categoriesRes.data || []
+  };
 };

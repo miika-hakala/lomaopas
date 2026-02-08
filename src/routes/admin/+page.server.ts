@@ -1,22 +1,11 @@
-import { error, redirect } from '@sveltejs/kit';
 import type { PageServerLoad } from './$types';
 
-export const load: PageServerLoad = async ({ locals }) => {
-	const session = await locals.getSession();
+export const load: PageServerLoad = async ({ locals, parent }) => {
+  const { session } = await parent();
 
-	if (!session) {
-		throw redirect(303, '/admin/login');
-	}
-
-	const isAdmin = await locals.isAdmin();
-	if (!isAdmin) {
-		throw error(403, 'Forbidden');
-	}
-
-	const { data: articles, error } = await locals.supabase
-		.from('articles')
-		.select(
-			`
+  const { data: articles, error: articlesError } = await locals.supabase
+    .from('articles')
+    .select(`
       id,
       slug,
       title,
@@ -24,18 +13,15 @@ export const load: PageServerLoad = async ({ locals }) => {
       updated_at,
       destination:destinations(name, slug),
       category:categories(name, slug)
-    `
-		)
-		.order('updated_at', { ascending: false });
+    `)
+    .order('updated_at', { ascending: false });
 
-	if (error) {
-		console.error('Error fetching articles:', error);
-		return { articles: [], session };
-	}
+  if (articlesError) {
+    console.error('Error fetching articles:', articlesError);
+    return { articles: [] };
+  }
 
-	return {
-		articles: articles || [],
-		session,
-		isAdmin
-	};
+  return {
+    articles: articles || []
+  };
 };
