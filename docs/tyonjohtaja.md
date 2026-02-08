@@ -167,6 +167,33 @@ Projektissa käytetään kolmea agenttia:
 
 ---
 
+## Tehtävänannon toimitus agentille
+
+Kun työnjohtaja luo tehtävänannon (esim. PR1-tehtavanto.md):
+
+1. **Tehtävänanto tallennetaan tiedostoksi** (ei anneta inline-tekstinä)
+2. **Käyttäjä lataa tiedoston** `~/Downloads/` -kansioon
+3. **Agentille annetaan lukukäsky**, ei itse tehtävänantoa:
+
+```
+Lue tehtävänanto tiedostosta ~/Downloads/[tiedostonimi].md ja noudata sen ohjeita tarkasti.
+```
+
+### Miksi tämä on pakollista
+
+- Tehtävänanto säilyy muuttumattomana (ei copy-paste -virheitä)
+- Agentti lukee täsmälleen saman tiedoston jonka työnjohtaja loi
+- Pitkät tehtävänannot eivät katkea tai vääristy
+- Tehtävänanto on jäljitettävissä tiedostona
+
+### Työnjohtaja ei koskaan
+
+- Liitä tehtävänantoa suoraan chat-viestiin agentille
+- Oleta agentin näkevän aiempia keskusteluja
+- Tiivistä tai muokkaa tehtävänantoa lennossa
+
+---
+
 ## Muutossäännöt
 
 - Ei suoria muutoksia
