@@ -43,14 +43,15 @@ Päivitetty: 2026-02-08
 | Dynamic routes | ✅ WORKING |
 | Breadcrumbs | ✅ WORKING |
 | RLS tested | ✅ PASSING |
-| E2E tests | ✅ PASSING (16 tests) |
+| E2E tests | ✅ PASSING (18 tests) |
 | SEO basics | ✅ IMPLEMENTED |
 | Sitemap | ✅ DEPLOYED |
 | Meta tags | ✅ IMPLEMENTED |
 | Auth hardening | ✅ DONE (PR1) |
 | Form actions | ✅ DONE (PR2) |
 | Audit trail | ✅ DONE (PR3) |
-| Node version | v22 LTS (NVM) |
+| Node version | v22 LTS (.nvmrc) |
+| Design MVP | ✅ DONE (Layer 1–4) |
 
 ## Current phase
 
@@ -73,11 +74,11 @@ See: [docs/roadmap.md](./roadmap.md)
 
 ## Next task
 
-**P8.1-001: Design MVP implementation**
-- Create scalable visual foundation for hub/spoke guides
-- Implement 10 core components (layout, hero, typography, TOC, etc.)
-- Use Fuengirola as reference implementation
-- Enable content scaling without design changes
+**P8.2-001: Gran Canaria & Teneriffa QA/SEO pass**
+- Review existing content (PDF masters + city pages)
+- SEO optimization (titles, meta descriptions, headings)
+- Internal linking check (hub ↔ spoke connections)
+- Content quality assurance
 
 ---
 
@@ -95,8 +96,8 @@ See: [docs/roadmap.md](./roadmap.md)
 | Phase 6.5 — Hardening | ✅ COMPLETE |
 | Phase 7 — Launch | ✅ COMPLETE |
 | Phase 8 — Post-Launch & Expansion | 🔄 ACTIVE |
-| Phase 8.1 — Design MVP | 🔄 ACTIVE |
-| Phase 8.2 — Content Expansion | ⏳ NEXT |
+| Phase 8.1 — Design MVP | ✅ COMPLETE |
+| Phase 8.2 — Content Expansion | 🔄 ACTIVE |
 
 ---
 

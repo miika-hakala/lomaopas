@@ -6,23 +6,17 @@ Päivitetty: 2026-02-08
 
 ## ACTIVE
 
-**P8.1-001: Design MVP implementation**
-- Implement base layout (header, footer, max-width, responsive)
-- Create hero component (hub + spoke variants)
-- Define typography system (1 heading font + 1 body font)
-- Implement content layout (readability, spacing)
-- Create guide navigation (hub ↔ spoke)
-- Build table of contents (TOC) component
-- Create generic info card component
-- Design neutral CTA component
-- Verify breadcrumbs styling
-- Define image guidelines (1 hero image per guide)
+**P8.2-001: Gran Canaria & Teneriffa QA/SEO pass**
+- Review existing content (PDF masters + city pages)
+- SEO optimization (titles, meta descriptions, headings)
+- Internal linking check (hub ↔ spoke connections)
+- Content quality assurance
 
 Gate criteria:
-- Hub and spoke guides work visually
-- Content is readable in long articles
-- New guides can be added without design work
-- Fuengirola guide serves as reference implementation
+- All pages load correctly
+- Meta tags present and accurate
+- Hub ↔ spoke links work
+- Content reviewed for quality
 
 ---
 
@@ -94,6 +88,15 @@ Gate criteria:
 ---
 
 ## DONE
+
+### Design MVP (Phase 8.1)
+
+- [x] P8.1-001: Design MVP implementation
+  - Layer 1: Typography (Inter), base layout, header, footer
+  - Layer 2: Hero, breadcrumbs, content layout, guide navigation
+  - Layer 3: TOC, info card, CTA components
+  - Layer 4: Image support and guidelines
+  - 10/10 components implemented
 
 ### Security Audit (Post-Launch)
 
