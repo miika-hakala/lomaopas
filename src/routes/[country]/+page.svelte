@@ -1,136 +1,105 @@
 <script lang="ts">
-	import type { PageData } from './$types';
+  import type { PageData } from './$types';
+  import Breadcrumbs from '$lib/components/Breadcrumbs.svelte';
+  import Hero from '$lib/components/Hero.svelte';
 
-	export let data: PageData;
+  export let data: PageData;
 </script>
 
 <svelte:head>
-	<title>{data.destination.name} - Lomaopas.fi</title>
-	<meta
-		name="description"
-		content="Tutustu {data.destination.name}n kohteisiin ja nähtävyyksiin. Suomenkielinen matkaopas."
-	/>
-	<meta property="og:title" content="{data.destination.name} - Lomaopas.fi" />
-	<meta property="og:description" content="Tutustu {data.destination.name}n kohteisiin" />
-	<meta property="og:type" content="website" />
+  <title>{data.destination.name} - Lomaopas.fi</title>
+  <meta
+    name="description"
+    content="Tutustu {data.destination.name}n kohteisiin ja nähtävyyksiin. Suomenkielinen matkaopas."
+  />
+  <meta property="og:title" content="{data.destination.name} - Lomaopas.fi" />
+  <meta property="og:description" content="Tutustu {data.destination.name}n kohteisiin" />
+  <meta property="og:type" content="website" />
 </svelte:head>
 
-<div class="container">
-	<nav class="breadcrumb">
-		<a href="/">Etusivu</a>
-		<span>/</span>
-		<span>{data.destination.name}</span>
-	</nav>
+<div class="guide-page">
+  <Breadcrumbs items={[
+    { label: 'Etusivu', href: '/' },
+    { label: data.destination.name }
+  ]} />
 
-	<article class="destination">
-		<h1>{data.destination.name}</h1>
+  <Hero
+    title={data.destination.name}
+    subtitle="Tutustu {data.destination.name}n kohteisiin ja vinkkeihin."
+    variant="hub"
+  />
 
-		<section class="intro">
-			<p>Tutustu {data.destination.name}n kohteisiin ja vinkkeihin.</p>
-		</section>
-
-		{#if data.cities.length > 0}
-			<section class="cities">
-				<h2>Kohteet</h2>
-				<ul class="city-list">
-					{#each data.cities as city}
-						<li>
-							<a href="/{data.destination.slug}/{city.slug}" class="city-card">
-								<h3>{city.name}</h3>
-								<p>Lue lisää →</p>
-							</a>
-						</li>
-					{/each}
-				</ul>
-			</section>
-		{:else}
-			<p class="no-content">Ei vielä kohteita tälle alueelle.</p>
-		{/if}
-	</article>
+  {#if data.cities.length > 0}
+    <section class="destinations-section">
+      <h2>Kohteet</h2>
+      <ul class="card-grid">
+        {#each data.cities as city}
+          <li>
+            <a href="/{data.destination.slug}/{city.slug}" class="destination-card">
+              <h3>{city.name}</h3>
+              <p class="card-cta">Lue lisää →</p>
+            </a>
+          </li>
+        {/each}
+      </ul>
+    </section>
+  {:else}
+    <p class="empty-state">Ei vielä kohteita tälle alueelle.</p>
+  {/if}
 </div>
 
 <style>
-	.container {
-		max-width: 900px;
-		margin: 0 auto;
-		padding: 2rem;
-	}
+  .guide-page {
+    max-width: var(--max-width-page);
+    margin: 0 auto;
+  }
 
-	.breadcrumb {
-		font-size: 0.875rem;
-		color: #6b7280;
-		margin-bottom: 2rem;
-	}
+  .destinations-section h2 {
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--space-lg);
+    color: var(--color-text-primary);
+  }
 
-	.breadcrumb a {
-		color: #3b82f6;
-		text-decoration: none;
-	}
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--space-lg);
+    list-style: none;
+    padding: 0;
+  }
 
-	.breadcrumb a:hover {
-		text-decoration: underline;
-	}
+  .destination-card {
+    display: block;
+    padding: var(--space-lg);
+    background: var(--color-bg-primary);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.15s ease;
+  }
 
-	.breadcrumb span {
-		margin: 0 0.5rem;
-	}
+  .destination-card:hover {
+    border-color: var(--color-link);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+    text-decoration: none;
+  }
 
-	.destination h1 {
-		font-size: 2.5rem;
-		margin-bottom: 1rem;
-		color: #111827;
-	}
+  .destination-card h3 {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--space-sm);
+    color: var(--color-text-primary);
+  }
 
-	.intro {
-		font-size: 1.125rem;
-		color: #4b5563;
-		margin-bottom: 3rem;
-	}
+  .card-cta {
+    color: var(--color-link);
+    font-size: var(--font-size-sm) !important;
+    margin: 0;
+  }
 
-	.cities h2 {
-		font-size: 1.5rem;
-		margin-bottom: 1.5rem;
-		color: #111827;
-	}
-
-	.city-list {
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-		gap: 1.5rem;
-		list-style: none;
-		padding: 0;
-	}
-
-	.city-card {
-		display: block;
-		padding: 1.5rem;
-		background: white;
-		border: 1px solid #e5e7eb;
-		border-radius: 8px;
-		text-decoration: none;
-		color: inherit;
-		transition: all 0.2s;
-	}
-
-	.city-card:hover {
-		border-color: #3b82f6;
-		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-		transform: translateY(-2px);
-	}
-
-	.city-card h3 {
-		font-size: 1.25rem;
-		margin-bottom: 0.5rem;
-		color: #111827;
-	}
-
-	.city-card p {
-		color: #3b82f6;
-		margin: 0;
-	}
-
-	.no-content {
-		color: #6b7280;
-		font-style: italic;
-	}
+  .empty-state {
+    color: var(--color-text-muted);
+    font-style: italic;
+  }
 </style>

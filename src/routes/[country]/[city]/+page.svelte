@@ -1,154 +1,130 @@
 <script lang="ts">
-	import type { PageData } from './$types';
+  import type { PageData } from './$types';
+  import Breadcrumbs from '$lib/components/Breadcrumbs.svelte';
+  import Hero from '$lib/components/Hero.svelte';
+  import GuideNav from '$lib/components/GuideNav.svelte';
 
-	export let data: PageData;
+  export let data: PageData;
 </script>
 
 <svelte:head>
-	<title>{data.city.name} - {data.country.name} - Lomaopas.fi</title>
-	<meta
-		name="description"
-		content="{data.city.name} - tutustu nähtävyyksiin, ravintoloihin ja rantoihin. Suomenkielinen matkaopas."
-	/>
-	<meta property="og:title" content="{data.city.name} - Lomaopas.fi" />
-	<meta property="og:description" content="Tutustu {data.city.name}n nähtävyyksiin" />
-	<meta property="og:type" content="website" />
+  <title>{data.city.name} - {data.country.name} - Lomaopas.fi</title>
+  <meta
+    name="description"
+    content="{data.city.name} - tutustu nähtävyyksiin, ravintoloihin ja rantoihin. Suomenkielinen matkaopas."
+  />
+  <meta property="og:title" content="{data.city.name} - Lomaopas.fi" />
+  <meta property="og:description" content="Tutustu {data.city.name}n nähtävyyksiin" />
+  <meta property="og:type" content="website" />
 </svelte:head>
 
-<div class="container">
-	<nav class="breadcrumb">
-		<a href="/">Etusivu</a>
-		<span>/</span>
-		<a href="/{data.country.slug}">{data.country.name}</a>
-		<span>/</span>
-		<span>{data.city.name}</span>
-	</nav>
+<div class="guide-page">
+  <Breadcrumbs items={[
+    { label: 'Etusivu', href: '/' },
+    { label: data.country.name, href: '/' + data.country.slug },
+    { label: data.city.name }
+  ]} />
 
-	<article class="city">
-		<h1>{data.city.name}</h1>
+  <Hero
+    title={data.city.name}
+    subtitle="Tutustu {data.city.name}n nähtävyyksiin, ravintoloihin ja rantoihin."
+    variant="spoke"
+  />
 
-		<section class="intro">
-			<p>Tutustu {data.city.name}n nähtävyyksiin, ravintoloihin ja rantoihin.</p>
-		</section>
+  {#if data.articles.length > 0}
+    <section class="articles-section">
+      <h2>Artikkelit</h2>
+      <ul class="card-grid">
+        {#each data.articles as article}
+          <li>
+            <a
+              href="/{data.country.slug}/{data.city.slug}/{article.slug}"
+              class="article-card"
+            >
+              <h3>{article.title}</h3>
+              {#if article.category}
+                <span class="category-tag">{article.category.name}</span>
+              {/if}
+              <p class="card-cta">Lue lisää →</p>
+            </a>
+          </li>
+        {/each}
+      </ul>
+    </section>
+  {:else}
+    <p class="empty-state">Ei vielä artikkeleita tälle kohteelle.</p>
+  {/if}
 
-		{#if data.articles.length > 0}
-			<section class="articles">
-				<h2>Artikkelit</h2>
-				<ul class="article-list">
-					{#each data.articles as article}
-						<li>
-							<a
-								href="/{data.country.slug}/{data.city.slug}/{article.slug}"
-								class="article-card"
-							>
-								<h3>{article.title}</h3>
-								{#if article.category}
-									<span class="category">{article.category.name}</span>
-								{/if}
-								<p>Lue lisää →</p>
-							</a>
-						</li>
-					{/each}
-				</ul>
-			</section>
-		{:else}
-			<p class="no-content">Ei vielä artikkeleita tälle kohteelle.</p>
-		{/if}
-	</article>
+  <GuideNav
+    label="Katso koko {data.country.name}-alueopas"
+    href="/{data.country.slug}"
+    direction="up"
+  />
 </div>
 
 <style>
-	.container {
-		max-width: 900px;
-		margin: 0 auto;
-		padding: 2rem;
-	}
+  .guide-page {
+    max-width: var(--max-width-page);
+    margin: 0 auto;
+  }
 
-	.breadcrumb {
-		font-size: 0.875rem;
-		color: #6b7280;
-		margin-bottom: 2rem;
-	}
+  .articles-section h2 {
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--space-lg);
+    color: var(--color-text-primary);
+  }
 
-	.breadcrumb a {
-		color: #3b82f6;
-		text-decoration: none;
-	}
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--space-lg);
+    list-style: none;
+    padding: 0;
+  }
 
-	.breadcrumb a:hover {
-		text-decoration: underline;
-	}
+  .article-card {
+    display: block;
+    padding: var(--space-lg);
+    background: var(--color-bg-primary);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.15s ease;
+  }
 
-	.breadcrumb span {
-		margin: 0 0.5rem;
-	}
+  .article-card:hover {
+    border-color: var(--color-link);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+    text-decoration: none;
+  }
 
-	.city h1 {
-		font-size: 2.5rem;
-		margin-bottom: 1rem;
-		color: #111827;
-	}
+  .article-card h3 {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--space-sm);
+    color: var(--color-text-primary);
+  }
 
-	.intro {
-		font-size: 1.125rem;
-		color: #4b5563;
-		margin-bottom: 3rem;
-	}
+  .category-tag {
+    display: inline-block;
+    padding: var(--space-xs) var(--space-sm);
+    background: var(--color-accent-light);
+    color: var(--color-accent);
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-medium);
+    margin-bottom: var(--space-sm);
+  }
 
-	.articles h2 {
-		font-size: 1.5rem;
-		margin-bottom: 1.5rem;
-		color: #111827;
-	}
+  .card-cta {
+    color: var(--color-link);
+    font-size: var(--font-size-sm) !important;
+    margin: var(--space-sm) 0 0 0;
+  }
 
-	.article-list {
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-		gap: 1.5rem;
-		list-style: none;
-		padding: 0;
-	}
-
-	.article-card {
-		display: block;
-		padding: 1.5rem;
-		background: white;
-		border: 1px solid #e5e7eb;
-		border-radius: 8px;
-		text-decoration: none;
-		color: inherit;
-		transition: all 0.2s;
-	}
-
-	.article-card:hover {
-		border-color: #3b82f6;
-		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-		transform: translateY(-2px);
-	}
-
-	.article-card h3 {
-		font-size: 1.25rem;
-		margin-bottom: 0.5rem;
-		color: #111827;
-	}
-
-	.category {
-		display: inline-block;
-		padding: 0.25rem 0.75rem;
-		background: #eff6ff;
-		color: #1e40af;
-		border-radius: 12px;
-		font-size: 0.875rem;
-		margin-bottom: 0.5rem;
-	}
-
-	.article-card p {
-		color: #3b82f6;
-		margin: 0.5rem 0 0 0;
-	}
-
-	.no-content {
-		color: #6b7280;
-		font-style: italic;
-	}
+  .empty-state {
+    color: var(--color-text-muted);
+    font-style: italic;
+  }
 </style>

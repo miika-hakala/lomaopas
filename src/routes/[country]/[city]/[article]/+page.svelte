@@ -1,157 +1,113 @@
 <script lang="ts">
-	import type { PageData } from './$types';
+  import type { PageData } from './$types';
+  import Breadcrumbs from '$lib/components/Breadcrumbs.svelte';
+  import Hero from '$lib/components/Hero.svelte';
+  import GuideNav from '$lib/components/GuideNav.svelte';
 
-	export let data: PageData;
+  export let data: PageData;
 </script>
 
 <svelte:head>
-	<title>{data.article.title} - {data.city.name} - Lomaopas.fi</title>
-	<meta
-		name="description"
-		content="{data.article.content?.substring(0, 160) || data.article.title}"
-	/>
-	<meta property="og:title" content="{data.article.title} - Lomaopas.fi" />
-	<meta
-		property="og:description"
-		content="{data.article.content?.substring(0, 160) || data.article.title}"
-	/>
-	<meta property="og:type" content="article" />
+  <title>{data.article.title} - {data.city.name} - Lomaopas.fi</title>
+  <meta
+    name="description"
+    content="{data.article.content?.substring(0, 160) || data.article.title}"
+  />
+  <meta property="og:title" content="{data.article.title} - Lomaopas.fi" />
+  <meta
+    property="og:description"
+    content="{data.article.content?.substring(0, 160) || data.article.title}"
+  />
+  <meta property="og:type" content="article" />
 </svelte:head>
 
-<div class="container">
-	<nav class="breadcrumb">
-		<a href="/">Etusivu</a>
-		<span>/</span>
-		<a href="/{data.country.slug}">{data.country.name}</a>
-		<span>/</span>
-		<a href="/{data.country.slug}/{data.city.slug}">{data.city.name}</a>
-		<span>/</span>
-		<span>{data.article.title}</span>
-	</nav>
+<div class="article-page">
+  <Breadcrumbs items={[
+    { label: 'Etusivu', href: '/' },
+    { label: data.country.name, href: '/' + data.country.slug },
+    { label: data.city.name, href: '/' + data.country.slug + '/' + data.city.slug },
+    { label: data.article.title }
+  ]} />
 
-	<article class="article">
-		<header>
-			<h1>{data.article.title}</h1>
-			{#if data.article.category}
-				<span class="category">{data.article.category.name}</span>
-			{/if}
-		</header>
+  <Hero
+    title={data.article.title}
+    variant="article"
+  >
+    {#if data.article.category}
+      <span class="category-tag">{data.article.category.name}</span>
+    {/if}
+  </Hero>
 
-		{#if data.article.content}
-			<div class="content">
-				{data.article.content}
-			</div>
-		{:else}
-			<p class="no-content">Sisältö tulossa pian...</p>
-		{/if}
+  <article class="article-content">
+    {#if data.article.content}
+      <div class="prose">
+        {data.article.content}
+      </div>
+    {:else}
+      <p class="empty-state">Sisältö tulossa pian...</p>
+    {/if}
+  </article>
 
-		<footer>
-			<a href="/{data.country.slug}/{data.city.slug}" class="back-link">
-				← Takaisin {data.city.name}-sivulle
-			</a>
-		</footer>
-	</article>
+  <GuideNav
+    label="Takaisin {data.city.name}-sivulle"
+    href="/{data.country.slug}/{data.city.slug}"
+    direction="back"
+  />
 </div>
 
 <style>
-	.container {
-		max-width: 800px;
-		margin: 0 auto;
-		padding: 2rem;
-	}
+  .article-page {
+    max-width: var(--max-width-content);
+    margin: 0 auto;
+  }
 
-	.breadcrumb {
-		font-size: 0.875rem;
-		color: #6b7280;
-		margin-bottom: 2rem;
-	}
+  .category-tag {
+    display: inline-block;
+    padding: var(--space-xs) var(--space-md);
+    background: var(--color-accent-light);
+    color: var(--color-accent);
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    margin-top: var(--space-sm);
+  }
 
-	.breadcrumb a {
-		color: #3b82f6;
-		text-decoration: none;
-	}
+  .prose {
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-relaxed);
+    color: var(--color-text-secondary);
+  }
 
-	.breadcrumb a:hover {
-		text-decoration: underline;
-	}
+  .prose :global(p) {
+    margin-bottom: var(--space-lg);
+  }
 
-	.breadcrumb span {
-		margin: 0 0.5rem;
-	}
+  .prose :global(h2) {
+    font-size: var(--font-size-3xl);
+    margin-top: var(--space-2xl);
+    margin-bottom: var(--space-md);
+    color: var(--color-text-primary);
+  }
 
-	.article header {
-		margin-bottom: 2rem;
-	}
+  .prose :global(h3) {
+    font-size: var(--font-size-2xl);
+    margin-top: var(--space-xl);
+    margin-bottom: var(--space-sm);
+    color: var(--color-text-primary);
+  }
 
-	.article h1 {
-		font-size: 2.5rem;
-		margin-bottom: 1rem;
-		color: #111827;
-		line-height: 1.2;
-	}
+  .prose :global(ul),
+  .prose :global(ol) {
+    margin-bottom: var(--space-lg);
+    padding-left: var(--space-lg);
+  }
 
-	.category {
-		display: inline-block;
-		padding: 0.5rem 1rem;
-		background: #eff6ff;
-		color: #1e40af;
-		border-radius: 16px;
-		font-size: 0.875rem;
-		font-weight: 500;
-	}
+  .prose :global(li) {
+    margin-bottom: var(--space-sm);
+  }
 
-	.content {
-		font-size: 1.125rem;
-		line-height: 1.75;
-		color: #374151;
-		margin-bottom: 3rem;
-	}
-
-	.content :global(p) {
-		margin-bottom: 1.5rem;
-	}
-
-	.content :global(h2) {
-		font-size: 1.875rem;
-		margin-top: 2.5rem;
-		margin-bottom: 1rem;
-		color: #111827;
-	}
-
-	.content :global(h3) {
-		font-size: 1.5rem;
-		margin-top: 2rem;
-		margin-bottom: 0.75rem;
-		color: #111827;
-	}
-
-	.content :global(ul),
-	.content :global(ol) {
-		margin-bottom: 1.5rem;
-		padding-left: 1.5rem;
-	}
-
-	.content :global(li) {
-		margin-bottom: 0.5rem;
-	}
-
-	.no-content {
-		color: #6b7280;
-		font-style: italic;
-	}
-
-	footer {
-		padding-top: 2rem;
-		border-top: 1px solid #e5e7eb;
-	}
-
-	.back-link {
-		color: #3b82f6;
-		text-decoration: none;
-		font-weight: 500;
-	}
-
-	.back-link:hover {
-		text-decoration: underline;
-	}
+  .empty-state {
+    color: var(--color-text-muted);
+    font-style: italic;
+  }
 </style>
