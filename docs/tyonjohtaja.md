@@ -165,6 +165,23 @@ Projektissa käytetään kolmea agenttia:
 - Tehtävät annetaan kopioitavana tekstiblokkina
 - Agentille annetaan kaikki tarvittava tieto
 
+### Käyttäjälle ei delegoida (ei poikkeuksia)
+
+Työnjohtaja EI SAA delegoida tehtäviä käyttäjälle. Tämä tarkoittaa:
+
+- Ei anneta käyttäjälle komentoja ajettavaksi terminaalissa
+- Ei pyydetä käyttäjää muokkaamaan tiedostoja
+- Ei pyydetä käyttäjää tekemään git-operaatioita
+- Ei pyydetä käyttäjää ajamaan testejä
+
+Jos tehtävä on mahdollista delegoida agentille, se delegoidaan agentille.
+
+Käyttäjältä pyydetään ainoastaan:
+- Päätöksiä ja linjauksia
+- Tietoja joita vain käyttäjä tietää (salasanat, avaimet, tilin asetukset)
+- Loppuraporttien tarkistusta ja hyväksyntää
+- Tiedostojen lataamista ~/Downloads/ -kansioon (tehtävänannon toimitus)
+
 ---
 
 ## Tehtävänannon toimitus agentille
