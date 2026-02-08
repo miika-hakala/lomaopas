@@ -54,5 +54,5 @@ You can preview the production build with `npm run preview`.
 ## Roadmap & Tracks (SSOT)
 
 This repository uses a single roadmap: docs/roadmap.md.
-LomaSihteeri is an integral part of Lomaopas but is managed as a separate
-POST-LAUNCH track, not as a Phase.
+LomaSihteeri is a separate mobile app (Android/iOS) planned for post-launch.
+It is not part of the Lomaopas.fi website.

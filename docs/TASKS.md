@@ -72,9 +72,13 @@ Gate criteria:
 
 ## PAUSED
 
-### LomaSihteeri (POST-LAUNCH, PAUSED)
+### LomaSihteeri — Mobiilisovellus (POST-LAUNCH, PAUSED)
 
-- [ ] LS-001: LomaSihteeri MVP (AI-assistentti)
+LomaSihteeri on erillinen mobiilisovellus (Android / iOS),
+ei osa Lomaopas.fi-verkkosivustoa.
+Web-pohjaiset prototyyppitiedostot on poistettu.
+
+- [ ] LS-001: LomaSihteeri MVP (mobiilisovellus)
 
 ### Phase 9 — PWA / Mobiilisovellus (Post-launch)
 
