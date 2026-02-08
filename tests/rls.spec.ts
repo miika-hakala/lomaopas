@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 
 test.describe('RLS (Row Level Security)', () => {
   test('only published articles visible on public site', async ({ page }) => {
-    await page.goto('/espanja/fuengirola');
+    await page.goto('/costa-del-sol/fuengirola');
     await expect(page.locator('text=Fuengirolan rannat')).toBeVisible();
 
     const articleCards = page.locator('.article-card');
@@ -11,7 +11,7 @@ test.describe('RLS (Row Level Security)', () => {
   });
 
   test('draft article returns 404 on public site', async ({ page }) => {
-    const response = await page.goto('/espanja/fuengirola/nonexistent-draft');
+    const response = await page.goto('/costa-del-sol/fuengirola/nonexistent-draft');
     expect(response?.status()).toBe(404);
   });
 });

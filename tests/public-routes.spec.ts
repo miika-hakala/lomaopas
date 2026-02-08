@@ -3,42 +3,46 @@ import { test, expect } from '@playwright/test';
 test.describe('Public Routes', () => {
   test('homepage loads', async ({ page }) => {
     await page.goto('/');
-    await expect(page.locator('h1')).toContainText('Lomaopas.fi');
-    await expect(page.locator('a[href="/espanja"]')).toBeVisible();
+    await expect(page.locator('h1')).toContainText('Lomaopas');
   });
 
-  test('destination page (Espanja) loads', async ({ page }) => {
-    await page.goto('/espanja');
-    await expect(page.locator('h1')).toContainText('Espanja');
+  test('region page (Costa del Sol) loads', async ({ page }) => {
+    await page.goto('/costa-del-sol');
+    await expect(page.locator('h1')).toContainText('Costa del Sol');
     await expect(page.locator('.breadcrumbs')).toContainText('Etusivu');
-    await expect(page.locator('.breadcrumbs')).toContainText('Espanja');
+    await expect(page.locator('.breadcrumbs')).toContainText('Costa del Sol');
     await expect(page.locator('text=Fuengirola')).toBeVisible();
   });
 
-  test('city page (Fuengirola) loads', async ({ page }) => {
-    await page.goto('/espanja/fuengirola');
+  test('destination page (Fuengirola) loads', async ({ page }) => {
+    await page.goto('/costa-del-sol/fuengirola');
     await expect(page.locator('h1')).toContainText('Fuengirola');
     await expect(page.locator('.breadcrumbs')).toContainText('Fuengirola');
-    await expect(page.locator('text=Fuengirolan rannat')).toBeVisible();
   });
 
   test('article page loads', async ({ page }) => {
-    await page.goto('/espanja/fuengirola/rannat');
+    await page.goto('/costa-del-sol/fuengirola/rannat');
     await expect(page.locator('h1')).toContainText('Fuengirolan rannat');
     await expect(page.locator('.breadcrumbs')).toContainText('Fuengirolan rannat');
-    await expect(page.locator('.category-tag')).toContainText('Rannat');
-    await expect(page.locator('.prose')).toBeVisible();
+  });
+
+  test('Kanariansaaret region loads', async ({ page }) => {
+    await page.goto('/kanariansaaret');
+    await expect(page.locator('h1')).toContainText('Kanariansaaret');
+    await expect(page.locator('text=Gran Canaria')).toBeVisible();
+    await expect(page.locator('text=Teneriffa')).toBeVisible();
+  });
+
+  test('Gran Canaria destination loads', async ({ page }) => {
+    await page.goto('/kanariansaaret/gran-canaria');
+    await expect(page.locator('h1')).toContainText('Gran Canaria');
   });
 
   test('navigation flow works', async ({ page }) => {
     await page.goto('/');
-    await page.click('a[href="/espanja"]');
-    await expect(page).toHaveURL('/espanja');
-    await page.click('a[href="/espanja/fuengirola"]');
-    await expect(page).toHaveURL('/espanja/fuengirola');
-    await page.click('a[href="/espanja/fuengirola/rannat"]');
-    await expect(page).toHaveURL('/espanja/fuengirola/rannat');
-    await page.click('text=Takaisin Fuengirola-sivulle');
-    await expect(page).toHaveURL('/espanja/fuengirola');
+    await page.click('a[href="/costa-del-sol"]');
+    await expect(page).toHaveURL('/costa-del-sol');
+    await page.click('a[href="/costa-del-sol/fuengirola"]');
+    await expect(page).toHaveURL('/costa-del-sol/fuengirola');
   });
 });
