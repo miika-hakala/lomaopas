@@ -10,24 +10,24 @@ test.describe('Public Routes', () => {
   test('destination page (Espanja) loads', async ({ page }) => {
     await page.goto('/espanja');
     await expect(page.locator('h1')).toContainText('Espanja');
-    await expect(page.locator('.breadcrumb')).toContainText('Etusivu');
-    await expect(page.locator('.breadcrumb')).toContainText('Espanja');
+    await expect(page.locator('.breadcrumbs')).toContainText('Etusivu');
+    await expect(page.locator('.breadcrumbs')).toContainText('Espanja');
     await expect(page.locator('text=Fuengirola')).toBeVisible();
   });
 
   test('city page (Fuengirola) loads', async ({ page }) => {
     await page.goto('/espanja/fuengirola');
     await expect(page.locator('h1')).toContainText('Fuengirola');
-    await expect(page.locator('.breadcrumb')).toContainText('Fuengirola');
+    await expect(page.locator('.breadcrumbs')).toContainText('Fuengirola');
     await expect(page.locator('text=Fuengirolan rannat')).toBeVisible();
   });
 
   test('article page loads', async ({ page }) => {
     await page.goto('/espanja/fuengirola/rannat');
     await expect(page.locator('h1')).toContainText('Fuengirolan rannat');
-    await expect(page.locator('.breadcrumb')).toContainText('Fuengirolan rannat');
-    await expect(page.locator('.category')).toContainText('Rannat');
-    await expect(page.locator('.content')).toBeVisible();
+    await expect(page.locator('.breadcrumbs')).toContainText('Fuengirolan rannat');
+    await expect(page.locator('.category-tag')).toContainText('Rannat');
+    await expect(page.locator('.prose')).toBeVisible();
   });
 
   test('navigation flow works', async ({ page }) => {
