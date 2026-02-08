@@ -1,8 +1,9 @@
 <script lang="ts">
 	import ArticleForm from '$lib/components/ArticleForm.svelte';
-	import type { PageData } from './$types';
+	import type { PageData, ActionData } from './$types';
 
 	export let data: PageData;
+	export let form: ActionData;
 </script>
 
-<ArticleForm supabase={data.supabase} destinations={data.destinations} categories={data.categories} />
+<ArticleForm destinations={data.destinations} categories={data.categories} {form} />

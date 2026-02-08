@@ -1,22 +1,21 @@
 <script lang="ts">
-	import { goto } from '$app/navigation';
-	import type { SupabaseClient } from '@supabase/supabase-js';
+	import { enhance } from '$app/forms';
 
-	export let supabase: SupabaseClient;
 	export let article: any = null;
 	export let destinations: any[] = [];
 	export let categories: any[] = [];
+	export let form: any = null;
 
-	let title = article?.title || '';
-	let slug = article?.slug || '';
-	let content = article?.content || '';
-	let destinationId = article?.destination_id || '';
-	let categoryId = article?.category_id || '';
-	let published = article?.published || false;
+	let title = form?.title ?? article?.title ?? '';
+	let slug = form?.slug ?? article?.slug ?? '';
+	let content = form?.content ?? article?.content ?? '';
+	let destinationId = form?.destinationId ?? article?.destination_id ?? '';
+	let categoryId = form?.categoryId ?? article?.category_id ?? '';
+	let published = article?.published ?? false;
 	let loading = false;
-	let error = '';
 
 	$: isEdit = !!article;
+	$: errorMessage = form?.error ?? '';
 
 	function generateSlug(text: string) {
 		return text
@@ -34,240 +33,217 @@
 		}
 	}
 
-	async function handleSubmit() {
-		try {
-			loading = true;
-			error = '';
-
-			if (!title || !slug || !destinationId) {
-				error = 'Please fill in all required fields';
-				return;
-			}
-
-			const articleData = {
-				title,
-				slug,
-				content,
-				destination_id: destinationId,
-				category_id: categoryId || null,
-				published
-			};
-
-			if (isEdit) {
-				const { error: updateError } = await supabase
-					.from('articles')
-					.update(articleData)
-					.eq('id', article.id);
-
-				if (updateError) throw updateError;
-
-				alert('Article updated successfully!');
-			} else {
-				const { error: insertError } = await supabase.from('articles').insert(articleData);
-
-				if (insertError) throw insertError;
-
-				alert('Article created successfully!');
-			}
-
-			goto('/admin');
-		} catch (err: any) {
-			error = err.message;
-		} finally {
-			loading = false;
-		}
-	}
-
-	async function handleDelete() {
-		if (!confirm('Are you sure you want to delete this article?')) return;
-
-		try {
-			loading = true;
-			const { error: deleteError } = await supabase
-				.from('articles')
-				.delete()
-				.eq('id', article.id);
-
-			if (deleteError) throw deleteError;
-
-			alert('Article deleted!');
-			goto('/admin');
-		} catch (err: any) {
-			error = err.message;
-		} finally {
-			loading = false;
+	function confirmDelete(event: Event) {
+		if (!confirm('Are you sure you want to delete this article?')) {
+			event.preventDefault();
 		}
 	}
 </script>
 
-<form on:submit|preventDefault={handleSubmit} class="article-form">
+<div class="form-container">
 	<h2>{isEdit ? 'Edit Article' : 'New Article'}</h2>
 
-	{#if error}
-		<p class="error">{error}</p>
+	{#if errorMessage}
+		<div class="error">{errorMessage}</div>
 	{/if}
 
-	<div class="form-group">
-		<label for="title">Title *</label>
-		<input
-			id="title"
-			type="text"
-			bind:value={title}
-			on:input={handleTitleChange}
-			required
-			disabled={loading}
-		/>
-	</div>
+	<form
+		method="POST"
+		action={isEdit ? '?/update' : ''}
+		use:enhance={() => {
+			loading = true;
+			return async ({ update }) => {
+				loading = false;
+				await update();
+			};
+		}}
+	>
+		<div class="field">
+			<label for="title">Title *</label>
+			<input
+				id="title"
+				name="title"
+				type="text"
+				bind:value={title}
+				on:input={handleTitleChange}
+				required
+				maxlength="200"
+			/>
+		</div>
 
-	<div class="form-group">
-		<label for="slug">Slug *</label>
-		<input id="slug" type="text" bind:value={slug} required disabled={loading} />
-		<small>URL-friendly identifier (auto-generated from title)</small>
-	</div>
+		<div class="field">
+			<label for="slug">Slug *</label>
+			<input
+				id="slug"
+				name="slug"
+				type="text"
+				bind:value={slug}
+				required
+				maxlength="200"
+				pattern="[a-z0-9]+(?:-[a-z0-9]+)*"
+			/>
+		</div>
 
-	<div class="form-group">
-		<label for="destination">Destination *</label>
-		<select id="destination" bind:value={destinationId} required disabled={loading}>
-			<option value="">Select destination...</option>
-			{#each destinations as dest}
-				<option value={dest.id}>{dest.name}</option>
-			{/each}
-		</select>
-	</div>
+		<div class="field">
+			<label for="destination">Destination *</label>
+			<select id="destination" name="destination_id" bind:value={destinationId} required>
+				<option value="">Select destination</option>
+				{#each destinations as dest}
+					<option value={dest.id}>{dest.name}</option>
+				{/each}
+			</select>
+		</div>
 
-	<div class="form-group">
-		<label for="category">Category</label>
-		<select id="category" bind:value={categoryId} disabled={loading}>
-			<option value="">Select category...</option>
-			{#each categories as cat}
-				<option value={cat.id}>{cat.name}</option>
-			{/each}
-		</select>
-	</div>
+		<div class="field">
+			<label for="category">Category</label>
+			<select id="category" name="category_id" bind:value={categoryId}>
+				<option value="">No category</option>
+				{#each categories as cat}
+					<option value={cat.id}>{cat.name}</option>
+				{/each}
+			</select>
+		</div>
 
-	<div class="form-group">
-		<label for="content">Content</label>
-		<textarea id="content" bind:value={content} rows="10" disabled={loading}></textarea>
-	</div>
+		<div class="field">
+			<label for="content">Content</label>
+			<textarea id="content" name="content" bind:value={content} rows="15" maxlength="50000"></textarea>
+		</div>
 
-	<div class="form-group checkbox-group">
-		<label>
-			<input type="checkbox" bind:checked={published} disabled={loading} />
-			Published
-		</label>
-	</div>
+		<div class="field checkbox">
+			<label>
+				<input type="checkbox" name="published" bind:checked={published} />
+				Published
+			</label>
+		</div>
 
-	<div class="form-actions">
-		<button type="submit" class="btn-primary" disabled={loading}>
-			{loading ? 'Saving...' : isEdit ? 'Update' : 'Create'}
-		</button>
-		<a href="/admin" class="btn-secondary">Cancel</a>
-		{#if isEdit}
-			<button type="button" class="btn-danger" on:click={handleDelete} disabled={loading}>
-				Delete
+		<div class="actions">
+			<button type="submit" disabled={loading}>
+				{loading ? 'Saving...' : isEdit ? 'Update' : 'Create'}
 			</button>
-		{/if}
-	</div>
-</form>
+			<a href="/admin" class="cancel">Cancel</a>
+		</div>
+	</form>
+
+	{#if isEdit}
+		<form
+			method="POST"
+			action="?/delete"
+			use:enhance={() => {
+				loading = true;
+				return async ({ update }) => {
+					loading = false;
+					await update();
+				};
+			}}
+			on:submit={confirmDelete}
+			class="delete-form"
+		>
+			<button type="submit" class="delete-btn" disabled={loading}>
+				Delete Article
+			</button>
+		</form>
+	{/if}
+</div>
 
 <style>
-	.article-form {
+	.form-container {
 		max-width: 800px;
 		margin: 0 auto;
 		padding: 2rem;
 	}
 
-	.form-group {
+	h2 {
 		margin-bottom: 1.5rem;
+		color: #111827;
+	}
+
+	.error {
+		background: #fef2f2;
+		color: #b91c1c;
+		padding: 0.75rem 1rem;
+		border-radius: 6px;
+		margin-bottom: 1rem;
+		border: 1px solid #fecaca;
+	}
+
+	.field {
+		margin-bottom: 1.25rem;
 	}
 
 	label {
 		display: block;
 		margin-bottom: 0.5rem;
 		font-weight: 500;
+		color: #374151;
 	}
 
-	input[type='text'],
-	select,
-	textarea {
+	input[type="text"],
+	textarea,
+	select {
 		width: 100%;
-		padding: 0.75rem;
+		padding: 0.5rem 0.75rem;
 		border: 1px solid #d1d5db;
 		border-radius: 6px;
-		font-family: inherit;
+		font-size: 1rem;
 	}
 
 	textarea {
 		resize: vertical;
 	}
 
-	small {
-		color: #6b7280;
-		font-size: 0.875rem;
-	}
-
-	.checkbox-group label {
+	.checkbox label {
 		display: flex;
 		align-items: center;
 		gap: 0.5rem;
+		cursor: pointer;
 	}
 
-	.form-actions {
+	.checkbox input[type="checkbox"] {
+		width: auto;
+	}
+
+	.actions {
 		display: flex;
 		gap: 1rem;
-		margin-top: 2rem;
+		align-items: center;
+		margin-top: 1.5rem;
 	}
 
-	.btn-primary,
-	.btn-secondary,
-	.btn-danger {
-		padding: 0.75rem 1.5rem;
-		border-radius: 6px;
-		font-weight: 500;
-		cursor: pointer;
-		border: none;
-		text-decoration: none;
-		display: inline-block;
-	}
-
-	.btn-primary {
+	button[type="submit"] {
+		padding: 0.5rem 1.5rem;
 		background: #3b82f6;
 		color: white;
+		border: none;
+		border-radius: 6px;
+		cursor: pointer;
+		font-size: 1rem;
 	}
 
-	.btn-secondary {
-		background: #6b7280;
-		color: white;
-	}
-
-	.btn-danger {
-		background: #ef4444;
-		color: white;
-		margin-left: auto;
-	}
-
-	.btn-primary:hover {
+	button[type="submit"]:hover {
 		background: #2563eb;
 	}
 
-	.btn-secondary:hover {
-		background: #4b5563;
-	}
-
-	.btn-danger:hover {
-		background: #dc2626;
-	}
-
-	button:disabled {
+	button[type="submit"]:disabled {
 		opacity: 0.5;
 		cursor: not-allowed;
 	}
 
-	.error {
-		background: #fee2e2;
-		color: #991b1b;
-		padding: 1rem;
-		border-radius: 6px;
-		margin-bottom: 1rem;
+	.cancel {
+		color: #6b7280;
+		text-decoration: none;
+	}
+
+	.delete-form {
+		margin-top: 2rem;
+		padding-top: 2rem;
+		border-top: 1px solid #e5e7eb;
+	}
+
+	.delete-btn {
+		background: #ef4444 !important;
+	}
+
+	.delete-btn:hover {
+		background: #dc2626 !important;
 	}
 </style>
