@@ -58,6 +58,18 @@ Gate criteria:
 
 ---
 
+### Market Research — Puutteiden täydennys
+
+**Lähde:** docs/market/matkakohteet-2026-kaikki.md (PUUTTEITA-osio)
+
+- [ ] MR-001: Aurinkomatkojen alikohdelistat (Espanja 22, Italia 22, Kreikka 25, Kanariansaaret 34, Thaimaa 40 kohdetta → yksittäiset alikohdelistat puuttuvat)
+- [ ] MR-002: Tjäreborgin data täydennys (Karibia/Amerikka/Kanariansaaret alikohdelistat katkesivat)
+- [ ] MR-003: Apollomatkojen alikohdelistat (vain maa-tason data, ei yksittäisiä kohteita)
+- [ ] MR-004: Trip X kohteet (JS-sivu ei renderöitynyt, kohdelista puuttuu kokonaan)
+- [ ] MR-005: top-destinations-2026.md päivitys uudella datalla
+
+---
+
 ## PAUSED
 
 ### LomaSihteeri — Mobiilisovellus (POST-LAUNCH, PAUSED)
