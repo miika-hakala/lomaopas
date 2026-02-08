@@ -3,8 +3,13 @@
   import Breadcrumbs from '$lib/components/Breadcrumbs.svelte';
   import Hero from '$lib/components/Hero.svelte';
   import GuideNav from '$lib/components/GuideNav.svelte';
+  import TableOfContents from '$lib/components/TableOfContents.svelte';
 
   export let data: PageData;
+
+  // TOC items will be populated when content has HTML headings
+  // For now, empty array means TOC won't render
+  let tocItems: { id: string; title: string; level?: number }[] = [];
 </script>
 
 <svelte:head>
@@ -38,15 +43,23 @@
     {/if}
   </Hero>
 
-  <article class="article-content">
-    {#if data.article.content}
-      <div class="prose">
-        {data.article.content}
-      </div>
-    {:else}
-      <p class="empty-state">Sisältö tulossa pian...</p>
+  <div class="article-layout">
+    <article class="article-content">
+      {#if data.article.content}
+        <div class="prose">
+          {data.article.content}
+        </div>
+      {:else}
+        <p class="empty-state">Sisältö tulossa pian...</p>
+      {/if}
+    </article>
+
+    {#if tocItems.length > 0}
+      <aside class="article-sidebar">
+        <TableOfContents items={tocItems} />
+      </aside>
     {/if}
-  </article>
+  </div>
 
   <GuideNav
     label="Takaisin {data.city.name}-sivulle"
@@ -57,8 +70,33 @@
 
 <style>
   .article-page {
-    max-width: var(--max-width-content);
+    max-width: var(--max-width-page);
     margin: 0 auto;
+  }
+
+  .article-layout {
+    display: flex;
+    gap: var(--space-2xl);
+  }
+
+  .article-content {
+    flex: 1;
+    max-width: var(--max-width-content);
+    min-width: 0;
+  }
+
+  .article-sidebar {
+    flex: 0 0 250px;
+  }
+
+  @media (max-width: 1023px) {
+    .article-layout {
+      flex-direction: column;
+    }
+    .article-sidebar {
+      flex: none;
+      order: -1;
+    }
   }
 
   .category-tag {
